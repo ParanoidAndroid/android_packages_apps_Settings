@@ -65,8 +65,9 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
     private static final String KEY_INPUT_METHOD_SELECTOR = "input_method_selector";
     private static final String KEY_USER_DICTIONARY_SETTINGS = "key_user_dictionary_settings";
     private static final String KEY_POINTER_SETTINGS_CATEGORY = "pointer_settings_category";
-    private static final String KEY_STYLUS_GESTURES = "stylus_gestures";
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
+    private static final String KEY_STYLUS_GESTURES = "stylus_gestures";
+    private static final String KEY_STYLUS_ICON_ENABLED = "stylus_icon_enabled";
 
     // false: on ICS or later
     private static final boolean SHOW_INPUT_METHOD_SWITCHER_SETTINGS = false;
@@ -86,7 +87,6 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
     private PreferenceCategory mHardKeyboardCategory;
     private PreferenceCategory mGameControllerCategory;
     private Preference mLanguagePref;
-    private PreferenceScreen mStylusGestures;
     private final ArrayList<InputMethodPreference> mInputMethodPreferenceList =
             new ArrayList<InputMethodPreference>();
     private final ArrayList<PreferenceScreen> mHardKeyboardPreferenceList =
@@ -99,9 +99,11 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
     @SuppressWarnings("unused")
     private SettingsObserver mSettingsObserver;
     private Intent mIntentWaitingForResult;
-    private ListPreference mVolumeKeyCursorControl;
 
     private CheckBoxPreference mDisableFullscreenKeyboard;
+    private ListPreference mVolumeKeyCursorControl;
+    private PreferenceScreen mStylusGestures;
+    private CheckBoxPreference mStylusIconEnabled;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -189,6 +191,8 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
                     findPreference(KEY_POINTER_SETTINGS_CATEGORY);
             pointerSettingsCategory.removePreference(mStylusGestures);
         }
+
+        mStylusIconEnabled = (CheckBoxPreference) findPreference(KEY_STYLUS_ICON_ENABLED);
 
         // Spell Checker
         final Intent intent = new Intent(Intent.ACTION_MAIN);
@@ -292,6 +296,11 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
             }
         }
 
+        if (mStylusIconEnabled != null) {
+            mStylusIconEnabled.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                    Settings.System.STYLUS_ICON_ENABLED, 0) == 1);
+        }
+
         // Hard keyboard
         if (!mHardKeyboardPreferenceList.isEmpty()) {
             for (int i = 0; i < sHardKeyboardKeys.length; ++i) {
@@ -377,6 +386,9 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
                         chkPref.isChecked() ? 1 : 0);
                 return true;
             }
+        } else if (preference == mStylusIconEnabled) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.STYLUS_ICON_ENABLED, mStylusIconEnabled.isChecked() ? 1 : 0);
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
