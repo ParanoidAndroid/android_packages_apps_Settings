@@ -22,6 +22,8 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.DialogInterface.OnMultiChoiceClickListener;
 import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -30,6 +32,7 @@ import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
+import android.view.IWindowManager;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -58,6 +61,7 @@ public class Toolbar extends SettingsPreferenceFragment
     private static final String PIE_CENTER = "pie_center";
     private static final String PIE_STICK = "pie_stick";
     private static final String PIE_RESTART = "pie_restart_launcher";
+    private static final String KEY_HARDWARE_KEYS = "hardware_keys";
 
     private ListPreference mAmPmStyle;
     private ListPreference mStatusBarMaxNotif;
@@ -209,6 +213,14 @@ public class Toolbar extends SettingsPreferenceFragment
             mNavigationCategory.removePreference(mNavigationBarControls);
             prefSet.removePreference(mQuickPullDown);
         }
+
+        // Only show the hardware keys config on a device that does not have a navbar
+        final int deviceKeys = getResources().getInteger(
+                com.android.internal.R.integer.config_deviceHardwareKeys);
+        if(deviceKeys==15) {
+             PreferenceScreen HARDWARE =(PreferenceScreen) prefSet.findPreference(KEY_HARDWARE_KEYS);
+             prefSet.removePreference(HARDWARE);
+        } 
     }
 
     @Override
