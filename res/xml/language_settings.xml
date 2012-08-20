@@ -116,5 +116,12 @@
                 android:title="@string/disable_fullscreen_keyboard_title"
                 android:summary="@string/disable_fullscreen_keyboard_summary"
                 android:defaultValue="false" />
+        <ListPreference
+                android:key="volume_key_cursor_control"
+                android:persistent="false"
+                android:dialogTitle="@string/volume_key_cursor_control_title"
+                android:title="@string/volume_key_cursor_control_title"
+                android:entries="@array/volume_key_cursor_control_entries"
+                android:entryValues="@array/volume_key_cursor_control_values" />
     </PreferenceCategory>
 </PreferenceScreen>
