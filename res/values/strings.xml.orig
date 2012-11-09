@@ -4398,6 +4398,7 @@
     <!-- PARANOIDANDROID STUFF -->
     <!-- ======================================================================================= -->
 
+<<<<<<< HEAD
 <!-- Lock Screen Shortcuts -->
     <string name="picker_activities">Activities</string>
     <string name="select_custom_app_title">Select custom application</string>
@@ -4407,6 +4408,162 @@
     <string name="lockscreen_target_summary">View or change custom lock screen shortcuts</string>
     <string name="lockscreen_target_reset">Lock screen shortcuts reset to default</string>
     <string name="lockscreen_target_save">Lock screen shortcuts saved</string>
+=======
+    <!-- **** CARBON ADDITIONS START **** -->
+
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+
+    <!-- Activity titles defined in AndroidManifest.xml -->
+    <string name="title_navbar">Navigation</string>
+    <string name="title_navring">Navigation Ring</string>
+
+    <!-- Quiet hours -->
+    <string name="quiet_hours_title">Quiet hours</string>
+    <string name="quiet_hours_summary">Configure the hours the device should be quiet</string>
+    <string name="quiet_hours_note_title">Note</string>
+    <string name="quiet_hours_note_summary">Incoming calls will behave like usual during quiet hours</string>
+    <string name="quiet_hours_enabled">Enable quiet hours</string>
+    <string name="quiet_hours_enabled_on">Quiet hours will be enforced</string>
+    <string name="quiet_hours_enabled_off">Notifications will function as normal</string>
+    <string name="quiet_hours_start">Start of quiet hours</string>
+    <string name="quiet_hours_start_summary">When to start enforcing quiet hours</string>
+    <string name="quiet_hours_end">End of quiet hours</string>
+    <string name="quiet_hours_end_summary">When to stop enforcing quiet hours</string>
+    <string name="quiet_hours_mute">Mute notifications</string>
+    <string name="quiet_hours_mute_on">No sounds will be played</string>
+    <string name="quiet_hours_mute_off">Sounds will play like normal</string>
+    <string name="quiet_hours_still">Disable vibrations</string>
+    <string name="quiet_hours_still_on">Device will not vibrate</string>
+    <string name="quiet_hours_still_off">Device will vibrate normally</string>
+    <string name="quiet_hours_dim">Disable notification light</string>
+    <string name="quiet_hours_dim_on">Notification light will be disabled</string>
+    <string name="quiet_hours_dim_off">Notification light will function as normal</string>
+    <string name="quiet_hours_haptic">Disable haptic feedback</string>
+    <string name="quiet_hours_haptic_on">Haptic feedback will be disabled</string>
+    <string name="quiet_hours_haptic_off">Haptic feedback will function as normal</string>
+    <string name="quiet_hours_active_from">Active from</string>
+    <string name="quiet_hours_active_to">to</string>
+
+    <!-- time range preference -->
+    <string name="start_time_title">Start</string>
+    <string name="end_time_title">End</string>
+
+    <!-- Hostname setting -->
+    <string name="device_hostname">Device hostname</string>
+
+    <!-- About phone screen,  setting option name-->
+    <string name="mod_version">Carbon version</string>
+    <string name="mod_version_default">Unknown</string>
+    <!-- About phone screen, build date of ROM -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2012-01-01-0000</string>
+    <!-- About device screen, Cpu info. -->
+    <string name="cpu_info">CPU</string>
+    <!-- About phone screen, Free memory info -->
+    <string name="mem_info">Memory</string>
+    <!-- About phone screen, status item label -->
+
+    <!-- CARBON Settings  -->
+    <!-- Settings main menu category heading. [CHAR LIMIT=40] -->
+    <string name="header_category_interface">CARBON SETTINGS</string>
+
+    <!-- CARBON Settings -->
+    <string name="interface_title">Interface</string>
+    <string name="lock_screen_title">Lockscreen</string>
+    <string name="navbar_title">Navigation</string>
+    <string name="performance_title">Performance</string>
+    <string name="power_menu_title">Powermenu</string>
+    <string name="power_widget_title">Powerwidget</string>
+    <string name="quick_settings_title">Quicksettings</string>
+    <string name="status_bar_title">Statusbar</string>
+    <string name="themes_settings_title">Themes</string>
+
+    <!-- Notification Drawer  -->
+    <string name="notification_drawer_title">Notification drawer</string>
+    <string name="notification_style_title">Notification drawer style</string>
+    <string name="notification_style_summary">Change your notification drawer style</string>
+    <string name="notification_show_wifi_ssid_title">Show Wifi network name</string>
+    <string name="notification_show_wifi_ssid_summary">Display the name of the currently connected Wifi network</string>
+
+    <!-- Notification drawer background -->
+    <string name="notification_wallpaper_title">Notification drawer background</string>
+    <string name="notification_wallpaper_landscape_title">Different landscape background</string>
+    <string name="notification_background_color_fill">Color fill</string>
+    <string name="notification_background_custom_image">Custom image</string>
+    <string name="notification_background_default_wallpaper">Default background</string>
+    <string name="notification_drawer_custom_background_dialog_title">Choose color</string>
+    <string name="notif_wallpaper_alpha_title">Notification background transparency</string>
+
+    <!-- Menu Strings -->
+    <string name="menu_nav_bar_reset">Reset nav bar</string>
+
+    <!-- Lockscreen Shortcuts -->
+    <string name="choose_app">Choose application</string>
+    <string name="icon_picker_type">Select icon type:</string>
+    <string name="icon_default">Default</string>
+    <string name="icon_presets">System icons</string>
+    <string name="icon_custom">Gallery</string>
+    <string name="lockscreen_shortcuts_title">Shortcuts</string>
+    <string name="lockscreen_shortcuts_summary">View or change custom lock screen shortcuts</string>
+    <string name="lock_screen_shortcuts_reset_message">Reset lock screen shortcuts?</string>
+    <string name="lock_screen_shortcuts_add">@string/profiles_add</string>
+    <string name="lock_screen_shortcuts_reset">Reset</string>
+    <string name="lock_screen_shortcuts_limit">Only 6 shorcuts are allowed!</string>
+    <string name="lockscreen_shorcuts_longpress_title">Shortcuts longpress</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Open custom lock screen shortcuts on longpress</string>
+    <string name="lockscreen_shortcuts_icon_picker_alarm">Alarm</string>
+    <string name="lockscreen_shortcuts_icon_picker_andy">Andy</string>
+    <string name="lockscreen_shortcuts_icon_picker_battery">Battery</string>
+    <string name="lockscreen_shortcuts_icon_picker_browser">Browser</string>
+    <string name="lockscreen_shortcuts_icon_picker_calendar">Calendar</string>
+    <string name="lockscreen_shortcuts_icon_picker_camera">Camera</string>
+    <string name="lockscreen_shortcuts_icon_picker_cloud">Cloud</string>
+    <string name="lockscreen_shortcuts_icon_picker_contact">Contact</string>
+    <string name="lockscreen_shortcuts_icon_picker_directdial">Direct Dial</string>
+    <string name="lockscreen_shortcuts_icon_picker_directmessage">Direct Message</string>
+    <string name="lockscreen_shortcuts_icon_picker_email">Email</string>
+    <string name="lockscreen_shortcuts_icon_picker_email2">Email 2</string>
+    <string name="lockscreen_shortcuts_icon_picker_facebook">Facebook</string>
+    <string name="lockscreen_shortcuts_icon_picker_favorite">Favorite</string>
+    <string name="lockscreen_shortcuts_icon_picker_file_browser">File Browser</string>
+    <string name="lockscreen_shortcuts_icon_picker_file_browser2">File Browser2</string>
+    <string name="lockscreen_shortcuts_icon_picker_gallery">Gallery</string>
+    <string name="lockscreen_shortcuts_icon_picker_google_small">Google</string>
+    <string name="lockscreen_shortcuts_icon_picker_gplus">Google Plus</string>
+    <string name="lockscreen_shortcuts_icon_picker_gtalk">GTalk</string>
+    <string name="lockscreen_shortcuts_icon_picker_help">Help</string>
+    <string name="lockscreen_shortcuts_icon_picker_joystick">Joystick</string>
+    <string name="lockscreen_shortcuts_icon_picker_key">Keys/Accounts</string>
+    <string name="lockscreen_shortcuts_icon_picker_laptop">Laptop</string>
+    <string name="lockscreen_shortcuts_icon_picker_luggage">Travel</string>
+    <string name="lockscreen_shortcuts_icon_picker_maps">Maps</string>
+    <string name="lockscreen_shortcuts_icon_picker_market">Market</string>
+    <string name="lockscreen_shortcuts_icon_picker_movie">Movies</string>
+    <string name="lockscreen_shortcuts_icon_picker_music">Music</string>
+    <string name="lockscreen_shortcuts_icon_picker_nav">Navigation</string>
+    <string name="lockscreen_shortcuts_icon_picker_phone">Phone</string>
+    <string name="lockscreen_shortcuts_icon_picker_pintrest">Pintrest</string>
+    <string name="lockscreen_shortcuts_icon_picker_play">Play</string>
+    <string name="lockscreen_shortcuts_icon_picker_podcast">Podcast</string>
+    <string name="lockscreen_shortcuts_icon_picker_quicksettings">Quick Settings</string>
+    <string name="lockscreen_shortcuts_icon_picker_rss">RSS Feed</string>
+    <string name="lockscreen_shortcuts_icon_picker_sdcard">SDCard</string>
+    <string name="lockscreen_shortcuts_icon_picker_search">Search</string>
+    <string name="lockscreen_shortcuts_icon_picker_sms">Messaging</string>
+    <string name="lockscreen_shortcuts_icon_picker_terminal">Terminal</string>
+    <string name="lockscreen_shortcuts_icon_picker_twitter">Twitter</string>
+    <string name="lockscreen_shortcuts_icon_picker_unlock">Unlock</string>
+
+    <!-- Lockscreen Targets -->    
+    <string name="lockscreen_target_info">Drag the slider to targets to assign action</string>
+    <string name="lockscreen_target_title">Slider Targets</string>
+    <string name="lockscreen_target_summary">View or change custom lockscreen targets</string>
+    <string name="lockscreen_eight_targets_title">Enable eight slider targets</string>
+    <string name="lockscreen_eight_targets_summary">Enable eight custom lock screen targets.\nNote: Changing this option resets your lock screen targets</string>
+    <string name="lockscreen_target_reset">Lockscreen Targets Reset To Default</string>
+    <string name="lockscreen_target_save">Lockscreen Targets Saved</string>
+>>>>>>> e407a76... Settings: Notification Shortcuts (2/2)
     <string name="lockscreen_target_reset_title">Reset</string>
     <string name="lockscreen_target_reset_message">Delete all user created lock screen shortcuts and restore to default?</string>
     <string name="lockscreen_target_empty">Empty</string>
@@ -4450,7 +4607,7 @@
     <string name="notification_light_default_value">Default</string>
     <string name="choose_app">Choose application</string>
 
-<!-- Notification Shortcuts -->
+    <!-- Notification Shortcuts -->
     <string name="notification_shortcuts_grouptitle">Shortcuts</string>
     <string name="notification_shortcuts_settings_title">Notification shortcuts</string>
     <string name="notification_shortcuts_settings_summary">Show shortcuts in the notification drawer</string>

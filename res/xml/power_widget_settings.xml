@@ -19,7 +19,7 @@
 
     <!-- Notification drawer Power Widget -->
     <PreferenceCategory
-       android:title="@string/power_widget_title">
+       android:title="Widgets">
 
         <CheckBoxPreference
             android:key="expanded_widget"
@@ -41,6 +41,13 @@
             android:dependency="expanded_widget"
             android:fragment="com.android.settings.cyanogenmod.PowerWidget$PowerWidgetOrder">
         </PreferenceScreen>
+
+        <PreferenceScreen	
+            android:id="@+id/slim_notification_shortcuts"
+            android:fragment="com.android.settings.carbon.notificationshortcuts.NotificationShortcuts"
+            android:key="slim_shortcuts_settings"
+            android:title="@string/notification_shortcuts_settings_title"
+            android:summary="@string/notification_shortcuts_settings_summary" />
 
     </PreferenceCategory>
 

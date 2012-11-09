@@ -63,12 +63,15 @@
     <dimen name="keyguard_appwidget_picker_margin_right">6dip</dimen>
     <integer name="keyguard_appwidget_picker_cols">1</integer>
 
+<<<<<<< HEAD
+=======
 
     <!-- **** CARBON ADDITIONS START **** -->
 
     <!-- Notification Shortcuts -->
     <dimen name="notification_shortcut_picker_left_padding">36dip</dimen>
 
+>>>>>>> e407a76... Settings: Notification Shortcuts (2/2)
     <!-- Light settings dialog -->
     <dimen name="dialog_light_settings_width">400dip</dimen>
 

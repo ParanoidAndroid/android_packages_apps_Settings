@@ -773,7 +773,27 @@
         <item>Always allow</item>
     </string-array>
 
-<!-- Notification Shortcuts -->
+<<<<<<< HEAD
+=======
+    <!-- **** CARBON EDITS START **** -->
+
+    <!-- LCD Density -->
+    <string-array name="lcd_density_entries" translatable="false">
+        <item>160</item>
+        <item>180</item>
+        <item>200</item>
+        <item>220</item>
+        <item>240</item>
+        <item>241</item>
+        <item>260</item>
+        <item>280</item>
+        <item>300</item>
+        <item>320</item>
+        <item>340</item>
+        <item>@string/custom_density</item>
+    </string-array>
+
+    <!-- Notification Shortcuts -->
     <string-array name="notification_shortcuts_quantity_entries" translatable="false">
         <item>4</item>
         <item>6 (Default)</item>
@@ -884,6 +904,21 @@
         <item>@*android:drawable/ic_shortcut_unlock</item>
     </string-array>
 
+    <string-array name="lcd_density_stock_entries">
+        <item>160 -- mdpi</item>
+        <item>213 -- nexus7</item>
+        <item>240 -- hdpi</item>
+        <item>320 -- xhdpi</item>
+    </string-array>
+
+    <string-array name="lcd_density_stock_values" translatable="false">
+        <item>160</item>
+        <item>213</item>
+        <item>240</item>
+        <item>320</item>
+    </string-array>
+
+>>>>>>> e407a76... Settings: Notification Shortcuts (2/2)
     <!-- Volume Overlay options. -->
     <string-array name="volume_overlay_entries">
         <item>@string/volume_overlay_single</item>
