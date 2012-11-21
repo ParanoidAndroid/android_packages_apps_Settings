@@ -68,6 +68,11 @@
             android:defaultValue="false" />
 
         <PreferenceScreen
+            android:key="notification_drawer"
+            android:fragment="com.android.settings.cyanogenmod.PowerWidget"
+            android:title="@string/notification_drawer_title" />
+            
+        <PreferenceScreen
             android:key="hardware_keys"
             android:fragment="com.android.settings.cyanogenmod.HardwareKeys"
             android:title="Hardware keys" />
@@ -158,7 +163,7 @@
             android:key="pie_restart_launcher"
             android:title="@string/pie_restart_launcher_title"
             android:summary="@string/pie_restart_launcher_summary" />
-            
+
     </PreferenceCategory>
 
 </PreferenceScreen>
