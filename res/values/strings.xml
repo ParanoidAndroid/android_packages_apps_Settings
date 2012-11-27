@@ -4546,6 +4546,11 @@
     <string name="status_bar_size_small">Small</string>
     <string name="status_bar_hidden">Hidden (default)</string>
     <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+
+    <!-- Kill app long-press back -->
+    <string name="kill_app_longpress_back">Kill app back button</string>
+    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
+
     <!-- Status bar notification count -->
     <string name="status_bar_notif_count_title">Notification count</string>
     <string name="status_bar_notif_count_summary">Display number of pending notifications on the status bar</string>
