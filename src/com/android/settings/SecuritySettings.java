@@ -79,6 +79,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private static final String KEY_POWER_INSTANTLY_LOCKS = "power_button_instantly_locks";
     private static final String KEY_CREDENTIALS_MANAGER = "credentials_management";
     private static final String PACKAGE_MIME_TYPE = "application/vnd.android.package-archive";
+    private static final String LOCK_SYNC_ENCRYPTION_PASSWORD = "lock_sync_encryption_password";
 
     DevicePolicyManager mDPM;
 
@@ -458,6 +459,8 @@ public class SecuritySettings extends SettingsPreferenceFragment
             lockPatternUtils.setVisiblePatternEnabled(isToggled(preference));
         } else if (KEY_POWER_INSTANTLY_LOCKS.equals(key)) {
             lockPatternUtils.setPowerButtonInstantlyLocks(isToggled(preference));
+        } else if (LOCK_SYNC_ENCRYPTION_PASSWORD.equals(key)) {
+            lockPatternUtils.setSyncEncryptionPassword(isToggled(preference));
         } else if (preference == mShowPassword) {
             Settings.System.putInt(getContentResolver(), Settings.System.TEXT_SHOW_PASSWORD,
                     mShowPassword.isChecked() ? 1 : 0);
