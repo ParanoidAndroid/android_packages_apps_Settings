@@ -2522,6 +2522,8 @@
     <string name="lockpattern_too_many_failed_confirmation_attempts_footer">Try again in <xliff:g id="number">%d</xliff:g> seconds.</string>
     <!-- Displayed when user launches a widget configuration activity that was uninstalled -->
     <string name="activity_not_found">Application is not installed on your phone.</string>
+    <!-- Security & location settings screen, setting check box title. This controls whether to sync encryption password with lock screen token [CHAR LIMIT=28] -->
+    <string name="lockpattern_settings_enable_sync_enc_pass">Sync encryption password</string>
 
     <!-- Applications Settings --> <skip />
     <!-- Applications settings screen, setting option name for the user to go to the screen to manage installed applications  -->
