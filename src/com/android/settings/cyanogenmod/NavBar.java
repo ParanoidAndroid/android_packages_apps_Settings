@@ -22,7 +22,7 @@ import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.util.ExtendedPropertiesUtils;
+import android.hybrid.HybridManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.LayoutInflater;
@@ -76,7 +76,7 @@ public class NavBar extends Fragment {
     public void onResume() {
         super.onResume();
         // If running on a phone, remove padding around container
-        if (!ExtendedPropertiesUtils.isTablet()) {
+        if (!HybridManager.isTablet()) {
             mContainer.setPadding(0, 0, 0, 0);
         }
     }

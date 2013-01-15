@@ -35,6 +35,7 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
+import android.hybrid.HybridManager;
 import android.net.ConnectivityManager;
 import android.net.LinkProperties;
 import android.net.Uri;
@@ -57,7 +58,6 @@ import android.provider.ContactsContract.RawContacts;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
-import android.util.ExtendedPropertiesUtils;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
@@ -618,18 +618,12 @@ public class Utils {
     }
 
     public static boolean isTablet(){
-        return ExtendedPropertiesUtils.isTablet();
+        return HybridManager.isTablet();
     }
 
     public static boolean hasNavigationBar() {
-        int value;
-        String prop = ExtendedPropertiesUtils.
-                readProperty("com.android.systemui.navbar.dpi", "0");
-        if(ExtendedPropertiesUtils.isParsableToInt(prop)) {
-            value = Integer.parseInt(prop);
-        } else {
-            value = ExtendedPropertiesUtils.getActualProperty(prop);
-        }
+        int value = HybridManager.getProperty(
+                "com.android.systemui.navbar").getDpi();
         return value > 0;
     }
 }
