@@ -4797,4 +4797,8 @@
     <string name="system_power_crt_mode_vertical">Portrait vertical</string>
     <string name="system_power_crt_mode_both">Orientation dependent</string>
 
+ 	<!-- USB Mass Storage -->
+    <string name="usb_mass_storage_title">Mass storage</string>
+    <string name="usb_mass_storage_summary">Enable USB mass storage</string>
+
 </resources>
