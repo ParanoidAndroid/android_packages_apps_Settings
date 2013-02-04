@@ -1863,7 +1863,6 @@
     <string name="rotation_270">270 градусов</string>
 
     <!-- Display settings screen, notification light settings -->
-    <string name="notification_pulse_title">Лампочка уведомлений</string>
     <string name="notification_light_general_title">Общее</string>
     <string name="notification_light_applist_title">Приложения</string>
     <string name="notification_light_use_custom">Использовать свои значения</string>
