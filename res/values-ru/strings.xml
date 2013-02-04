@@ -1842,7 +1842,7 @@
     <!-- ======================================================================================= -->
 
     <!-- Sound settings screen -->
-    <string name="link_volume_ringtones">Обьединить громкость рингтона &amp; уведомлений</string>
+    <string name="link_volume_ringtones">Объединить громкость рингтона &amp; уведомлений</string>
     <string name="link_volume_mutes">Тихий  режим влияет на уведомления</string>
     <string name="volume_overlay_title">Стиль звуковой панели</string>
     <string name="volume_overlay_single">Простой</string>
@@ -1851,7 +1851,7 @@
     <string name="volume_overlay_none">Ничего</string>
     <string name="volume_ring_only_description">Рингтон</string>
     <string name="notification_sound_limiter_title">Лимит звука уведомлений</string>
-    <string name="notification_sound_limiter_summary">Установить задерку между входящими уведомлениями</string>
+    <string name="notification_sound_limiter_summary">Установить задержку между входящими уведомлениями</string>
     <string name="notification_sound_default_time">По умолчанию</string>
 
     <!-- Display settings screen, rotation settings -->
@@ -1878,7 +1878,7 @@
     <string name="edit_light_settings">Редактирование цвета</string>
     <string name="pulse_speed_title">Длительность импульса и скорость</string>
     <string name="picker_arrow" translatable="false">→</string>
-    <string name="default_time">Нормальная</string>
+    <string name="default_time">Стандарт</string>
     <string name="custom_time">Своя</string>
     <string name="dialog_delete_title">Удаление</string>
     <string name="dialog_delete_message">Удалить выбранные элементы?</string>
@@ -1890,7 +1890,7 @@
     <string name="pulse_length_always_on">Всегда включено</string>
     <string name="pulse_length_very_short">Очень короткое</string>
     <string name="pulse_length_short">Короткое</string>
-    <string name="pulse_length_normal">Нормальное</string>
+    <string name="pulse_length_normal">Стандарт</string>
     <string name="pulse_length_long">Долгое</string>
     <string name="pulse_length_very_long">Очень долгое</string>
     <string name="pulse_speed_very_fast">Очень быстро</string>
