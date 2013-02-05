@@ -2039,7 +2039,7 @@
     <string name="pref_network_mode_title">@string/title_tile_networkmode</string>
     <string name="network_mode_2g_3g2g">2G/3G+2G</string>
     <string name="network_mode_2g_3g">Только 2G/3G</string>
-    <string name="network_mode_2g_3g_3g2g">2G/3G ТОлько /3G+2G</string>
+    <string name="network_mode_2g_3g_3g2g">2G/3G Только /3G+2G</string>
 
     <!-- Add tiles -->
     <string name="add_title">Добавить</string>
