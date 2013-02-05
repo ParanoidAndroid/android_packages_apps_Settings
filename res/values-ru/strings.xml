@@ -1989,13 +1989,13 @@
     <string name="status_bar_max_notifications_summary">Выберите лимит отображения иконок в панели уведомлений. Применяется только к портретному режиму</string>
     <!-- Do not disturb -->
     <string name="status_bar_donotdisturb_title">Не беспокоить</string>
-    <string name="status_bar_donotdisturb_summary">Отключить входящие уведомления</string>
+    <string name="status_bar_donotdisturb_summary">Отключить анимацию входящих уведомлений</string>
 
     <!-- Custom tiles panel  -->
     <string name="custom_tiles_title">Настройка плиток</string>
     <string name="title_static_tiles">Статические плитки</string>
     <string name="tile_picker_title">Плитки и расположение</string>
-    <string name="tile_picker_summary">Просмотр, удаления или изменения отображения плиток</string>
+    <string name="tile_picker_summary">Просмотр, удаление или изменение отображения плиток</string>
     <string name="tile_choose_title">Выберите плитку</string>
     <string name="title_tile_airplane">Режим самолета</string>
     <string name="title_tile_battery">Статус батареи</string>
@@ -2021,8 +2021,8 @@
     <string name="dynamic_tiles_note_title">Заметка</string>
     <string name="dynamic_tiles_note_summary">Динамические плитки не всегда отображаются и будут показываться только при соучае систменого события</string>
     <string name="title_dynamic_alarm">Будильник</string>
-    <string name="title_dynamic_bugreport">Баг отчет</string>
-    <string name="title_dynamic_ime">Переключение IME</string>
+    <string name="title_dynamic_bugreport">Баг отчеты</string>
+    <string name="title_dynamic_ime">Переключение клавиатуры</string>
     <string name="title_dynamic_wifi">Wi-Fi дисплей</string>
 
     <string name="pref_screentimeout_mode_title">Режимы тайм-аута экрана</string>
@@ -2031,7 +2031,7 @@
     <string name="pref_ring_mode_title">Режимы звука</string>
     <string name="pref_ring_mode_summary">Просмотр или изменеие режимов Звука</string>
     <string name="sound_mode_silent">Тихий</string>
-    <string name="sound_mode_vibrate">Вибрацяи</string>
+    <string name="sound_mode_vibrate">Вибрация</string>
     <string name="sound_mode_sound">Звук</string>
     <string name="sound_mode_sound_vibrate">Мелодия и вибрация</string>
 
@@ -2046,47 +2046,47 @@
 
     <!-- Reset tiles -->
     <string name="tiles_reset_title">@string/lock_screen_shortcuts_reset</string>
-    <string name="tiles_reset_message">Восстановить стандартные плитки и расположение?</string>
+    <string name="tiles_reset_message">Восстановить стандартные плитки и их расположение?</string>
 
     <!-- Pie controls -->
-    <string name="pie_controls_title">Pie контроль</string>
+    <string name="pie_controls_title">PIE</string>
     
-    <string name="pie_gravity_title">Положение Pie</string>
-    <string name="pie_gravity_summary">Выберите где будет расположен Pie</string>
-    <string name="pie_gravity_top">Вверху</string>
-    <string name="pie_gravity_bottom">Внизу</string>
-    <string name="pie_gravity_right">Справо</string>
-    <string name="pie_gravity_left">Слева</string>
+    <string name="pie_gravity_title">Положение PIE</string>
+    <string name="pie_gravity_summary">Выберите где будет расположен PIE</string>
+    <string name="pie_gravity_top">Верх</string>
+    <string name="pie_gravity_bottom">Низ</string>
+    <string name="pie_gravity_right">Право</string>
+    <string name="pie_gravity_left">Лево</string>
     
-    <string name="pie_mode_title">Pie стиль</string>
-    <string name="pie_mode_summary">Настройте как анимация и дополнительные уведомления будут обработаны</string>
-    <string name="pie_mode_bare">Простой</string>
+    <string name="pie_mode_title">PIE стиль</string>
+    <string name="pie_mode_summary">Настройте появление анимации и дополнительных элементов PIE</string>
+    <string name="pie_mode_bare">Просто</string>
     <string name="pie_mode_quick">Быстро</string>
-    <string name="pie_mode_default">Обычный (по умолчанию)</string>
+    <string name="pie_mode_default">Обычно (по умолчанию)</string>
     <string name="pie_mode_slow">Медленно</string>
     
-    <string name="pie_size_title">Pie размер</string>
-    <string name="pie_size_summary">Определите размер pie контроля</string>
+    <string name="pie_size_title">Размер PIE</string>
+    <string name="pie_size_summary">Установите размер PIE</string>
     <string name="pie_size_small">Маленький</string>
     <string name="pie_size_default">@string/pie_mode_default</string>
     <string name="pie_size_large">Большой</string>
     <string name="pie_size_gigantic">Огромный</string>
     
     <string name="pie_gap_title">Интервал элементов</string>
-    <string name="pie_gap_summary">Настройте интервал который отделяет pie элементы</string>
+    <string name="pie_gap_summary">Настройте интервал между PIE элементами</string>
     <string name="pie_gap_none">Без интервала</string>
     <string name="pie_gap_small">Маленький (По умолчанию)</string>
     <string name="pie_gap_big">Большой</string>
     <string name="pie_gap_huge">Огромный</string>
 
     <string name="pie_menu_title">Постоянная кнопка меню</string>
-    <string name="pie_menu_summary">Всегда отображать кнопку меню, даже когда в этом нет необходисмоти</string>
+    <string name="pie_menu_summary">Всегда отображать кнопку меню, даже когда в этом нет необходимоcти</string>
 
-    <string name="pie_search_title">Кнопка посика</string>
-    <string name="pie_search_summary">Активировать поиск в pie контроле</string>
+    <string name="pie_search_title">Кнопка поиска</string>
+    <string name="pie_search_summary">Активировать кнопку поиска при PIE</string>
 
     <string name="pie_trigger_title">Область триггера</string>
-    <string name="pie_trigger_summary">Определить размер области, которая регистрирует жест Swype</string>
+    <string name="pie_trigger_summary">Определить размер области, которая регистрирует жест Swipe</string>
     <string name="pie_trigger_small">Маленький (По умолчанию)</string>
     <string name="pie_trigger_big">@string/pie_gap_big</string>
     <string name="pie_trigger_huge">@string/pie_gap_huge</string>
