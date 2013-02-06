@@ -1843,12 +1843,12 @@
 
     <!-- Sound settings screen -->
     <string name="link_volume_ringtones">Объединить громкость рингтона &amp; уведомлений</string>
-    <string name="link_volume_mutes">Тихий  режим влияет на уведомления</string>
+    <string name="link_volume_mutes">Отключить уведомления при тихом режиме</string>
     <string name="volume_overlay_title">Стиль звуковой панели</string>
-    <string name="volume_overlay_single">Простой</string>
+    <string name="volume_overlay_single">Одиночная</string>
     <string name="volume_overlay_expandable">С возможностью расширить</string>
-    <string name="volume_overlay_expanded">Расширенный</string>
-    <string name="volume_overlay_none">Ничего</string>
+    <string name="volume_overlay_expanded">Расширенная</string>
+    <string name="volume_overlay_none">Без отображения</string>
     <string name="volume_ring_only_description">Рингтон</string>
     <string name="notification_sound_limiter_title">Лимит звука уведомлений</string>
     <string name="notification_sound_limiter_summary">Установить задержку между входящими уведомлениями</string>
@@ -1879,7 +1879,7 @@
     <string name="picker_arrow" translatable="false">→</string>
     <string name="default_time">Стандарт</string>
     <string name="custom_time">Своя</string>
-    <string name="dialog_delete_title">Удаление</string>
+    <string name="dialog_delete_title">Удалить</string>
     <string name="dialog_delete_message">Удалить выбранные элементы?</string>
     <string name="dialog_test">Тест</string>
     <string name="dialog_test_message">Выключите экран чтобы проверить выбранные настройки в действии или сверните это окно чтобы пропустить тест</string>
@@ -1900,7 +1900,7 @@
 
     <!-- Battery light settings  -->
     <string name="battery_light_title">Уведомления батареи</string>
-    <string name="battery_low_pulse_title">Пульсировать если батарея разряжена</string>
+    <string name="battery_low_pulse_title">Мигать при разряженной батареи</string>
     <string name="battery_light_list_title">Цвета</string>
     <string name="battery_light_low_color_title">Низкий заряд</string>
     <string name="battery_light_medium_color_title">Во время зарядки</string>
@@ -1920,11 +1920,11 @@
     <!-- Home screen widgets -->
     <string name="home_screen_widgets_title">Виджеты домашнего экрана</string>
     <string name="home_screen_widgets_summary">Позволяет добавить виджеты с домашнего экрана на экран блокировки</string>
-    <string name="home_screen_widgets_warning_title">Это может юыть опасно!</string>
+    <string name="home_screen_widgets_warning_title">Это может быть опасно!</string>
     <string name="home_screen_widgets_warning">Добавление виджетов с домашнего экрана на экран блокировки может может привести к проблемам безопастности, продолжить?</string>
     <!-- Shortcuts -->
     <string name="lock_screen_shortcuts_title">Ярлыки</string>
-    <string name="lock_screen_shortcuts_summary">Просмотреть или изменить ярлыки экрана блокировки</string>
+    <string name="lock_screen_shortcuts_summary">Просмотреть или изменить ярлыки на экране блокировки</string>
     <string name="lock_screen_shortcuts_add">@string/notification_light_add</string>
     <string name="lock_screen_shortcuts_reset">Сбросить</string>
     <string name="lock_screen_shortcuts_reset_message">Сбросить ярлыки экрана блокировки?</string>
@@ -1932,7 +1932,7 @@
     <string name="icon_picker_type">Выберите тип иконки:</string>
     <string name="icon_default">По умолчанию</string>
     <string name="icon_presets">Преднастройки</string>
-    <string name="icon_custom">Своя</string>
+    <string name="icon_custom">Настроить</string>
     <string name="icon_picker_choose_icon_title">Выберите иконку</string>
     <string name="icon_picker_alarm">Будильник</string>
     <string name="icon_picker_browser">Браузер</string>
@@ -1958,12 +1958,12 @@
     <!-- Volume sub settings -->
     <string name="volume_button_setting_title">Настройки клавиш громкости</string>
     <!-- Volume music controls -->
-    <string name="volbtn_music_controls_title">Медиа контроль</string>
-    <string name="volbtn_music_controls_summary">Использовать клавиши громкости для переключения треков при выключенном экране</string>
+    <string name="volbtn_music_controls_title">Управление музыкой</string>
+    <string name="volbtn_music_controls_summary">Использовать клавиши громкости, для переключения треков при выключенном экране</string>
 
     <!-- Wakeup options -->
-    <string name="pref_volume_wake_title">Пробуждение</string>
-    <string name="pref_volume_wake_summary">Использование клавиш громкости для включения экрана</string>
+    <string name="pref_volume_wake_title">Включение кнопкой громкости</string>
+    <string name="pref_volume_wake_summary">Использовать клавиши громкости, для включения экрана</string>
 
     <!-- Bars sub menu [CHAR LIMIT=30] -->
     <string name="tool_bar_settings">Панели инструментов</string>
@@ -1980,13 +1980,13 @@
     <string name="status_bar_am_pm_info">24-часовой формат активирован</string>
     <!-- Status bar notification count -->
     <string name="status_bar_notif_count_title">Счетчик уведомлений</string>
-    <string name="status_bar_notif_count_summary">Отображать количество текущих уведомлений в строке состояния</string>
+    <string name="status_bar_notif_count_summary">Отображать количество текущих уведомлений в строке уведомлений</string>
     <!-- Split menu -->
     <string name="navigation_bar_tabui_menu_title">Разделить кнопку меню</string>
-    <string name="navigation_bar_tabui_menu_summary">Отображать отдельно кнопку меню</string>
+    <string name="navigation_bar_tabui_menu_summary">Отображать кнопку меню отдельно от кнопки недавних приложений</string>
     <!-- Status bar notification limit -->
     <string name="status_bar_max_notifications_title">Лимит уведомлений</string>
-    <string name="status_bar_max_notifications_summary">Выберите лимит отображения иконок в панели уведомлений. Применяется только к портретному режиму</string>
+    <string name="status_bar_max_notifications_summary">Выберите лимит отображения иконок в строке уведомлений. Применяется только к портретному режиму</string>
     <!-- Do not disturb -->
     <string name="status_bar_donotdisturb_title">Не беспокоить</string>
     <string name="status_bar_donotdisturb_summary">Отключить анимацию входящих уведомлений</string>
@@ -2029,7 +2029,7 @@
 
     <!-- Sound mode -->
     <string name="pref_ring_mode_title">Режимы звука</string>
-    <string name="pref_ring_mode_summary">Просмотр или изменеие режимов Звука</string>
+    <string name="pref_ring_mode_summary">Просмотр или изменеие кнопки режимов Звука</string>
     <string name="sound_mode_silent">Тихий</string>
     <string name="sound_mode_vibrate">Вибрация</string>
     <string name="sound_mode_sound">Звук</string>
@@ -2053,14 +2053,14 @@
     
     <string name="pie_gravity_title">Положение PIE</string>
     <string name="pie_gravity_summary">Выберите где будет расположен PIE</string>
-    <string name="pie_gravity_top">Верх</string>
-    <string name="pie_gravity_bottom">Низ</string>
-    <string name="pie_gravity_right">Право</string>
-    <string name="pie_gravity_left">Лево</string>
+    <string name="pie_gravity_top">Вверху</string>
+    <string name="pie_gravity_bottom">Снизу</string>
+    <string name="pie_gravity_right">Справо</string>
+    <string name="pie_gravity_left">Слева</string>
     
-    <string name="pie_mode_title">PIE стиль</string>
-    <string name="pie_mode_summary">Настройте появление анимации и дополнительных элементов PIE</string>
-    <string name="pie_mode_bare">Просто</string>
+    <string name="pie_mode_title">PIE анимация</string>
+    <string name="pie_mode_summary">Настройте анимацию появления уведомлений и дополнительных элементов</string>
+    <string name="pie_mode_bare">Без уведомлений</string>
     <string name="pie_mode_quick">Быстро</string>
     <string name="pie_mode_default">Обычно (по умолчанию)</string>
     <string name="pie_mode_slow">Медленно</string>
@@ -2094,7 +2094,7 @@
     <!-- Navigation Bar #CM -->
     <string name="navigation_reset_title">@string/lock_screen_shortcuts_reset</string>
     <string name="navigation_bar_title">Элементы навигационной панели</string>
-    <string name="navigation_bar_help_text">1 - Чтобы начать редактирование, нажмите на иконку замка\n\n2 - Нажмите на любую кнопку, чтобы назначить или изменить функционал\n\n3 - Длительное нажатие любой кнопки, чтобы изменить порядок\n\n4 - Чтобы сохранить, нажмите на значок замка снова\n\n5 - Для восстановления системы по умолчанию, нажмите кнопку сброса\n\n</string>
+    <string name="navigation_bar_help_text">1 - Чтобы начать редактирование, нажмите на иконку замка\n\n2 - Нажмите на любую кнопку, чтобы назначить или изменить функционал\n\n3 - Длительное нажатие любой кнопки, чтобы изменить порядок\n\n4 - Чтобы сохранить, нажмите на значок замка снова\n\n5 - Для восстановления настроек по умолчанию, нажмите кнопку сброса\n\n</string>
     <string name="navigation_bar_tips">&#8226; Действия могут быть назначены тоько на одну кнопку\n\n&#8226; Кнопка домой не может быть изменена\n\n&#8226; Боковые кнопки могут быть перемещены</string>
     <string name="navigation_bar_tips_title">Советы</string>
     <string name="navigation_bar_reset_message">Удалить текущие настройки и восстановить по умолчанию?</string>
@@ -2104,7 +2104,7 @@
     <string name="navigation_bar_menu_locked">Заблокировано</string>
     
     <!-- Hybrid sub menu [CHAR LIMIT=30] -->
-    <string name="hybrid_settings">Гибридные настройки</string>
+    <string name="hybrid_settings">Настройки ParanoidAndroid</string>
 
     <string name="mod_version">Версия ParanoidAndroid</string>
     <string name="mod_version_default">Неизвестно</string>
