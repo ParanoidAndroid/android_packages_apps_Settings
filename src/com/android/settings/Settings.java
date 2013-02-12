@@ -393,7 +393,11 @@ public class Settings extends PreferenceActivity
                 VpnSettings.class.getName().equals(fragmentName) ||
                 SecuritySettings.class.getName().equals(fragmentName) ||
                 InstalledAppDetails.class.getName().equals(fragmentName) ||
-                ChooseLockGenericFragment.class.getName().equals(fragmentName)) {
+                ChooseLockGenericFragment.class.getName().equals(fragmentName) ||
+                TetherSettings.class.getName().equals(fragmentName) ||
+                ApnSettings.class.getName().equals(fragmentName) ||
+                LocationSettings.class.getName().equals(fragmentName) ||
+                ZonePicker.class.getName().equals(fragmentName)) {
             intent.putExtra(EXTRA_CLEAR_UI_OPTIONS, true);
         }
 
@@ -833,4 +837,5 @@ public class Settings extends PreferenceActivity
     public static class TextToSpeechSettingsActivity extends Settings { /* empty */ }
     public static class AndroidBeamSettingsActivity extends Settings { /* empty */ }
     public static class WifiDisplaySettingsActivity extends Settings { /* empty */ }
+    public static class DreamSettingsActivity extends Settings { /* empty */ }
 }
