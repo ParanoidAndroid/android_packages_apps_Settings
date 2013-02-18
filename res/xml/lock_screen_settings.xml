@@ -32,6 +32,11 @@
         android:title="@string/home_screen_widgets_title"
         android:summary="@string/home_screen_widgets_summary" />
 
+    <CheckBoxPreference
+        android:key="widgets_maximized"
+        android:title="@string/widgets_maximized_title"
+        android:summary="@string/widgets_maximized_summary" />
+
     <PreferenceScreen
         android:key="lock_screen_shortcuts"
         android:fragment="com.android.settings.paranoid.Shortcuts"

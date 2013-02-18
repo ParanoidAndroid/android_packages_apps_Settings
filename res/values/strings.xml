@@ -4471,6 +4471,9 @@
     <!-- Lock screen see through -->
     <string name="see_through_title">See through</string>
     <string name="see_through_summary">Allows to see the application behind the lock screen</string>
+    <!-- Widgets maximized -->
+    <string name="widgets_maximized_title">Maximize lockscreen widgets</string>
+    <string name="widgets_maximized_summary">If enabled lockscreen widgets will display maximized</string>
     <!-- Home screen widgets -->
     <string name="home_screen_widgets_title">Home screen widgets</string>
     <string name="home_screen_widgets_summary">Allows widgets from the home screen to be added on lock screen</string>
