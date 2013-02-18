@@ -408,15 +408,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mAllowedRotationModes = Settings.System.getInt(getActivity().getContentResolver(), Settings.System
                     .ACCELEROMETER_ROTATION_ANGLES, -1);
             if (mAllowedRotationModes < 0) {
-                mAllowedRotationModes = Utils.getScreenType(getActivity())
-                        == Utils.DEVICE_TABLET ? (1 | 2 | 4 | 8) :  (1 | 2 | 8);
+                mAllowedRotationModes = (1 | 2 | 8);
             }
             AlertDialog.Builder d = new AlertDialog.Builder(getActivity());
             d.setTitle(R.string.rotation_settings_title);
             String[] entries = getResources().getStringArray(R.array.rotation_mode_entries);
             final String[] values = getResources().getStringArray(R.array.rotation_mode_values);
             boolean[] selectedRotations = {(mAllowedRotationModes & 1) != 0, (mAllowedRotationModes & 2) != 0,
-                    (mAllowedRotationModes & 4) != 0, (mAllowedRotationModes & 8) != 0};
+                    (mAllowedRotationModes & 8) != 0};
             d.setMultiChoiceItems(entries, selectedRotations, new OnMultiChoiceClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which, boolean isChecked) {
