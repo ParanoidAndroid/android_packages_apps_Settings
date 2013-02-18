@@ -4524,6 +4524,9 @@
     <string name="tool_bar_status_header">Status bar</string>
     <string name="tool_bar_navigation_header">Navigation bar</string>
 
+    <!-- Status bar quick pulldown -->
+    <string name="status_bar_quick_pulldown_title">Quick pull-down</string>
+    <string name="status_bar_quick_pulldown_summary">Enables phablet-UI like panel access</string>
     <!-- Show clock -->
     <string name="show_clock_title">Show clock</string>
     <!-- AM/PM style -->
