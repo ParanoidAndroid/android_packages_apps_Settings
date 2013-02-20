@@ -38,7 +38,7 @@ import com.android.settings.Utils;
 public class Toolbar extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
-    private static final String KEY_QUICK_PULL = "status_bar_quick_pulldown";
+    private static final String KEY_QUICK_PULL_DOWN = "quick_pulldown";
     private static final String KEY_AM_PM_STYLE = "am_pm_style";
     private static final String KEY_SHOW_CLOCK = "show_clock";
     private static final String KEY_STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
@@ -63,7 +63,7 @@ public class Toolbar extends SettingsPreferenceFragment
     private ListPreference mPieGravity;
     private ListPreference mPieTrigger;
     private ListPreference mPieGap;
-    private CheckBoxPreference mQuickPull;
+    private CheckBoxPreference mQuickPullDown;
     private CheckBoxPreference mShowClock;
     private CheckBoxPreference mStatusBarNotifCount;
     private CheckBoxPreference mMenuButtonShow;
@@ -85,8 +85,8 @@ public class Toolbar extends SettingsPreferenceFragment
         PreferenceScreen prefSet = getPreferenceScreen();
         mContext = getActivity();
 
-        mQuickPull = (CheckBoxPreference) prefSet.findPreference(KEY_QUICK_PULL);
-        mQuickPull.setChecked(Settings.System.getInt(mContext.getContentResolver(),
+        mQuickPullDown = (CheckBoxPreference) prefSet.findPreference(KEY_QUICK_PULL_DOWN);
+        mQuickPullDown.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                 Settings.System.QS_QUICK_PULLDOWN, 0) == 1);
 
         mShowClock = (CheckBoxPreference) prefSet.findPreference(KEY_SHOW_CLOCK);
@@ -148,7 +148,7 @@ public class Toolbar extends SettingsPreferenceFragment
             float pieTrigger = Settings.System.getFloat(mContext.getContentResolver(),
                     Settings.System.PIE_TRIGGER);
             mPieTrigger.setValue(String.valueOf(pieTrigger));
-        } catch(Settings.SettingNotFoundException ex) {
+        } catch(SettingNotFoundException ex) {
             // So what
         }
 
@@ -189,7 +189,7 @@ public class Toolbar extends SettingsPreferenceFragment
             }
         } else {
             mNavigationCategory.removePreference(mNavigationBarControls);
-            prefSet.removePreference(mQuickPull);
+            prefSet.removePreference(mQuickPullDown);
         }
     }
 
@@ -199,9 +199,9 @@ public class Toolbar extends SettingsPreferenceFragment
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.STATUS_BAR_SHOW_CLOCK, mShowClock.isChecked()
                     ? 1 : 0);
-        } else if (preference == mQuickPull) {	
+        } else if (preference == mQuickPullDown) {	
             Settings.System.putInt(mContext.getContentResolver(),
-                    Settings.System.QS_QUICK_PULLDOWN,	mQuickPull.isChecked()
+                    Settings.System.QS_QUICK_PULLDOWN,	mQuickPullDown.isChecked()
                     ? 1 : 0);	
         } else if (preference == mStatusBarNotifCount) {	
             Settings.System.putInt(mContext.getContentResolver(),

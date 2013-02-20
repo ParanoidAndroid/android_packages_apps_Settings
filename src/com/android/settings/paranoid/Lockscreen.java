@@ -35,14 +35,14 @@ public class Lockscreen extends SettingsPreferenceFragment
     private static final String KEY_ALLOW_ROTATION = "allow_rotation";
     private static final String KEY_SEE_TRHOUGH = "see_through";
     private static final String KEY_HOME_SCREEN_WIDGETS = "home_screen_widgets";
-    private static final String KEY_WIDGETS_MAXIMIZED = "widgets_maximized";
+    private static final String KEY_MAXIMIZE_WIDGETS = "maximize_widgets";
     private static final String KEY_VOLBTN_MUSIC_CTRL = "music_controls";
     private static final String KEY_VOLUME_WAKE = "volume_wake";
 
     private CheckBoxPreference mAllowRotation;
     private CheckBoxPreference mSeeThrough;
     private CheckBoxPreference mHomeScreenWidgets;
-    private CheckBoxPreference mWidgetsMaximized;
+    private CheckBoxPreference mMaximizeWidgets;
     private CheckBoxPreference mVolBtnMusicCtrl;
     private CheckBoxPreference mVolumeWake;
 
@@ -64,8 +64,8 @@ public class Lockscreen extends SettingsPreferenceFragment
         mSeeThrough.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.LOCKSCREEN_SEE_THROUGH, 0) == 1);
 
-        mWidgetsMaximized = (CheckBoxPreference) prefSet.findPreference(KEY_WIDGETS_MAXIMIZED);
-        mWidgetsMaximized.setChecked(Settings.System.getInt(mContext.getContentResolver(),
+        mMaximizeWidgets = (CheckBoxPreference) prefSet.findPreference(KEY_MAXIMIZE_WIDGETS);
+        mMaximizeWidgets.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.LOCKSCREEN_MAXIMIZE_WIDGETS, 0) == 1);
 
         mHomeScreenWidgets = (CheckBoxPreference) prefSet.findPreference(KEY_HOME_SCREEN_WIDGETS);
@@ -121,9 +121,9 @@ public class Lockscreen extends SettingsPreferenceFragment
                 Settings.System.putInt(mContext.getContentResolver(),
                         Settings.System.HOME_SCREEN_WIDGETS, 0);
             }
-         } else if (preference == mWidgetsMaximized) {
+         } else if (preference == mMaximizeWidgets) {
             Settings.System.putInt(mContext.getContentResolver(),
-                    Settings.System.LOCKSCREEN_MAXIMIZE_WIDGETS, mWidgetsMaximized.isChecked() ? 1 : 0);
+                    Settings.System.LOCKSCREEN_MAXIMIZE_WIDGETS, mMaximizeWidgets.isChecked() ? 1 : 0);
          } else if (preference == mVolumeWake) {
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.VOLUME_WAKE_SCREEN, mVolumeWake.isChecked() ? 1 : 0);

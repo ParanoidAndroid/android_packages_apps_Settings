@@ -4413,7 +4413,6 @@
     <string name="rotation_settings_summary">Select allowed rotation modes</string>
     <string name="rotation_0">0 degrees</string>
     <string name="rotation_90">90 degrees</string>
-    <string name="rotation_180">180 degrees</string>
     <string name="rotation_270">270 degrees</string>
 
     <!-- Display settings screen, notification light settings -->
@@ -4471,9 +4470,9 @@
     <!-- Lock screen see through -->
     <string name="see_through_title">See through</string>
     <string name="see_through_summary">Allows to see the application behind the lock screen</string>
-    <!-- Widgets maximized -->
-    <string name="widgets_maximized_title">Maximize lockscreen widgets</string>
-    <string name="widgets_maximized_summary">If enabled lockscreen widgets will display maximized</string>
+    <!-- Maximize widgets -->
+    <string name="maximize_widgets_title">Maximize widgets</string>
+    <string name="maximize_widgets_summary">Show widgets maximized and the unlock minimized when the screen is turned on</string>
     <!-- Home screen widgets -->
     <string name="home_screen_widgets_title">Home screen widgets</string>
     <string name="home_screen_widgets_summary">Allows widgets from the home screen to be added on lock screen</string>
@@ -4527,9 +4526,9 @@
     <string name="tool_bar_status_header">Status bar</string>
     <string name="tool_bar_navigation_header">Navigation bar</string>
 
-    <!-- Status bar quick pulldown -->
-    <string name="status_bar_quick_pulldown_title">Quick pull-down</string>
-    <string name="status_bar_quick_pulldown_summary">Enables phablet-UI like panel access</string>
+    <!-- Quick pulldown -->
+    <string name="quick_pulldown_title">Quick pulldown</string>
+    <string name="quick_pulldown_summary">Edge of status bar will pull down Quick Settings</string>
     <!-- Show clock -->
     <string name="show_clock_title">Show clock</string>
     <!-- AM/PM style -->
