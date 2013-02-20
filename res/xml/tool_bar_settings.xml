@@ -22,9 +22,9 @@
         android:title="@string/tool_bar_status_header">
 
          <CheckBoxPreference
-            android:key="status_bar_quick_pulldown"
-            android:title="@string/status_bar_quick_pulldown_title"
-            android:summary="@string/status_bar_quick_pulldown_summary"
+            android:key="quick_pulldown"
+            android:title="@string/quick_pulldown_title"
+            android:summary="@string/quick_pulldown_summary"
             android:defaultValue="false" />
 
         <CheckBoxPreference

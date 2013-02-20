@@ -33,9 +33,9 @@
         android:summary="@string/home_screen_widgets_summary" />
 
     <CheckBoxPreference
-        android:key="widgets_maximized"
-        android:title="@string/widgets_maximized_title"
-        android:summary="@string/widgets_maximized_summary" />
+        android:key="maximize_widgets"
+        android:title="@string/maximize_widgets_title"
+        android:summary="@string/maximize_widgets_summary" />
 
     <PreferenceScreen
         android:key="lock_screen_shortcuts"
