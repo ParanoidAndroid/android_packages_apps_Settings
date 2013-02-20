@@ -4586,9 +4586,6 @@
 
     <string name="pref_screentimeout_mode_title">Screen timeout modes</string>
 
-    <!-- Advanced, Device specific (DeviceParts) settings  -->
-    <string name="advanced_settings_title">Advanced</string>
-
     <!-- Sound mode -->
     <string name="pref_ring_mode_title">Sound modes</string>
     <string name="pref_ring_mode_summary">View or change the Sound button modes</string>
