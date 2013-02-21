@@ -19,15 +19,11 @@ package com.android.settings;
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
 
 import android.app.ActivityManagerNative;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.admin.DevicePolicyManager;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnClickListener;
-import android.content.DialogInterface.OnMultiChoiceClickListener;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
@@ -62,7 +58,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_ACCELEROMETER = "accelerometer";
-    private static final String KEY_ROTATION = "rotation";
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_NOTIFICATION_PULSE = "notification_pulse";
     private static final String KEY_SCREEN_SAVER = "screensaver";
@@ -74,7 +69,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private DisplayManager mDisplayManager;
 
     private CheckBoxPreference mAccelerometer;
-    private Preference mRotation;
     private WarnedListPreference mFontSizePref;
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
@@ -86,8 +80,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private WifiDisplayStatus mWifiDisplayStatus;
     private Preference mWifiDisplayPreference;
-
-    private int mAllowedRotationModes;
 
     private final RotationPolicy.RotationPolicyListener mRotationPolicyListener =
             new RotationPolicy.RotationPolicyListener() {
@@ -111,9 +103,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             // Display settings.  However, is still available in Accessibility settings.
             getPreferenceScreen().removePreference(mAccelerometer);
         }
-
-        mRotation = findPreference(KEY_ROTATION);
-        mRotation.setOnPreferenceClickListener(this);
 
         mScreenSaverPreference = findPreference(KEY_SCREEN_SAVER);
         if (mScreenSaverPreference != null
@@ -404,39 +393,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } else {
                 mFontSizePref.click();
             }
-        } else if (preference == mRotation) {
-            mAllowedRotationModes = Settings.System.getInt(getActivity().getContentResolver(), Settings.System
-                    .ACCELEROMETER_ROTATION_ANGLES, -1);
-            if (mAllowedRotationModes < 0) {
-                mAllowedRotationModes = Utils.getScreenType(getActivity())
-                        == Utils.DEVICE_TABLET ? (1 | 2 | 4 | 8) :  (1 | 2 | 8);
-            }
-            AlertDialog.Builder d = new AlertDialog.Builder(getActivity());
-            d.setTitle(R.string.rotation_settings_title);
-            String[] entries = getResources().getStringArray(R.array.rotation_mode_entries);
-            final String[] values = getResources().getStringArray(R.array.rotation_mode_values);
-            boolean[] selectedRotations = {(mAllowedRotationModes & 1) != 0, (mAllowedRotationModes & 2) != 0,
-                    (mAllowedRotationModes & 4) != 0, (mAllowedRotationModes & 8) != 0};
-            d.setMultiChoiceItems(entries, selectedRotations, new OnMultiChoiceClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                    int value = Integer.parseInt(values[which]);
-                    if(isChecked) {
-                        mAllowedRotationModes |= value;
-                    } else {
-                        mAllowedRotationModes &= ~value;
-                    }
-                }
-            });
-            d.setPositiveButton(android.R.string.ok, new OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    Settings.System.putInt(getActivity().getContentResolver(), Settings.System
-                            .ACCELEROMETER_ROTATION_ANGLES, mAllowedRotationModes);
-                }				
-            });
-            d.show();
-            return true;
         }
         return false;
     }

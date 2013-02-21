@@ -4408,13 +4408,6 @@
     <string name="notification_sound_limiter_summary">Sets the allowed delay between incoming notifications</string>
     <string name="notification_sound_default_time">Default</string>
 
-    <!-- Display settings screen, rotation settings -->
-    <string name="rotation_settings_title">Rotation</string>
-    <string name="rotation_settings_summary">Select allowed rotation modes</string>
-    <string name="rotation_0">0 degrees</string>
-    <string name="rotation_90">90 degrees</string>
-    <string name="rotation_270">270 degrees</string>
-
     <!-- Display settings screen, notification light settings -->
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_applist_title">Applications</string>

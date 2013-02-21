@@ -801,7 +801,7 @@
         <item>Always allow</item>
     </string-array>
 
-    <!-- Volume overlay options. -->
+    <!-- Volume Overlay options. -->
     <string-array name="volume_overlay_entries">
         <item>@string/volume_overlay_single</item>
         <item>@string/volume_overlay_expandable</item>
@@ -809,28 +809,12 @@
         <item>@string/volume_overlay_none</item>
     </string-array>
 
-    <!-- Values for volume overlay. -->
+    <!-- Values for Volume Overlay. Do not translate. -->
     <string-array name="volume_overlay_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
-    </string-array>
-
-    <!-- Rotation mode options. -->
-    <string-array name="rotation_mode_entries">
-        <item>@string/rotation_0</item>
-        <item>@string/rotation_90</item>
-        <item>@string/rotation_180</item>
-        <item>@string/rotation_270</item>
-    </string-array>
-
-    <!-- Values for rotation mode. -->
-    <string-array name="rotation_mode_values" translatable="false">
-        <item>1</item>
-        <item>2</item>
-        <item>4</item>
-        <item>8</item>
     </string-array>
 
     <!-- Icon type for lockscreen targets. -->
@@ -888,7 +872,7 @@
         <item>@*android:drawable/ic_lockscreen_twitter</item>
     </string-array>
 
-    <!-- Notification light pulse length spinners. -->
+    <!-- Values for the notification light pulse spinners -->
     <string-array name="notification_pulse_length_entries" translatable="false">
         <item>@string/pulse_length_always_on</item>
         <item>@string/pulse_length_very_short</item>
@@ -898,7 +882,6 @@
         <item>@string/pulse_length_very_long</item>
     </string-array>
 
-    <!-- Values for notification light length. -->
     <string-array name="notification_pulse_length_values" translatable="false">
         <item>1</item>
         <item>250</item>
@@ -908,7 +891,6 @@
         <item>5000</item>
     </string-array>
 
-    <!-- Notification light pulse speed spinners. -->
     <string-array name="notification_pulse_speed_entries" translatable="false">
         <item>@string/pulse_speed_very_fast</item>
         <item>@string/pulse_speed_fast</item>
@@ -952,14 +934,12 @@
         <item>5000</item>
     </string-array>
 
-    <!-- Status bar misc sizes. -->
     <string-array name="status_bar_sizes_entries">
         <item>@string/status_bar_size_normal</item>
         <item>@string/status_bar_size_small</item>
         <item>@string/status_bar_hidden</item>
     </string-array>
 
-    <!-- Values for status bar misc sizes. -->
     <string-array name="status_bar_sizes_values" translatable="false">
         <item>0</item>
         <item>1</item>
