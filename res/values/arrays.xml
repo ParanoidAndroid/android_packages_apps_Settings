@@ -821,6 +821,7 @@
     <string-array name="rotation_mode_entries">
         <item>@string/rotation_0</item>
         <item>@string/rotation_90</item>
+        <item>@string/rotation_180</item>
         <item>@string/rotation_270</item>
     </string-array>
 
