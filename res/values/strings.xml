@@ -4622,6 +4622,7 @@
     
     <string name="pie_size_title">Pie size</string>
     <string name="pie_size_summary">Define pie controls size</string>
+    <string name="pie_size_none">None</string>
     <string name="pie_size_small">Small</string>
     <string name="pie_size_default">@string/pie_mode_default</string>
     <string name="pie_size_large">Large</string>
