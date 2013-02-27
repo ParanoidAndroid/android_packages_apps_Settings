@@ -997,6 +997,7 @@
     </string-array>
 
     <string-array name="entries_pie_size">
+        <item>@string/pie_size_none</item>
         <item>@string/pie_size_small</item>
         <item>@string/pie_size_default</item>
         <item>@string/pie_size_large</item>
@@ -1004,6 +1005,7 @@
     </string-array>
 
     <string-array name="values_pie_size" translatable="false">
+        <item>0.0</item>
         <item>0.85</item>
         <item>1.0</item>
         <item>1.1</item>
