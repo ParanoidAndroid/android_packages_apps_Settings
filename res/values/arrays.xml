@@ -1039,6 +1039,7 @@
     </string-array>
 
     <string-array name="entries_pie_trigger">
+        <item>@string/pie_trigger_none</item>
         <item>@string/pie_trigger_small</item>
         <item>@string/pie_trigger_normal</item>
         <item>@string/pie_trigger_big</item>
@@ -1046,6 +1047,7 @@
     </string-array>
 
     <string-array name="values_pie_trigger" translatable="false">
+        <item>0.0</item>
         <item>0.5</item>
         <item>1.0</item>
         <item>2.0</item>
