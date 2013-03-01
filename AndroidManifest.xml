@@ -103,7 +103,8 @@
             android:launchMode="singleTask"
             android:excludeFromRecents="true"
             android:permission="android.permission.REQUEST_SUPERUSER"
-            android:theme="@style/RequestTheme" />
+            android:process=":superuser"
+            android:theme="@style/RequestThemeDark" />
         <!-- Only system/su can open this activity -->
         <!-- This is activity is started in multiuser mode when the user invoking su -->
         <!-- is not the device owner (user id 0). -->
@@ -114,7 +115,8 @@
             android:launchMode="singleTask"
             android:excludeFromRecents="true"
             android:permission="android.permission.REQUEST_SUPERUSER"
-            android:theme="@style/RequestTheme" />
+            android:process=":superuser"
+            android:theme="@style/RequestThemeDark" />
 
         <!-- Multiple instances of this activity can be running for multiple su requests -->
         <activity
@@ -122,7 +124,8 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="false"
             android:label="@string/request"
-            android:theme="@style/RequestTheme" />
+            android:process=":superuser"
+            android:theme="@style/RequestThemeDark" />
 
         <receiver
             android:name="com.koushikdutta.superuser.SuReceiver"
