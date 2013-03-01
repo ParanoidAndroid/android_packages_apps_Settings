@@ -160,6 +160,13 @@
     <header android:id="@+id/customization_section"
         android:title="@string/header_category_customization" />
 
+    <!-- Superuser -->
+    <header
+        android:id="@+id/superuser"
+        android:fragment="com.koushikdutta.superuser.PolicyNativeFragment"
+        android:icon="@drawable/ic_action_permission"
+        android:title="@string/superuser" />
+
     <!-- Themes -->
     <header
         android:id="@+id/themes_settings"
@@ -199,13 +206,6 @@
     <!-- SYSTEM -->
     <header android:id="@+id/system_section"
         android:title="@string/header_category_system" />
-
-    <!-- Superuser -->
-    <header
-        android:id="@+id/superuser"
-        android:fragment="com.koushikdutta.superuser.PolicyNativeFragment"
-        android:icon="@drawable/ic_action_permission"
-        android:title="@string/superuser" />
 
     <!-- Date & Time -->
     <header
