@@ -101,7 +101,7 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/superuser"
             android:launchMode="singleTask"
-            android:excludeFromRecents="true"
+            android:noHistory="true"
             android:permission="android.permission.REQUEST_SUPERUSER"
             android:process=":superuser"
             android:theme="@style/RequestThemeDark" />
@@ -113,7 +113,7 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/superuser"
             android:launchMode="singleTask"
-            android:excludeFromRecents="true"
+            android:noHistory="true"
             android:permission="android.permission.REQUEST_SUPERUSER"
             android:process=":superuser"
             android:theme="@style/RequestThemeDark" />
