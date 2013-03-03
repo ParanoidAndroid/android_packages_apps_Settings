@@ -193,8 +193,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 
         mConvertSoundToVibration = (CheckBoxPreference) findPreference(KEY_CONVERT_SOUND_TO_VIBRATE);
         mConvertSoundToVibration.setPersistent(false);
-        mConvertSoundToVibration.setChecked(Settings.System.getBoolean(resolver,
-                Settings.System.NOTIFICATION_CONVERT_SOUND_TO_VIBRATION, false));
+        mConvertSoundToVibration.setChecked(Settings.System.getInt(resolver,
+                Settings.System.NOTIFICATION_CONVERT_SOUND_TO_VIBRATION, 1) != 0);
 
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         if (vibrator == null || !vibrator.hasVibrator()) {
@@ -332,8 +332,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                     mLockSounds.isChecked() ? 1 : 0);
 
         } else if (preference == mConvertSoundToVibration) {
-            Settings.System.putBoolean(getContentResolver(), Settings.System.NOTIFICATION_CONVERT_SOUND_TO_VIBRATION,
-                    mConvertSoundToVibration.isChecked());
+            Settings.System.putInt(getContentResolver(), Settings.System.NOTIFICATION_CONVERT_SOUND_TO_VIBRATION,
+                    mConvertSoundToVibration.isChecked() ? 1 : 0);
 
         } else if (preference == mMusicFx) {
             // let the framework fire off the intent
