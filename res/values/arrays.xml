@@ -949,7 +949,7 @@
     </string-array>
 
     <string-array name="values_pie_size" translatable="false">
-        <item>0.85</item>
+        <item>0.9</item>
         <item>1.0</item>
         <item>1.1</item>
         <item>1.2</item>
