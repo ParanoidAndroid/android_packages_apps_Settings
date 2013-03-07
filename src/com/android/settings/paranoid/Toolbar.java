@@ -41,6 +41,7 @@ public class Toolbar extends SettingsPreferenceFragment
     private static final String KEY_QUICK_PULL_DOWN = "quick_pulldown";
     private static final String KEY_AM_PM_STYLE = "am_pm_style";
     private static final String KEY_SHOW_CLOCK = "show_clock";
+    private static final String KEY_CIRCLE_BATTERY = "circle_battery";
     private static final String KEY_STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
     private static final String STATUS_BAR_MAX_NOTIF = "status_bar_max_notifications";
     private static final String NAV_BAR_TABUI_MENU = "nav_bar_tabui_menu";
@@ -67,6 +68,7 @@ public class Toolbar extends SettingsPreferenceFragment
     private ListPreference mPieGap;
     private CheckBoxPreference mQuickPullDown;
     private CheckBoxPreference mShowClock;
+    private CheckBoxPreference mCircleBattery;
     private CheckBoxPreference mStatusBarNotifCount;
     private CheckBoxPreference mMenuButtonShow;
     private CheckBoxPreference mStatusBarDoNotDisturb;
@@ -96,6 +98,10 @@ public class Toolbar extends SettingsPreferenceFragment
         mShowClock = (CheckBoxPreference) prefSet.findPreference(KEY_SHOW_CLOCK);
         mShowClock.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                 Settings.System.STATUS_BAR_SHOW_CLOCK, 1) == 1);
+
+        mCircleBattery = (CheckBoxPreference) prefSet.findPreference(KEY_CIRCLE_BATTERY);
+        mCircleBattery.setChecked(Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.STATUS_BAR_CIRCLE_BATTERY, 0) == 1);
 
         mPieMenu = (CheckBoxPreference) prefSet.findPreference(PIE_MENU);
         mPieMenu.setChecked(Settings.System.getInt(mContext.getContentResolver(),
@@ -210,6 +216,10 @@ public class Toolbar extends SettingsPreferenceFragment
         if (preference == mShowClock) {
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.STATUS_BAR_SHOW_CLOCK, mShowClock.isChecked()
+                    ? 1 : 0);
+        } else if (preference == mCircleBattery) {
+            Settings.System.putInt(mContext.getContentResolver(),
+                    Settings.System.STATUS_BAR_CIRCLE_BATTERY, mCircleBattery.isChecked()
                     ? 1 : 0);
         } else if (preference == mQuickPullDown) {	
             Settings.System.putInt(mContext.getContentResolver(),

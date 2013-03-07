@@ -4524,6 +4524,8 @@
     <string name="quick_pulldown_summary">Edge of status bar will pull down Quick Settings</string>
     <!-- Show clock -->
     <string name="show_clock_title">Show clock</string>
+    <!-- Circle battery -->
+    <string name="circle_battery_title">Circle battery</string>
     <!-- AM/PM style -->
     <string name="am_pm_style_title">AM/PM style</string>
     <string name="status_bar_size_normal">Normal</string>
