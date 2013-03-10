@@ -1953,7 +1953,8 @@
     <string name="title_tile_battery">Estado de la bateria</string>
     <string name="title_tile_brightness">Brillo</string>
     <string name="title_tile_sleep">Apagar pantalla</string>
-    <string name="title_tile_flashlight">Linterna</string>
+    <string name="title_tile_torch">Linterna</string>
+    <string name="title_tile_lockscreen">Bloquear pantalla</string>
     <string name="title_tile_mobiledata">Datos móviles</string>
     <string name="title_tile_autorotate">Orientación</string>
     <string name="title_tile_settings">Ajustes</string>
@@ -1963,7 +1964,7 @@
     <string name="title_tile_user">Usuario</string>
     <string name="title_tile_networkmode">Modo de red</string>
     <string name="title_tile_screen_timeout">Espera de pantalla</string>
-    <string name="title_tile_usb_tether">Tethering USB</string>
+    <string name="title_tile_usb_tether">Anclaje USB</string>
     <string name="title_tile_quiet_hours">Modo \'tranquilidad\'</string>
     <string name="title_tile_desktop_mode">Modo de escritorio</string>
     <string name="title_dynamic_tiles">Controles dinámicos</string>
