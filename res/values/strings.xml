@@ -4613,24 +4613,24 @@
     <string name="cm_sound_mode_sound">Sound</string>
     <string name="cm_sound_mode_soundVibrate">Sound &amp; Vibrate</string>
 
-    <!-- Pie controls -->
-    <string name="pie_controls_title">Pie controls</string>
+    <!-- pie controls -->
+    <string name="pie_controls_title">pie controls</string>
     
-    <string name="pie_gravity_title">Pie gravity</string>
-    <string name="pie_gravity_summary">Select the location where Pie will be placed at</string>
+    <string name="pie_gravity_title">pie gravity</string>
+    <string name="pie_gravity_summary">Select the location where pie will be placed at</string>
     <string name="pie_gravity_top">Top</string>
     <string name="pie_gravity_bottom">Bottom</string>
     <string name="pie_gravity_right">Right</string>
     <string name="pie_gravity_left">Left</string>
     
-    <string name="pie_mode_title">Pie style</string>
+    <string name="pie_mode_title">pie style</string>
     <string name="pie_mode_summary">Manage how animations and status additions will be handled</string>
     <string name="pie_mode_bare">Bare</string>
     <string name="pie_mode_quick">Quick</string>
     <string name="pie_mode_default">Normal (default)</string>
     <string name="pie_mode_slow">Slow</string>
     
-    <string name="pie_size_title">Pie size</string>
+    <string name="pie_size_title">pie size</string>
     <string name="pie_size_summary">Define pie controls size</string>
     <string name="pie_size_small">Small</string>
     <string name="pie_size_default">@string/pie_mode_default</string>
@@ -4645,10 +4645,10 @@
     <string name="pie_gap_huge">Huge (default)</string>
 
     <string name="pie_center_title">Middle alignment</string>
-    <string name="pie_center_summary">Center Pie on the trigger edge</string>
+    <string name="pie_center_summary">Center pie on the trigger edge</string>
 
     <string name="pie_stick_title">Prevent rotation</string>
-    <string name="pie_stick_summary">If checked Pie will stay in place no matter which orientation</string>
+    <string name="pie_stick_summary">Avoids orientation change when screen rotates</string>
 
     <string name="pie_menu_title">Persistent menu button</string>
     <string name="pie_menu_summary">Always show menu button even when it\'s not necessary</string>
@@ -4663,8 +4663,8 @@
     <string name="pie_trigger_big">@string/pie_gap_big</string>
     <string name="pie_trigger_huge">@string/pie_gap_huge</string>
 
-    <string name="pie_restart_launcher_title">Restart Launcher</string>
-    <string name="pie_restart_launcher_summary">Changing screensize can have adverse effects. This option allows your launcher to regain sanity, the cost is a slight blackout (recommended)</string>
+    <string name="pie_restart_launcher_title">Redraw launcher</string>
+    <string name="pie_restart_launcher_summary">Programmatically changing screen size can have adverse visual effects. This option allows your launcher to regain sanity at the cost of a slight blackout (recommended)</string>
 
     <!-- Navigation Bar #CM -->
     <string name="navigation_reset_title">@string/lock_screen_shortcuts_reset</string>
