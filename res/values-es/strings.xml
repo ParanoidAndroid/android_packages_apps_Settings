@@ -1185,7 +1185,7 @@
     <string name="language_keyboard_settings_title" msgid="243220021717425813">"Idioma y entrada de texto"</string>
     <string name="language_settings_category" msgid="2288258489940617043">"Ajustes de idioma"</string>
     <string name="keyboard_settings_category" msgid="8275523930352487827">"Teclado y métodos de entrada"</string>
-	<string name="keyboard_settings_additional_category">Configuraciones adicionales del teclado</string>
+    <string name="keyboard_settings_additional_category">Configuraciones adicionales del teclado</string>
     <string name="phone_language" msgid="8870144109924299673">"Idioma"</string>
     <string name="phone_language_summary" msgid="3871309445655554211"></string>
     <string name="auto_replace" msgid="6199184757891937822">"Corrección automática"</string>
@@ -1419,7 +1419,7 @@
     <string name="recognizer_title" msgid="3231385184559054457">"Reconocedor de voz"</string>
     <string name="recognizer_settings_title" msgid="432493301215113154">"Búsqueda por voz"</string>
     <string name="recognizer_settings_summary" msgid="4472287934134546902">"Configuración de \"<xliff:g id="RECOGNIZER_NAME">%s</xliff:g>\""</string>
-	<string name="disable_fullscreen_keyboard_title">Desactivar teclado en pantalla completa</string>
+    <string name="disable_fullscreen_keyboard_title">Desactivar teclado en pantalla completa</string>
     <string name="disable_fullscreen_keyboard_summary">El teclado nunca ocupará toda la pantalla en modo paisaje</string>
     <string name="tts_settings" msgid="8186971894801348327">"Configuración síntesis voz"</string>
     <string name="tts_settings_title" msgid="1237820681016639683">"Síntesis de voz"</string>
@@ -1969,7 +1969,7 @@
     <string name="title_tile_screen_timeout">Espera de pantalla</string>
     <string name="title_tile_usb_tether">Anclaje USB</string>
     <string name="title_tile_quiet_hours">Modo \'tranquilidad\'</string>
-	<string name="title_tile_volume">Volumen</string>
+    <string name="title_tile_volume">Volumen</string>
     <string name="title_dynamic_tiles">Controles dinámicos</string>
     <string name="dynamic_tiles_note_title">Nota</string>
     <string name="dynamic_tiles_note_summary">Los controles dinámicos no son siempre visibles y sólo se mostrarán si son causados por un evento del sistema</string>
