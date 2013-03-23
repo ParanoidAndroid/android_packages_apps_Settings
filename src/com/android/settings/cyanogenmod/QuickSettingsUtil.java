@@ -39,6 +39,7 @@ import static com.android.internal.util.cm.QSConstants.TILE_VOLUME;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFI;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFIAP;
 import static com.android.internal.util.cm.QSConstants.TILE_DESKTOPMODE;
+import static com.android.internal.util.cm.QSConstants.TILE_HYBRID;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -117,7 +118,10 @@ public class QuickSettingsUtil {
                 "com.android.systemui:drawable/ic_qs_default_user"));
         TILES.put(TILE_DESKTOPMODE, new QuickSettingsUtil.TileInfo(
                 TILE_DESKTOPMODE, R.string.title_tile_desktop_mode,
-                "com.android.systemui:drawable/ic_qs_expanded_desktop"));
+                "com.android.systemui:drawable/ic_qs_expanded_desktop_off"));
+        TILES.put(TILE_HYBRID, new QuickSettingsUtil.TileInfo(
+                TILE_HYBRID, R.string.title_tile_hybrid,
+                "com.android.systemui:drawable/ic_qs_hybrid"));
     }
 
     public static String getCurrentTiles(Context context) {
