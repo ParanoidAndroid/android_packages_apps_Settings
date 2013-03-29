@@ -116,6 +116,7 @@ public class Lockscreen extends SettingsPreferenceFragment
                    
         if(Utils.getScreenType(mContext) == Utils.DEVICE_TABLET) {
             prefSet.removePreference(mAllowRotation);
+            prefSet.removePreference(mMaximizeWidgets);
         }
         updateCustomBackgroundSummary();
     }
