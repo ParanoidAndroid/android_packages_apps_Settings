@@ -128,7 +128,7 @@ public class QuickSettingsUtil {
 
     public static String getCurrentTiles(Context context) {
         String tiles = Settings.System.getString(context.getContentResolver(),
-                Settings.System.QUICK_SETTINGS_TILES);
+                Settings.System.QUICK_SETTINGS);
         if (tiles == null) {
             tiles = getDefaultTiles(context);
         }
