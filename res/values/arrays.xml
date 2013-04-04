@@ -3,6 +3,7 @@
 /*
 **
 ** Copyright 2007 The Android Open Source Project
+   Copyright (C) 2013 The CyanogenMod Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -1072,6 +1073,19 @@
     </string-array>
 
     <string-array name="values_network_widget" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Custom lock screen background-->
+    <string-array name="lockscreen_background_entries" translatable="false">
+        <item>@string/lockscreen_background_color_fill</item>
+        <item>@string/lockscreen_background_custom_image</item>
+        <item>@string/lockscreen_background_default_wallpaper</item>
+    </string-array>
+
+    <string-array name="lockscreen_background_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>

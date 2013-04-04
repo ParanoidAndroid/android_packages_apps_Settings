@@ -4758,4 +4758,13 @@
     <string name="auto_brightness_menu_split">Split</string>
     <string name="auto_brightness_menu_remove">Remove</string>
 
+    <!-- Custom lock screen background -->
+    <string name="lockscreen_custom_background_title">Background</string>
+    <string name="lockscreen_custom_background_dialog_title">Choose color</string>
+    <string name="lockscreen_background_result_successful">Background changed successfully</string>
+    <string name="lockscreen_background_result_not_successful">Background could not be changed</string>
+    <string name="lockscreen_background_color_fill">Color fill</string>
+    <string name="lockscreen_background_custom_image">Custom image</string>
+    <string name="lockscreen_background_default_wallpaper">Default wallpaper</string>
+
 </resources>
