@@ -41,7 +41,7 @@ import static com.android.internal.util.cm.QSConstants.TILE_WIFIAP;
 import static com.android.internal.util.cm.QSConstants.TILE_DESKTOPMODE;
 import static com.android.internal.util.cm.QSConstants.TILE_HYBRID;
 import static com.android.internal.util.cm.QSUtils.deviceSupportsBluetooth;
-import static com.android.internal.util.cm.QSUtils.deviceSupportsTelephony;
+import static com.android.internal.util.cm.QSUtils.deviceSupportsMobileData;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -189,13 +189,13 @@ public class QuickSettingsUtil {
     public static String getDefaultTiles(Context context) {
         // Filter items not compatible with device
         boolean bluetoothSupported = deviceSupportsBluetooth();
-        boolean telephonySupported = deviceSupportsTelephony(context);
+        boolean mobileDataSupported = deviceSupportsMobileData(context);
 
         if (!bluetoothSupported) {
             TILES_DEFAULT.remove(TILE_BLUETOOTH);
         }
 
-        if (!telephonySupported) {
+        if (!mobileDataSupported) {
             TILES_DEFAULT.remove(TILE_MOBILEDATA);
         }
 
