@@ -23,6 +23,7 @@ import static com.android.internal.util.cm.QSConstants.TILE_NFC;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFIAP;
 import static com.android.internal.util.cm.QSConstants.TILE_LTE;
 import static com.android.internal.util.cm.QSUtils.deviceSupportsBluetooth;
+import static com.android.internal.util.cm.QSUtils.deviceSupportsMobileData;
 import static com.android.internal.util.cm.QSUtils.deviceSupportsNfc;
 import static com.android.internal.util.cm.QSUtils.deviceSupportsUsbTether;
 import static com.android.internal.util.cm.QSUtils.deviceSupportsWifiDisplay;
@@ -115,6 +116,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         }
         mRingMode.setOnPreferenceChangeListener(this);
 
+        // Add the network mode preference
+        mNetworkMode = (ListPreference) prefSet.findPreference(EXP_NETWORK_MODE);
+        if(mNetworkMode != null){
+            mNetworkMode.setSummary(mNetworkMode.getEntry());
+            mNetworkMode.setOnPreferenceChangeListener(this);
+        }
+
         // Screen timeout mode
         mScreenTimeoutMode = (ListPreference) prefSet.findPreference(EXP_SCREENTIMEOUT_MODE);
         mScreenTimeoutMode.setSummary(mScreenTimeoutMode.getEntry());
@@ -149,10 +157,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         }
 
         // Don't show mobile data options if not supported
-        boolean isMobileData = pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
-        if (!isMobileData) {
+        if (!deviceSupportsMobileData(getActivity())) {
             QuickSettingsUtil.TILES.remove(TILE_MOBILEDATA);
             QuickSettingsUtil.TILES.remove(TILE_WIFIAP);
+            QuickSettingsUtil.TILES.remove(TILE_NETWORKMODE);
+            if(mNetworkMode != null) {
+                mStaticTiles.removePreference(mNetworkMode);
+            }
         } else {
             // We have telephony support however, some phones run on networks not supported
             // by the networkmode tile so remove both it and the associated options list
@@ -170,6 +181,10 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                 case Phone.NT_MODE_WCDMA_ONLY:
                 case Phone.NT_MODE_GSM_UMTS:
                 case Phone.NT_MODE_GSM_ONLY:
+                    break;
+                default:
+                    QuickSettingsUtil.TILES.remove(TILE_NETWORKMODE);
+                    mStaticTiles.removePreference(mNetworkMode);
                     break;
             }
         }
@@ -237,6 +252,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             Settings.System.putString(resolver, Settings.System.EXPANDED_RING_MODE,
                     TextUtils.join(SEPARATOR, arrValue));
             updateSummary(TextUtils.join(SEPARATOR, arrValue), mRingMode, R.string.pref_ring_mode_summary);
+            return true;
+        } else if (preference == mNetworkMode) {
+            int value = Integer.valueOf((String) newValue);
+            int index = mNetworkMode.findIndexOfValue((String) newValue);
+            Settings.System.putInt(resolver,
+                    Settings.System.EXPANDED_NETWORK_MODE, value);
+            mNetworkMode.setSummary(mNetworkMode.getEntries()[index]);
             return true;
         } else if (preference == mScreenTimeoutMode) {
             int value = Integer.valueOf((String) newValue);
