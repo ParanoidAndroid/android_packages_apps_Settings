@@ -238,10 +238,10 @@ public class Lockscreen extends SettingsPreferenceFragment
             int selection = mCustomBackground.findIndexOfValue(objValue.toString());
             return handleBackgroundSelection(selection);
         } else if (preference == mCrtMode) {
-            int index = mCrtMode.findIndexOfValue((String) newValue);
+            int index = mCrtMode.findIndexOfValue(objValue.toString());
             preference.setSummary(mCrtMode.getEntries()[index]);
-            int val = Integer.valueOf((String) newValue);
-            Settings.System.putInt(mContentResolver, Settings.System.SYSTEM_POWER_CRT_MODE, val);
+            int val = Integer.valueOf(objValue.toString());
+            Settings.System.putInt(getContentResolver(), Settings.System.SYSTEM_POWER_CRT_MODE, val);
             return true;
         }
 
