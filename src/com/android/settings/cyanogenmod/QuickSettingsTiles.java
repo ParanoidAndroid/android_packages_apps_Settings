@@ -16,6 +16,9 @@
 
 package com.android.settings.cyanogenmod;
 
+import static com.android.internal.util.cm.QSUtils.getTileTextColor;
+import static com.android.internal.util.cm.QSUtils.setBackgroundStyle;
+
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Context;
@@ -88,8 +91,11 @@ public class QuickSettingsTiles extends Fragment {
      */
     void addTile(int titleId, String iconSysId, int iconRegId, boolean newTile) {
         View v = (View) mInflater.inflate(R.layout.qs_tile, null, false);
+        v.setBackgroundDrawable(null);
+        setBackgroundStyle(mContext, v);
         final TextView name = (TextView) v.findViewById(R.id.qs_text);
         name.setText(titleId);
+        name.setTextColor(getTileTextColor(mContext));
         if (mSystemUiResources != null && iconSysId != null) {
             int resId = mSystemUiResources.getIdentifier(iconSysId, null, null);
             if (resId > 0) {

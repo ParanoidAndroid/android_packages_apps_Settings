@@ -27,6 +27,18 @@
             android:title="@string/title_collapse_panel"
             android:summary="@string/summary_collapse_panel" />
 
+	<ListPreference
+            android:key="tile_background_style"
+            android:entries="@array/tile_background_style_entries"
+            android:entryValues="@array/tile_background_style_values"
+            android:title="@string/tile_background_style_title"
+            android:summary="@string/tile_background_style_summary" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="tile_text_color"
+            android:title="@string/tile_text_color_title"
+            android:defaultValue="#ffffffff" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
