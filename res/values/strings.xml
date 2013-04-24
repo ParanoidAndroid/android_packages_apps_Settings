@@ -4807,6 +4807,8 @@
     <string name="tile_background_random">Random colors</string>
     <string name="tile_custom_background_dialog_title">Tile background style</string>
     <string name="tile_text_color_title">Set tile text color</string>
+    <string name="notif_background_default">Default background</string>
+    <string name="notif_background_color_fill">Color fill</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>

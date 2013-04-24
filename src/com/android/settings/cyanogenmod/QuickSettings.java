@@ -102,6 +102,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+	    mActivity = getActivity();
 
         PreferenceScreen prefSet = getPreferenceScreen();
         PackageManager pm = getPackageManager();
@@ -217,7 +218,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
 
     private void updateTileBackgroundSummary() {
         int resId;
-        String value = Settings.System.getString(mContentResolver,
+        String value = Settings.System.getString(getContentResolver(),
                 Settings.System.QUICK_SETTINGS_BACKGROUND_STYLE);
         if (value == null) {
             resId = R.string.notif_background_default;
@@ -304,7 +305,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String.valueOf(newValue)));
             preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(mContentResolver,
+            Settings.System.putInt(getContentResolver(),
                     Settings.System.QUICK_SETTINGS_TEXT_COLOR, intHex);
             return true;
 
@@ -313,13 +314,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             switch (indexOf) {
                 //Displays color dialog when user has chosen color fill
                 case 0:
-                    Settings.System.putString(mContentResolver,
+                    Settings.System.putString(getContentResolver(),
                             Settings.System.QUICK_SETTINGS_BACKGROUND_STYLE, "random");
                     updateTileBackgroundSummary();
                     break;
                 case 1:
                     final ColorPickerView colorView = new ColorPickerView(mActivity);
-                    int currentColor = Settings.System.getInt(mContentResolver,
+                    int currentColor = Settings.System.getInt(getContentResolver(),
                             Settings.System.QUICK_SETTINGS_BACKGROUND_STYLE, -1);
                     if (currentColor != -1) {
                         colorView.setColor(currentColor);
@@ -330,7 +331,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                     .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener(){
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            Settings.System.putInt(mContentResolver,
+                            Settings.System.putInt(getContentResolver(),
                             Settings.System.QUICK_SETTINGS_BACKGROUND_STYLE, colorView.getColor());
                             updateTileBackgroundSummary();
                         }
@@ -342,7 +343,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                     }).setView(colorView).show();
                     return false;
                 case 2:
-                    Settings.System.putString(mContentResolver,
+                    Settings.System.putString(getContentResolver(),
                             Settings.System.QUICK_SETTINGS_BACKGROUND_STYLE, null);
                     updateTileBackgroundSummary();
                     break;
