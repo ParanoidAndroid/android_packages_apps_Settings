@@ -16,14 +16,16 @@
 
 package com.android.settings.cyanogenmod;
 
+import java.util.Random;
+
 import static com.android.internal.util.cm.QSUtils.getTileTextColor;
-import static com.android.internal.util.cm.QSUtils.setBackgroundStyle;
 
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -54,6 +56,7 @@ public class QuickSettingsTiles extends Fragment {
     TileAdapter mTileAdapter;
 
     private Context mContext;
+    private View v;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -92,9 +95,8 @@ public class QuickSettingsTiles extends Fragment {
      * @param newTile - whether a new tile is being added by user
      */
     void addTile(int titleId, String iconSysId, int iconRegId, boolean newTile) {
-        View v = (View) mInflater.inflate(R.layout.qs_tile, null, false);
-        v.setBackgroundDrawable(null);
-        setBackgroundStyle(mContext, v);
+        v = (View) mInflater.inflate(R.layout.qs_tile, null, false);
+        setTileBackground();
         final TextView name = (TextView) v.findViewById(R.id.qs_text);
         name.setText(titleId);
         name.setTextColor(getTileTextColor(mContext));
@@ -239,5 +241,47 @@ public class QuickSettingsTiles extends Fragment {
     public interface OnRearrangeListener {
         public abstract void onRearrange(int oldIndex, int newIndex);
         public abstract void onDelete(int index);
+    }
+
+    public void setTileBackground() {
+        ContentResolver mContentResolver = mContext.getContentResolver();
+        int tileBg = Settings.System.getInt(mContentResolver,
+                Settings.System.QUICK_SETTINGS_BACKGROUND_STYLE, 2);
+        int blueDark = Settings.System.getInt(mContentResolver,
+                Settings.System.RANDOM_COLOR_ONE, android.R.color.holo_blue_dark);
+        int greenDark = Settings.System.getInt(mContentResolver,
+                Settings.System.RANDOM_COLOR_TWO, android.R.color.holo_green_dark);
+        int redDark = Settings.System.getInt(mContentResolver,
+                Settings.System.RANDOM_COLOR_THREE, android.R.color.holo_red_dark);
+        int orangeDark = Settings.System.getInt(mContentResolver,
+                Settings.System.RANDOM_COLOR_FOUR, android.R.color.holo_orange_dark);
+        int purple = Settings.System.getInt(mContentResolver,
+                Settings.System.RANDOM_COLOR_FIVE, android.R.color.holo_purple);
+        int blueBright = Settings.System.getInt(mContentResolver,
+                Settings.System.RANDOM_COLOR_SIX, android.R.color.holo_blue_bright);
+        if (tileBg == 1) {
+            int tileBgColor = Settings.System.getInt(mContentResolver,
+                    Settings.System.QUICK_SETTINGS_BACKGROUND_COLOR, 0xFF000000);
+            v.setBackgroundColor(tileBgColor);
+        } else if (tileBg == 0) {
+            int[] Colors = new int[] {
+                blueDark,
+                greenDark,
+                redDark,
+                orangeDark,
+                purple,
+                blueBright
+            };
+            Random generator = new Random();
+            v.setBackgroundColor(Colors[generator.nextInt(Colors.length)]);
+        } else {
+            int resID = mSystemUiResources.getIdentifier("qs_tile_background", "drawable", null);
+            try {
+                Drawable d = mSystemUiResources.getDrawable(resID);
+                v.setBackground(d);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

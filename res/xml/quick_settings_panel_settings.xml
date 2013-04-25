@@ -35,9 +35,26 @@
             android:summary="@string/tile_background_style_summary" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="tile_background_color"
+            android:title="@string/tile_background_color_title"
+            android:defaultValue="#ff000000"
+            alphaSlider="true" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="tile_text_color"
             android:title="@string/tile_text_color_title"
-            android:defaultValue="#ffffffff" />
+            android:defaultValue="#ffffffff"
+            alphaSlider="true" />
+
+        <PreferenceScreen
+            android:key="random_colors"
+            android:fragment="com.android.settings.cyanogenmod.RandomColors"
+            android:title="Random Colors" />
+
+        <CheckBoxPreference
+            android:key="flip_tile"
+            android:title="@string/flip_tile_title"
+            android:summary="@string/flip_tile_summary" />
 
     </PreferenceCategory>
 
