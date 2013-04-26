@@ -127,15 +127,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
 
         mTileBgColor = (ColorPickerPreference) findPreference(TILE_BACKGROUND_COLOR);
         mTileBgColor.setOnPreferenceChangeListener(this);
-        mTileBgColor.setSummary(ColorPickerPreference.convertToARGB(Integer.valueOf(
-                Settings.System.getString(resolver,
-                Settings.System.QUICK_SETTINGS_BACKGROUND_COLOR))));
+        mTileBgColor.setSummary(ColorPickerPreference.convertToARGB(Settings.System.getInt(
+                resolver, Settings.System.QUICK_SETTINGS_BACKGROUND_COLOR, 0xFF000000)));
 
         mTileTextColor = (ColorPickerPreference) findPreference(TILE_TEXT_COLOR);
         mTileTextColor.setOnPreferenceChangeListener(this);
-        mTileTextColor.setSummary(ColorPickerPreference.convertToARGB(Integer.valueOf(
-                Settings.System.getString(resolver,
-                Settings.System.QUICK_SETTINGS_TEXT_COLOR))));
+        mTileTextColor.setSummary(ColorPickerPreference.convertToARGB(Settings.System.getInt(
+                resolver, Settings.System.QUICK_SETTINGS_TEXT_COLOR, 0xFFFFFFFF)));
 
         mFlipTile = (CheckBoxPreference) prefSet.findPreference(FLIP_TILE);
         mFlipTile.setChecked(Settings.System.getInt(resolver,
@@ -342,7 +340,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
     }
 
     private void updateVisibility() {
-        int visible = Settings.System.getInt(mContentResolver,
+        int visible = Settings.System.getInt(getActivity().getContentResolver(),
                     Settings.System.QUICK_SETTINGS_BACKGROUND_STYLE, 2);
         if (visible == 2) {
             mRandomColors.setEnabled(false);

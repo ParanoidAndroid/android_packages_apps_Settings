@@ -33,15 +33,14 @@ public class RandomColors extends SettingsPreferenceFragment implements OnPrefer
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Load the preferences from an XML resource
-        PreferenceScreen prefSet = getPreferenceScreen();
         addPreferencesFromResource(R.xml.prefs_random_colors);
 
-        mOne = (ColorPickerPreference) prefSet.findPreference(PREF_RANDOM_COLOR_ONE);
-        mTwo = (ColorPickerPreference) prefSet.findPreference(PREF_RANDOM_COLOR_TWO);
-        mThree = (ColorPickerPreference) prefSet.findPreference(PREF_RANDOM_COLOR_THREE);
-        mFour = (ColorPickerPreference) prefSet.findPreference(PREF_RANDOM_COLOR_FOUR);
-        mFive = (ColorPickerPreference) prefSet.findPreference(PREF_RANDOM_COLOR_FIVE);
-        mSix = (ColorPickerPreference) prefSet.findPreference(PREF_RANDOM_COLOR_SIX);
+        mOne = (ColorPickerPreference) findPreference(PREF_RANDOM_COLOR_ONE);
+        mTwo = (ColorPickerPreference) findPreference(PREF_RANDOM_COLOR_TWO);
+        mThree = (ColorPickerPreference) findPreference(PREF_RANDOM_COLOR_THREE);
+        mFour = (ColorPickerPreference) findPreference(PREF_RANDOM_COLOR_FOUR);
+        mFive = (ColorPickerPreference) findPreference(PREF_RANDOM_COLOR_FIVE);
+        mSix = (ColorPickerPreference) findPreference(PREF_RANDOM_COLOR_SIX);
     }
 
     @Override
@@ -61,24 +60,18 @@ public class RandomColors extends SettingsPreferenceFragment implements OnPrefer
     }
 
     private void updateSummaries() {
-        mOne.setSummary(ColorPickerPreference.convertToARGB(Integer.valueOf(
-                Settings.System.getString(getContentResolver(),
-                Settings.System.RANDOM_COLOR_ONE))));
-        mTwo.setSummary(ColorPickerPreference.convertToARGB(Integer.valueOf(
-                Settings.System.getString(getContentResolver(),
-                Settings.System.RANDOM_COLOR_TWO))));
-        mThree.setSummary(ColorPickerPreference.convertToARGB(Integer.valueOf(
-                Settings.System.getString(getContentResolver(),
-                Settings.System.RANDOM_COLOR_THREE))));
-        mFour.setSummary(ColorPickerPreference.convertToARGB(Integer.valueOf(
-                Settings.System.getString(getContentResolver(),
-                Settings.System.RANDOM_COLOR_FOUR))));
-        mFive.setSummary(ColorPickerPreference.convertToARGB(Integer.valueOf(
-                Settings.System.getString(getContentResolver(),
-                Settings.System.RANDOM_COLOR_FIVE))));
-        mSix.setSummary(ColorPickerPreference.convertToARGB(Integer.valueOf(
-                Settings.System.getString(getContentResolver(),
-                Settings.System.RANDOM_COLOR_SIX))));
+        mOne.setSummary(ColorPickerPreference.convertToARGB(Settings.System.getInt(
+                getContentResolver(), Settings.System.RANDOM_COLOR_ONE, 0xFF0099CC)));
+        mTwo.setSummary(ColorPickerPreference.convertToARGB(Settings.System.getInt(
+                getContentResolver(), Settings.System.RANDOM_COLOR_TWO, 0xFF669900)));
+        mThree.setSummary(ColorPickerPreference.convertToARGB(Settings.System.getInt(
+                getContentResolver(), Settings.System.RANDOM_COLOR_THREE, 0xFFCC0000)));
+        mFour.setSummary(ColorPickerPreference.convertToARGB(Settings.System.getInt(
+                getContentResolver(), Settings.System.RANDOM_COLOR_FOUR, 0xFFFF8800)));
+        mFive.setSummary(ColorPickerPreference.convertToARGB(Settings.System.getInt(
+                getContentResolver(), Settings.System.RANDOM_COLOR_FIVE, 0xFFAA66CC)));
+        mSix.setSummary(ColorPickerPreference.convertToARGB(Settings.System.getInt(
+                getContentResolver(), Settings.System.RANDOM_COLOR_SIX, 0xFF00DDFF)));
     }
 
     @Override
