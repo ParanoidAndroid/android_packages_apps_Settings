@@ -1369,8 +1369,8 @@
     <string name="power_phone" msgid="5392641106474567277">"Llamadas de voz"</string>
     <string name="power_idle" product="tablet" msgid="4612478572401640759">"Tablet inactivo"</string>
     <string name="power_idle" product="default" msgid="9055659695602194990">"Teléfono inactivo"</string>
-    <string name="usage_type_cpu" msgid="715162150698338714">"Total de CPU"</string>
-    <string name="usage_type_cpu_foreground" msgid="6500579611933211831">"Primer plano de la CPU"</string>
+    <string name="usage_type_cpu" msgid="715162150698338714">"Total"</string>
+    <string name="usage_type_cpu_foreground" msgid="6500579611933211831">"Primer plano"</string>
     <string name="usage_type_wake_lock" msgid="5125438890233677880">"Activo"</string>
     <string name="usage_type_gps" msgid="7989688715128160790">"GPS"</string>
     <string name="usage_type_wifi_running" msgid="8234997940652067049">"Wi-Fi"</string>
@@ -1380,8 +1380,8 @@
     <string name="usage_type_data_recv" msgid="7251090882025234185">"Datos recibidos"</string>
     <string name="usage_type_audio" msgid="6957269406840886290">"Audio"</string>
     <string name="usage_type_video" msgid="4295357792078579944">"Vídeo"</string>
-    <string name="usage_type_on_time" msgid="3351200096173733159">"Tiempo de activación"</string>
-    <string name="usage_type_no_coverage" msgid="3797004252954385053">"Tiempo sin señal"</string>
+    <string name="usage_type_on_time" msgid="3351200096173733159">@string/usage_type_wake_lock</string>
+    <string name="usage_type_no_coverage" msgid="3797004252954385053">"Sin señal"</string>
     <string name="battery_action_stop" msgid="649958863744041872">"Forzar detención"</string>
     <string name="battery_action_app_details" msgid="7861051816778419018">"Información de la aplicación"</string>
     <string name="battery_action_app_settings" msgid="4570481408106287454">"Ajustes de aplicación"</string>
@@ -2046,6 +2046,9 @@
     <string name="adb_over_network">"ADB sobre TCP/IP"</string>
     <string name="adb_over_network_summary">"Activar la depuración TCP/IP sobre las interfaces de red (Wi-Fi, redes USB). Esta configuración se restablece al reiniciar el dispositivo."</string>
     <string name="adb_over_network_warning">"AVISO: ¡Cuando 'ADB sobre TCP/IP' este activo, su teléfono estará abierto a intrusiones en todas las redes conectadas, incluida la red de datos GSM!\n\nUse sólo esta característica cuando esté conectado a redes de confianza.\n\n¿Desea realmente activar esta función?"</string>
+    <string name="vibration_title">Vibración del teléfono</string>
+    <string name="notification_convert_sound_to_vibration_title">Conversión de notificaciones</string>
+    <string name="notification_convert_sound_to_vibration_summary">Convierte el sonido a vibraciones durante el modo de vibración</string>
     <string name="quiet_hours_title">Modo \u00ABtranquilidad\u00BB</string>
     <string name="quiet_hours_summary">Configurar las horas en las que el dispositivo debe de estar en modo \u00ABtranquilidad\u00BB</string>
     <string name="quiet_hours_note_title">Nota</string>
