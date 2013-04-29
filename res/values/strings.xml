@@ -4399,6 +4399,9 @@
     <!-- ======================================================================================= -->
 
 <!-- Lock Screen Shortcuts -->
+    <string name="picker_activities">Activities</string>
+    <string name="select_custom_app_title">Select custom application</string>
+    <string name="select_custom_activity_title">Select custom activity</string>
     <string name="lockscreen_target_info">Drag the slider to targets to assign shortcuts</string>
     <string name="lockscreen_target_title">Slider shortcuts</string>
     <string name="lockscreen_target_summary">View or change custom lock screen shortcuts</string>
@@ -4506,6 +4509,7 @@
     <string name="icon_picker_choose_icon_title">Choose icon</string>
     <string name="icon_picker_alarm">Alarm</string>
     <string name="icon_picker_browser">Browser</string>
+    <string name="icon_picker_chrome">Chrome</string>
     <string name="icon_picker_calendar">Calendar</string>
     <string name="icon_picker_camera">Camera</string>
     <string name="icon_picker_email">Email</string>
@@ -4519,10 +4523,12 @@
     <string name="icon_picker_movie">Movie</string>
     <string name="icon_picker_music">Music</string>
     <string name="icon_picker_nav">Navigation</string>
+    <string name="icon_picker_nav_normal">Navigation</string>
     <string name="icon_picker_phone">Phone</string>
     <string name="icon_picker_podcast">Podcast</string>
     <string name="icon_picker_rss">Rss</string>
     <string name="icon_picker_sms">Messaging</string>
+    <string name="icon_picker_search">Search</string>
     <string name="icon_picker_twitter">Twitter</string>
 
     <!-- Volume sub settings -->
@@ -4852,5 +4858,19 @@
 
     <string name="flip_tile_title">Flip tile</string>
     <string name="flip_tile_summary">Flips the tile when touched on/off</string>
+
+<!-- Reset Profiles -->
+    <string name="profile_reset_title">Reset</string>
+    <string name="profile_reset_message">Delete all user created profiles and application groups and restore them to default?</string>
+
+<!-- Title for application group setting screen -->
+    <string name="profile_appgroups_title">Application groups</string>
+    <string name="profile_applist_title">Applications</string>
+    <string name="profile_new_appgroup">New application group</string>
+    <string name="profile_delete_appgroup">Delete this application group?</string>
+    <string name="profile_appgroup_name_prompt">Enter a name for the new application group</string>
+    <string name="profile_appgroup_name_title">Name</string>
+    <string name="profile_add_app">Add application</string>
+    <string name="profile_delete_app">Remove application</string>
 
 </resources>
