@@ -118,9 +118,9 @@ public class PowerWidgetUtil {
                     BUTTON_LTE, R.string.title_toggle_lte,
                     "com.android.systemui:drawable/stat_lte_on"));
         }*/
-        BUTTONS.put(BUTTON_WIMAX, new PowerWidgetUtil.ButtonInfo(
+        /*BUTTONS.put(BUTTON_WIMAX, new PowerWidgetUtil.ButtonInfo(
                 BUTTON_WIMAX, R.string.title_toggle_wimax,
-                "com.android.systemui:drawable/stat_wimax_on"));
+                "com.android.systemui:drawable/stat_wimax_on"));*/
     }
 
     private static final String BUTTON_DELIMITER = "|";

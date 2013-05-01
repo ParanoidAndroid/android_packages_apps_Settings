@@ -1170,42 +1170,6 @@
         <item>1800000</item>
     </string-array>
 
-    <string-array name="entries_screentimeout_widget">
-        <item>15s | 1m | 5m</item>
-        <item>30s | 2m | 5m</item>
-    </string-array>
-
-    <string-array name="values_screentimeout_widget" translatable="false">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-
-    <string-array name="entries_ring_widget" translatable="false">
-        <item>@string/cm_sound_mode_silent</item>
-        <item>@string/cm_sound_mode_vibrate</item>
-        <item>@string/cm_sound_mode_sound</item>
-        <item>@string/cm_sound_mode_soundVibrate</item>
-    </string-array>
-
-    <string-array name="values_ring_widget" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-
-    <string-array name="entries_network_widget">
-        <item>2G | 2G+3G</item>
-        <item>2G | 3G</item>
-        <item>2G | 3G | 2G+3G</item>
-    </string-array>
-
-    <string-array name="values_network_widget" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
     <!-- Custom lock screen background-->
     <string-array name="lockscreen_background_entries" translatable="false">
         <item>@string/lockscreen_background_color_fill</item>
