@@ -63,6 +63,8 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
     <uses-permission android:name="android.permission.SET_TIME" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
 
     <permission
         android:name="android.permission.REQUEST_SUPERUSER"
@@ -1518,6 +1520,10 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
+        <!-- CyanogenMod port START -->
+        <activity android:name=".cyanogenmod.PerformanceSettings" />
+        <!-- CyanogenMod port END -->
+
         <!-- ParanoidAndroid customization -->
        <activity android:name=".paranoid.Lockscreen" />
 
@@ -1596,6 +1602,14 @@
                 <action android:name="android.bluetooth.intent.DISCOVERABLE_TIMEOUT" />
             </intent-filter>
         </receiver>
+
+        <!-- CyanogenMod port START -->
+        <receiver android:name=".cyanogenmod.BootReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!-- CyanogenMod port END -->
 
         <!-- Watch for ContactsContract.Profile changes and update the user's photo.  -->
         <receiver android:name=".users.ProfileUpdateReceiver">
