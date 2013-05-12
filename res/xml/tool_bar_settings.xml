@@ -28,6 +28,18 @@
             android:defaultValue="false" />
 
         <CheckBoxPreference
+            android:key="halo_hide"
+            android:title="@string/halo_hide_title"
+            android:summary="@string/halo_hide_summary"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="halo_reversed"
+            android:title="@string/halo_reversed_title"
+            android:summary="@string/halo_reversed_summary"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
             android:key="show_clock"
             android:title="@string/show_clock_title" />
 
