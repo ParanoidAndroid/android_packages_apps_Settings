@@ -19,6 +19,8 @@ package com.android.settings.cyanogenmod;
 import java.util.Collections;
 import java.util.ArrayList;
 
+import static com.android.internal.util.cm.QSUtils.getTileTextColor;
+
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
@@ -277,6 +279,7 @@ public class DraggableGridView extends ViewGroup implements
         TextView addDeleteTile = ((TextView) getChildAt(getChildCount() - 1).findViewById(R.id.qs_text));
         addDeleteTile.setCompoundDrawablesRelativeWithIntrinsicBounds(0, resid, 0, 0);
         addDeleteTile.setText(stringid);
+		addDeleteTile.setTextColor(getTileTextColor(mContext));
     }
 
     public boolean onLongClick(View view) {

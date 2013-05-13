@@ -63,6 +63,12 @@
     <dimen name="keyguard_appwidget_picker_margin_right">6dip</dimen>
     <integer name="keyguard_appwidget_picker_cols">1</integer>
 
+
+    <!-- **** CARBON ADDITIONS START **** -->
+
+    <!-- Notification Shortcuts -->
+    <dimen name="notification_shortcut_picker_left_padding">36dip</dimen>
+
     <!-- Light settings dialog -->
     <dimen name="dialog_light_settings_width">400dip</dimen>
 
@@ -70,4 +76,5 @@
     <dimen name="normal_height">64dip</dimen>
     <!-- height of an expanded list item in edit playlist mode -->
     <dimen name="expanded_height">128dip</dimen>
+
 </resources>

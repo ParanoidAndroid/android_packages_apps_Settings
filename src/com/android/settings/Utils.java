@@ -617,6 +617,10 @@ public class Utils {
         }
     }
 
+    public static boolean isPhone(Context context) {
+        return getScreenType(context) == DEVICE_PHONE;
+    }
+
     public static boolean isTablet(){
         return ExtendedPropertiesUtils.isTablet();
     }

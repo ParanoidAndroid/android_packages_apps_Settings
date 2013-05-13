@@ -57,12 +57,16 @@ public class Lockscreen extends SettingsPreferenceFragment
     private static final String KEY_VOLBTN_MUSIC_CTRL = "music_controls";
     private static final String KEY_VOLUME_WAKE = "volume_wake";
     private static final String KEY_BACKGROUND_PREF = "lockscreen_background";
+    private static final String PREF_POWER_CRT_MODE = "system_power_crt_mode";
+    private static final String PREF_POWER_CRT_SCREEN_OFF = "system_power_crt_screen_off";
 
     private static final int REQUEST_CODE_BG_WALLPAPER = 1024;
     private static final int LOCKSCREEN_BACKGROUND_COLOR_FILL = 0;
     private static final int LOCKSCREEN_BACKGROUND_CUSTOM_IMAGE = 1;
     private static final int LOCKSCREEN_BACKGROUND_DEFAULT_WALLPAPER = 2;
 
+    private CheckBoxPreference mCrtOff;
+    private ListPreference mCrtMode;
     private ListPreference mCustomBackground;
     private CheckBoxPreference mAllowRotation;
     private CheckBoxPreference mSeeThrough;
@@ -113,6 +117,13 @@ public class Lockscreen extends SettingsPreferenceFragment
         mVolBtnMusicCtrl = (CheckBoxPreference) findPreference(KEY_VOLBTN_MUSIC_CTRL);
         mVolBtnMusicCtrl.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                    Settings.System.VOLBTN_MUSIC_CONTROLS, 0) == 1);
+        mCrtOff = (CheckBoxPreference) findPreference(PREF_POWER_CRT_SCREEN_OFF);
+        mCrtOff.setChecked(Settings.System.getInt(mContext.getContentResolver(), 
+                   Settings.System.SYSTEM_POWER_ENABLE_CRT_OFF, 0) == 1);
+        mCrtMode = (ListPreference) findPreference(PREF_POWER_CRT_MODE);
+        mCrtMode.setSummary(mCrtMode.getEntry());
+        mCrtMode.setOnPreferenceChangeListener(this);
+
                    
         if(Utils.getScreenType(mContext) == Utils.DEVICE_TABLET) {
             prefSet.removePreference(mAllowRotation);
@@ -183,6 +194,9 @@ public class Lockscreen extends SettingsPreferenceFragment
          } else if (preference == mVolumeWake) {
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.VOLUME_WAKE_SCREEN, mVolumeWake.isChecked() ? 1 : 0);
+        } else if (preference == mCrtOff) {
+            Settings.System.putInt(mContext.getContentResolver(), Settings.System.SYSTEM_POWER_ENABLE_CRT_OFF,
+                    mCrtOff.isChecked() ? 1 : 0);
          } else if (preference == mVolBtnMusicCtrl) {
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.VOLBTN_MUSIC_CONTROLS, mVolBtnMusicCtrl.isChecked() ? 1 : 0);
@@ -223,7 +237,14 @@ public class Lockscreen extends SettingsPreferenceFragment
         if (preference == mCustomBackground) {
             int selection = mCustomBackground.findIndexOfValue(objValue.toString());
             return handleBackgroundSelection(selection);
+        } else if (preference == mCrtMode) {
+            int index = mCrtMode.findIndexOfValue(objValue.toString());
+            preference.setSummary(mCrtMode.getEntries()[index]);
+            int val = Integer.valueOf(objValue.toString());
+            Settings.System.putInt(getContentResolver(), Settings.System.SYSTEM_POWER_CRT_MODE, val);
+            return true;
         }
+
         return false;
     }
 
