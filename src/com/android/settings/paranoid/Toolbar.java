@@ -22,6 +22,8 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.DialogInterface.OnMultiChoiceClickListener;
 import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -30,6 +32,7 @@ import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
+import android.view.IWindowManager;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -57,7 +60,7 @@ public class Toolbar extends SettingsPreferenceFragment
     private static final String PIE_SEARCH = "pie_search";
     private static final String PIE_CENTER = "pie_center";
     private static final String PIE_STICK = "pie_stick";
-    private static final String PIE_RESTART = "pie_restart_launcher";
+    private static final String KEY_HARDWARE_KEYS = "hardware_keys";
 
     private ListPreference mAmPmStyle;
     private ListPreference mStatusBarMaxNotif;
@@ -76,7 +79,6 @@ public class Toolbar extends SettingsPreferenceFragment
     private CheckBoxPreference mPieSearch;
     private CheckBoxPreference mPieCenter;
     private CheckBoxPreference mPieStick;
-    private CheckBoxPreference mPieRestart;
     private PreferenceScreen mNavigationBarControls;
     private PreferenceCategory mNavigationCategory;
 
@@ -118,10 +120,6 @@ public class Toolbar extends SettingsPreferenceFragment
         mPieStick = (CheckBoxPreference) prefSet.findPreference(PIE_STICK);
         mPieStick.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                 Settings.System.PIE_STICK, 1) == 1);
-
-        mPieRestart = (CheckBoxPreference) prefSet.findPreference(PIE_RESTART);
-        mPieRestart.setChecked(Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.EXPANDED_DESKTOP_RESTART_LAUNCHER, 1) == 1);
 
         mAmPmStyle = (ListPreference) prefSet.findPreference(KEY_AM_PM_STYLE);
         int amPmStyle = Settings.System.getInt(mContext.getContentResolver(),
@@ -209,6 +207,14 @@ public class Toolbar extends SettingsPreferenceFragment
             mNavigationCategory.removePreference(mNavigationBarControls);
             prefSet.removePreference(mQuickPullDown);
         }
+
+        // Only show the hardware keys config on a device that does not have a navbar
+        final int deviceKeys = getResources().getInteger(
+                com.android.internal.R.integer.config_deviceHardwareKeys);
+        if(deviceKeys==15) {
+             PreferenceScreen HARDWARE =(PreferenceScreen) prefSet.findPreference(KEY_HARDWARE_KEYS);
+             prefSet.removePreference(HARDWARE);
+        } 
     }
 
     @Override
@@ -250,9 +256,6 @@ public class Toolbar extends SettingsPreferenceFragment
         } else if (preference == mPieStick) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.PIE_STICK, mPieStick.isChecked() ? 1 : 0);
-        } else if (preference == mPieRestart) {
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.EXPANDED_DESKTOP_RESTART_LAUNCHER, mPieRestart.isChecked() ? 1 : 0);
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }

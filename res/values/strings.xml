@@ -4612,6 +4612,29 @@
     <!-- Advanced, Device specific (DeviceParts) settings  -->
     <string name="advanced_settings_title">Advanced</string>
 
+    <!-- Hardware keys -->
+    <string name="hardware_keys_title">Hardware keys</string>
+    <string name="hardware_keys_bindings_title">Key actions</string>
+    <string name="hardware_keys_enable_custom_title">Enable custom actions</string>
+    <string name="hardware_keys_home_long_press_title">Home key (long press)</string>
+    <string name="hardware_keys_menu_press_title">Menu key</string>
+    <string name="hardware_keys_menu_long_press_title">Menu key (long press)</string>
+    <string name="hardware_keys_assist_press_title">Search key</string>
+    <string name="hardware_keys_assist_long_press_title">Search key (long press)</string>
+    <string name="hardware_keys_app_switch_press_title">App switch key</string>
+    <string name="hardware_keys_app_switch_long_press_title">App switch key (long press)</string>
+    <string name="hardware_keys_show_overflow_title">Show action overflow</string>
+    <string name="hardware_keys_show_overflow_summary">Display the 3-dot overflow menu button within apps</string>
+    <string name="hardware_keys_show_overflow_toast_enable">The action overflow button may not be visible until apps are restarted</string>
+    <string name="hardware_keys_show_overflow_toast_disable">The action overflow button may not be hidden until apps are restarted</string>
+    <string name="hardware_keys_action_nothing">No action</string>
+    <string name="hardware_keys_action_menu">Open/close menu</string>
+    <string name="hardware_keys_action_app_switch">Recent apps switcher</string>
+    <string name="hardware_keys_action_search">Search assistant</string>
+    <string name="hardware_keys_action_voice_search">Voice search</string>
+    <string name="hardware_keys_action_in_app_search">In-app search</string>
+    <string name="additional_options_title">Additional options</string>
+
     <string name="pref_ring_mode_title">Sound modes</string>
     <string name="pref_ring_mode_summary">View or change the Sound button modes</string>
     <string name="pref_network_mode_title">Network modes</string>
@@ -4640,7 +4663,6 @@
     
     <string name="pie_size_title">Pie size</string>
     <string name="pie_size_summary">Define pie controls size</string>
-    <string name="pie_size_none">None</string>
     <string name="pie_size_small">Small</string>
     <string name="pie_size_default">@string/pie_mode_default</string>
     <string name="pie_size_large">Large</string>
@@ -4667,14 +4689,11 @@
 
     <string name="pie_trigger_title">Trigger area</string>
     <string name="pie_trigger_summary">Determine the size of the region that registers swipes</string>
-    <string name="pie_trigger_none">None</string>
+    <string name="pie_trigger_none">None (Pie disabled)</string>
     <string name="pie_trigger_small">@string/pie_size_small</string>
     <string name="pie_trigger_normal">@string/pie_mode_default</string>
     <string name="pie_trigger_big">@string/pie_gap_big</string>
     <string name="pie_trigger_huge">@string/pie_gap_huge</string>
-
-    <string name="pie_restart_launcher_title">Redraw launcher</string>
-    <string name="pie_restart_launcher_summary">Programmatically changing screen size can have adverse visual effects. This option allows your launcher to regain sanity at the cost of a slight blackout (recommended)</string>
 
     <!-- Navigation Bar #CM -->
     <string name="navigation_reset_title">@string/lock_screen_shortcuts_reset</string>
