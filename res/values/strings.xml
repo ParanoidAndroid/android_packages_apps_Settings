@@ -4410,6 +4410,7 @@
     <string name="notification_sound_limiter_title">Notification sound limit</string>
     <string name="notification_sound_limiter_summary">Sets the allowed delay between incoming notifications</string>
     <string name="notification_sound_default_time">Default</string>
+    <string name="volume_keys_control_ring_stream">Volume keys control ringtone volume</string>
 
     <!-- Display settings screen, notification light settings -->
     <string name="notification_light_general_title">General</string>
