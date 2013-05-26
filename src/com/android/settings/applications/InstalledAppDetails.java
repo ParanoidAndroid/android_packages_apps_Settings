@@ -139,7 +139,7 @@ public class InstalledAppDetails extends Fragment
     private Button mForceStopButton;
     private Button mClearDataButton;
     private Button mMoveAppButton;
-    private CompoundButton mNotificationSwitch;
+    private CompoundButton mNotificationSwitch, mHaloBlacklist;
 
     private PackageMoveObserver mPackageMoveObserver;
 
@@ -384,12 +384,16 @@ public class InstalledAppDetails extends Fragment
         INotificationManager nm = INotificationManager.Stub.asInterface(
                 ServiceManager.getService(Context.NOTIFICATION_SERVICE));
         boolean enabled = true; // default on
+        boolean blacklisted = false; // default off
         try {
             enabled = nm.areNotificationsEnabledForPackage(mAppEntry.info.packageName);
+            blacklisted = nm.isPackageHaloBlacklisted(mAppEntry.info.packageName);
         } catch (android.os.RemoteException ex) {
             // this does not bode well
         }
         mNotificationSwitch.setChecked(enabled);
+        mHaloBlacklist.setChecked(blacklisted);
+        mHaloBlacklist.setOnCheckedChangeListener(this);
         if (isThisASystemPackage()) {
             mNotificationSwitch.setEnabled(false);
         } else {
@@ -474,6 +478,7 @@ public class InstalledAppDetails extends Fragment
         mEnableCompatibilityCB = (CheckBox)view.findViewById(R.id.enable_compatibility_cb);
         
         mNotificationSwitch = (CompoundButton) view.findViewById(R.id.notification_switch);
+        mHaloBlacklist = (CompoundButton) view.findViewById(R.id.halo_blacklist);
 
         return view;
     }
@@ -1269,6 +1274,17 @@ public class InstalledAppDetails extends Fragment
         }
     }
 
+    private void setBlacklisted(boolean blacklisted) {
+        String packageName = mAppEntry.info.packageName;
+        INotificationManager nm = INotificationManager.Stub.asInterface(
+                ServiceManager.getService(Context.NOTIFICATION_SERVICE));
+        try {
+            nm.setHaloBlacklistStatus(packageName, blacklisted);
+        } catch (android.os.RemoteException ex) {
+            mHaloBlacklist.setChecked(!blacklisted); // revert
+        }
+    }
+
     private int getPremiumSmsPermission(String packageName) {
         try {
             if (mSmsManager != null) {
@@ -1366,6 +1382,8 @@ public class InstalledAppDetails extends Fragment
             } else {
                 setNotificationsEnabled(true);
             }
+        } else if (buttonView == mHaloBlacklist) {
+            setBlacklisted(isChecked);
         }
     }
 }
