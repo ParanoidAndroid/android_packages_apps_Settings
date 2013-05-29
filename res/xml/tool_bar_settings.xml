@@ -137,6 +137,14 @@
             android:entryValues="@array/values_pie_size" />
 
         <ListPreference
+            android:key="pie_angle"
+            android:dialogTitle="@string/pie_angle_title"
+            android:title="@string/pie_angle_title"
+            android:summary="@string/pie_angle_summary"
+            android:entries="@array/entries_pie_angle"
+            android:entryValues="@array/values_pie_angle" />
+
+        <ListPreference
             android:key="pie_gap"
             android:dialogTitle="@string/pie_gap_title"
             android:title="@string/pie_gap_title"
