@@ -4668,6 +4668,13 @@
     <string name="pie_size_default">@string/pie_mode_default</string>
     <string name="pie_size_large">Large</string>
     <string name="pie_size_gigantic">Gigantic</string>
+
+    <string name="pie_angle_title">Pie angle</string>
+    <string name="pie_angle_summary">Adjust the angle of pie bords from pie attach</string>
+    <string name="pie_angle_none">None (old)</string>
+    <string name="pie_angle_small">Small</string>
+    <string name="pie_angle_big">Normal (default)</string>
+    <string name="pie_angle_huge">Big</string>
     
     <string name="pie_gap_title">Item gap</string>
     <string name="pie_gap_summary">Adjust the gap that separates pie elements</string>
@@ -4694,7 +4701,7 @@
     <string name="pie_trigger_small">@string/pie_size_small</string>
     <string name="pie_trigger_normal">@string/pie_mode_default</string>
     <string name="pie_trigger_big">@string/pie_gap_big</string>
-    <string name="pie_trigger_huge">@string/pie_gap_huge</string>
+    <string name="pie_trigger_huge">Huge</string>
 
     <!-- Navigation Bar #CM -->
     <string name="navigation_reset_title">@string/lock_screen_shortcuts_reset</string>

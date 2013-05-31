@@ -187,7 +187,7 @@ public class RingerVolumePreference extends VolumePreference {
 
         final CheckBox linkCheckBox = (CheckBox) view.findViewById(R.id.link_ring_and_volume);
         final CheckBox linkMuteStates = (CheckBox) view.findViewById(R.id.link_mutes);
-	final CheckBox volumeKeysControlRingStream = (CheckBox) view.findViewById(R.id.volume_keys_control_ring_stream);
+        final CheckBox volumeKeysControlRingStream = (CheckBox) view.findViewById(R.id.volume_keys_control_ring_stream);
 
         final View ringerSection = view.findViewById(R.id.ringer_section);
         final View notificationSection = view.findViewById(R.id.notification_section);
@@ -258,7 +258,7 @@ public class RingerVolumePreference extends VolumePreference {
 
             });
 
-	    if (System.getInt(getContext().getContentResolver(),
+           if (System.getInt(getContext().getContentResolver(),
                     		System.VOLUME_KEYS_CONTROL_RING_STREAM, 1) == 1) {
                 	volumeKeysControlRingStream.setChecked(true);
             } else {
