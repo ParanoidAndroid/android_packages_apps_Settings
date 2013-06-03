@@ -51,6 +51,7 @@ public class Lockscreen extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_ALLOW_ROTATION = "allow_rotation";
+    private static final String KEY_QUICK_UNLOCK = "quick_unlock";
     private static final String KEY_SEE_TRHOUGH = "see_through";
     private static final String KEY_HOME_SCREEN_WIDGETS = "home_screen_widgets";
     private static final String KEY_MAXIMIZE_WIDGETS = "maximize_widgets";
@@ -70,6 +71,7 @@ public class Lockscreen extends SettingsPreferenceFragment
     private CheckBoxPreference mMaximizeWidgets;
     private CheckBoxPreference mVolBtnMusicCtrl;
     private CheckBoxPreference mVolumeWake;
+    private CheckBoxPreference mQuickUnlock;
 
     private File mWallpaperImage;
     private File mWallpaperTemporary;
@@ -93,6 +95,10 @@ public class Lockscreen extends SettingsPreferenceFragment
         mAllowRotation = (CheckBoxPreference) prefSet.findPreference(KEY_ALLOW_ROTATION);
         mAllowRotation.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.LOCKSCREEN_ALLOW_ROTATION, 0) == 1);
+
+        mQuickUnlock = (CheckBoxPreference) prefSet.findPreference(KEY_QUICK_UNLOCK);
+        mQuickUnlock.setChecked(Settings.System.getBoolean(mContext.getContentResolver(),
+                Settings.System.LOCKSCREEN_QUICK_UNLOCK, false));
 
         mSeeThrough = (CheckBoxPreference) prefSet.findPreference(KEY_SEE_TRHOUGH);
         mSeeThrough.setChecked(Settings.System.getInt(mContext.getContentResolver(),
@@ -147,6 +153,11 @@ public class Lockscreen extends SettingsPreferenceFragment
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.LOCKSCREEN_ALLOW_ROTATION, mAllowRotation.isChecked()
                     ? 1 : 0);
+        } else if (preference == mQuickUnlock) {
+            Settings.System.putBoolean(mContext.getContentResolver(),
+                    Settings.System.LOCKSCREEN_QUICK_UNLOCK,
+((CheckBoxPreference) preference).isChecked());
+            return true;
         } else if (preference == mSeeThrough) {
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.LOCKSCREEN_SEE_THROUGH, mSeeThrough.isChecked()
