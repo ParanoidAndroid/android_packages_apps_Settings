@@ -4668,6 +4668,7 @@
     <string name="pie_size_default">@string/pie_mode_default</string>
     <string name="pie_size_large">Large</string>
     <string name="pie_size_gigantic">Gigantic</string>
+    <string name="pie_size_monster">Monster</string>
 
     <string name="pie_angle_title">Pie angle</string>
     <string name="pie_angle_summary">Adjust the angle of pie\'s egdes from the attachment</string>
@@ -4701,7 +4702,7 @@
     <string name="pie_trigger_none">None (Pie disabled)</string>
     <string name="pie_trigger_small">@string/pie_size_small</string>
     <string name="pie_trigger_normal">@string/pie_mode_default</string>
-    <string name="pie_trigger_big">@string/pie_gap_big</string>
+    <string name="pie_trigger_big">Big</string>
     <string name="pie_trigger_huge">Huge</string>
 
     <!-- Navigation Bar #CM -->
