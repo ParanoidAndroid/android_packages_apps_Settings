@@ -27,6 +27,14 @@
             android:summary="@string/quick_pulldown_summary"
             android:defaultValue="false" />
 
+        <ListPreference
+            android:key="halo_state"
+            android:dialogTitle="@string/halo_state_title"
+            android:title="@string/halo_state_title"
+            android:summary="@string/halo_state_summary"
+            android:entries="@array/entries_halo_state"
+            android:entryValues="@array/values_halo_state" />
+
         <CheckBoxPreference
             android:key="halo_hide"
             android:title="@string/halo_hide_title"
