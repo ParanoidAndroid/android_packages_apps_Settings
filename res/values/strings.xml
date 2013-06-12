@@ -4799,6 +4799,12 @@
     <string name="auto_brightness_menu_edit_lux">Ambient brightness range</string>
     <string name="auto_brightness_menu_split">Split</string>
     <string name="auto_brightness_menu_remove">Remove</string>
+    <string name="auto_brightness_sensitivity_title">Adjustment sensitivity</string>
+    <string name="auto_brightness_sensitivity_verylow">Very low</string>
+    <string name="auto_brightness_sensitivity_low">Low</string>
+    <string name="auto_brightness_sensitivity_medium">Medium</string>
+    <string name="auto_brightness_sensitivity_high">High</string>
+    <string name="auto_brightness_sensitivity_veryhigh">Very high</string>
 
     <!-- Custom lock screen background -->
     <string name="lockscreen_custom_background_title">Background</string>
@@ -4809,11 +4815,9 @@
     <string name="lockscreen_background_custom_image">Custom image</string>
     <string name="lockscreen_background_default_wallpaper">Default wallpaper</string>
 
-    <string name="auto_brightness_sensitivity_title">Adjustment sensitivity</string>
-    <string name="auto_brightness_sensitivity_verylow">Very low</string>
-    <string name="auto_brightness_sensitivity_low">Low</string>
-    <string name="auto_brightness_sensitivity_medium">Medium</string>
-    <string name="auto_brightness_sensitivity_high">High</string>
-    <string name="auto_brightness_sensitivity_veryhigh">Very high</string>
+    <!-- Lockscreen, hide initial pages hints -->
+
+    <string name="lockscreen_hide_hints_title">Hide hints</string>
+    <string name="lockscreen_hide_hints_summary">If checked hides the widgets\' hints when the screen is turned on (only in portrait mode).</string>
 
 </resources>
