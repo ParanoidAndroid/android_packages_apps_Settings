@@ -48,6 +48,11 @@
             android:defaultValue="true" />
 
         <CheckBoxPreference
+            android:key="halo_pause"
+            android:title="@string/halo_pause_title"
+            android:summary="@string/halo_pause_summary" />
+
+        <CheckBoxPreference
             android:key="show_clock"
             android:title="@string/show_clock_title" />
 
