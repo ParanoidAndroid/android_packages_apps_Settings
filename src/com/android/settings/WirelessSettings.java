@@ -124,7 +124,7 @@ public class WirelessSettings extends SettingsPreferenceFragment
         mNfcPollingMode = (ListPreference) findPreference(KEY_NFC_POLLING_MODE);
         mNfcPollingMode.setOnPreferenceChangeListener(this);
         mNfcPollingMode.setValue((Settings.System.getInt(activity.getContentResolver(),
-                Settings.System.NFC_POLLING_MODE, 3)) + "");
+                Settings.System.NFC_POLLING_MODE, 3)) String.valueOf());
         updateNfcPolling();
 
         mAirplaneModeEnabler = new AirplaneModeEnabler(activity, mAirplaneModePreference);
