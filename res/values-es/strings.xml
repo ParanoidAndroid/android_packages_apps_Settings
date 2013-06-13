@@ -2014,8 +2014,10 @@
     <string name="hardware_keys_action_voice_search">Búsqueda por voz</string>
     <string name="hardware_keys_action_in_app_search">Búsqueda dentro de la aplicación</string>
     <string name="additional_options_title">Opciones adicionales</string>
-    <string name="pie_controls_title">Controles circulares</string>
+    
+    <string name="pie_settings_title">Controles circulares</string>
     <string name="pie_controls_summary">Permite la navegación y el reporte de estado en el modo de escritorio expandido</string>
+    
     <string name="pie_gravity_title">Ubicación de los controles</string>
     <string name="pie_gravity_summary">Seleccionar la ubicación donde se encontrarán los controles circulares</string>
     <string name="pie_gravity_top">Arriba</string>
@@ -2032,7 +2034,7 @@
     <string name="pie_size_summary">Define el tamaño de los controles circulares</string>
     <string name="pie_size_small">Pequeño</string>
     <string name="pie_size_large">Grande</string>
-    <string name="pie_size_gigantic">Gigante</string>
+    <string name="pie_size_monster">Monstruoso</string>
     <string name="pie_gap_title">Espacio entre los controles</string>
     <string name="pie_gap_summary">Ajustar el espacio entre los elementos</string>
     <string name="pie_gap_none">Sin espacio</string>
@@ -2119,4 +2121,18 @@
     <string name="lockscreen_background_color_fill">Relleno de color</string>
     <string name="lockscreen_background_custom_image">Imagen personalizada</string>
     <string name="lockscreen_background_default_wallpaper">Imagen por defecto</string>
+    
+    <!-- HALO -->
+    <string name="halo_settings_title">Notificaciones HALO</string>
+    <string name="halo_hide_title">Ocultar HALO tras la actividad</string>
+    <string name="halo_hide_summary">HALO aparecerá para tareas entrantes y se desplazará fuera de vista después de un rato</string>
+    <string name="halo_reversed_title">Revertir gestos de HALO</string>
+    <string name="halo_reversed_summary">Aplica tareas o arrastrar al gesto de la doble pulsación</string>
+    <string name="halo_state_title">Política de HALO</string>
+    <string name="halo_state_summary">Para notificiaciones en lista negra/blanca a través de la aplicación de HALO</string>
+    <string name="halo_state_black">Lista negra</string>
+    <string name="halo_state_white">Lista blanca</string>
+    <string name="app_halo_label_black">Lista negra de notificaciones HALO</string>
+    <string name="app_halo_label_white">Lista blanca de notificaciones HALO</string>
+    
 </resources>
