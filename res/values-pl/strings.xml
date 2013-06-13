@@ -1830,4 +1830,236 @@
     <string name="user_picture_title" msgid="7297782792000291692">"Identyfikator zdjęcia"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Transmisje komórkowe"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Wybierz typy alertów o zagrożeniu, które chcesz wyświetlić."</string>
+
+    <!-- ======================================================================================= -->
+    <!-- PARANOIDANDROID STUFF -->
+    <!-- ======================================================================================= -->
+
+    <!-- Sound settings screen -->
+    <string name="link_volume_ringtones">”Połącz głośność dzwonka i powiadomień”</string>
+    <string name="link_volume_mutes">”Tryb cichy wpływa na powiadomienia”</string>
+    <string name="volume_overlay_title">”Styl paska głośności”</string>
+    <string name="volume_overlay_single">”Pojedynczy”</string>
+    <string name="volume_overlay_expandable">”Rozwijalny”</string>
+    <string name="volume_overlay_expanded">”Rozwinięty”</string>
+    <string name="volume_overlay_none">”Brak”</string>
+    <string name="volume_ring_only_description">”Dzwonek”</string>
+    <string name="notification_sound_limiter_title">”Limit dzwięku powiadomień”</string>
+    <string name="notification_sound_limiter_summary">”Ustaw opóźnienie pomiędzy przychodzącymi powiadomieniami”</string>
+    <string name="notification_sound_default_time">”Domyślny”</string>
+    <string name="volume_keys_control_ring_stream">”Przyciski głośności kontrolują głośność dzwonka”</string>
+
+    <!-- Display settings screen, notification light settings -->
+    <string name="notification_light_general_title">”Ogólne”</string>
+    <string name="notification_light_applist_title">”Aplikacje”</string>
+    <string name="notification_light_use_custom">”Użyj własnych wartości”</string>
+    <string name="notification_light_add">”Dodaj”</string>
+    <string name="notification_light_reset">”Resetuj”</string>
+    <string name="notification_light_enabled">”Włączone”</string>
+    <string name="notification_light_disabled">”Wyłączone”</string>
+    <string name="notification_light_default_value">”Domyślny”</string>
+    <string name="choose_app">”Wybierz aplikację”</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">”Edytuj ustawienia diody”</string>
+    <string name="pulse_speed_title">”Długość świecenia I szybkość pulsowania diody”</string>
+    <string name="picker_arrow" translatable="false">→</string>
+    <string name="default_time">Normalny”</string>
+    <string name="custom_time">Custom</string>
+    <string name="dialog_delete_title">”Usuń”</string>
+    <string name="dialog_delete_message">”Usunąć wybrany?”</string>
+    <string name="dialog_test">”Podgląd”</string>
+    <string name="dialog_test_message">”Wyłącz ekran aby zobaczyć wybrane powiadomienie lub wciśnij Anuluj aby przerwać podgląd” </string>
+    <string name="dialog_test_button">”Anuluj”</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">”Zawsze włączona”</string>
+    <string name="pulse_length_very_short">”Bardzo krótko”</string>
+    <string name="pulse_length_short">”Krótko”</string>
+    <string name="pulse_length_normal">”Normalnie”</string>
+    <string name="pulse_length_long">”Długo”</string>
+    <string name="pulse_length_very_long">”Bardzo długo”</string>
+    <string name="pulse_speed_very_fast">”Bardzo szybko”</string>
+    <string name="pulse_speed_fast">”Szybko”</string>
+    <string name="pulse_speed_normal">”Normalnie”</string>
+    <string name="pulse_speed_slow">”Wolno”</string>
+    <string name="pulse_speed_very_slow">”Bardzo wolno”</string>
+
+    <!-- Battery light settings  -->
+    <string name="battery_light_title">”Bateria”</string>
+    <string name="battery_low_pulse_title">Włącz jeśli bateria na wyczerpaniu”</string>
+    <string name="battery_light_list_title">”Kolory”</string>
+    <string name="battery_light_low_color_title">”Niski poziom baterii”</string>
+    <string name="battery_light_medium_color_title">”Ładowanie”</string>
+    <string name="battery_light_full_color_title">”Naładowany”</string>
+    
+    <!-- Customization main menu category heading [CHAR LIMIT=40] -->
+    <string name="header_category_customization">”Dostosowywanie”</string>
+
+    <!-- Lock screen sub menu [CHAR LIMIT=30] -->
+    <string name="lock_screen_settings">”Ekran blokady”</string>
+    <!-- Allow rotation -->
+    <string name="allow_rotate_title">”Zezwalaj na obrót”</string>
+    <string name="allow_rotate_summary">”Włącza poziomy układ wyświetlania na ekranie blokady” </string>
+    <!-- Quick Unlock -->
+    <string name="allow_quick_unlock_title">”Szybkie odblokowanie”</string>
+    <string name="allow_quick_unlock_summary">”Włącza szybkie odblokowanie dla ekranu blokady”</string>
+    <!-- Lock screen see through -->
+    <string name="see_through_title">”Widok przez”</string>
+    <string name="see_through_summary">”Pozwala zobaczyć aplikację za ekranem blokady”</string>
+    <!-- Maximize widgets -->
+    <string name="maximize_widgets_title">”Powiększone widżety”</string>
+    <string name="maximize_widgets_summary">”Pokazuje powiększone widżety I pomniejszoną blokade podczas włączenia ekranu”</string>
+    <!-- Home screen widgets -->
+    <string name="home_screen_widgets_title">”Widżety pulpit”</string>
+    <string name="home_screen_widgets_summary">”Pozwala dodawać widżety pulpitu do ekranu blokady”</string>
+    <string name="home_screen_widgets_warning_title">”To może być niebezpieczne!”</string>
+    <string name="home_screen_widgets_warning">”Pozwolenie na dodawanie widżetów pulpitu na ekran blokady może prowadzić do naruszenia bezpieczeństwa, chcesz kontynuować ?”</string>
+    <!-- Shortcuts -->
+    <string name="lock_screen_shortcuts_title">”Skróty”</string>
+    <string name="lock_screen_shortcuts_summary">”Zobacz i zmień własne skróty ekranu blokady”</string>
+    <string name="lock_screen_shortcuts_add">@string/notification_light_add</string>
+    <string name="lock_screen_shortcuts_reset">”Resetuj”</string>
+    <string name="lock_screen_shortcuts_reset_message">”Zresetować skróty ekranu blokady?”</string>
+    <string name="lock_screen_shortcuts_limit">”Można dodać tylko 6 skrótów!”</string>
+    <string name="icon_picker_type">”Wybierz rodzaj ikony:”</string>
+    <string name="icon_default">”Domyślna”</string>
+    <string name="icon_presets">”Przygotowana”</string>
+    <string name="icon_custom">”Własna”</string>
+    <string name="icon_picker_choose_icon_title">”Wybierz ikonę”</string>
+    <string name="icon_picker_alarm">Alarmy”</string>
+    <string name="icon_picker_browser">”Przeglądarka”</string>
+    <string name="icon_picker_calendar">”Kalendarz”</string>
+    <string name="icon_picker_camera">”Aparat”</string>
+    <string name="icon_picker_email">”Poczta”</string>
+    <string name="icon_picker_email2">”Poczta Holo”</string>
+    <string name="icon_picker_facebook">”Facebook”</string>
+    <string name="icon_picker_gallery">”Galeria”</string>
+    <string name="icon_picker_google_small">”Google (małe)”</string>
+    <string name="icon_picker_googleplus">”Google Plus”</string>
+    <string name="icon_picker_googletalk">”Google Talk”</string>
+    <string name="icon_picker_maps">”Mapy”</string>
+    <string name="icon_picker_movie">”Filmy”</string>
+    <string name="icon_picker_music">”Muzyka”</string>
+    <string name="icon_picker_nav">”Nawigacja”</string>
+    <string name="icon_picker_phone">”Telefon”</string>
+    <string name="icon_picker_podcast">”Podcasty”</string>
+    <string name="icon_picker_rss">”Rss”</string>
+    <string name="icon_picker_sms">”Wiadomości”</string>
+    <string name="icon_picker_twitter">”Twitter”</string>
+
+    <!-- Volume sub settings -->
+    <string name="volume_button_setting_title">”Ustawienia przycisków głośności”</string>
+    <!-- Volume music controls -->
+    <string name="volbtn_music_controls_title">”Kontrolowanie muzyki”</string>
+    <string name="volbtn_music_controls_summary">”Przy wyłączonym ekranie przytrzymanie przycisków głośności rozpocznie przeszukiwanie utworów”</string>
+
+    <!-- Wakeup options -->
+    <string name="pref_volume_wake_title">”Włączanie urządzenia”</string>
+    <string name="pref_volume_wake_summary">”Przy wyłączonym ekranie przytrzymanie przycisku głośności wybudzi urządzenie”</string>
+
+    <!-- Bars sub menu [CHAR LIMIT=30] -->
+    <string name="tool_bar_settings">”Paski narzędziowe”</string>
+    <string name="tool_bar_status_header">”Pasek status”</string>
+    <string name="tool_bar_navigation_header">”Pasek nawigacji”</string>
+
+    <!-- HALO -->
+    <string name="halo_hide_title">”Schowaj HALO po aktywności</string>
+    <string name="halo_hide_summary">”HALO pojawi się podczas przychodzącego powiadomienia i schowa się po chwili”</string>
+    <string name="halo_reversed_title">”Odwrócone gesty HALO”</string>
+    <string name="halo_reversed_summary">”Włącza przesuwanie HALO po wykonaniu gestu podwójnego puknięcia i przesunięcia”</string>
+    <string name="halo_state_title">”Polityka HALO”</string>
+    <string name="halo_state_summary">Wybranie czarnej/białej-listy powiadomień obsługiwanych przez HALO”</string>
+    <string name="halo_state_black">”Czarna lista”</string>
+    <string name="halo_state_white">”Biała lista”</string>
+    <string name="halo_pause_title">”HALO wstrzymuje aktywną aplikację”</string>
+    <string name="halo_pause_summary">”Kiedy otworzysz aplikację poprzez HALO aplikacja pod spodem zostanie wstrzymana(ustawienie domyślne dla urzadzeń z małą ilościa pamięci)”</string>
+
+    <!-- Quick pulldown -->
+    <string name="quick_pulldown_title">”Szybkie rozwijanie”</string>
+    <string name="quick_pulldown_summary">”Krawędź paska statusu rozwija Szybkie Ustawienia”</string>
+    <!-- Show clock -->
+    <string name="show_clock_title">”Pokaż zegar”</string>
+    <!-- Circle battery -->
+    <string name="circle_battery_title">”Pierścień jako wskaźnik baterii”</string>
+    <!-- AM/PM style -->
+    <string name="am_pm_style_title">”AM/PM styl”</string>
+    <string name="status_bar_size_normal">”Normalny”</string>
+    <string name="status_bar_size_small">”Mały”</string>
+    <string name="status_bar_hidden">”Ukryty (domyślnie)”</string>
+    <string name="status_bar_am_pm_info">”24-godzinny zegar jest włączony”</string>
+    <!-- Status bar notification count -->
+    <string name="status_bar_notif_count_title">”Liczba powiadomień”</string>
+    <string name="status_bar_notif_count_summary">”Wyświetla liczbę aktywnych powiadomień na pasku status”</string>
+    <!-- Split menu -->
+    <string name="navigation_bar_tabui_menu_title">”Rozdziel przycisk menu”</string>
+    <string name="navigation_bar_tabui_menu_summary">”Wyświetla osobny przycisk menu zamiast scalenia go z przyciskiem ostatnich aplikacji“</string>
+    <!-- Status bar notification limit -->
+    <string name="status_bar_max_notifications_title">”Limit powiadomień”</string>
+    <string name="status_bar_max_notifications_summary">”Wybierz limit ikon powiadomień pokazywanych na pasku status. Aktywne tylko w pionowej orientacji”</string>
+    <!-- Do not disturb -->
+    <string name="status_bar_donotdisturb_title">”Nie przeszkadzaj”</string>
+    <string name="status_bar_donotdisturb_summary">”Wyłącza dymek dla przychodzących powiadomień”</string>
+
+    <!-- Quick settings panel  -->
+    <string name="quick_settings_panel_title">”Panel Szybkich Ustawień”</string>
+    <string name="quick_settings_title">”Szybkie Ustawienia”</string>
+    <string name="title_static_tiles">”Statyczne kafelki”</string>
+    <string name="tile_picker_title">”Kafelki I układ”</string>
+    <string name="tile_picker_summary">”Zobacz, wybierz lub zmień układ wyświetlanych kafelków”</string>
+    <string name="tile_choose_title">”Wybierz kafelek”</string>
+
+    <string name="title_tile_airplane">”Tryb samolotowy”</string>
+    <string name="title_tile_battery">”Statystyki baterii”</string>
+    <string name="title_tile_bluetooth">”Bluetooth”</string>
+    <string name="title_tile_brightness">”Jasność”</string>
+    <string name="title_tile_sleep">”Uśpij” </string>
+    <string name="title_tile_gps">”GPS”</string>
+    <string name="title_tile_torch">”Latarka”</string>
+    <string name="title_tile_lockscreen">”Zablokuj ekran”</string>
+    <string name="title_tile_lte">”LTE”</string>
+    <string name="title_tile_mobiledata">”Przesył danych”</string>
+    <string name="title_tile_profile">”Profile”</string>
+    <string name="title_tile_autorotate">”Orientacja”</string>
+    <string name="title_tile_settings">”Ustawienia”</string>
+    <string name="title_tile_sound">”Dźwięki”</string>
+    <string name="title_tile_sync">”Synchronizacja”</string>
+    <string name="title_tile_wifiap">”Wi-Fi AP”</string>
+    <string name="title_tile_wifi">”Wi-Fi”</string>
+    <string name="title_tile_wimax">”WiMAX”</string>
+    <string name="title_tile_user">”Przełączanie użytkownika”</string>
+    <string name="title_tile_networkmode">”Tryb sieci”</string>
+    <string name="title_tile_nfc">”NFC”</string>
+    <string name="title_tile_screen_timeout">”Uśpienie”</string>
+    <string name="title_tile_usb_tether">”USB Tether”</string>
+    <string name="title_tile_quiet_hours">”Ciche godziny”</string>
+    <string name="title_tile_desktop_mode">”Pie”</string>
+    <string name="title_tile_hybrid">@string/hybrid_settings</string>
+    <string name="title_tile_volume">”Głośność”</string>
+
+    <string name="title_dynamic_tiles">”Dynamiczne kafelki”</string>
+    <string name="dynamic_tiles_note_title">Note</string>
+    <string name="dynamic_tiles_note_summary">”Dynamiczne kafelki nie są zawsze widoczne pojawią się tylko wyzwolone przez zdarzenie systemowe”</string>
+    <string name="title_dynamic_alarm">”Alarmy”</string>
+    <string name="title_dynamic_bugreport">”Raportowanie błędów”</string>
+    <string name="title_dynamic_ime">”Zmiana IME”</string>
+    <string name="title_dynamic_usbtether">@string/title_tile_usb_tether</string>
+    <string name="title_dynamic_wifi">"Ekran Wi-Fi”</string>
+
+    <string name="title_general">”Ogólne”</string>
+    <string name="title_quick_pulldown">”Szybkie rozwinięcie”</string>
+    <string name="summary_quick_pulldown">”%1 krawędzi paska statusu rozwija Szybkie Ustawienia”</string>
+    <string name="quick_pulldown_summary_left">Lewej</string>
+    <string name="quick_pulldown_summary_right">Prawej</string>
+    <string name="quick_pulldown_off">”Wyłączone”</string>
+    <string name="quick_pulldown_left">Lewa</string>
+    <string name="quick_pulldown_right">Prawa</string>
+    <string name="title_collapse_panel">”Automatycznie zamknięcie panelu”</string>
+    <string name="summary_collapse_panel">”Zamknij Szybkie Ustawienia po naciśnięciu kafelka”</string>
+
+    <!-- Reset tiles -->
+    <string name="tiles_add_title">”Dodaj”</string>
+    <string name="tiles_reset_title">”Resetuj”</string>
+    <string name="tiles_reset_message">”Przywrócić domyślne kafelki i układ?”</string>
+
 </resources>
