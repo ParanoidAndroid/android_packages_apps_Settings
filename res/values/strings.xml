@@ -4532,14 +4532,14 @@
     <!-- HALO -->
     <string name="halo_hide_title">Hide HALO after activity</string>
     <string name="halo_hide_summary">HALO will appear for incoming tasks and scroll out of sight after a while</string>
-    <string name="halo_reversed_title">Reverse HALO gestures</string>
-    <string name="halo_reversed_summary">Applies tasking or dragging to the double-tap-swipe gesture</string>
+    <string name="halo_reversed_title">Reverse HALO</string>
+    <string name="halo_reversed_summary">Applies for task switching and HALO moving gestures</string>
     <string name="halo_state_title">HALO policy</string>
-    <string name="halo_state_summary">For black/white-listing notifications pinging through HALO</string>
+    <string name="halo_state_summary">Enables black/white listing notifications shown in HALO</string>
     <string name="halo_state_black">Black list</string>
     <string name="halo_state_white">White list</string>
-    <string name="halo_pause_title">HALO pause active app</string>
-    <string name="halo_pause_summary">When opening an app with HALO the underlying app will get paused (enabled by default on low memory devices)</string>
+    <string name="halo_pause_title">Pause active app</string>
+    <string name="halo_pause_summary">When opening an app with HALO the underlying app will get paused (enabled by default on low RAM devices)</string>
 
     <!-- Quick pulldown -->
     <string name="quick_pulldown_title">Quick pulldown</string>
