@@ -1930,6 +1930,7 @@
     <string name="tool_bar_settings">Barras de herramientas</string>
     <string name="tool_bar_status_header">Barra de estado</string>
     <string name="tool_bar_navigation_header">Barra de navegación</string>
+    <string name="halo_settings_title">Notificaciones HALO</string>
     <string name="halo_hide_title">Ocultar HALO tras la actividad</string>
     <string name="halo_hide_summary">HALO aparecerá para tareas entrantes y se desplazará fuera de vista después de un rato</string>
     <string name="halo_reversed_title">Revertir gestos de HALO</string>
