@@ -2046,6 +2046,7 @@
     <string name="pie_size_summary">Define el tamaño de los controles circulares</string>
     <string name="pie_size_small">Pequeño</string>
     <string name="pie_size_large">Grande</string>
+    <string name="pie_size_gigantic">Gigante</string>
     <string name="pie_size_monster">Monstruoso</string>
     <string name="pie_gap_title">Espacio entre los controles</string>
     <string name="pie_gap_summary">Ajustar el espacio entre los elementos</string>
