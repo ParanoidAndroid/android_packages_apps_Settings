@@ -1,7 +1,10 @@
-android_packages_apps_Settings
+ParanoidAndroid
 ==============================
 
-Android settings:
+Android settings
+
+Branches
+=========
 
 For Nexus devices, use the branch 'jellybean'.
 
