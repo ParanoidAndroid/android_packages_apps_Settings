@@ -522,6 +522,10 @@
     <string name="android_beam_disabled_summary" msgid="1737782116894793393">"No disponible porque la función NFC está desactivada"</string>
     <string name="android_beam_label" msgid="6257036050366775040">"Android Beam"</string>
     <string name="android_beam_explained" msgid="6981652347448777459">"Si la función Android Beam está activada, puedes juntar tu dispositivo con otro compatible con la tecnología NFC para compartir el contenido de las aplicaciones. Por ejemplo, puedes transferir páginas del navegador, vídeos de YouTube, contactos y mucho más."\n\n"Solo tienes que unir los dispositivos (normalmente, por la parte trasera) y, a continuación, tocar la pantalla de tu dispositivo. Las aplicaciones determinan el contenido que puede compartirse."</string>
+    <string name="nfc_polling_mode_title">Modo de sondeo NFC</string>
+    <string name="nfc_polling_mode_screen_off">Pantalla apagada</string>
+    <string name="nfc_polling_mode_screen_locked">Pantalla encendida, bloqueado</string>
+    <string name="nfc_polling_mode_screen_unlocked">Pantalla encendida, desbloqueado (defecto)</string>
     <string name="nsd_quick_toggle_title" msgid="3125572815278848258">"Detección de aplicaciones"</string>
     <string name="nsd_quick_toggle_summary" msgid="155692215972781276">"Permitir que las aplicaciones de otros dispositivos puedan ver las aplicaciones de este dispositivo"</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
@@ -1888,6 +1892,8 @@
     <string name="lock_screen_settings">Pantalla de bloqueo</string>
     <string name="allow_rotate_title">Activar rotación</string>
     <string name="allow_rotate_summary">Permite el modo paisaje en la pantalla de bloqueo</string>
+    <string name="allow_quick_unlock_title">Desbloqueo rápido</string>
+    <string name="allow_quick_unlock_summary">Desbloquear automáticamente cuando se introduce la clave correcta</string>
     <string name="see_through_title">Ver a través</string>
     <string name="see_through_summary">Permite observar la aplicación detrás de la pantalla de bloqueo</string>
     <string name="maximize_widgets_title">Maximizar widgets</string>

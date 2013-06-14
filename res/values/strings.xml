@@ -4472,8 +4472,8 @@
     <string name="allow_rotate_title">Allow rotation</string>
     <string name="allow_rotate_summary">Enables landscape mode on lock screen</string>
     <!-- Quick Unlock -->
-    <string name="allow_quick_unlock_title">Quick Unlock</string>
-    <string name="allow_quick_unlock_summary">Enables quick unlock for lock screen</string>
+    <string name="allow_quick_unlock_title">Quick unlock</string>
+    <string name="allow_quick_unlock_summary">Unlock automatically when the correct password is entered</string>
     <!-- Lock screen see through -->
     <string name="see_through_title">See through</string>
     <string name="see_through_summary">Allows to see the application behind the lock screen</string>
