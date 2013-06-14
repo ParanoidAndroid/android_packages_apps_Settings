@@ -1830,4 +1830,47 @@
     <string name="user_picture_title" msgid="7297782792000291692">"ID de foto"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Transmissões por celular"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Selecione os tipos de alertas de emergência a exibir."</string>
+    
+        <!-- Hybrid sub menu [CHAR LIMIT=30] -->
+    <string name="hybrid_settings">Conf. do Hybrid</string>
+    
+    <!-- Bars sub menu [CHAR LIMIT=30] -->
+    <string name="tool_bar_settings">Barrras</string>
+    <string name="tool_bar_status_header">Barra de Status</string>
+    <string name="tool_bar_navigation_header">Barra de Navegação</string>
+     <!-- HALO -->
+    <string name="halo_hide_title">Ocultar HALO após ativdade</string>
+    <string name="halo_hide_summary">O HALO vai aparecer para novas tarefas e sair do campo de visão após um tempo</string>
+    <string name="halo_reversed_title">Inverter gesturas do HALO</string>
+    <string name="halo_reversed_summary">Aplica tarefas ou arrasto a gestura swipe-de-toque-duplo</string>
+    <string name="halo_state_title">Política do HALO</string>
+    <string name="halo_state_summary">Para notificações de lista negra/branca pulando no HALO</string>
+    <string name="halo_state_black">Lista Negra</string>
+    <string name="halo_state_white">Lista Branca</string>
+
+    <!-- Quick pulldown -->
+    <string name="quick_pulldown_title">Puxada Rápida</string>
+    <string name="quick_pulldown_summary">As bordas da barra de status irão puxar o menu de Config. Rápidas</string>
+    <!-- Show clock -->
+    <string name="show_clock_title">Mostrar relógio</string>
+    <!-- Circle battery -->
+    <string name="circle_battery_title">Bateria com Círculo</string>
+    <!-- AM/PM style -->
+    <string name="am_pm_style_title">Estilo AM/PM</string>
+    <string name="status_bar_size_normal">Normal</string>
+    <string name="status_bar_size_small">Pequeno</string>
+    <string name="status_bar_hidden">Oculto (padrão)</string>
+    <string name="status_bar_am_pm_info">Relógio 24 horas ativado</string>
+    <!-- Status bar notification count -->
+    <string name="status_bar_notif_count_title">Contagem de Notif.</string>
+    <string name="status_bar_notif_count_summary">Mostrar o número de notif. pendentes na barra de status</string>
+    <!-- Split menu -->
+    <string name="navigation_bar_tabui_menu_title">Dividir botão de menu</string>
+    <string name="navigation_bar_tabui_menu_summary">Mostrar botão de menu separado invés de juntá-lo ao menu de apps recentes</string>
+    <!-- Status bar notification limit -->
+    <string name="status_bar_max_notifications_title">Limite de notificações</string>
+    <string name="status_bar_max_notifications_summary">Selecione o limite de notificações a serem mostradas na barra de status. Aplicável apenas ao modo retrato.</string>
+    <!-- Do not disturb -->
+    <string name="status_bar_donotdisturb_title">Não pertube</string>
+    <string name="status_bar_donotdisturb_summary">Desabilitar animações de notif. para novas mensagens.</string>
 </resources>

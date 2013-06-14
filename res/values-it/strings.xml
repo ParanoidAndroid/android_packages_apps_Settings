@@ -1830,4 +1830,333 @@
     <string name="user_picture_title" msgid="7297782792000291692">"ID foto"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Cell broadcast"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Seleziona i tipi di avvisi di emergenza da visualizzare."</string>
+
+    <!-- ======================================================================================= -->
+    <!-- PARANOIDANDROID STUFF -->
+    <!-- ======================================================================================= -->
+
+    <!-- Display settings screen, notification light settings -->
+    <string name="notification_light_general_title">Generale</string>
+    <string name="notification_light_applist_title">Applicazioni</string>
+    <string name="notification_light_use_custom">Usa valori personalizzati</string>
+    <string name="notification_light_add">Aggiungi</string>
+    <string name="notification_light_reset">Resetta</string>
+    <string name="notification_light_enabled">Abilita</string>
+    <string name="notification_light_disabled">Disabilita</string>
+    <string name="notification_light_default_value">Predefinito</string>
+    <string name="choose_app">Scegli Applicazione</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Modifica impostazioni spia luminosa</string>
+    <string name="pulse_speed_title">Durata e velocità dell\'impulso</string>
+    <string name="default_time">Normale</string>
+    <string name="custom_time">Personalizzato</string>
+    <string name="dialog_delete_title">Elimina</string>
+    <string name="dialog_delete_message">Rimuovere l\'elemento selezionato?</string>
+    <string name="dialog_test">Prova</string>
+    <string name="dialog_test_message">Disattiva lo schermo per vedere le notifiche selezionate in azione o abbandona questa finestra per uscire dal test.</string>
+    <string name="dialog_test_button">Abbandona</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Sempre acceso</string>
+    <string name="pulse_length_very_short">Molto breve</string>
+    <string name="pulse_length_short">Breve</string>
+    <string name="pulse_length_normal">Normale</string>
+    <string name="pulse_length_long">Lunga</string>
+    <string name="pulse_length_very_long">Molto lunga</string>
+    <string name="pulse_speed_very_fast">Molto veloce</string>
+    <string name="pulse_speed_fast">Veloce</string>
+    <string name="pulse_speed_normal">Normale</string>
+    <string name="pulse_speed_slow">Lenta</string>
+    <string name="pulse_speed_very_slow">Molto lenta</string>
+
+    <!-- Battery light settings  -->
+    <string name="battery_light_title">Spia luminosa batteria</string>
+    <string name="battery_low_pulse_title">Lampeggia se la batteria è scarsa</string>
+    <string name="battery_light_list_title">Colori</string>
+    <string name="battery_light_low_color_title">Batteria scarsa</string>
+    <string name="battery_light_medium_color_title">In carica</string>
+    <string name="battery_light_full_color_title">Carica</string>
+    
+    <!-- Customization main menu category heading [CHAR LIMIT=40] -->
+    <string name="header_category_customization">Personalizzazioni</string>
+
+    <!-- Lock screen sub menu [CHAR LIMIT=30] -->
+    <string name="lock_screen_settings">Schermata di sblocco</string>
+    <!-- Allow rotation -->
+    <string name="allow_rotate_title">Abilita rotazione</string>
+    <string name="allow_rotate_summary">Abilita la modalità orizzontale per la schermata di sblocco</string>
+    <!-- Quick Unlock -->
+    <string name="allow_quick_unlock_title">Sblocco Veloce</string>
+    <string name="allow_quick_unlock_summary">Rende possibile lo sblocco veloce per la schermata di sblocco</string>
+    <!-- Lock screen see through -->
+    <string name="see_through_title">Guarda attraverso</string>
+    <string name="see_through_summary">Rende possibile vedere l\'applicazione dietro la schermata di sblocco</string>
+    <!-- Maximize widgets -->
+    <string name="maximize_widgets_title">Massimizza i widgets</string>
+    <string name="maximize_widgets_summary">Mostra i widgets massimizzati e lo sblocco rimpicciolito quando lo schermo viene acceso</string>
+    <!-- Home screen widgets -->
+    <string name="home_screen_widgets_title">Widgets schermata home</string>
+    <string name="home_screen_widgets_summary">Rende possibile aggiungere i widgets della home sulla schermata di sblocco</string>
+    <string name="home_screen_widgets_warning_title">Questo può essere pericoloso!</string>
+    <string name="home_screen_widgets_warning">Rendendo possibile aggiungere i widgets della home alla schermata di sblocco, può comportare problemi di sicurezza, vuoi continuare?</string>
+    <!-- Shortcuts -->
+    <string name="lock_screen_shortcuts_title">Scorciatoie</string>
+    <string name="lock_screen_shortcuts_summary">Mostra o cambia le scorciatoie personalizzate sulla schermata di sblocco</string>
+    <string name="lock_screen_shortcuts_add">@string/notification_light_add</string>
+    <string name="lock_screen_shortcuts_reset">Resetta</string>
+    <string name="lock_screen_shortcuts_reset_message">Resettare le scorciatoie della schermata di sblocco?</string>
+    <string name="lock_screen_shortcuts_limit">Solo 6 scorciatoie sono possibili!</string>
+    <string name="icon_picker_type">Seleziona il tipo di icona:</string>
+    <string name="icon_default">Predefinita</string>
+    <string name="icon_presets">Predefinite</string>
+    <string name="icon_custom">Personalizzate</string>
+    <string name="icon_picker_choose_icon_title">Scegli l\'icona</string>
+    <string name="icon_picker_alarm">Sveglia</string>
+    <string name="icon_picker_browser">Browser</string>
+    <string name="icon_picker_calendar">Calendario</string>
+    <string name="icon_picker_camera">Camera</string>
+    <string name="icon_picker_email">Email</string>
+    <string name="icon_picker_email2">Email Holo</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">Galleria</string>
+    <string name="icon_picker_google_small">Google (piccola)</string>
+    <string name="icon_picker_googleplus">Google Plus</string>
+    <string name="icon_picker_googletalk">Google Talk</string>
+    <string name="icon_picker_maps">Mappe</string>
+    <string name="icon_picker_movie">Film</string>
+    <string name="icon_picker_music">Musica</string>
+    <string name="icon_picker_nav">Navigazione</string>
+    <string name="icon_picker_phone">Telefono</string>
+    <string name="icon_picker_podcast">Podcast</string>
+    <string name="icon_picker_rss">Rss</string>
+    <string name="icon_picker_sms">Messaggi</string>
+    <string name="icon_picker_twitter">Twitter</string>
+
+    <!-- Volume sub settings -->
+    <string name="volume_button_setting_title">Impostazioni tasti volume</string>
+    <!-- Volume music controls -->
+    <string name="volbtn_music_controls_title">Tasti volume per controllo musica</string>
+    <string name="volbtn_music_controls_summary">Quando lo schermo è spento tenendo premuto uno dei tasti volume verranno sfogliate le tracce musicali</string>
+
+    <!-- Wakeup options -->
+    <string name="pref_volume_wake_title">Tasti volume per risvegliare lo schermo</string>
+    <string name="pref_volume_wake_summary">Premendo uno dei tasti volume risveglierà lo schermo del dispositivo</string>
+
+    <!-- Bars sub menu [CHAR LIMIT=30] -->
+    <string name="tool_bar_settings">Barre strumenti</string>
+    <string name="tool_bar_status_header">Barra di stato</string>
+    <string name="tool_bar_navigation_header">Barra di navigazione</string>
+
+    <!-- HALO -->
+    <string name="halo_settings_title">HALO</string>
+    <string name="halo_hide_title">Nascondi HALO dopo un\'attività</string>
+    <string name="halo_hide_summary">HALO apparirà alla ricezione di una notifica e verrà nascosto dopo un pò</string>
+    <string name="halo_reversed_title">Inverti HALO</string>
+    <string name="halo_reversed_summary">Si applica per navigare tra le notifiche e per i gesti di movimento</string>
+    <string name="halo_state_title">Politica di HALO</string>
+    <string name="halo_state_summary">Abilita una lista nera/bianca per le notifiche considerate</string>
+    <string name="halo_state_black">Lista nera</string>
+    <string name="halo_state_white">Lista bianca</string>
+    <string name="halo_pause_title">Metti in pausa l\'app corrente</string>
+    <string name="halo_pause_summary">Quando apri un\'app con HALO l\'applicazione sottostante viene messa in pausa</string>
+
+    <!-- Quick pulldown -->
+    <string name="quick_pulldown_title">Rapida discesa</string>
+    <string name="quick_pulldown_summary">L\'angolo della barra id stato tirerà verso il basso le Impostazioni Veloci</string>
+    <!-- Show clock -->
+    <string name="show_clock_title">Mostra orologio</string>
+    <!-- Circle battery -->
+    <string name="circle_battery_title">Batteria circolare</string>
+    <!-- AM/PM style -->
+    <string name="am_pm_style_title">Stile AM/PM</string>
+    <string name="status_bar_size_normal">Normale</string>
+    <string name="status_bar_size_small">Piccolo</string>
+    <string name="status_bar_hidden">Nascosto (predefinito)</string>
+    <string name="status_bar_am_pm_info">Formato 24 ore abilitato</string>
+    <!-- Status bar notification count -->
+    <string name="status_bar_notif_count_title">Conteggio notifiche</string>
+    <string name="status_bar_notif_count_summary">Mostra il numero delle notifiche non lette sulla barra di stato</string>
+    <!-- Split menu -->
+    <string name="navigation_bar_tabui_menu_title">Dividi il tasto menu</string>
+    <string name="navigation_bar_tabui_menu_summary">Mostra il tasto menu separato invece di unirlo al tasto recenti</string>
+    <!-- Status bar notification limit -->
+    <string name="status_bar_max_notifications_title">Limite delle notifiche</string>
+    <string name="status_bar_max_notifications_summary">Seleziona il limite delle notifiche mostrate nella barra di stato. Si applica solo all\'orientamento verticale.</string>
+    <!-- Do not disturb -->
+    <string name="status_bar_donotdisturb_title">Non disturbare</string>
+    <string name="status_bar_donotdisturb_summary">Disabilita l\'animazione per le notifiche ricevute</string>
+
+    <!-- Quick settings panel  -->
+    <string name="quick_settings_panel_title">Pannello impostazioni veloci</string>
+    <string name="quick_settings_title">Impostazioni veloci</string>
+    <string name="title_static_tiles">Scorciatoie statiche</string>
+    <string name="tile_picker_title">Scorciatoie e layout</string>
+    <string name="tile_picker_summary">Guarda, seleziona o cambia il layout delle scorciatoie mostrate</string>
+    <string name="tile_choose_title">Scegli una scorciatoia</string>
+
+    <string name="title_tile_airplane">Modalità aereoplano</string>
+    <string name="title_tile_battery">Stato batteria</string>
+    <string name="title_tile_bluetooth">Bluetooth</string>
+    <string name="title_tile_brightness">Luminosità</string>
+    <string name="title_tile_sleep">Vai in standby</string>
+    <string name="title_tile_gps">GPS</string>
+    <string name="title_tile_torch">Torcia</string>
+    <string name="title_tile_lockscreen">Schermata sblocco</string>
+    <string name="title_tile_lte">LTE</string>
+    <string name="title_tile_mobiledata">Connessione dati</string>
+    <string name="title_tile_profile">Profilo</string>
+    <string name="title_tile_autorotate">Orientazione</string>
+    <string name="title_tile_settings">Impostazioni</string>
+    <string name="title_tile_sound">Suono</string>
+    <string name="title_tile_sync">Sync</string>
+    <string name="title_tile_wifiap">Wi-Fi PA</string>
+    <string name="title_tile_wifi">Wi-Fi</string>
+    <string name="title_tile_wimax">WiMAX</string>
+    <string name="title_tile_user">Cambio utente</string>
+    <string name="title_tile_networkmode">Modalità Connessione</string>
+    <string name="title_tile_nfc">NFC</string>
+    <string name="title_tile_screen_timeout">Timeout schermo</string>
+    <string name="title_tile_usb_tether">USB Tether</string>
+    <string name="title_tile_quiet_hours">Ore tranquille</string>
+    <string name="title_tile_desktop_mode">Pie</string>
+    <string name="title_tile_hybrid">@string/hybrid_settings</string>
+    <string name="title_tile_volume">Volume</string>
+
+    <string name="title_dynamic_tiles">Scorciatoie dinamiche</string>
+    <string name="dynamic_tiles_note_title">Note</string>
+    <string name="dynamic_tiles_note_summary">Le scorciatoie dinamiche non sono visibili sempre e saranno visibili solo se chiamate da un evento di sistema</string>
+    <string name="title_dynamic_alarm">Sveglia</string>
+    <string name="title_dynamic_bugreport">Riporta bug</string>
+    <string name="title_dynamic_ime">Cambio IME</string>
+    <string name="title_dynamic_usbtether">@string/title_tile_usb_tether</string>
+    <string name="title_dynamic_wifi">Wi-Fi display</string>
+
+    <!-- Reset tiles -->
+    <string name="tiles_add_title">Aggiungi</string>
+    <string name="tiles_reset_title">Resetta</string>
+    <string name="tiles_reset_message">Ripristinare le scorciatoie e il layout predefiniti?</string>
+
+    <!-- Hardware keys -->
+    <string name="hardware_keys_title">Tasti hardware</string>
+    <string name="hardware_keys_bindings_title">Azione tasti</string>
+    <string name="hardware_keys_enable_custom_title">Abilita azioni personalizzate</string>
+    <string name="hardware_keys_home_long_press_title">Tasto home (pressione lunga)</string>
+    <string name="hardware_keys_menu_press_title">Tasto menu</string>
+    <string name="hardware_keys_menu_long_press_title">Tasto menu (pressione lunga)</string>
+    <string name="hardware_keys_assist_press_title">Tasto ricerca</string>
+    <string name="hardware_keys_assist_long_press_title">Tasto ricerca (pressione lunga)</string>
+    <string name="hardware_keys_app_switch_press_title">Tasto cambio app</string>
+    <string name="hardware_keys_app_switch_long_press_title">Tasto cambio app (pressione lunga)</string>
+    <string name="hardware_keys_show_overflow_title">Show action overflow</string>
+    <string name="hardware_keys_show_overflow_summary">Display the 3-dot overflow menu button within apps</string>
+    <string name="hardware_keys_show_overflow_toast_enable">The action overflow button may not be visible until apps are restarted</string>
+    <string name="hardware_keys_show_overflow_toast_disable">The action overflow button may not be hidden until apps are restarted</string>
+    <string name="hardware_keys_action_nothing">Nessuna azione</string>
+    <string name="hardware_keys_action_menu">Apri/chiudi menu</string>
+    <string name="hardware_keys_action_app_switch">Sfoglia appicazioni recenti</string>
+    <string name="hardware_keys_action_search">Assistente ricerca</string>
+    <string name="hardware_keys_action_voice_search">Ricerca vocale</string>
+    <string name="hardware_keys_action_in_app_search">Ricerca nell\'app</string>
+    <string name="additional_options_title">Opzioni aggiuntive</string>
+
+    <string name="pref_ring_mode_title">Modalità suono</string>
+    <string name="pref_ring_mode_summary">Guarda o cambia le modalità del tasto Suono</string>
+    <string name="pref_network_mode_title">Modalità connessione</string>
+    <string name="pref_screentimeout_mode_title">Modalità timeout schermo</string>
+    <string name="cm_sound_mode_silent">Silenzioso</string>
+    <string name="cm_sound_mode_vibrate">Vibrazione</string>
+    <string name="cm_sound_mode_sound">Suono</string>
+    <string name="cm_sound_mode_soundVibrate">Suono &amp; Vibrazione</string>
+
+    <!-- Pie controls -->
+    <string name="pie_controls_title">Impostazioni Pie Control</string>
+    
+    <string name="pie_gravity_title">Gravità Pie</string>
+    <string name="pie_gravity_summary">Seleziona il lato dove verrà posizionato</string>
+    <string name="pie_gravity_top">In alto</string>
+    <string name="pie_gravity_bottom">In basso</string>
+    <string name="pie_gravity_right">A destra</string>
+    <string name="pie_gravity_left">A sinistra</string>
+    
+    <string name="pie_mode_title">Stile Pie</string>
+    <string name="pie_mode_summary">Imposta come verranno gestite le animazioni</string>
+    <string name="pie_mode_bare">Povero</string>
+    <string name="pie_mode_quick">Veloce</string>
+    <string name="pie_mode_default">Normale (predefinito)</string>
+    <string name="pie_mode_slow">Lento</string>
+    
+    <string name="pie_size_title">Grandezza Pie</string>
+    <string name="pie_size_summary">Definisci la grandezza del Pie Control</string>
+    <string name="pie_size_small">Piccolo</string>
+    <string name="pie_size_default">@string/pie_mode_default</string>
+    <string name="pie_size_large">Largo</string>
+    <string name="pie_size_gigantic">Gigante</string>
+    <string name="pie_size_monster">Monstruoso</string>
+
+    <string name="pie_angle_title">Angolo Pie</string>
+    <string name="pie_angle_summary">Aggiusta l\'angolo degli angoli del Pie Control dall\'attaccatura</string>
+    <string name="pie_angle_none">Nessuno (vecchio)</string>
+    <string name="pie_angle_small">Piccolo</string>
+    <string name="pie_angle_big">Normale (predefinito)</string>
+    <string name="pie_angle_huge">Grande</string>
+    <string name="pie_angle_super">Molto grande</string>
+    
+    <string name="pie_gap_title">Divario elementi</string>
+    <string name="pie_gap_summary">Definisce lo spazio tra i vari elementi del Pie Control</string>
+    <string name="pie_gap_none">Nessuno</string>
+    <string name="pie_gap_small">Piccolo</string>
+    <string name="pie_gap_big">Grande (predefinito)</string>
+    <string name="pie_gap_huge">Molto grande</string>
+
+    <string name="pie_center_title">Allineamento centrale</string>
+    <string name="pie_center_summary">Centra il Pie Control sul bordo di attivazione</string>
+
+    <string name="pie_stick_title">Previeni rotazione</string>
+    <string name="pie_stick_summary">Evita il cambio di orientamento quando viene ruotato lo schermo</string>
+
+    <string name="pie_menu_title">Tasto menu persistente</string>
+    <string name="pie_menu_summary">Mostra sempre il tasto menu anche quando non necessario</string>
+
+    <string name="pie_search_title">Tasto ricerca</string>
+    <string name="pie_search_summary">Abilita il tasto ricerca sul Pie Control</string>
+
+    <string name="pie_trigger_title">Area di attivazione</string>
+    <string name="pie_trigger_summary">Determina lo spessore della regione che registra le interazioni (swipes)</string>
+    <string name="pie_trigger_none">Nessuno (Pie disattivato)</string>
+    <string name="pie_trigger_small">@string/pie_size_small</string>
+    <string name="pie_trigger_normal">@string/pie_mode_default</string>
+    <string name="pie_trigger_big">Grande</string>
+    <string name="pie_trigger_huge">Molto grande</string>
+
+    <!-- Navigation Bar #CM -->
+    <string name="navigation_reset_title">@string/lock_screen_shortcuts_reset</string>
+    <string name="navigation_bar_title">Controlli navigazione</string>
+    <string name="navigation_bar_help_text">1 - Per iniziare ad editare, tocca l\icona del lucchetto\n\n2 - Tocca ogni pulsante per assegnare o cambiare funzionalità\n\n3 - Pressione lunga su ogni pulsante per riarrangiarne l\'ordine\n\n4 - Per salvare, tocca l\'icona del lucchetto un\'altra volta\n\n5 - Per resettare come da predefinito, tocca il pulsante reset\n\n</string>
+    <string name="navigation_bar_tips">&#8226; Le azioni possono essere assegnate ad un solo bottone alla volta\n\n&#8226; Il pulsante home non può essere riassegnato\n\n&#8226; I pulsanti laterali non possono essere riarrangiati</string>
+    <string name="navigation_bar_tips_title">Consiglio veloce</string>
+    <string name="navigation_bar_reset_message">Elimina le impostazioni attuali e ripristina le predefinite?</string>
+    <string name="navigation_bar_save_message">Impostazioni barra di navigazione salvate</string>
+    <string name="navigation_bar_reset_toast">Impostazioni barra di navigazione ripristinate</string>
+    <string name="navigation_bar_menu_editable">Editabile</string>
+    <string name="navigation_bar_menu_locked">Bloccato</string>
+    
+    <!-- Hybrid sub menu [CHAR LIMIT=30] -->
+    <string name="hybrid_settings">Proprietà Ibride</string>
+
+    <string name="mod_version">Versione ParanoidAndroid</string>
+    <string name="mod_version_default">Sconosciuta</string>
+
+    <string name="themes_settings_title">Temi</string>
+
+    <!-- Android debugging over WiFi -->
+    <string name="adb_over_network">ADB attraverso la rete</string>
+    <string name="adb_over_network_summary">Abilita TCP/IP debugging con le interfacce network (Wi-Fi, USB networks). Questa impostazione è ripristinata al riavvio</string>
+    <!-- Warning for Adb over Network -->
+    <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks, including GSM data network!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
+
+    <string name="vibration_title">Vibrazione telefono</string>
+    <string name="notification_convert_sound_to_vibration_title">Conversione notifiche</string>
+    <string name="notification_convert_sound_to_vibration_summary">Da suono a vibrazione durante la modalità vibrazione</string>
+
 </resources>

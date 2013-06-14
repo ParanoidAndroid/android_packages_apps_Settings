@@ -1832,6 +1832,8 @@
     <string name="global_locale_change_title" msgid="5956281361384221451">"Cambiar idioma"</string>
     <string name="global_font_change_title" msgid="1887126466191012035">"Cambiar tamaño de fuente"</string>
     <string name="app_notifications_switch_label" msgid="9124072219553687583">"Mostrar notificaciones"</string>
+    <string name="app_halo_label_black">Agregar a lista negra de HALO</string>
+    <string name="app_halo_label_white">Agregar a lista blanca de HALO</string>
     <string name="help_label" msgid="1107174367904110532">"Ayuda"</string>
     <string name="user_account_title" msgid="1127193807312271167">"Cuenta para contenido"</string>
     <string name="user_picture_title" msgid="7297782792000291692">"ID de foto"</string>
@@ -1928,6 +1930,16 @@
     <string name="tool_bar_settings">Barras de herramientas</string>
     <string name="tool_bar_status_header">Barra de estado</string>
     <string name="tool_bar_navigation_header">Barra de navegación</string>
+    <string name="halo_hide_title">Ocultar HALO tras la actividad</string>
+    <string name="halo_hide_summary">HALO aparecerá para tareas entrantes y se desplazará fuera de vista después de un rato</string>
+    <string name="halo_reversed_title">Revertir gestos de HALO</string>
+    <string name="halo_reversed_summary">Aplica para cambio de tareas y los gestos de movimiento</string>
+    <string name="halo_state_title">Política de HALO</string>
+    <string name="halo_state_summary">Activa la lista negra/blanca de notificaciones</string>
+    <string name="halo_state_black">Lista negra</string>
+    <string name="halo_state_white">Lista blanca</string>
+    <string name="halo_pause_title">Pausar aplicación activa</string>
+    <string name="halo_pause_summary">Al iniciar una aplicación con HALO, la aplicación actual será pausada</string>
     <string name="quick_pulldown_title">Despliegue rápido</string>
     <string name="quick_pulldown_summary">El borde de la barra de notificaciones desplegará el panel de ajustes rápidos</string>
     <string name="title_collapse_panel">Cierre automático</string>
@@ -2014,8 +2026,10 @@
     <string name="hardware_keys_action_voice_search">Búsqueda por voz</string>
     <string name="hardware_keys_action_in_app_search">Búsqueda dentro de la aplicación</string>
     <string name="additional_options_title">Opciones adicionales</string>
-    <string name="pie_controls_title">Controles circulares</string>
+    
+    <string name="pie_settings_title">Controles circulares</string>
     <string name="pie_controls_summary">Permite la navegación y el reporte de estado en el modo de escritorio expandido</string>
+    
     <string name="pie_gravity_title">Ubicación de los controles</string>
     <string name="pie_gravity_summary">Seleccionar la ubicación donde se encontrarán los controles circulares</string>
     <string name="pie_gravity_top">Arriba</string>
@@ -2033,6 +2047,7 @@
     <string name="pie_size_small">Pequeño</string>
     <string name="pie_size_large">Grande</string>
     <string name="pie_size_gigantic">Gigante</string>
+    <string name="pie_size_monster">Monstruoso</string>
     <string name="pie_gap_title">Espacio entre los controles</string>
     <string name="pie_gap_summary">Ajustar el espacio entre los elementos</string>
     <string name="pie_gap_none">Sin espacio</string>
@@ -2119,4 +2134,5 @@
     <string name="lockscreen_background_color_fill">Relleno de color</string>
     <string name="lockscreen_background_custom_image">Imagen personalizada</string>
     <string name="lockscreen_background_default_wallpaper">Imagen por defecto</string>
+    
 </resources>
