@@ -1835,4 +1835,144 @@
     <string name="user_picture_title" msgid="7297782792000291692">"ID de photo"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Diffusions cellulaires"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Sélectionnez les types d\'alertes d\'urgence à afficher."</string>
+
+    <!-- Hardware keys -->
+    <string name="hardware_keys_title">Touches sensitives</string>
+    <string name="hardware_keys_bindings_title">Actions des touches</string>
+    <string name="hardware_keys_enable_custom_title">Activer les actions personnalisées</string>
+    <string name="hardware_keys_home_long_press_title">Touche Home (longue pression)</string>
+    <string name="hardware_keys_menu_press_title">Touche Menu</string>
+    <string name="hardware_keys_menu_long_press_title">Touche Menu (longue pression)</string>
+    <string name="hardware_keys_assist_press_title">Touche Recherche</string>
+    <string name="hardware_keys_assist_long_press_title">Touche Recherche (longue pression)</string>
+    <string name="hardware_keys_app_switch_press_title">Touche Changement d\'application</string>
+    <string name="hardware_keys_app_switch_long_press_title">Touche Changement d\'application (longue pression)</string>
+    <string name="hardware_keys_show_overflow_title">Afficher le bouton Menu dans les applications</string>
+    <string name="hardware_keys_show_overflow_summary">Affiche le bouton Menu à 3 points dans les applications</string>
+    <string name="hardware_keys_show_overflow_toast_enable">Le bouton Menu peut n\'apparaître qu\'après redémarrage des applications</string>
+    <string name="hardware_keys_show_overflow_toast_disable">Le bouton Menu peut rester apparent jusqu\'au redémarrage des applications</string>
+    <string name="hardware_keys_action_nothing">Pas d\'action</string>
+    <string name="hardware_keys_action_menu">Ouvrir/fermer le menu</string>
+    <string name="hardware_keys_action_app_switch">Multitâche</string>
+    <string name="hardware_keys_action_search">Assistant de recherche</string>
+    <string name="hardware_keys_action_voice_search">Recherche vocale</string>
+    <string name="hardware_keys_action_in_app_search">Recherche dans une application</string>
+    <string name="additional_options_title">Options supplémentaires</string>
+
+    <string name="pref_ring_mode_title">Modes sonores</string>
+    <string name="pref_ring_mode_summary">Voir ou modifier les modes du bouton Son</string>
+    <string name="pref_network_mode_title">Modes du réseau</string>
+    <string name="pref_screentimeout_mode_title">Modes du temps mort de l\'écran</string>
+    <string name="cm_sound_mode_silent">Silencieux</string>
+    <string name="cm_sound_mode_vibrate">Vibreur</string>
+    <string name="cm_sound_mode_sound">Son</string>
+    <string name="cm_sound_mode_soundVibrate">Son &amp; Vibreur</string>
+
+    <!-- Pie controls -->
+    <string name="pie_controls_title">Contrôles de la Pie</string>
+    
+    <string name="pie_gravity_title">Gravité de la Pie</string>
+    <string name="pie_gravity_summary">Choisir l'endroit où sera placée la Pie</string>
+    <string name="pie_gravity_top">Haut</string>
+    <string name="pie_gravity_bottom">Bas</string>
+    <string name="pie_gravity_right">Droite</string>
+    <string name="pie_gravity_left">Gauche</string>
+    
+    <string name="pie_mode_title">Style de la Pie</string>
+    <string name="pie_mode_summary">Contrôle la façon dont les animations et les informations de status seront affichées</string>
+    <string name="pie_mode_bare">Nue</string>
+    <string name="pie_mode_quick">Rapide</string>
+    <string name="pie_mode_default">Normale (défaut)</string>
+    <string name="pie_mode_slow">Lente</string>
+    
+    <string name="pie_size_title">Taille de la Pie</string>
+    <string name="pie_size_summary">Définit la taille de la Pie</string>
+    <string name="pie_size_small">Petite</string>
+    <string name="pie_size_default">@string/pie_mode_default</string>
+    <string name="pie_size_large">Grande</string>
+    <string name="pie_size_gigantic">Gigantesque</string>
+    <string name="pie_size_monster">Monstrueuse</string>
+
+    <string name="pie_angle_title">Angle de la Pie</string>
+    <string name="pie_angle_summary">Ajuste l\'angle entre le bord de l\'écran et la Pie</string>
+    <string name="pie_angle_none">Aucun (Ancienne configuration)</string>
+    <string name="pie_angle_small">Petit</string>
+    <string name="pie_angle_big">Normal (défaut)</string>
+    <string name="pie_angle_huge">Grand</string>
+    <string name="pie_angle_super">Enorme</string>
+    
+    <string name="pie_gap_title">Ecart entre les éléments</string>
+    <string name="pie_gap_summary">Ajuste l\'écart séparant les éléments de la Pie</string>
+    <string name="pie_gap_none">Aucun</string>
+    <string name="pie_gap_small">Petit</string>
+    <string name="pie_gap_big">Grand (défaut)</string>
+    <string name="pie_gap_huge">Enorme</string>
+
+    <string name="pie_center_title">Alignement au milieu</string>
+    <string name="pie_center_summary">Centre la Pie quelque soit l\'endroit où elle est déclenchée</string>
+
+    <string name="pie_stick_title">Eviter la rotation</string>
+    <string name="pie_stick_summary">La Pie reste sur le bord choisi en cas de rotation de l'écran</string>
+
+    <string name="pie_menu_title">Bouton Menu persistant</string>
+    <string name="pie_menu_summary">Toujours afficher le bouton Menu, même quand il n'est pas utile</string>
+
+    <string name="pie_search_title">Bouton Recherche</string>
+    <string name="pie_search_summary">Activer le bouton Recherche dans la Pie</string>
+
+    <string name="pie_trigger_title">Zone de déclenchement de la Pie</string>
+    <string name="pie_trigger_summary">Détermine la taille de la zone qui permet de déclencher la Pie</string>
+    <string name="pie_trigger_none">Aucune (Pie désactivée)</string>
+    <string name="pie_trigger_small">@string/pie_size_small</string>
+    <string name="pie_trigger_normal">@string/pie_mode_default</string>
+    <string name="pie_trigger_big">Grande</string>
+    <string name="pie_trigger_huge">Enorme</string>     
+     
+     
+    <!-- Hybrid sub menu [CHAR LIMIT=30] -->
+    <string name="hybrid_settings">Propriétés hybrides</string>
+
+    <string name="mod_version">Version de ParanoidAndroid</string>
+    <string name="mod_version_default">Inconnu</string>
+
+    <string name="themes_settings_title">Thèmes</string>
+    
+
+    <string name="vibration_title">Vibration du téléphone</string>
+    <string name="notification_convert_sound_to_vibration_title">Conversion des notifications</string>
+    <string name="notification_convert_sound_to_vibration_summary">Conversion des sons en vibrations en mode Vibreur</string>
+
+    <!-- Quiet hours -->
+    <string name="quiet_hours_title">Heures silencieuses</string>
+    <string name="quiet_hours_summary">Configure l\'horaire pendant lequel le téléphone devrait être silencieux</string>
+    <string name="quiet_hours_note_title">Note</string>
+    <string name="quiet_hours_note_summary">Les appels entrants se comportent comme d\'habitude pendant les heures silencieuses</string>
+    <string name="quiet_hours_enabled">Activer les heures silencieuses</string>
+    <string name="quiet_hours_enabled_on">Les heures silencieuses seront appliquées de force</string>
+    <string name="quiet_hours_enabled_off">Les notifications fonctionneront normalement</string>
+    <string name="quiet_hours_start">Début des heures silencieuses</string>
+    <string name="quiet_hours_start_summary">Heure où débuter les heures silencieuses</string>
+    <string name="quiet_hours_end">Fin des heures silencieuses</string>
+    <string name="quiet_hours_end_summary">Heure où stopper les heures silencieuses</string>
+    <string name="quiet_hours_mute">Couper les notifications</string>
+    <string name="quiet_hours_mute_on">Aucun son ne sera joué</string>
+    <string name="quiet_hours_mute_off">Les sons seront joués normalement</string>
+    <string name="quiet_hours_still">Désactiver les vibrations</string>
+    <string name="quiet_hours_still_on">Le téléphone ne vibrera pas</string>
+    <string name="quiet_hours_still_off">Le téléphone vibrera normalement</string>
+    <string name="quiet_hours_dim">Désactiver la LED de notification</string>
+    <string name="quiet_hours_dim_on">La LED de notification sera désactivée</string>
+    <string name="quiet_hours_dim_off">La LED de notification fonctionnera normalement</string>
+    <string name="quiet_hours_haptic">Désactiver le retour haptique</string>
+    <string name="quiet_hours_haptic_on">Le retour haptique sera désactivé</string>
+    <string name="quiet_hours_haptic_off">Le retour haptique fonctionnera normalement</string>
+    <string name="quiet_hours_active_from">Actives de</string>
+    <string name="quiet_hours_active_to">à</string>
+
+    <!-- Time range preference -->
+    <string name="start_time_title">Début</string>
+    <string name="end_time_title">Fin</string>
+    
+    
+     
 </resources>
