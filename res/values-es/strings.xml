@@ -2054,6 +2054,13 @@
     <string name="pie_size_large">Grande</string>
     <string name="pie_size_gigantic">Gigante</string>
     <string name="pie_size_monster">Monstruoso</string>
+    <string name="pie_angle_title">Ángulo inferior</string>
+    <string name="pie_angle_summary">Ajusta el angulo entre el borde la pantalla y los controles</string>
+    <string name="pie_angle_none">Ninguno</string>
+    <string name="pie_angle_small">Pequeño</string>
+    <string name="pie_angle_big">Normal (defecto)</string>
+    <string name="pie_angle_huge">Grande</string>
+    <string name="pie_angle_super">Enorme</string>
     <string name="pie_gap_title">Espacio entre los controles</string>
     <string name="pie_gap_summary">Ajustar el espacio entre los elementos</string>
     <string name="pie_gap_none">Sin espacio</string>
