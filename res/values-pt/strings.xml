@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--  Copyright (C) 2007 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -12,12 +12,15 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
- -->
+-->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="yes" msgid="4676390750360727396">"Sim"</string>
+    <!-- Translations to PT-BR by Gafanhotz - Team Paranoid Android -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+   <string name="yes" msgid="4676390750360727396">"Sim"</string>
     <string name="no" msgid="6731231425810196216">"Não"</string>
+    <string name="ok">"Ok"</string>
     <string name="create" msgid="3578857613172647409">"Criar"</string>
     <string name="allow" msgid="3349662621170855910">"Permitir"</string>
     <string name="deny" msgid="6947806159746484865">"Recusar"</string>
@@ -28,11 +31,10 @@
   </plurals>
     <string name="show_dev_on" msgid="1110711554982716293">"Você agora é um desenvolvedor!"</string>
     <string name="show_dev_already" msgid="2151632240145446227">"Não é necessário. Você já é um desenvolvedor."</string>
-    <string name="header_category_wireless_networks" msgid="4944823405420438623">"REDES SEM FIO E OUTRAS"</string>
     <string name="header_category_device" msgid="5781174212691167553">"DISPOSITIVO"</string>
     <string name="header_category_personal" msgid="6225932173498802187">"PESSOAL"</string>
     <string name="header_category_system" msgid="2073558547468647128">"SISTEMA"</string>
-    <string name="turn_on_radio" msgid="8706561489788373676">"Ativar o rádio"</string>
+     <string name="turn_on_radio" msgid="8706561489788373676">"Ativar o rádio"</string>
     <string name="turn_off_radio" msgid="1820294552893884115">"Desativar o rádio"</string>
     <string name="sms_over_ims_on" msgid="5085290395865632925">"Ligar SMS sobre IMS"</string>
     <string name="sms_over_ims_off" msgid="8354792045992793959">"Desligar SMS sobre IMS"</string>
@@ -71,7 +73,11 @@
     <string name="small_font" msgid="2295331917424072635">"Pequeno"</string>
     <string name="medium_font" msgid="2068475425515133701">"Médio"</string>
     <string name="large_font" msgid="599055175160971446">"Grande"</string>
-    <string name="font_size_save" msgid="3450855718056759095">"OK"</string>
+    <string name="font_size_preview_text">Servez à ce monsieur une bière et des kiwis.</string>
+    <string name="font_size_save">OK</string>
+    <string name="sdcard_setting" product="nosdcard">USB storage</string>
+    <string name="sdcard_setting" product="default">SD card</string>
+	<string name="font_size_save" msgid="3450855718056759095">"OK"</string>
     <string name="sdcard_setting" product="nosdcard" msgid="8281011784066476192">"Armaz. USB"</string>
     <string name="sdcard_setting" product="default" msgid="5922637503871474866">"Cartão SD"</string>
     <string name="battery_info_status_label" msgid="8109155295509700309">"Status da bateria:"</string>
@@ -90,7 +96,7 @@
     <string name="battery_info_screen_on" msgid="376277447175613889">"Tempo ativo da tela:"</string>
     <string name="battery_info_status_unknown" msgid="196130600938058547">"Desconhecido"</string>
     <string name="battery_info_status_charging" msgid="1705179948350365604">"Carregando"</string>
-    <string name="battery_info_status_charging_ac" msgid="5874340256342956252">"(CA)"</string>
+	<string name="battery_info_status_charging_ac" msgid="5874340256342956252">"(CA)"</string>
     <string name="battery_info_status_charging_usb" msgid="4059070156126770959">"(USB)"</string>
     <string name="battery_info_status_charging_wireless" msgid="1822125795446772771">"(sem fio)"</string>
     <string name="battery_info_status_discharging" msgid="310932812698268588">"Não está carregando"</string>
@@ -158,7 +164,7 @@
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="989613204829097159">"Um aplicativo quer ativar o Bluetooth e tornar seu tablet visível para outros dispositivos. Você pode alterar esta opção a qualquer momento nas configurações do Bluetooth."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="6671615712909139801">"Um aplicativo quer ativar o Bluetooth e tornar seu telefone visível para outros dispositivos. Você pode alterar esta opção a qualquer momento nas configurações do Bluetooth."</string>
     <string name="bluetooth_turning_on" msgid="4850574877288036646">"Ativando Bluetooth..."</string>
-    <string name="bluetooth_turning_off" msgid="2337747302892025192">"Desligar o Bluetooth…"</string>
+    <string name="bluetooth_turning_off" msgid="2337747302892025192">"Desligando o Bluetooth…"</string>
     <string name="bluetooth_auto_connect" msgid="40711424456733571">"Conexão automática"</string>
     <string name="bluetooth_connection_permission_request" msgid="4747918249032890077">"Solicitação de conexão Bluetooth"</string>
     <string name="bluetooth_connection_notif_message" msgid="3687933246423942977">"Toque para conectar-se a \"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>\"."</string>
@@ -168,20 +174,21 @@
     <string name="bluetooth_pb_remember_choice" msgid="2901499974259177202">"Não perguntar novamente"</string>
     <string name="date_and_time" msgid="4114084177056654663">"Configurações de data e hora"</string>
     <string name="choose_timezone" msgid="1362834506479536274">"Selecione o fuso horário"</string>
-    <string name="normal_date_format" msgid="7636406984925498359">"Regional (<xliff:g id="DATE">%s</xliff:g>)"</string>
+    <string name="default_date_format"><xliff:g id="default_date_format">MM/dd/yyyy</xliff:g></string>
+	<string name="normal_date_format" msgid="7636406984925498359">"Regional (<xliff:g id="DATE">%s</xliff:g>)"</string>
     <string name="display_preview_label" msgid="1127597250917274792">"Visualizar:"</string>
     <string name="display_font_size_label" msgid="8941851418397475389">"Tamanho da fonte:"</string>
-    <!-- no translation found for intent_sender_data_label (6332324780477289261) -->
-    <skip />
-    <string name="intent_sender_sendbroadcast_text" msgid="1415735148895872715">"Enviar<xliff:g id="BROADCAST">broadcast</xliff:g>"</string>
-    <string name="intent_sender_action_label" msgid="616458370005452389">"<xliff:g id="ACTION">Action</xliff:g>:"</string>
-    <string name="intent_sender_startactivity_text" msgid="5080516029580421895">"Iniciar <xliff:g id="ACTIVITY">activity</xliff:g>"</string>
-    <string name="intent_sender_resource_label" msgid="6963659726895482829">"<xliff:g id="RESOURCE">Resource</xliff:g>:"</string>
-    <string name="intent_sender_account_label" msgid="465210404475603404">"Conta:"</string>
-    <string name="proxy_settings_title" msgid="5912878565897294401">"Configurações de proxy"</string>
+    <string name="intent_sender_data_label"><xliff:g id="data">Data:</xliff:g></string>
+    <string name="intent_sender_sendbroadcast_text">Enviar <xliff:g id="broadcast">broadcast</xliff:g></string>
+    <string name="intent_sender_action_label"><xliff:g id="action">Ação</xliff:g>:</string>
+    <string name="intent_sender_startactivity_text">Iniciar  <xliff:g id="activity">atividade</xliff:g></string>
+    <string name="intent_sender_resource_label"><xliff:g id="resource">Recursos</xliff:g>: </string>
+    <string name="intent_sender_account_label">Conta: </string>
+	<string name="proxy_settings_title" msgid="5912878565897294401">"Configurações de proxy"</string>
     <string name="proxy_clear_text" msgid="5555400754952012657">"Limpar"</string>
     <string name="proxy_port_label" msgid="5655276502233453400">"Porta do proxy"</string>
-    <string name="proxy_exclusionlist_label" msgid="7700491504623418701">"Evitar proxy para"</string>
+    <string name="proxy_port_hint" translatable="false">8080</string>
+	<string name="proxy_exclusionlist_label" msgid="7700491504623418701">"Evitar proxy para"</string>
     <string name="proxy_exclusionlist_hint" msgid="6084099226687226948">"example.com,mycomp.test.com,localhost"</string>
     <string name="proxy_defaultView_text" msgid="6387985519141433291">"Restaurar padrões"</string>
     <string name="proxy_action_text" msgid="2957063145357903951">"Concluído"</string>
@@ -196,7 +203,7 @@
     <string name="proxy_error_invalid_port" msgid="2671425042711054494">"A porta digitada não é válida."</string>
     <string name="proxy_warning_limited_support" msgid="7229337138062837422">"O proxy HTTP é usado pelo navegador, mas não pode ser usado por outros aplicativos."</string>
     <string name="radio_info_signal_location_label" msgid="16475158265551708">"Localização:"</string>
-    <string name="radio_info_neighboring_location_label" msgid="2385625674055934880">"CID vizinho:"</string>
+	<string name="radio_info_neighboring_location_label" msgid="2385625674055934880">"CID vizinho:"</string>
     <string name="radio_info_cellinfo_label" msgid="1300937728020622362">"CellInfo:"</string>
     <string name="radio_info_data_attempts_label" msgid="1731106244577323381">"Tentativas de dados:"</string>
     <string name="radio_info_gprs_service_label" msgid="2331818110375395364">"Serviço GPRS:"</string>
@@ -232,7 +239,7 @@
     <string name="band_mode_set" msgid="5730560180249458484">"Definir"</string>
     <string name="band_mode_failed" msgid="1495968863884716379">"Falha"</string>
     <string name="band_mode_succeeded" msgid="2701016190055887575">"Êxito"</string>
-    <string name="sdcard_changes_instructions" msgid="4482324130377280131">"As alterações são aplicadas quando o cabo USB é reconectado."</string>
+	<string name="sdcard_changes_instructions" msgid="4482324130377280131">"As alterações são aplicadas quando o cabo USB é reconectado."</string>
     <string name="sdcard_settings_screen_mass_storage_text" msgid="3741220147296482474">"Ativar o armazenamento USB em massa"</string>
     <string name="sdcard_settings_total_bytes_label" msgid="9184160745785062144">"Total de bytes:"</string>
     <string name="sdcard_settings_not_present_status" product="nosdcard" msgid="1636218515775929394">"Armazenam. USB não conectado."</string>
@@ -258,7 +265,7 @@
     <string name="display_label" msgid="8074070940506840792">"Tela"</string>
     <string name="phone_info_label" product="tablet" msgid="7820855350955963628">"Informações do tablet"</string>
     <string name="phone_info_label" product="default" msgid="2127552523124277664">"Informações do telefone"</string>
-    <string name="sd_card_settings_label" product="nosdcard" msgid="8101475181301178428">"Armaz. USB"</string>
+	<string name="sd_card_settings_label" product="nosdcard" msgid="8101475181301178428">"Armaz. USB"</string>
     <string name="sd_card_settings_label" product="default" msgid="5743100901106177102">"Cartão SD"</string>
     <string name="proxy_settings_label" msgid="3271174136184391743">"Configurações de proxy"</string>
     <string name="cancel" msgid="6859253417269739139">"Cancelar"</string>
@@ -270,7 +277,7 @@
     <string name="wireless_networks_settings_title" msgid="3643009077742794212">"Redes sem fio e outras"</string>
     <string name="radio_controls_summary" msgid="2998818677094465517">"Gerenciar rede Wi-Fi, Bluetooth, modo avião, redes e VPNs"</string>
     <string name="roaming" msgid="3596055926335478572">"Roaming de dados"</string>
-    <string name="roaming_enable" msgid="3737380951525303961">"Conectar aos serviços de dados quando estiver em roaming"</string>
+	<string name="roaming_enable" msgid="3737380951525303961">"Conectar aos serviços de dados quando estiver em roaming"</string>
     <string name="roaming_disable" msgid="1295279574370898378">"Conectar aos serviços de dados quando estiver em roaming"</string>
     <string name="roaming_reenable_message" msgid="9141007271031717369">"Você perdeu a conectividade de dados porque deixou o roaming de dados da sua rede doméstica desativado."</string>
     <string name="roaming_turn_it_on_button" msgid="4387601818162120589">"Ativar"</string>
@@ -1149,13 +1156,9 @@
     <string name="cached" msgid="1059590879740175019">"Processo em segundo plano em cache"</string>
     <string name="no_running_services" msgid="2059536495597645347">"Nada em execução."</string>
     <string name="service_started_by_app" msgid="818675099014723551">"Iniciado pelo aplicativo."</string>
-    <!-- no translation found for service_client_name (4037193625611815517) -->
-    <skip />
     <string name="service_background_processes" msgid="6844156253576174488">"<xliff:g id="MEMORY">%1$s</xliff:g> livre"</string>
     <string name="service_foreground_processes" msgid="7583975676795574276">"<xliff:g id="MEMORY">%1$s</xliff:g> usada"</string>
     <string name="memory" msgid="6609961111091483458">"RAM"</string>
-    <!-- no translation found for service_process_name (4098932168654826656) -->
-    <skip />
     <string name="running_process_item_user_label" msgid="3129887865552025943">"Usuário: <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="running_process_item_removed_user_label" msgid="8250168004291472959">"Usuário removido"</string>
     <string name="running_processes_item_description_s_s" msgid="5790575965282023145">"<xliff:g id="NUMPROCESS">%1$d</xliff:g> processo e <xliff:g id="NUMSERVICES">%2$d</xliff:g> serviço"</string>
@@ -1347,8 +1350,6 @@
     <string name="battery_stats_wifi_running_label" msgid="3093545080361658269">"Wi-Fi"</string>
     <string name="battery_stats_wake_lock_label" msgid="1908942681902324095">"Ativo"</string>
     <string name="battery_stats_phone_signal_label" msgid="4137799310329041341">"Sinal da rede móvel"</string>
-    <!-- no translation found for battery_stats_last_duration (1535831453827905957) -->
-    <skip />
     <string name="awake" msgid="387122265874485088">"Tempo ativo do aparelho"</string>
     <string name="wifi_on_time" msgid="6310209835617490616">"Tempo ativo da rede Wi-Fi"</string>
     <string name="bluetooth_on_time" msgid="6157799524996162271">"Tempo ativo da rede Wi-Fi"</string>
@@ -1580,8 +1581,7 @@
     <string name="settings_backup_summary" msgid="7916877705938054035">"Fazer backup de minhas configurações"</string>
     <string name="sync_menu_sync_now" msgid="6154608350395805683">"Sincronizar agora"</string>
     <string name="sync_menu_sync_cancel" msgid="8292379009626966949">"Cancelar sincronização"</string>
-    <string name="sync_one_time_sync" msgid="6766593624598183090">"Toque para sincronizar agora<xliff:g id="LAST_SYNC_TIME">
-%1$s</xliff:g>"</string>
+    <string name="sync_one_time_sync" msgid="6766593624598183090">"Toque para sincronizar agora<xliff:g id="LAST_SYNC_TIME">%1$s</xliff:g>"</string>
     <string name="sync_gmail" msgid="714886122098006477">"Gmail"</string>
     <string name="sync_calendar" msgid="9056527206714733735">"Agenda"</string>
     <string name="sync_contacts" msgid="9174914394377828043">"Contatos"</string>
@@ -1599,8 +1599,6 @@
     <string name="remove_account_failed" product="tablet" msgid="3086620478225952725">"Esta conta é necessária para alguns aplicativos. Só é possível removê-la redefinindo o tablet para os padrões de fábrica (ação que exclui todos os seus dados pessoais) em Configurações &gt; Fazer backup e redefinir."</string>
     <string name="remove_account_failed" product="default" msgid="6217238709175617517">"Esta conta é necessária para alguns aplicativos. Só é possível removê-la redefinindo o telefone para os padrões de fábrica (ação que exclui todos os seus dados pessoais) em Configurações &gt; Fazer backup e redefinir."</string>
     <string name="provider_label" msgid="7724593781904508866">"Enviar inscrições"</string>
-    <!-- no translation found for sync_item_title (4782834606909853006) -->
-    <skip />
     <string name="cant_sync_dialog_title" msgid="8923508322291625282">"Não é possível sincronizar manualmente"</string>
     <string name="cant_sync_dialog_message" msgid="1938380442159016449">"A sincronização para o item está desativada no momento. Para alterar essa configuração, ative os dados de segundo plano e a sincronização automática temporariamente."</string>
     <string name="wimax_settings" msgid="1574837328738396794">"Configurações de 4G"</string>
@@ -1609,7 +1607,7 @@
     <string name="enter_password" msgid="4131758584074246224">"Digite a senha para descriptografar o armazenamento"</string>
     <string name="try_again" msgid="4272075051293936921">"Tente novamente."</string>
     <string name="delete" msgid="4219243412325163003">"Excluir"</string>
-    <string name="misc_files" msgid="6720680815969643497">"Arquivos variados"</string>
+	<string name="misc_files" msgid="6720680815969643497">"Arquivos variados"</string>
     <string name="misc_files_selected_count" msgid="4647048020823912088">"selecionados <xliff:g id="NUMBER">%1$d</xliff:g> de <xliff:g id="TOTAL">%2$d</xliff:g>"</string>
     <string name="misc_files_selected_count_bytes" msgid="2876232009069114352">"<xliff:g id="NUMBER">%1$s</xliff:g> de <xliff:g id="TOTAL">%2$s</xliff:g>"</string>
     <string name="select_all" msgid="1562774643280376715">"Selecionar tudo"</string>
@@ -1831,28 +1829,154 @@
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Transmissões por celular"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Selecione os tipos de alertas de emergência a exibir."</string>
     
-        <!-- Hybrid sub menu [CHAR LIMIT=30] -->
-    <string name="hybrid_settings">Conf. do Hybrid</string>
     
+    <!-- ======================================================================================= -->
+    <!-- PARANOIDANDROID STUFF -->
+    <!-- ======================================================================================= -->
+
+    <!-- Sound settings screen -->
+    <string name="link_volume_ringtones">Unificar vol. de toque com volume de notif.</string>
+    <string name="link_volume_mutes">Modo de silêncio afeta notificações</string>
+    <string name="volume_overlay_title">Estilo do Painel de Volume</string>
+    <string name="volume_overlay_single">Único</string>
+    <string name="volume_overlay_expandable">Expansível</string>
+    <string name="volume_overlay_expanded">Expandido</string>
+    <string name="volume_overlay_none">Nenhum</string>
+    <string name="volume_ring_only_description">Toque</string>
+    <string name="notification_sound_limiter_title">Limite de som de notificação</string>
+    <string name="notification_sound_limiter_summary">Configura o atraso permitido entre novas notificações</string>
+    <string name="notification_sound_default_time">Padrão</string>
+    <string name="volume_keys_control_ring_stream">Teclas de volume controlam o toque</string>
+
+    <!-- Display settings screen, notification light settings -->
+    <string name="notification_light_general_title">Geral</string>
+    <string name="notification_light_applist_title">Aplicativos</string>
+    <string name="notification_light_use_custom">Usar valores customizados</string>
+    <string name="notification_light_add">Adicionar</string>
+    <string name="notification_light_reset">Resetar</string>
+    <string name="notification_light_enabled">Ativado</string>
+    <string name="notification_light_disabled">Desativado</string>
+    <string name="notification_light_default_value">Padrão</string>
+    <string name="choose_app">Escolha a aplicação</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Editar configurações de luz</string>
+    <string name="pulse_speed_title">Velocidade e duração do pulso</string>
+    <string name="picker_arrow" translatable="false">→</string>
+    <string name="default_time">Normal</string>
+    <string name="custom_time">Customizado</string>
+    <string name="dialog_delete_title">Deletar</string>
+    <string name="dialog_delete_message">Deletar item selecionado?</string>
+    <string name="dialog_test">Testar</string>
+    <string name="dialog_test_message">Desligue a tela paraver a notif. selecionada em ação ou feche este diálogo para parar o teste</string>
+    <string name="dialog_test_button">Fechar</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Sempre ligado</string>
+    <string name="pulse_length_very_short">Muito curto</string>
+    <string name="pulse_length_short">Curto</string>
+    <string name="pulse_length_normal">Normal</string>
+    <string name="pulse_length_long">Longo</string>
+    <string name="pulse_length_very_long">Muito longo</string>
+    <string name="pulse_speed_very_fast">Muito rápido</string>
+    <string name="pulse_speed_fast">Rápido</string>
+    <string name="pulse_speed_normal">Normal</string>
+    <string name="pulse_speed_slow">Devagar</string>
+    <string name="pulse_speed_very_slow">Muito degavar</string>
+
+    <!-- Battery light settings  -->
+    <string name="battery_light_title">Luz da bateria</string>
+    <string name="battery_low_pulse_title">Pulsar se a bateria estiver fraca</string>
+    <string name="battery_light_list_title">Cores</string>
+    <string name="battery_light_low_color_title">Bateria fraca</string>
+    <string name="battery_light_medium_color_title">Carregando</string>
+    <string name="battery_light_full_color_title">Carregado</string>
+    
+    <!-- Customization main menu category heading [CHAR LIMIT=40] -->
+    <string name="header_category_customization">Customização</string>
+
+    <!-- Lock screen sub menu [CHAR LIMIT=30] -->
+    <string name="lock_screen_settings">Tela de Bloqueio</string>
+    <!-- Allow rotation -->
+    <string name="allow_rotate_title">Permitir rotação</string>
+    <string name="allow_rotate_summary">Ativar modo paisagem na tela de bloqueio</string>
+    <!-- Quick Unlock -->
+    <string name="allow_quick_unlock_title">Destrave Rápido</string>
+    <string name="allow_quick_unlock_summary">Habilita o destrave rápido na tela de bloqueio</string>
+    <!-- Lock screen see through -->
+    <string name="see_through_title">Transparência</string>
+    <string name="see_through_summary">Permite ver a aplicação por trás da tela de bloqueio</string>
+    <!-- Maximize widgets -->
+    <string name="maximize_widgets_title">Maximizar widgets</string>
+    <string name="maximize_widgets_summary">Mostrar widgets maximizados e o destrave minimizado quando a tela estiver ligada</string>
+    <!-- Home screen widgets -->
+    <string name="home_screen_widgets_title">Widgets da Home</string>
+    <string name="home_screen_widgets_summary">Permite que widgets da Home sejam adicionados a tela de bloqueio</string>
+    <string name="home_screen_widgets_warning_title">Isso pode ser perigoso!</string>
+    <string name="home_screen_widgets_warning">Permitir que widgers da Home sejam adicionados a tela de bloqueio, pode levar a falhas de segurança, você deseja continuar?</string>
+    <!-- Shortcuts -->
+    <string name="lock_screen_shortcuts_title">Atalhos</string>
+    <string name="lock_screen_shortcuts_summary">Ver ou mudar os atalhos personalizados da tela de bloqueio</string>
+    <string name="lock_screen_shortcuts_add">@string/notification_light_add</string>
+    <string name="lock_screen_shortcuts_reset">Resetar</string>
+    <string name="lock_screen_shortcuts_reset_message">Resetar atalhos da tela de bloqueio?</string>
+    <string name="lock_screen_shortcuts_limit">Apenas 6 atalhos são permitidos!</string>
+    <string name="icon_picker_type">Selecione o típo do ícone</string>
+    <string name="icon_default">Padrão</string>
+    <string name="icon_presets">Pré-Definidos</string>
+    <string name="icon_custom">Customizados</string>
+    <string name="icon_picker_choose_icon_title">Escolher ícone</string>
+    <string name="icon_picker_alarm">Alarme</string>
+    <string name="icon_picker_browser">Navegador</string>
+    <string name="icon_picker_calendar">Calendário</string>
+    <string name="icon_picker_camera">Câmera</string>
+    <string name="icon_picker_email">Email</string>
+    <string name="icon_picker_email2">Email (Holo)</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">Galeria</string>
+    <string name="icon_picker_google_small">Google (pequeno)</string>
+    <string name="icon_picker_googleplus">Google Plus</string>
+    <string name="icon_picker_googletalk">Google Talk</string>
+    <string name="icon_picker_maps">Mapas</string>
+    <string name="icon_picker_movie">Filmes</string>
+    <string name="icon_picker_music">Música</string>
+    <string name="icon_picker_nav">Navegação</string>
+    <string name="icon_picker_phone">Telefone</string>
+    <string name="icon_picker_podcast">Podcast</string>
+    <string name="icon_picker_rss">RSS</string>
+    <string name="icon_picker_sms">Mensagens</string>
+    <string name="icon_picker_twitter">Twitter</string>
+
+    <!-- Volume sub settings -->
+    <string name="volume_button_setting_title">Config. de botão de volume</string>
+    <!-- Volume music controls -->
+    <string name="volbtn_music_controls_title">Botão de volume controla música</string>
+    <string name="volbtn_music_controls_summary">Com a tela desligada aperte e segure o botão de volume e eles vão navegar pelas faixas de músicas</string>
+
+    <!-- Wakeup options -->
+    <string name="pref_volume_wake_title">Acordar por botão de volume</string>
+    <string name="pref_volume_wake_summary">Apertar os botões de volume irá acordar o seu dispositivo</string>
+
     <!-- Bars sub menu [CHAR LIMIT=30] -->
-    <string name="tool_bar_settings">Barrras</string>
+    <string name="tool_bar_settings">Barras</string>
     <string name="tool_bar_status_header">Barra de Status</string>
     <string name="tool_bar_navigation_header">Barra de Navegação</string>
-     <!-- HALO -->
-    <string name="halo_hide_title">Ocultar HALO após ativdade</string>
-    <string name="halo_hide_summary">O HALO vai aparecer para novas tarefas e sair do campo de visão após um tempo</string>
+
+    <!-- HALO -->
+    <string name="halo_hide_title">Ocultar o HALO após a ativdade</string>
+    <string name="halo_hide_summary">O HALO irá aparecer para novas tarefas e sair da tela após um tempo</string>
     <string name="halo_reversed_title">Inverter gesturas do HALO</string>
-    <string name="halo_reversed_summary">Aplica tarefas ou arrasto a gestura swipe-de-toque-duplo</string>
+	<string name="halo_reversed_summary">Aplica tarefas ou gesto de arrasto à gestura swipe-de-toque-duplo</string>
     <string name="halo_state_title">Política do HALO</string>
-    <string name="halo_state_summary">Para notificações de lista negra/branca pulando no HALO</string>
+<string name="halo_state_summary">Para notificações de lista negra/branca mostradas no HALO</string>
     <string name="halo_state_black">Lista Negra</string>
     <string name="halo_state_white">Lista Branca</string>
 
     <!-- Quick pulldown -->
     <string name="quick_pulldown_title">Puxada Rápida</string>
-    <string name="quick_pulldown_summary">As bordas da barra de status irão puxar o menu de Config. Rápidas</string>
+    <string name="quick_pulldown_summary">As bordas da barra de status irão puxar o menu de Configs. Rápidas</string>
     <!-- Show clock -->
-    <string name="show_clock_title">Mostrar relógio</string>
+	<string name="show_clock_title">Mostrar relógio</string>
     <!-- Circle battery -->
     <string name="circle_battery_title">Bateria com Círculo</string>
     <!-- AM/PM style -->
@@ -1867,10 +1991,266 @@
     <!-- Split menu -->
     <string name="navigation_bar_tabui_menu_title">Dividir botão de menu</string>
     <string name="navigation_bar_tabui_menu_summary">Mostrar botão de menu separado invés de juntá-lo ao menu de apps recentes</string>
-    <!-- Status bar notification limit -->
+	<!-- Status bar notification limit -->
     <string name="status_bar_max_notifications_title">Limite de notificações</string>
     <string name="status_bar_max_notifications_summary">Selecione o limite de notificações a serem mostradas na barra de status. Aplicável apenas ao modo retrato.</string>
     <!-- Do not disturb -->
     <string name="status_bar_donotdisturb_title">Não pertube</string>
     <string name="status_bar_donotdisturb_summary">Desabilitar animações de notif. para novas mensagens.</string>
+
+    <!-- Quick settings panel  -->
+    <string name="quick_settings_panel_title">Painel de Configs. Rápidas</string>
+    <string name="quick_settings_title">Configurações Rápidas</string>
+    <string name="title_static_tiles">Tiles estáticas</string>
+    <string name="tile_picker_title">Tiles e layout</string>
+    <string name="tile_picker_summary">Ver, selecionar ou mudar o layout das tiles exibidas</string>
+    <string name="tile_choose_title">Escolha uma Tile</string>
+
+    <string name="title_tile_airplane">Modo Avião</string>
+    <string name="title_tile_battery">Status da Bateria</string>
+    <string name="title_tile_bluetooth">Bluetooth</string>
+    <string name="title_tile_brightness">Brilho</string>
+    <string name="title_tile_sleep">Dormir</string>
+    <string name="title_tile_gps">GPS</string>
+    <string name="title_tile_torch">Lanterna</string>
+    <string name="title_tile_lockscreen">Bloquear Tela</string>
+    <string name="title_tile_lte">LTE</string>
+    <string name="title_tile_mobiledata">Dados Móveis</string>
+    <string name="title_tile_profile">Perfil</string>
+    <string name="title_tile_autorotate">Orientação</string>
+    <string name="title_tile_settings">Config.</string>
+    <string name="title_tile_sound">Som</string>
+    <string name="title_tile_sync">Sincr.</string>
+    <string name="title_tile_wifiap">Wi-Fi AP</string>
+    <string name="title_tile_wifi">Wi-Fi</string>
+    <string name="title_tile_wimax">WiMAX</string>
+    <string name="title_tile_user">Mudar Usuário</string>
+    <string name="title_tile_networkmode">Modo de Rede</string>
+    <string name="title_tile_nfc">NFC</string>
+    <string name="title_tile_screen_timeout">Tempo da Tela Ativa</string>
+    <string name="title_tile_usb_tether">USB Tether</string>
+    <string name="title_tile_quiet_hours">Horas de Silêncio</string>
+    <string name="title_tile_desktop_mode">Pie</string>
+    <string name="title_tile_hybrid">@string/hybrid_settings</string>
+    <string name="title_tile_volume">Volume</string>
+
+    <string name="title_dynamic_tiles">Tiles dinâmicas</string>
+    <string name="dynamic_tiles_note_title">Notas</string>
+    <string name="dynamic_tiles_note_summary">Tiles dinâmicas não estão sempre visíveis e só serão exibidas quando ativadas por um evento do sistema</string>
+    <string name="title_dynamic_alarm">Alarme</string>
+    <string name="title_dynamic_bugreport">Reportar Bug</string>
+    <string name="title_dynamic_ime">Alteador IME</string>
+    <string name="title_dynamic_usbtether">@string/title_tile_usb_tether</string>
+    <string name="title_dynamic_wifi">Tela Wi-Fi</string>
+
+    <string name="title_general">Geral</string>
+    <string name="title_quick_pulldown">Puxada Rápida</string>
+    <string name="summary_quick_pulldown">As bordas da barra de status irão puxar o menu de Configs. Rápidas</string>
+    <string name="quick_pulldown_summary_left">Esquerda</string>
+    <string name="quick_pulldown_summary_right">Direita</string>
+    <string name="quick_pulldown_off">Desligado</string>
+    <string name="quick_pulldown_left">Esquerda</string>
+    <string name="quick_pulldown_right">Direita</string>
+    <string name="title_collapse_panel">Fechar painel automáticamente</string>
+    <string name="summary_collapse_panel">Fechar o painel de Configs. Rápidas ao clicar na tile</string>
+
+    <!-- Reset tiles -->
+    <string name="tiles_add_title">Adicionar</string>
+    <string name="tiles_reset_title">Resetar</string>
+    <string name="tiles_reset_message">Restaurar o layout e as tiles padrões?</string>
+
+    <!-- Hardware keys -->
+    <string name="hardware_keys_title">Teclas do Hardware</string>
+    <string name="hardware_keys_bindings_title">Ações das Teclas</string>
+    <string name="hardware_keys_enable_custom_title">Habilitar ações customizadas</string>
+    <string name="hardware_keys_home_long_press_title">Tecla Home (pressionamento longo)</string>
+    <string name="hardware_keys_menu_press_title">Tecla Menu</string>
+    <string name="hardware_keys_menu_long_press_title">Tecla Menu (pressionamento longo)</string>
+    <string name="hardware_keys_assist_press_title">Tecla de Busca</string>
+    <string name="hardware_keys_assist_long_press_title">Tecla de Busca (pressionamento longo)</string>
+    <string name="hardware_keys_app_switch_press_title">Tecla de mudar de aplicação</string>
+    <string name="hardware_keys_app_switch_long_press_title">Tecla de mudar de aplicação (pressionamento longo)</string>
+    <string name="hardware_keys_show_overflow_title">Mostrar fluxo de ações</string>
+    <string name="hardware_keys_show_overflow_summary">Mostrar o botão de fluxo de 3-pontos com as aplicações</string>
+    <string name="hardware_keys_show_overflow_toast_enable">O botão de fluxo de ação pode não ser visível até as aplicações serem reiniciadas</string>
+    <string name="hardware_keys_show_overflow_toast_disable">O botão de fluxo de ação pode não ser ocultado até as aplicações serem reiniciadas</string>
+    <string name="hardware_keys_action_nothing">Sem ação</string>
+    <string name="hardware_keys_action_menu">Abrir/fechar menu</string>
+    <string name="hardware_keys_action_app_switch">Alternador de Aplicações Recentes</string>
+    <string name="hardware_keys_action_search">Assistente de Busca</string>
+    <string name="hardware_keys_action_voice_search">Busca por Voz</string>
+    <string name="hardware_keys_action_in_app_search">Busca In-app</string>
+    <string name="additional_options_title">Opções adicionais</string>
+
+    <string name="pref_ring_mode_title">Modos de Som</string>
+    <string name="pref_ring_mode_summary">Ver ou mudar os modos dos botões de som</string>
+    <string name="pref_network_mode_title">Modos de Rede</string>
+    <string name="pref_screentimeout_mode_title">Modo de tempo de tela ativa</string>
+    <string name="cm_sound_mode_silent">Silêncioso</string>
+    <string name="cm_sound_mode_vibrate">Vibrar</string>
+    <string name="cm_sound_mode_sound">Som</string>
+    <string name="cm_sound_mode_soundVibrate">Som e vibração</string>
+
+    <!-- Pie controls -->
+    <string name="pie_controls_title">Controles Pie</string>
+    
+    <string name="pie_gravity_title">Gravidade da Pie</string>
+    <string name="pie_gravity_summary">Selecione o local onde a Pie se localizará</string>
+    <string name="pie_gravity_top">Topo</string>
+    <string name="pie_gravity_bottom">Fundo</string>
+    <string name="pie_gravity_right">Direita</string>
+    <string name="pie_gravity_left">Esqueda</string>
+    
+    <string name="pie_mode_title">Estilo da Pie</string>
+    <string name="pie_mode_summary">Configurar como as animações e adições de status são controladas</string>
+    <string name="pie_mode_bare">Variável</string>
+    <string name="pie_mode_quick">Rápido</string>
+    <string name="pie_mode_default">Normal (default)</string>
+    <string name="pie_mode_slow">Devagar</string>
+    
+    <string name="pie_size_title">Tamanho da Pie</string>
+    <string name="pie_size_summary">Defina o tamanho dos controles da Pie</string>
+    <string name="pie_size_small">Pequenos</string>
+    <string name="pie_size_default">@string/pie_mode_default</string>
+    <string name="pie_size_large">Largos</string>
+    <string name="pie_size_gigantic">Giganticos</string>
+    <string name="pie_size_monster">Monstros</string>
+
+    <string name="pie_angle_title">Ângulo da Pie</string>
+    <string name="pie_angle_summary">Ajuste o ângulo das bordas da Pie da sua base</string>
+    <string name="pie_angle_none">Nenhum (antigo)</string>
+    <string name="pie_angle_small">Pequeno</string>
+    <string name="pie_angle_big">Normal (padrão)</string>
+    <string name="pie_angle_huge">Grande</string>
+    <string name="pie_angle_super">Gigante</string>
+    
+    <string name="pie_gap_title">Espaço dos Itens</string>
+    <string name="pie_gap_summary">Controle o espaço que separa os elementos da Pie</string>
+    <string name="pie_gap_none">Nenhum</string>
+    <string name="pie_gap_small">Pequeno</string>
+    <string name="pie_gap_big">Grande (padrão)</string>
+    <string name="pie_gap_huge">Gigante</string>
+
+    <string name="pie_center_title">Alinhamento Central</string>
+    <string name="pie_center_summary">Centralizar a Pie na borda da área de ativação</string>
+
+    <string name="pie_stick_title">Prevenir rotação</string>
+    <string name="pie_stick_summary">Evita alteração na rotação quando a tela rotaciona</string>
+
+    <string name="pie_menu_title">Botão de menu persistente</string>
+    <string name="pie_menu_summary">Sempre mostra o botão de menu mesmo quando não é necessário</string>
+
+    <string name="pie_search_title">Botão de busca</string>
+    <string name="pie_search_summary">Habilitar o botão de busca nos controles da Pie</string>
+
+    <string name="pie_trigger_title">Área de ativação</string>
+    <string name="pie_trigger_summary">Determinar o tamanho da área que registra swipes</string>
+    <string name="pie_trigger_none">Nenhum (Pie desligada)</string>
+    <string name="pie_trigger_small">@string/pie_size_small</string>
+    <string name="pie_trigger_normal">@string/pie_mode_default</string>
+    <string name="pie_trigger_big">Grande</string>
+    <string name="pie_trigger_huge">Gigante</string>
+
+    <!-- Navigation Bar #CM -->
+    <string name="navigation_reset_title">@string/lock_screen_shortcuts_reset</string>
+    <string name="navigation_bar_title">Controles de navegação</string>
+    <string name="navigation_bar_help_text">1 - Para começar a editar, toque no ícone de destrave\n\n2 - Toque em qualquer botão para atribuir ou mudar sua funcionalidade\n\n3 - Faça um toque longo em qualquer botão para reorganizar a ordem dos botões\n\n4 - Para salvar, toque no ícone de trava novamente\n\n5 - Para restaurar os padrões, toque no botão resetar\n\n</string>
+    <string name="navigation_bar_tips">&#8226; Funções podem ser atribuidas à apenas um botão por vez\n\n&#8226; O botão Home não pode ser alterado\n\n&#8226; Botões laterais não podem ser alterados</string>
+    <string name="navigation_bar_tips_title">Dicas</string>
+    <string name="navigation_bar_reset_message">Deletar a config. atual e voltar ao padrão?</string>
+    <string name="navigation_bar_save_message">Configurações salvas</string>
+    <string name="navigation_bar_reset_toast">Barra de navegação restaurada ao padrão</string>
+    <string name="navigation_bar_menu_editable">Editável</string>
+    <string name="navigation_bar_menu_locked">Travado</string>
+    
+    <!-- Hybrid sub menu [CHAR LIMIT=30] -->
+    <string name="hybrid_settings">Propriedades do Hybrid</string>
+
+    <string name="mod_version">Versão da ParanoidAndroid</string>
+    <string name="mod_version_default">Desconhecida</string>
+
+    <string name="themes_settings_title">Temas</string>
+
+    <!-- Android debugging over WiFi -->
+    <string name="adb_over_network">ADB sobre rede</string>
+    <string name="adb_over_network_summary">Ativar debugging TCP/IP sobre interfaces de rede (Wi-Fi, USB, etc). Essa config. é desfeita no boot.</string>
+    <!-- Warning for Adb over Network -->
+    <string name="adb_over_network_warning">AVISO: Quando ADB sobre rede está ativado, seu dispositivo estará aberto a intrusões em todas as redes conectadas, incluindo a rede de dados GSM!\n\nApenas use essa função quando você estiver conectado em redes seguras!\n\nVocê quer ativar esta função?</string>
+
+    <string name="vibration_title">Vibração</string>
+    <string name="notification_convert_sound_to_vibration_title">Notificação de Conversa</string>
+    <string name="notification_convert_sound_to_vibration_summary">Converter som em vibração durante o movo "Vibrar"</string>
+
+    <!-- Quiet hours -->
+    <string name="quiet_hours_title">Horas Quietas</string>
+    <string name="quiet_hours_summary">Configuras as horas em que o aparelho deve ficar quieto</string>
+    <string name="quiet_hours_note_title">Nota</string>
+    <string name="quiet_hours_note_summary">Chamadas de vez irão funcionar normalmente durante as horas quietas</string>
+    <string name="quiet_hours_enabled">Ligar horas quietas</string>
+    <string name="quiet_hours_enabled_on">Horas quietas serão forçadas</string>
+    <string name="quiet_hours_enabled_off">Notificações irão funcionar normalmente</string>
+    <string name="quiet_hours_start">Inicio das horas quietas</string>
+    <string name="quiet_hours_start_summary">Quando começar a forçar as horas quietas</string>
+    <string name="quiet_hours_end">Fim das horas quietas</string>
+    <string name="quiet_hours_end_summary">Quando parar de forçar as horas quietas</string>
+    <string name="quiet_hours_mute">Silênciar notificações</string>
+    <string name="quiet_hours_mute_on">Nenhum som será tocado</string>
+    <string name="quiet_hours_mute_off">Sons irão tocar normalmente</string>
+    <string name="quiet_hours_still">Desligar  vibrações</string>
+    <string name="quiet_hours_still_on">Seu dispositivo não irá vibrar</string>
+    <string name="quiet_hours_still_off">Seu dispositivo vibrará normalmente</string>
+    <string name="quiet_hours_dim">Desligar luz de notificação</string>
+    <string name="quiet_hours_dim_on">Luzes de notificação serão desativadas</string>
+    <string name="quiet_hours_dim_off">Luzes de notificação funcionarão normalmente</string>
+    <string name="quiet_hours_haptic">Desabilitar vibração no toque de tela</string>
+    <string name="quiet_hours_haptic_on">A vibração no toque de tela será desligada</string>
+    <string name="quiet_hours_haptic_off">A vibração no toque de tela funcionará normalmente</string>
+    <string name="quiet_hours_active_from">Ativar de</string>
+    <string name="quiet_hours_active_to">até</string>
+
+    <!-- Time range preference -->
+    <string name="start_time_title">Inicio</string>
+    <string name="end_time_title">Fim</string>
+
+    <!-- Automatic brightness customization -->
+    <string name="light_sensor_current_value">Valor atual do sensor: <xliff:g id="light_level">%d</xliff:g> lux</string>
+    <string name="auto_brightness_dialog_title">Níveis automaticos de brilho</string>
+    <string name="auto_brightness_level_format"><xliff:g id="start_level">%1$s</xliff:g> -\n<xliff:g id="end_level">%2$s</xliff:g> lux</string>
+    <string name="auto_brightness_brightness_format"><xliff:g id="percent">%s</xliff:g>%%</string>
+    <string name="auto_brightness_adjust_button">Ajustar</string>
+    <string name="auto_brightness_reset_button">Resetar</string>
+    <string name="auto_brightness_remove_button">Remover</string>
+    <string name="auto_brightness_add_line">Adicionar linhas</string>
+    <string name="auto_brightness_lux_dialog_title">Alcance de brilho do ambiente</string>
+    <string name="auto_brightness_split_dialog_title">Dividir nível de brilho</string>
+    <string name="auto_brightness_start_lux">Início do alcance (lux)</string>
+    <string name="auto_brightness_end_lux">Fim do alcânce (lux)</string>
+    <string name="auto_brightness_reset_dialog_title">Resetar níveis?</string>
+    <string name="auto_brightness_reset_confirmation">Todos os níveis de brilho serão resetados aos seus padrões.</string>
+    <string name="auto_brightness_split_lux_format">Dividir posição (entre <xliff:g id="min">%1$d</xliff:g> e <xliff:g id="max">%2$d</xliff:g> lux)</string>
+    <string name="auto_brightness_level_options">Opções do nível de luz</string>
+    <string name="auto_brightness_menu_edit_lux">Alcance de brilho do ambiente</string>
+    <string name="auto_brightness_menu_split">Dividir</string>
+    <string name="auto_brightness_menu_remove">Remover</string>
+    <string name="auto_brightness_sensitivity_title">Ajustar sensibilidade</string>
+    <string name="auto_brightness_sensitivity_verylow">Muito baixa</string>
+    <string name="auto_brightness_sensitivity_low">Baixa</string>
+    <string name="auto_brightness_sensitivity_medium">Media</string>
+    <string name="auto_brightness_sensitivity_high">Alta</string>
+    <string name="auto_brightness_sensitivity_veryhigh">Muito alta</string>
+
+    <!-- Custom lock screen background -->
+    <string name="lockscreen_custom_background_title">Plano de fundo</string>
+    <string name="lockscreen_custom_background_dialog_title">Selecione a cor</string>
+    <string name="lockscreen_background_result_successful">Plano de fundo alterado com sucesso</string>
+    <string name="lockscreen_background_result_not_successful">Plano de fundo não pôde ser alterado</string>
+    <string name="lockscreen_background_color_fill">Preenchimento de Cor</string>
+    <string name="lockscreen_background_custom_image">Imagem customizada</string>
+    <string name="lockscreen_background_default_wallpaper">Papel de parede padrão</string>
+
+    <!-- Lockscreen, hide initial pages hints -->
+
+    <string name="lockscreen_hide_hints_title">Ocultar dicas</string>
+    <string name="lockscreen_hide_hints_summary">Se selecionado, isso desligará as dicas dos widgets quando a tela está ligada (apenas em modo retrato).</string>
+
 </resources>
