@@ -74,9 +74,6 @@
     <string name="medium_font" msgid="2068475425515133701">"Médio"</string>
     <string name="large_font" msgid="599055175160971446">"Grande"</string>
     <string name="font_size_preview_text">Servez à ce monsieur une bière et des kiwis.</string>
-    <string name="font_size_save">OK</string>
-    <string name="sdcard_setting" product="nosdcard">USB storage</string>
-    <string name="sdcard_setting" product="default">SD card</string>
     <string name="font_size_save" msgid="3450855718056759095">"OK"</string>
     <string name="sdcard_setting" product="nosdcard" msgid="8281011784066476192">"Armaz. USB"</string>
     <string name="sdcard_setting" product="default" msgid="5922637503871474866">"Cartão SD"</string>
