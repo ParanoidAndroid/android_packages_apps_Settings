@@ -529,6 +529,10 @@
     <string name="android_beam_disabled_summary" msgid="1737782116894793393">"Indisponível porque o NFC está desativado"</string>
     <string name="android_beam_label" msgid="6257036050366775040">"Android Beam"</string>
     <string name="android_beam_explained" msgid="6981652347448777459">"Quando este recurso está ativado, você pode enviar o conteúdo do aplicativo para outro dispositivo compatível com NFC, mantendo os dispositivos próximos. Por exemplo, você pode enviar páginas do navegador, vídeos do YouTube, contatos de pessoas e muito mais."\n\n"Basta posicionar os dispositivos próximos (normalmente de costas um para o outro) e tocar em sua tela. O aplicativo determina o que é enviado."</string>
+    <string name="nfc_polling_mode_title">Funcionamento do NFC</string>
+    <string name="nfc_polling_mode_screen_off">Tela desligada</string>
+    <string name="nfc_polling_mode_screen_locked">Tela ligada, travado</string>
+    <string name="nfc_polling_mode_screen_unlocked">Tela ligada, destravado (padrão)</string>
     <string name="nsd_quick_toggle_title" msgid="3125572815278848258">"Detecção de serviço de rede"</string>
     <string name="nsd_quick_toggle_summary" msgid="155692215972781276">"Permitir que aplicativos em outros dispositivos descubram aplicativos neste dispositivo"</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
@@ -1904,7 +1908,7 @@
     <string name="allow_rotate_summary">Ativar modo paisagem na tela de bloqueio</string>
     <!-- Quick Unlock -->
     <string name="allow_quick_unlock_title">Destrave Rápido</string>
-    <string name="allow_quick_unlock_summary">Habilita o destrave rápido na tela de bloqueio</string>
+    <string name="allow_quick_unlock_summary">Destrava automáticamente quando a senha correta é digitada</string>
     <!-- Lock screen see through -->
     <string name="see_through_title">Transparência</string>
     <string name="see_through_summary">Permite ver a aplicação por trás da tela de bloqueio</string>
@@ -2118,9 +2122,9 @@
     <string name="pie_size_gigantic">Giganticos</string>
     <string name="pie_size_monster">Monstros</string>
 
-    <string name="pie_angle_title">Ângulo da Pie</string>
-    <string name="pie_angle_summary">Ajuste o ângulo das bordas da Pie da sua base</string>
-    <string name="pie_angle_none">Nenhum (antigo)</string>
+    <string name="pie_angle_title">Ângulo inferior</string>
+    <string name="pie_angle_summary">Ajuste o ângulo entre as bordas da tela da Pie</string>
+    <string name="pie_angle_none">Nenhum</string>
     <string name="pie_angle_small">Pequeno</string>
     <string name="pie_angle_big">Normal (padrão)</string>
     <string name="pie_angle_huge">Grande</string>
