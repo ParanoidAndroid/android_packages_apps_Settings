@@ -1966,8 +1966,13 @@
     <string name="tool_bar_status_header">Панель уведомлений</string>
     <string name="tool_bar_navigation_header">Панель навигации</string>
 
+    <!-- Quick pulldown -->
+    <string name="quick_pulldown_title">Быстрый вызов</string>
+    <string name="quick_pulldown_summary">Край статус-бара будет вызывать панель быстрых настроек</string>
     <!-- Show clock -->
     <string name="show_clock_title">Показывать часы</string>
+    <!-- Circle battery -->
+    <string name="circle_battery_title">Круг батареи</string>
     <!-- AM/PM style -->
     <string name="am_pm_style_title">Стиль AM/PM</string>
     <string name="status_bar_size_normal">Обычные</string>
@@ -1986,6 +1991,10 @@
     <!-- Do not disturb -->
     <string name="status_bar_donotdisturb_title">Не беспокоить</string>
     <string name="status_bar_donotdisturb_summary">Отключить анимацию входящих уведомлений</string>
+    
+    <!-- Quick settings panel  -->
+    <string name="quick_settings_panel_title">Панель быстрых настроек</string>
+    <string name="quick_settings_title">Быстрые настройки</string>
 
     <!-- Custom tiles panel  -->
     <string name="custom_tiles_title">Настройка плиток</string>
