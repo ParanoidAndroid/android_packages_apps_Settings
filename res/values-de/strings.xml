@@ -1980,7 +1980,7 @@
 
     <!-- Quick pulldown -->
     <string name="quick_pulldown_title">Schnelles Herunterziehen</string>
-    <string name="quick_pulldown_summary">An der Ecke der Status Leiste werden die Schnelleinstellungen heruntergezogen</string>
+    <string name="quick_pulldown_summary">Beim Herunterziehen an der Ecke der Statusleiste werden die Schnelleinstellungen geöffnet</string>
     <!-- Show clock -->
     <string name="show_clock_title">Zeige Uhr an</string>
     <!-- Circle battery -->
@@ -1999,49 +1999,49 @@
     <string name="navigation_bar_tabui_menu_summary">Zeige ein separates Menü-Symbol anstatt es mit dem Recents-Symbol zusammenzuführen</string>
     <!-- Status bar notification limit -->
     <string name="status_bar_max_notifications_title">Limit an Benachrichtigungen</string>
-    <string name="status_bar_max_notifications_summary">Select the limit of notification icons to be shown on status bar. Applies only to portrait orientation</string>
+    <string name="status_bar_max_notifications_summary">Setze ein Limit für die Anzahl an Benachrichtigungen die in der Statusleiste angezeigt werden solen. Gilt nur für die Portrait-Orientierungs-Modus</string>
     <!-- Do not disturb -->
-    <string name="status_bar_donotdisturb_title">Do not disturb</string>
-    <string name="status_bar_donotdisturb_summary">Disable ticker animation for incoming notifications</string>
+    <string name="status_bar_donotdisturb_title">Nicht stören</string>
+    <string name="status_bar_donotdisturb_summary">Deaktiviere die Ticker Animation für eingehende Benachrichtigungen</string>
 
     <!-- Quick settings panel  -->
-    <string name="quick_settings_panel_title">Quick Settings panel</string>
-    <string name="quick_settings_title">Quick Settings</string>
-    <string name="title_static_tiles">Static tiles</string>
-    <string name="tile_picker_title">Tiles and layout</string>
-    <string name="tile_picker_summary">View, select or change the layout of the displayed tiles</string>
+    <string name="quick_settings_panel_title">Schnelleinstellungs Panel</string>
+    <string name="quick_settings_title">Schenelleinstellungen</string>
+    <string name="title_static_tiles">Statische Kacheln</string>
+    <string name="tile_picker_title">Kacheln und Layout</string>
+    <string name="tile_picker_summary">Betrachte, wähle oder verändere das Layout der angezeigten Kacheln</string>
     <string name="tile_choose_title">Choose a tile</string>
 
-    <string name="title_tile_airplane">Airplane mode</string>
-    <string name="title_tile_battery">Battery stats</string>
+    <string name="title_tile_airplane">Flugmodus</string>
+    <string name="title_tile_battery">Batterie Statistiken</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
-    <string name="title_tile_brightness">Brightness</string>
-    <string name="title_tile_sleep">Go to sleep</string>
+    <string name="title_tile_brightness">Helligkeit</string>
+    <string name="title_tile_sleep">Geh schlafen</string>
     <string name="title_tile_gps">GPS</string>
-    <string name="title_tile_torch">Torch</string>
-    <string name="title_tile_lockscreen">Lock screen</string>
+    <string name="title_tile_torch">Taschenlampe</string>
+    <string name="title_tile_lockscreen">Sperrbildschirm</string>
     <string name="title_tile_lte">LTE</string>
-    <string name="title_tile_mobiledata">Mobile data</string>
-    <string name="title_tile_profile">Profile</string>
-    <string name="title_tile_autorotate">Orientation</string>
-    <string name="title_tile_settings">Settings</string>
-    <string name="title_tile_sound">Sound</string>
-    <string name="title_tile_sync">Sync</string>
-    <string name="title_tile_wifiap">Wi-Fi AP</string>
+    <string name="title_tile_mobiledata">Mobile Daten</string>
+    <string name="title_tile_profile">Profil</string>
+    <string name="title_tile_autorotate">Orientierung</string>
+    <string name="title_tile_settings">Einstellungen</string>
+    <string name="title_tile_sound">Ton</string>
+    <string name="title_tile_sync">Synchronisierung</string>
+    <string name="title_tile_wifiap">Wi-Fi Hotspot</string>
     <string name="title_tile_wifi">Wi-Fi</string>
     <string name="title_tile_wimax">WiMAX</string>
-    <string name="title_tile_user">User switcher</string>
-    <string name="title_tile_networkmode">Network mode</string>
+    <string name="title_tile_user">Benutzer Wechsler</string>
+    <string name="title_tile_networkmode">Netzwerk Modus</string>
     <string name="title_tile_nfc">NFC</string>
-    <string name="title_tile_screen_timeout">Screen timeout</string>
-    <string name="title_tile_usb_tether">USB Tether</string>
-    <string name="title_tile_quiet_hours">Quiet hours</string>
+    <string name="title_tile_screen_timeout">Bildschrim Timeout</string>
+    <string name="title_tile_usb_tether">USB Tethering</string>
+    <string name="title_tile_quiet_hours">Ruhige Stunden</string>
     <string name="title_tile_desktop_mode">Pie</string>
     <string name="title_tile_hybrid">@string/hybrid_settings</string>
-    <string name="title_tile_volume">Volume</string>
+    <string name="title_tile_volume">Lautstärke</string>
 
-    <string name="title_dynamic_tiles">Dynamic tiles</string>
-    <string name="dynamic_tiles_note_title">Note</string>
+    <string name="title_dynamic_tiles">Dynamische Kacheln</string>
+    <string name="dynamic_tiles_note_title">Notiz</string>
     <string name="dynamic_tiles_note_summary">Dynamic tiles are not always visible and will only show up if triggered by a system event</string>
     <string name="title_dynamic_alarm">Alarm clock</string>
     <string name="title_dynamic_bugreport">Bug report</string>
