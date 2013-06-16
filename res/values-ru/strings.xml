@@ -522,6 +522,10 @@
     <string name="android_beam_disabled_summary" msgid="1737782116894793393">"Недоступно, так как отключена связь малого радиуса действия"</string>
     <string name="android_beam_label" msgid="6257036050366775040">"Android Beam"</string>
     <string name="android_beam_explained" msgid="6981652347448777459">"Когда включена эта функция, вы можете обмениваться данными между устройствами, просто приложив их друг к другу."\n\n"Передавать можно практически любые данные, включая контакты, ссылки, веб-страницы, фотографии и видео."</string>
+    <string name="nfc_polling_mode_title">Режим работы NFC</string>
+    <string name="nfc_polling_mode_screen_off">Экран выкл.</string>
+    <string name="nfc_polling_mode_screen_locked">Экран вкл., заблок.</string>
+    <string name="nfc_polling_mode_screen_unlocked">Экран вкл., разблок. (по умолч.)</string>
     <string name="nsd_quick_toggle_title" msgid="3125572815278848258">"Обнаружение сетевых служб"</string>
     <string name="nsd_quick_toggle_summary" msgid="155692215972781276">"Разрешить приложениям на других устройствах обнаруживать приложения на этом устройстве"</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
@@ -1974,6 +1978,8 @@
     <string name="status_bar_size_small">Маленькие</string>
     <string name="status_bar_hidden">Скрытые (по умолчанию)</string>
     <string name="status_bar_am_pm_info">24-часовой формат активирован</string>
+    <!-- Circle battery -->
+    <string name="circle_battery_title">Батарея в виде круга</string>
     <!-- Status bar notification count -->
     <string name="status_bar_notif_count_title">Счетчик уведомлений</string>
     <string name="status_bar_notif_count_summary">Отображать количество текущих уведомлений в строке уведомлений</string>
@@ -1999,9 +2005,11 @@
     <string name="title_tile_brightness">Яркость</string>
     <string name="title_tile_sleep">Режим ожидания</string>
     <string name="title_tile_gps">GPS</string>
-    <string name="title_tile_flashlight">Фонарик</string>
+    <string name="title_tile_torch">Фонарик</string>
+    <string name="title_tile_lockscreen">Экран блокировки</string>
     <string name="title_tile_lte">LTE</string>
     <string name="title_tile_mobiledata">Мобильный интернет</string>
+    <string name="title_tile_profile">Профиль</string>
     <string name="title_tile_autorotate">Ориентация</string>
     <string name="title_tile_settings">Настройки</string>
     <string name="title_tile_screentimeout">Тайм-аут экрана</string>
@@ -2013,6 +2021,9 @@
     <string name="title_tile_user">Переключение пользователей</string>
     <string name="title_tile_networkmode">Режим сети</string>
     <string name="title_tile_nfc">NFC</string>
+    <string name="title_tile_screen_timeout">Задержка выкл. экрана</string>
+    <string name="title_tile_usb_tether">USB-модем</string>
+    <string name="title_tile_quiet_hours">Тихие часы</string>
     <string name="title_dynamic_tiles">Динамические пликти</string>
     <string name="dynamic_tiles_note_title">Заметка</string>
     <string name="dynamic_tiles_note_summary">Динамические плитки не всегда отображаются и будут показываться только при соучае систменого события</string>
@@ -2020,6 +2031,7 @@
     <string name="title_dynamic_bugreport">Баг отчеты</string>
     <string name="title_dynamic_ime">Переключение клавиатуры</string>
     <string name="title_dynamic_wifi">Wi-Fi дисплей</string>
+    <string name="title_tile_volume">Volume</string>
 
     <string name="pref_screentimeout_mode_title">Режимы тайм-аута экрана</string>
 
@@ -2106,6 +2118,37 @@
     <string name="mod_version_default">Неизвестно</string>
 
     <string name="themes_settings_title">Темы</string>
+    
+    <!-- Quiet hours -->
+    <string name="quiet_hours_title">Тихие часы</string>
+    <string name="quiet_hours_summary">Настройка часов, когда устройство должно быть тихим</string>
+    <string name="quiet_hours_note_title">Примечание</string>
+    <string name="quiet_hours_note_summary">Входящие звонки будут вести себя как обычно во время тихих часов</string>
+    <string name="quiet_hours_enabled">Включить тихие часы</string>
+    <string name="quiet_hours_enabled_on">Тихие часы активированы</string>
+    <string name="quiet_hours_enabled_off">Уведомления будут вести себя как обычно</string>
+    <string name="quiet_hours_start">Начало тихих часов</string>
+    <string name="quiet_hours_start_summary">Когда начинаются тихие часы</string>
+    <string name="quiet_hours_end">Конец тихих часов</string>
+    <string name="quiet_hours_end_summary">Когда заканчиваются тихие часы</string>
+    <string name="quiet_hours_mute">Отключить звук уведомлений</string>
+    <string name="quiet_hours_mute_on">Звуки уведомлений не проигрываются</string>
+    <string name="quiet_hours_mute_off">Звуки проигрываются нормально</string>
+    <string name="quiet_hours_still">Отключить вибрацию</string>
+    <string name="quiet_hours_still_on">Устройство не будет вибрировать</string>
+    <string name="quiet_hours_still_off">Устройство вибрирует нормально</string>
+    <string name="quiet_hours_dim">Отключить световое уведомление</string>
+    <string name="quiet_hours_dim_on">Световое уведомление отключено</string>
+    <string name="quiet_hours_dim_off">Световое уведомление функционирует нормально</string>
+    <string name="quiet_hours_haptic">Отключить отклик на нажатие</string>
+    <string name="quiet_hours_haptic_on">Отклик на нажатие выключен</string>
+    <string name="quiet_hours_haptic_off">Отклик на нажатие включён</string>
+    <string name="quiet_hours_active_from">Активно с</string>
+    <string name="quiet_hours_active_to">по</string>
+    
+    <!-- convert sound to vibration toggle -->
+    <string name="notification_convert_sound_to_vibration_title">Вибрация при уведомлениях</string>
+    <string name="notification_convert_sound_to_vibration_summary">В режиме \"Вибро\" вибрировать при уведомлениях независимо от настроек приложений</string>
 
     <!-- Android debugging over WiFi -->
     <string name="adb_over_network">ADB через сеть</string>
