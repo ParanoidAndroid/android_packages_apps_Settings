@@ -522,6 +522,10 @@
     <string name="android_beam_disabled_summary" msgid="1737782116894793393">"Non disponibile perché la tecnologia NFC non è attiva"</string>
     <string name="android_beam_label" msgid="6257036050366775040">"Android Beam"</string>
     <string name="android_beam_explained" msgid="6981652347448777459">"Quando questa funzione è attiva, puoi trasferire contenuti di applicazioni su un altro dispositivo che supporta la tecnologia NFC tenendo vicini i due dispositivi. Puoi trasferire, ad esempio, pagine dell\'applicazione Browser, video di YouTube, contatti di Persone e altri dati."\n\n"È sufficiente avvicinare i dispositivi (generalmente mettendo a contatto le due parti posteriori), quindi toccare lo schermo. L\'applicazione stabilisce i dati da trasferire."</string>
+    <string name="nfc_polling_mode_title">Modalità sondaggio NFC</string>
+    <string name="nfc_polling_mode_screen_off">Schermo spento</string>
+    <string name="nfc_polling_mode_screen_locked">Schermo acceso, bloccato</string>
+    <string name="nfc_polling_mode_screen_unlocked">Schermo acceso, sbloccato (predefinito)</string>
     <string name="nsd_quick_toggle_title" msgid="3125572815278848258">"Rilevamento servizi di rete"</string>
     <string name="nsd_quick_toggle_summary" msgid="155692215972781276">"Consenti alle applicazioni su altri dispositivi di scoprire applicazioni su questo dispositivo"</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
@@ -1888,7 +1892,7 @@
     <string name="allow_rotate_summary">Abilita la modalità orizzontale per la schermata di sblocco</string>
     <!-- Quick Unlock -->
     <string name="allow_quick_unlock_title">Sblocco Veloce</string>
-    <string name="allow_quick_unlock_summary">Rende possibile lo sblocco veloce per la schermata di sblocco</string>
+    <string name="allow_quick_unlock_summary">Sblocco automatico quando viene inserita la password corretta</string>
     <!-- Lock screen see through -->
     <string name="see_through_title">Guarda attraverso</string>
     <string name="see_through_summary">Rende possibile vedere l\'applicazione dietro la schermata di sblocco</string>
@@ -2094,9 +2098,9 @@
     <string name="pie_size_gigantic">Gigante</string>
     <string name="pie_size_monster">Monstruoso</string>
 
-    <string name="pie_angle_title">Angolo Pie</string>
-    <string name="pie_angle_summary">Aggiusta l\'angolo degli angoli del Pie Control dall\'attaccatura</string>
-    <string name="pie_angle_none">Nessuno (vecchio)</string>
+    <string name="pie_angle_title">Angolo inferiore</string>
+    <string name="pie_angle_summary">Aggiusta l\'angolo tra i bordi dello schermo e il Pie Control</string>
+    <string name="pie_angle_none">Nessuno</string>
     <string name="pie_angle_small">Piccolo</string>
     <string name="pie_angle_big">Normale (predefinito)</string>
     <string name="pie_angle_huge">Grande</string>
