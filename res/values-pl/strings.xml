@@ -1864,12 +1864,12 @@
     <string name="edit_light_settings">”Edytuj ustawienia diody”</string>
     <string name="pulse_speed_title">”Długość świecenia I szybkość pulsowania diody”</string>
     <string name="picker_arrow" translatable="false">→</string>
-    <string name="default_time">Normalny”</string>
-    <string name="custom_time">Custom</string>
+    <string name="default_time">"Normalny”</string>
+    <string name="custom_time">"Własne"</string>
     <string name="dialog_delete_title">”Usuń”</string>
     <string name="dialog_delete_message">”Usunąć wybrany?”</string>
     <string name="dialog_test">”Podgląd”</string>
-    <string name="dialog_test_message">”Wyłącz ekran aby zobaczyć wybrane powiadomienie lub wciśnij Anuluj aby przerwać podgląd” </string>
+    <string name="dialog_test_message">”Wyłącz ekran aby zobaczyć wybrane powiadomienie lub wciśnij Anuluj aby przerwać podgląd”</string>
     <string name="dialog_test_button">”Anuluj”</string>
 
     <!-- Values for the notification light pulse spinners -->
@@ -1887,7 +1887,7 @@
 
     <!-- Battery light settings  -->
     <string name="battery_light_title">”Bateria”</string>
-    <string name="battery_low_pulse_title">Włącz jeśli bateria na wyczerpaniu”</string>
+    <string name="battery_low_pulse_title">"Włącz jeśli bateria na wyczerpaniu”</string>
     <string name="battery_light_list_title">”Kolory”</string>
     <string name="battery_light_low_color_title">”Niski poziom baterii”</string>
     <string name="battery_light_medium_color_title">”Ładowanie”</string>
@@ -1900,7 +1900,7 @@
     <string name="lock_screen_settings">”Ekran blokady”</string>
     <!-- Allow rotation -->
     <string name="allow_rotate_title">”Zezwalaj na obrót”</string>
-    <string name="allow_rotate_summary">”Włącza poziomy układ wyświetlania na ekranie blokady” </string>
+    <string name="allow_rotate_summary">”Włącza poziomy układ wyświetlania na ekranie blokady”</string>
     <!-- Quick Unlock -->
     <string name="allow_quick_unlock_title">”Szybkie odblokowanie”</string>
     <string name="allow_quick_unlock_summary">”Włącza szybkie odblokowanie dla ekranu blokady”</string>
@@ -1927,7 +1927,7 @@
     <string name="icon_presets">”Przygotowana”</string>
     <string name="icon_custom">”Własna”</string>
     <string name="icon_picker_choose_icon_title">”Wybierz ikonę”</string>
-    <string name="icon_picker_alarm">Alarmy”</string>
+    <string name="icon_picker_alarm">"Alarmy”</string>
     <string name="icon_picker_browser">”Przeglądarka”</string>
     <string name="icon_picker_calendar">”Kalendarz”</string>
     <string name="icon_picker_camera">”Aparat”</string>
@@ -1964,15 +1964,15 @@
     <string name="tool_bar_navigation_header">”Pasek nawigacji”</string>
 
     <!-- HALO -->
-    <string name="halo_hide_title">”Schowaj HALO po aktywności</string>
+    <string name="halo_hide_title">”Schowaj HALO po aktywności"</string>
     <string name="halo_hide_summary">”HALO pojawi się podczas przychodzącego powiadomienia i schowa się po chwili”</string>
     <string name="halo_reversed_title">”Odwrócone gesty HALO”</string>
     <string name="halo_reversed_summary">”Włącza przesuwanie HALO po wykonaniu gestu podwójnego puknięcia i przesunięcia”</string>
     <string name="halo_state_title">”Polityka HALO”</string>
-    <string name="halo_state_summary">Włącza czarną/białą liste powiadomień obsługiwanych przez HALO”</string>
+    <string name="halo_state_summary">"Włącza czarną/białą liste powiadomień obsługiwanych przez HALO”</string>
     <string name="halo_state_black">”Czarna lista”</string>
     <string name="halo_state_white">”Biała lista”</string>
-    <string name="halo_pause_title">Wstrzymanie aktywnej aplikacji”</string>
+    <string name="halo_pause_title">"Wstrzymanie aktywnej aplikacji”</string>
     <string name="halo_pause_summary">”Kiedy otworzysz aplikację poprzez HALO aplikacja pod spodem zostanie wstrzymana”</string>
 
     <!-- Quick pulldown -->
@@ -2038,7 +2038,7 @@
     <string name="title_tile_volume">”Głośność”</string>
 
     <string name="title_dynamic_tiles">”Dynamiczne kafelki”</string>
-    <string name="dynamic_tiles_note_title">Note</string>
+    <string name="dynamic_tiles_note_title">"Informacja"</string>
     <string name="dynamic_tiles_note_summary">”Dynamiczne kafelki nie są zawsze widoczne pojawią się tylko wyzwolone przez zdarzenie systemowe”</string>
     <string name="title_dynamic_alarm">”Alarmy”</string>
     <string name="title_dynamic_bugreport">”Raportowanie błędów”</string>
@@ -2049,11 +2049,11 @@
     <string name="title_general">”Ogólne”</string>
     <string name="title_quick_pulldown">”Szybkie rozwinięcie”</string>
     <string name="summary_quick_pulldown">”%1 krawędzi paska statusu rozwija Szybkie Ustawienia”</string>
-    <string name="quick_pulldown_summary_left">Lewej</string>
-    <string name="quick_pulldown_summary_right">Prawej</string>
+    <string name="quick_pulldown_summary_left">"Lewej"</string>
+    <string name="quick_pulldown_summary_right">"Prawej"</string>
     <string name="quick_pulldown_off">”Wyłączone”</string>
-    <string name="quick_pulldown_left">Lewa</string>
-    <string name="quick_pulldown_right">Prawa</string>
+    <string name="quick_pulldown_left">"Lewa"</string>
+    <string name="quick_pulldown_right">"Prawa"</string>
     <string name="title_collapse_panel">”Automatycznie zamknięcie panelu”</string>
     <string name="summary_collapse_panel">”Zamknij Szybkie Ustawienia po naciśnięciu kafelka”</string>
 
@@ -2063,162 +2063,162 @@
     <string name="tiles_reset_message">”Przywrócić domyślne kafelki i układ?”</string>
 
     <!-- Hardware keys -->
-    <string name="hardware_keys_title">Przyciski fizyczne</string>
-    <string name="hardware_keys_bindings_title">Działania przycisków</string>
-    <string name="hardware_keys_enable_custom_title">Włącz własne akcje</string>
-    <string name="hardware_keys_home_long_press_title">Przycisk Home (długie przytrzymanie)</string>
-    <string name="hardware_keys_menu_press_title">Przycisk Menu</string>
-    <string name="hardware_keys_menu_long_press_title">Przycisk Menu (długie przytrzymanie)</string>
-    <string name="hardware_keys_assist_press_title">Przycisk Szukania</string>
-    <string name="hardware_keys_assist_long_press_title">Przycisk Szukania (długie przytrzymanie)</string>
-    <string name="hardware_keys_app_switch_press_title">Przycisk zmiany aplikacji</string>
-    <string name="hardware_keys_app_switch_long_press_title">Przycisk zmiany aplikacji (długie przytrzymanie)</string>
-    <string name="hardware_keys_show_overflow_title">Wyświetlaj przycisk menu</string>
-    <string name="hardware_keys_show_overflow_summary">Wyświetlaj w aplikacjach ekranowy przycisk menu</string>
-    <string name="hardware_keys_show_overflow_toast_enable">Ekranowy przycisk menu może się nie pojawić dopóki nie zrestartujesz aplikacji</string>
-    <string name="hardware_keys_show_overflow_toast_disable">Ekranowy przycisk menu może się nie schować dopóki nie zrestartujesz aplikacji</string>
-    <string name="hardware_keys_action_nothing">Brak akcji</string>
-    <string name="hardware_keys_action_menu">Otwórz/zamknij menu</string>
-    <string name="hardware_keys_action_app_switch">Przycisk przełączania ostatnich aplikacji</string>
-    <string name="hardware_keys_action_search">Asystant szukania</string>
-    <string name="hardware_keys_action_voice_search">Wyszukiwanie głosowe</string>
-    <string name="hardware_keys_action_in_app_search">Wyszukiwanie wewnątrz aplikacji</string>
-    <string name="additional_options_title">Dodatkowe opcje</string>
+    <string name="hardware_keys_title">"Przyciski fizyczne"</string>
+    <string name="hardware_keys_bindings_title">"Działania przycisków"</string>
+    <string name="hardware_keys_enable_custom_title">"Włącz własne akcje"</string>
+    <string name="hardware_keys_home_long_press_title">"Przycisk Home (długie przytrzymanie)"</string>
+    <string name="hardware_keys_menu_press_title">"Przycisk Menu"</string>
+    <string name="hardware_keys_menu_long_press_title">"Przycisk Menu (długie przytrzymanie)"</string>
+    <string name="hardware_keys_assist_press_title">"Przycisk Szukania"</string>
+    <string name="hardware_keys_assist_long_press_title">"Przycisk Szukania (długie przytrzymanie)"</string>
+    <string name="hardware_keys_app_switch_press_title">"Przycisk zmiany aplikacji"</string>
+    <string name="hardware_keys_app_switch_long_press_title">"Przycisk zmiany aplikacji (długie przytrzymanie)"</string>
+    <string name="hardware_keys_show_overflow_title">"Wyświetlaj przycisk menu"</string>
+    <string name="hardware_keys_show_overflow_summary">"Wyświetlaj w aplikacjach ekranowy przycisk menu"</string>
+    <string name="hardware_keys_show_overflow_toast_enable">"Ekranowy przycisk menu może się nie pojawić dopóki nie zrestartujesz aplikacji"</string>
+    <string name="hardware_keys_show_overflow_toast_disable">"Ekranowy przycisk menu może się nie schować dopóki nie zrestartujesz aplikacji"</string>
+    <string name="hardware_keys_action_nothing">"Brak akcji"</string>
+    <string name="hardware_keys_action_menu">"Otwórz/zamknij menu"</string>
+    <string name="hardware_keys_action_app_switch">"Przycisk przełączania ostatnich aplikacji"</string>
+    <string name="hardware_keys_action_search">"Asystent szukania"</string>
+    <string name="hardware_keys_action_voice_search">"Wyszukiwanie głosowe"</string>
+    <string name="hardware_keys_action_in_app_search">"Wyszukiwanie wewnątrz aplikacji"</string>
+    <string name="additional_options_title">"Dodatkowe opcje"</string>
 
-    <string name="pref_ring_mode_title">Tryby Dźwięku</string>
-    <string name="pref_ring_mode_summary">Zobacz lub zmień tryby przycisków głośności</string>
-    <string name="pref_network_mode_title">Tryby Sieci</string>
-    <string name="pref_screentimeout_mode_title">Tryby opóźnienia wyłączania ekranu</string>
-    <string name="cm_sound_mode_silent">Wyciszenie</string>
-    <string name="cm_sound_mode_vibrate">Wibracje</string>
-    <string name="cm_sound_mode_sound">Dźwięk</string>
-    <string name="cm_sound_mode_soundVibrate">Dźwięk i Wibrację</string>
+    <string name="pref_ring_mode_title">"Tryby Dźwięku"</string>
+    <string name="pref_ring_mode_summary">"Zobacz lub zmień tryby przycisków głośności"</string>
+    <string name="pref_network_mode_title">"Tryby Sieci"</string>
+    <string name="pref_screentimeout_mode_title">"Tryby opóźnienia wyłączania ekranu"</string>
+    <string name="cm_sound_mode_silent">"Wyciszenie"</string>
+    <string name="cm_sound_mode_vibrate">"Wibracje"</string>
+    <string name="cm_sound_mode_sound">"Dźwięk"</string>
+    <string name="cm_sound_mode_soundVibrate">"Dźwięk i Wibracje"</string>
 
     <!-- Pie controls -->
-    <string name="pie_controls_title">Przyciski Pie</string>
+    <string name="pie_controls_title">"Przyciski Pie"</string>
     
-    <string name="pie_gravity_title">Grawitacja Pie</string>
-    <string name="pie_gravity_summary">Wybierz miejsce ekranu z którego będzie się wysuwać Pie</string>
-    <string name="pie_gravity_top">Góra</string>
-    <string name="pie_gravity_bottom">Dół</string>
-    <string name="pie_gravity_right">Prawa</string>
-    <string name="pie_gravity_left">Lewa</string>
+    <string name="pie_gravity_title">"Grawitacja Pie"</string>
+    <string name="pie_gravity_summary">"Wybierz miejsce ekranu z którego będzie się wysuwać Pie"</string>
+    <string name="pie_gravity_top">"Góra"</string>
+    <string name="pie_gravity_bottom">"Dół"</string>
+    <string name="pie_gravity_right">"Prawo"</string>
+    <string name="pie_gravity_left">"Lewo"</string>
     
-    <string name="pie_mode_title">Styl Pie</string>
-    <string name="pie_mode_summary">Wybierz jak szybko będzię sie wysuwać Pie i jak będą się pokazywać dodatkowe informację</string>
-    <string name="pie_mode_bare">Natychmiastowo</string>
-    <string name="pie_mode_quick">Szybko</string>
-    <string name="pie_mode_default">Normalnie (domyślnie)</string>
-    <string name="pie_mode_slow">Wolno</string>
+    <string name="pie_mode_title">"Styl Pie"</string>
+    <string name="pie_mode_summary">"Wybierz jak szybko będzię sie wysuwać Pie i jak będą się pokazywać dodatkowe informację"</string>
+    <string name="pie_mode_bare">"Natychmiastowo"</string>
+    <string name="pie_mode_quick">"Szybko"</string>
+    <string name="pie_mode_default">"Normalnie (domyślnie)"</string>
+    <string name="pie_mode_slow">"Wolno"</string>
     
-    <string name="pie_size_title">Rozmiar Pie</string>
-    <string name="pie_size_summary">Okreś rozmiar przycisków Pie</string>
-    <string name="pie_size_small">Małe</string>
+    <string name="pie_size_title">"Rozmiar Pie"</string>
+    <string name="pie_size_summary">"Okreś rozmiar przycisków Pie"</string>
+    <string name="pie_size_small">"Małe"</string>
     <string name="pie_size_default">@string/pie_mode_default</string>
-    <string name="pie_size_large">Duże</string>
-    <string name="pie_size_gigantic">Gigantyczne</string>
-    <string name="pie_size_monster">Monstrualne</string>
+    <string name="pie_size_large">"Duże"</string>
+    <string name="pie_size_gigantic">"Gigantyczne"</string>
+    <string name="pie_size_monster">"Monstrualne"</string>
 
-    <string name="pie_angle_title">Kąt Pie</string>
-    <string name="pie_angle_summary">Zmień kąt dzielący Pie od krawędzi ekranu</string>
-    <string name="pie_angle_none">Żaden (stare)</string>
-    <string name="pie_angle_small">Mały</string>
-    <string name="pie_angle_big">Normalny (domyślnie)</string>
-    <string name="pie_angle_huge">Duże</string>
-    <string name="pie_angle_super">Ogromnę</string>
+    <string name="pie_angle_title">"Kąt Pie"</string>
+    <string name="pie_angle_summary">"Zmień kąt dzielący Pie od krawędzi ekranu"</string>
+    <string name="pie_angle_none">"Żaden (stare)"</string>
+    <string name="pie_angle_small">"Mały"</string>
+    <string name="pie_angle_big">"Normalny (domyślnie)"</string>
+    <string name="pie_angle_huge">"Duże"</string>
+    <string name="pie_angle_super">"Ogromne"</string>
     
-    <string name="pie_gap_title">Przerwa przycisków</string>
-    <string name="pie_gap_summary">Zmień rozmiar przerwy między przyciskami Pie</string>
-    <string name="pie_gap_none">Brak</string>
-    <string name="pie_gap_small">Mała</string>
-    <string name="pie_gap_big">Duża (domyślnie)</string>
-    <string name="pie_gap_huge">Ogromna</string>
+    <string name="pie_gap_title">"Odstęp przycisków"</string>
+    <string name="pie_gap_summary">"Zmień rozmiar przerwy między przyciskami Pie"</string>
+    <string name="pie_gap_none">"Brak"</string>
+    <string name="pie_gap_small">"Mała"</string>
+    <string name="pie_gap_big">"Duża (domyślnie)"</string>
+    <string name="pie_gap_huge">"Ogromna"</string>
 
-    <string name="pie_center_title">Wyśrodkowanie</string>
-    <string name="pie_center_summary">Wycentruj Pie na środku krawędzi</string>
+    <string name="pie_center_title">"Wyśrodkowanie"</string>
+    <string name="pie_center_summary">"Wycentruj Pie na środku krawędzi"</string>
 
-    <string name="pie_stick_title">Zablokuj obracanie</string>
-    <string name="pie_stick_summary">Wyświetlaj Pie zawsze na tej samej krawędzi</string>
+    <string name="pie_stick_title">"Zablokuj obracanie"</string>
+    <string name="pie_stick_summary">"Wyświetlaj Pie zawsze na tej samej krawędzi"</string>
 
-    <string name="pie_menu_title">Zawsze widoczny przycisk menu</string>
-    <string name="pie_menu_summary">Zawsze wyświetlaj przycisk menu, nawet jak jest to niepotrzebne</string>
+    <string name="pie_menu_title">"Zawsze widoczny przycisk menu"</string>
+    <string name="pie_menu_summary">"Zawsze wyświetlaj przycisk menu, nawet kiedy to niepotrzebne"</string>
 
-    <string name="pie_search_title">Przycisk wyszukiwania</string>
-    <string name="pie_search_summary">Włącz przycisk wyszukiwania w Pie</string>
+    <string name="pie_search_title">"Przycisk wyszukiwania"</string>
+    <string name="pie_search_summary">"Włącz przycisk wyszukiwania w Pie"</string>
 
-    <string name="pie_trigger_title">Obszar reakcji</string>
-    <string name="pie_trigger_summary">Określ rozmiar reagujący na przeciągnięcia</string>
-    <string name="pie_trigger_none">Brak (Pie wyłączone)</string>
-    <string name="pie_trigger_small">Mały</string>
-    <string name="pie_trigger_normal">Normalny (domyślnie)</string>
-    <string name="pie_trigger_big">Duży</string>
-    <string name="pie_trigger_huge">Ogromny</string>
+    <string name="pie_trigger_title">"Obszar reakcji"</string>
+    <string name="pie_trigger_summary">"Określ rozmiar reagujący na przeciągnięcia"</string>
+    <string name="pie_trigger_none">"Brak (Pie wyłączone)"</string>
+    <string name="pie_trigger_small">"Mały"</string>
+    <string name="pie_trigger_normal">"Normalny (domyślnie)"</string>
+    <string name="pie_trigger_big">"Duży"</string>
+    <string name="pie_trigger_huge">"Ogromny"</string>
 
     <!-- Navigation Bar #CM -->
     <string name="navigation_reset_title">@string/lock_screen_shortcuts_reset</string>
-    <string name="navigation_bar_title">Przyciski nawigacyjne</string>
-    <string name="navigation_bar_help_text">1 - Aby edyotwać dotknij ikone kłódki\n\n2 - Dotknij przycisk któremu chcesz zmienić lub dodać funkcję\n\n3 - Przyrzymaj przycisk aby go przesunąć\n\n4 - Aby zapisać dotknij ikone kłódki ponownie\n\n5 - Aby przywrócić ustawiena domyślne dotknij przycisk Zresetuj\n\n</string>
-    <string name="navigation_bar_tips">&#8226; Każdy przycisk może mieć tylko jedną funkcję\n\n&#8226; Funkcja przycisku home nie może być zmieniona\n\n&#8226; Boczne przyciski nie mogą być przesunięte</string>
-    <string name="navigation_bar_tips_title">Szybkie porady</string>
-    <string name="navigation_bar_reset_message">Usunąć obecne ustawienia i przywrócić domyślne?</string>
-    <string name="navigation_bar_save_message">Ustawienia przycisków nawigacyjnych zapisane</string>
-    <string name="navigation_bar_reset_toast">Pasek nawigacyjny zresetowany do ustawień domyślnych</string>
-    <string name="navigation_bar_menu_editable">Edytowalne</string>
-    <string name="navigation_bar_menu_locked">Zablokowane</string>
+    <string name="navigation_bar_title">"Przyciski nawigacyjne"</string>
+    <string name="navigation_bar_help_text">"1 - Aby edyotwać dotknij ikone kłódki\n\n2 - Dotknij przycisk któremu chcesz zmienić lub dodać funkcję\n\n3 - Przyrzymaj przycisk aby go przesunąć\n\n4 - Aby zapisać dotknij ikone kłódki ponownie\n\n5 - Aby przywrócić ustawiena domyślne dotknij przycisk Zresetuj\n\n"</string>
+    <string name="navigation_bar_tips">"&#8226; Każdy przycisk może mieć tylko jedną funkcję\n\n&#8226; Funkcja przycisku home nie może być zmieniona\n\n&#8226; Boczne przyciski nie mogą być przesunięte"</string>
+    <string name="navigation_bar_tips_title">"Szybkie porady"</string>
+    <string name="navigation_bar_reset_message">"Usunąć obecne ustawienia i przywrócić domyślne?"</string>
+    <string name="navigation_bar_save_message">"Ustawienia przycisków nawigacyjnych zapisane"</string>
+    <string name="navigation_bar_reset_toast">"Pasek nawigacyjny zresetowany do ustawień domyślnych"</string>
+    <string name="navigation_bar_menu_editable">"Edytowalne"</string>
+    <string name="navigation_bar_menu_locked">"Zablokowane"</string>
     
     <!-- Hybrid sub menu [CHAR LIMIT=30] -->
-    <string name="hybrid_settings">Ustawienia Hybrydy</string>
+    <string name="hybrid_settings">"Ustawienia Hybrydowe"</string>
 
-    <string name="mod_version">wersja ParanoidAndroid</string>
-    <string name="mod_version_default">Nieznane</string>
+    <string name="mod_version">"Wersja ParanoidAndroid"</string>
+    <string name="mod_version_default">"Nieznane"</string>
 
-    <string name="themes_settings_title">Motywy</string>
+    <string name="themes_settings_title">"Motywy"</string>
 
     <!-- Android debugging over WiFi -->
-    <string name="adb_over_network">ADB przez sieć</string>
-    <string name="adb_over_network_summary">Włącz debugowanie TCP/IP przez interfejsy sieciowe (Wi-Fi, sieci USB). Ta opcja wyłącza się po restarcie urządzenia</string>
+    <string name="adb_over_network">"ADB przez sieć"</string>
+    <string name="adb_over_network_summary">"Włącz debugowanie TCP/IP przez interfejsy sieciowe (Wi-Fi, sieci USB). Ta opcja wyłącza się po restarcie urządzenia"</string>
     <!-- Warning for Adb over Network -->
-    <string name="adb_over_network_warning">UWAGA: Kiedy adb przez sieć jest włączone twój telefon jest podatny na wtargnięcia ze wszystkich podłączonych sieci. Dotyczy to także sieci GSM!\n\nUżywaj tej funkcji tylko i wyłącznie jeżeli jesteś podłączony do zaufanych sieci.\n\nCzy na pewno chcesz to włączyć?</string>
+    <string name="adb_over_network_warning">"UWAGA: Kiedy adb przez sieć jest włączone twój telefon jest podatny na wtargnięcia ze wszystkich podłączonych sieci. Dotyczy to także sieci GSM!\n\nUżywaj tej funkcji tylko i wyłącznie jeżeli jesteś podłączony do zaufanych sieci.\n\nCzy na pewno chcesz to włączyć?"</string>
 
-    <string name="vibration_title">Wibracje telefonu</string>
-    <string name="notification_convert_sound_to_vibration_title">Konwersja powiadomień</string>
-    <string name="notification_convert_sound_to_vibration_summary">Zamiana dźwięków powiadomień na wibrację</string>
+    <string name="vibration_title">"Wibracje telefonu"</string>
+    <string name="notification_convert_sound_to_vibration_title">"Konwersja powiadomień"</string>
+    <string name="notification_convert_sound_to_vibration_summary">"Zamiana dźwięków powiadomień na wibrację"</string>
 
     <!-- Quiet hours -->
-    <string name="quiet_hours_title">Ciche godziny</string>
-    <string name="quiet_hours_summary">Skonfiguruj godziny podczas których urządzenie powinno być wyciszone</string>
-    <string name="quiet_hours_note_title">Uwaga</string>
-    <string name="quiet_hours_note_summary">Połączenia przychodzące będą sie zachowywać normalnie podczas cichych godzin</string>
-    <string name="quiet_hours_enabled">Włącz ciche godziny</string>
-    <string name="quiet_hours_enabled_on">Ciche godzny bedą włączone</string>
-    <string name="quiet_hours_enabled_off">Powiadomienia będą zachowywać się normalnie</string>
-    <string name="quiet_hours_start">Start cichych godzin</string>
-    <string name="quiet_hours_start_summary">Kiedy zacząć egzekwowanie cichych godzin</string>
-    <string name="quiet_hours_end">Koniec cichych godzin</string>
-    <string name="quiet_hours_end_summary">Kiedy zakończyć egzekwowanie cichych godzin</string>
-    <string name="quiet_hours_mute">Wycisz powiadomienia</string>
-    <string name="quiet_hours_mute_on">Dźwięki nie będą odtwarzane</string>
-    <string name="quiet_hours_mute_off">Dźwięki będą odtwarzane normalnie</string>
-    <string name="quiet_hours_still">Wyłącz wibracje</string>
-    <string name="quiet_hours_still_on">Urządzenie nie będzie wibrować</string>
-    <string name="quiet_hours_still_off">Urządzenie będzie wibrować normalnie</string>
-    <string name="quiet_hours_dim">Wyłącz diodę powiadomień</string>
-    <string name="quiet_hours_dim_on">Dioda powiadomień nie będzie świecić</string>
-    <string name="quiet_hours_dim_off">Dioda powiadomień będzie zachowywać się normalnie</string>
-    <string name="quiet_hours_haptic">Wibracja dotykowa</string>
-    <string name="quiet_hours_haptic_on">Wibracja dotykowa będzie wyłączona</string>
-    <string name="quiet_hours_haptic_off">Wibracja dotykowa będzie włączona</string>
-    <string name="quiet_hours_active_from">Aktywne od</string>
-    <string name="quiet_hours_active_to">do</string>
+    <string name="quiet_hours_title">"Ciche godziny"</string>
+    <string name="quiet_hours_summary">"Skonfiguruj godziny podczas których urządzenie powinno być wyciszone"</string>
+    <string name="quiet_hours_note_title">"Uwaga"</string>
+    <string name="quiet_hours_note_summary">"Połączenia przychodzące będą sie zachowywać normalnie podczas cichych godzin"</string>
+    <string name="quiet_hours_enabled">"Włącz ciche godziny"</string>
+    <string name="quiet_hours_enabled_on">"Ciche godzny bedą włączone"</string>
+    <string name="quiet_hours_enabled_off">"Powiadomienia będą zachowywać się normalnie"</string>
+    <string name="quiet_hours_start">"Start cichych godzin"</string>
+    <string name="quiet_hours_start_summary">"Kiedy zacząć egzekwowanie cichych godzin"</string>
+    <string name="quiet_hours_end">"Koniec cichych godzin"</string>
+    <string name="quiet_hours_end_summary">"Kiedy zakończyć egzekwowanie cichych godzin"</string>
+    <string name="quiet_hours_mute">"Wycisz powiadomienia"</string>
+    <string name="quiet_hours_mute_on">"Dźwięki powiadomień nie będą odtwarzane"</string>
+    <string name="quiet_hours_mute_off">"Dźwięki powiadomień będą odtwarzane normalnie"</string>
+    <string name="quiet_hours_still">"Wyłącz wibracje"</string>
+    <string name="quiet_hours_still_on">"Urządzenie nie będzie wibrować"</string>
+    <string name="quiet_hours_still_off">"Urządzenie będzie wibrować normalnie"</string>
+    <string name="quiet_hours_dim">"Wyłącz diodę powiadomień"</string>
+    <string name="quiet_hours_dim_on">"Dioda powiadomień nie będzie świecić"</string>
+    <string name="quiet_hours_dim_off">"Dioda powiadomień będzie zachowywać się normalnie"</string>
+    <string name="quiet_hours_haptic">"Wibracja dotykowa"</string>
+    <string name="quiet_hours_haptic_on">"Wibracja dotykowa będzie wyłączona"</string>
+    <string name="quiet_hours_haptic_off">"Wibracja dotykowa będzie włączona"</string>
+    <string name="quiet_hours_active_from">"Aktywne od"</string>
+    <string name="quiet_hours_active_to">"do"</string>
 
     <!-- Time range preference -->
-    <string name="start_time_title">Start</string>
-    <string name="end_time_title">Koniec</string>
+    <string name="start_time_title">"Start"</string>
+    <string name="end_time_title">"Koniec"</string>
 
 <!-- Automatic brightness customization -->
-    <string name="light_sensor_current_value">”Aktualny odczyt sensora: “ <xliff:g id="light_level">%d</xliff:g> lux</string>
-    <string name="auto_brightness_dialog_title">”Automatyczny poziom jasności”string>
-    <string name="auto_brightness_level_format"><xliff:g id="start_level">%1$s</xliff:g> -\n<xliff:g id="end_level">%2$s</xliff:g> lux</string>
+    <string name="light_sensor_current_value">”Aktualny odczyt sensora: “ <xliff:g id="light_level">%d</xliff:g>" lux"</string>
+    <string name="auto_brightness_dialog_title">”Automatyczny poziom jasności”</string>
+    <string name="auto_brightness_level_format"><xliff:g id="start_level">%1$s</xliff:g> -\n<xliff:g id="end_level">%2$s</xliff:g>" lux"</string>
     <string name="auto_brightness_brightness_format"><xliff:g id="percent">%s</xliff:g>%%</string>
     <string name="auto_brightness_adjust_button">”Dopasuj”</string>
     <string name="auto_brightness_reset_button">”Resetuj”</string>
