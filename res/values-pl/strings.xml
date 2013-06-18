@@ -2063,157 +2063,157 @@
     <string name="tiles_reset_message">”Przywrócić domyślne kafelki i układ?”</string>
 
     <!-- Hardware keys -->
-    <string name="hardware_keys_title">”Klawisze sprzętowe”</string>
-    <string name="hardware_keys_bindings_title">Key actions</string>
-    <string name="hardware_keys_enable_custom_title">Enable custom actions</string>
-    <string name="hardware_keys_home_long_press_title">Home key (long press)</string>
-    <string name="hardware_keys_menu_press_title">Menu key</string>
-    <string name="hardware_keys_menu_long_press_title">Menu key (long press)</string>
-    <string name="hardware_keys_assist_press_title">Search key</string>
-    <string name="hardware_keys_assist_long_press_title">Search key (long press)</string>
-    <string name="hardware_keys_app_switch_press_title">App switch key</string>
-    <string name="hardware_keys_app_switch_long_press_title">App switch key (long press)</string>
-    <string name="hardware_keys_show_overflow_title">Show action overflow</string>
-    <string name="hardware_keys_show_overflow_summary">Display the 3-dot overflow menu button within apps</string>
-    <string name="hardware_keys_show_overflow_toast_enable">The action overflow button may not be visible until apps are restarted</string>
-    <string name="hardware_keys_show_overflow_toast_disable">The action overflow button may not be hidden until apps are restarted</string>
-    <string name="hardware_keys_action_nothing">No action</string>
-    <string name="hardware_keys_action_menu">Open/close menu</string>
-    <string name="hardware_keys_action_app_switch">Recent apps switcher</string>
-    <string name="hardware_keys_action_search">Search assistant</string>
-    <string name="hardware_keys_action_voice_search">Voice search</string>
-    <string name="hardware_keys_action_in_app_search">In-app search</string>
-    <string name="additional_options_title">Additional options</string>
+    <string name="hardware_keys_title">Przyciski fizyczne</string>
+    <string name="hardware_keys_bindings_title">Działania przycisków</string>
+    <string name="hardware_keys_enable_custom_title">Włącz własne akcje</string>
+    <string name="hardware_keys_home_long_press_title">Przycisk Home (długie przytrzymanie)</string>
+    <string name="hardware_keys_menu_press_title">Przycisk Menu</string>
+    <string name="hardware_keys_menu_long_press_title">Przycisk Menu (długie przytrzymanie)</string>
+    <string name="hardware_keys_assist_press_title">Przycisk Szukania</string>
+    <string name="hardware_keys_assist_long_press_title">Przycisk Szukania (długie przytrzymanie)</string>
+    <string name="hardware_keys_app_switch_press_title">Przycisk zmiany aplikacji</string>
+    <string name="hardware_keys_app_switch_long_press_title">Przycisk zmiany aplikacji (długie przytrzymanie)</string>
+    <string name="hardware_keys_show_overflow_title">Wyświetlaj przycisk menu</string>
+    <string name="hardware_keys_show_overflow_summary">Wyświetlaj w aplikacjach ekranowy przycisk menu</string>
+    <string name="hardware_keys_show_overflow_toast_enable">Ekranowy przycisk menu może się nie pojawić dopóki nie zrestartujesz aplikacji</string>
+    <string name="hardware_keys_show_overflow_toast_disable">Ekranowy przycisk menu może się nie schować dopóki nie zrestartujesz aplikacji</string>
+    <string name="hardware_keys_action_nothing">Brak akcji</string>
+    <string name="hardware_keys_action_menu">Otwórz/zamknij menu</string>
+    <string name="hardware_keys_action_app_switch">Przycisk przełączania ostatnich aplikacji</string>
+    <string name="hardware_keys_action_search">Asystant szukania</string>
+    <string name="hardware_keys_action_voice_search">Wyszukiwanie głosowe</string>
+    <string name="hardware_keys_action_in_app_search">Wyszukiwanie wewnątrz aplikacji</string>
+    <string name="additional_options_title">Dodatkowe opcje</string>
 
-    <string name="pref_ring_mode_title">Sound modes</string>
-    <string name="pref_ring_mode_summary">View or change the Sound button modes</string>
-    <string name="pref_network_mode_title">Network modes</string>
-    <string name="pref_screentimeout_mode_title">Screen timeout modes</string>
-    <string name="cm_sound_mode_silent">Silent</string>
-    <string name="cm_sound_mode_vibrate">Vibrate</string>
-    <string name="cm_sound_mode_sound">Sound</string>
-    <string name="cm_sound_mode_soundVibrate">Sound &amp; Vibrate</string>
+    <string name="pref_ring_mode_title">Tryby Dźwięku</string>
+    <string name="pref_ring_mode_summary">Zobacz lub zmień tryby przycisków głośności</string>
+    <string name="pref_network_mode_title">Tryby Sieci</string>
+    <string name="pref_screentimeout_mode_title">Tryby opóźnienia wyłączania ekranu</string>
+    <string name="cm_sound_mode_silent">Wyciszenie</string>
+    <string name="cm_sound_mode_vibrate">Wibracje</string>
+    <string name="cm_sound_mode_sound">Dźwięk</string>
+    <string name="cm_sound_mode_soundVibrate">Dźwięk i Wibrację</string>
 
     <!-- Pie controls -->
-    <string name="pie_controls_title">Pie controls</string>
+    <string name="pie_controls_title">Przyciski Pie</string>
     
-    <string name="pie_gravity_title">Pie gravity</string>
-    <string name="pie_gravity_summary">Select the location where pie will be placed at</string>
-    <string name="pie_gravity_top">Top</string>
-    <string name="pie_gravity_bottom">Bottom</string>
-    <string name="pie_gravity_right">Right</string>
-    <string name="pie_gravity_left">Left</string>
+    <string name="pie_gravity_title">Grawitacja Pie</string>
+    <string name="pie_gravity_summary">Wybierz miejsce ekranu z którego będzie się wysuwać Pie</string>
+    <string name="pie_gravity_top">Góra</string>
+    <string name="pie_gravity_bottom">Dół</string>
+    <string name="pie_gravity_right">Prawa</string>
+    <string name="pie_gravity_left">Lewa</string>
     
-    <string name="pie_mode_title">Pie style</string>
-    <string name="pie_mode_summary">Manage how animations and status additions will be handled</string>
-    <string name="pie_mode_bare">Bare</string>
-    <string name="pie_mode_quick">Quick</string>
-    <string name="pie_mode_default">Normal (default)</string>
-    <string name="pie_mode_slow">Slow</string>
+    <string name="pie_mode_title">Styl Pie</string>
+    <string name="pie_mode_summary">Wybierz jak szybko będzię sie wysuwać Pie i jak będą się pokazywać dodatkowe informację</string>
+    <string name="pie_mode_bare">Natychmiastowo</string>
+    <string name="pie_mode_quick">Szybko</string>
+    <string name="pie_mode_default">Normalnie (domyślnie)</string>
+    <string name="pie_mode_slow">Wolno</string>
     
-    <string name="pie_size_title">Pie size</string>
-    <string name="pie_size_summary">Define pie controls size</string>
-    <string name="pie_size_small">Small</string>
+    <string name="pie_size_title">Rozmiar Pie</string>
+    <string name="pie_size_summary">Okreś rozmiar przycisków Pie</string>
+    <string name="pie_size_small">Małe</string>
     <string name="pie_size_default">@string/pie_mode_default</string>
-    <string name="pie_size_large">Large</string>
-    <string name="pie_size_gigantic">Gigantic</string>
-    <string name="pie_size_monster">Monster</string>
+    <string name="pie_size_large">Duże</string>
+    <string name="pie_size_gigantic">Gigantyczne</string>
+    <string name="pie_size_monster">Monstrualne</string>
 
-    <string name="pie_angle_title">Pie angle</string>
-    <string name="pie_angle_summary">Adjust the angle of pie\'s egdes from the attachment</string>
-    <string name="pie_angle_none">None (old)</string>
-    <string name="pie_angle_small">Small</string>
-    <string name="pie_angle_big">Normal (default)</string>
-    <string name="pie_angle_huge">Big</string>
-    <string name="pie_angle_super">Huge</string>
+    <string name="pie_angle_title">Kąt Pie</string>
+    <string name="pie_angle_summary">Zmień kąt dzielący Pie od krawędzi ekranu</string>
+    <string name="pie_angle_none">Żaden (stare)</string>
+    <string name="pie_angle_small">Mały</string>
+    <string name="pie_angle_big">Normalny (domyślnie)</string>
+    <string name="pie_angle_huge">Duże</string>
+    <string name="pie_angle_super">Ogromnę</string>
     
-    <string name="pie_gap_title">Item gap</string>
-    <string name="pie_gap_summary">Adjust the gap that separates pie elements</string>
-    <string name="pie_gap_none">None</string>
-    <string name="pie_gap_small">Small</string>
-    <string name="pie_gap_big">Big (default)</string>
-    <string name="pie_gap_huge">Huge</string>
+    <string name="pie_gap_title">Przerwa przycisków</string>
+    <string name="pie_gap_summary">Zmień rozmiar przerwy między przyciskami Pie</string>
+    <string name="pie_gap_none">Brak</string>
+    <string name="pie_gap_small">Mała</string>
+    <string name="pie_gap_big">Duża (domyślnie)</string>
+    <string name="pie_gap_huge">Ogromna</string>
 
-    <string name="pie_center_title">Middle alignment</string>
-    <string name="pie_center_summary">Center pie on the trigger edge</string>
+    <string name="pie_center_title">Wyśrodkowanie</string>
+    <string name="pie_center_summary">Wycentruj Pie na środku krawędzi</string>
 
-    <string name="pie_stick_title">Prevent rotation</string>
-    <string name="pie_stick_summary">Avoids orientation change when screen rotates</string>
+    <string name="pie_stick_title">Zablokuj obracanie</string>
+    <string name="pie_stick_summary">Wyświetlaj Pie zawsze na tej samej krawędzi</string>
 
-    <string name="pie_menu_title">Persistent menu button</string>
-    <string name="pie_menu_summary">Always show menu button even when it\'s not necessary</string>
+    <string name="pie_menu_title">Zawsze widoczny przycisk menu</string>
+    <string name="pie_menu_summary">Zawsze wyświetlaj przycisk menu, nawet jak jest to niepotrzebne</string>
 
-    <string name="pie_search_title">Search button</string>
-    <string name="pie_search_summary">Enable search button on pie controls</string>
+    <string name="pie_search_title">Przycisk wyszukiwania</string>
+    <string name="pie_search_summary">Włącz przycisk wyszukiwania w Pie</string>
 
-    <string name="pie_trigger_title">Trigger area</string>
-    <string name="pie_trigger_summary">Determine the size of the region that registers swipes</string>
-    <string name="pie_trigger_none">None (Pie disabled)</string>
-    <string name="pie_trigger_small">@string/pie_size_small</string>
-    <string name="pie_trigger_normal">@string/pie_mode_default</string>
-    <string name="pie_trigger_big">Big</string>
-    <string name="pie_trigger_huge">Huge</string>
+    <string name="pie_trigger_title">Obszar reakcji</string>
+    <string name="pie_trigger_summary">Określ rozmiar reagujący na przeciągnięcia</string>
+    <string name="pie_trigger_none">Brak (Pie wyłączone)</string>
+    <string name="pie_trigger_small">Mały</string>
+    <string name="pie_trigger_normal">Normalny (domyślnie)</string>
+    <string name="pie_trigger_big">Duży</string>
+    <string name="pie_trigger_huge">Ogromny</string>
 
     <!-- Navigation Bar #CM -->
     <string name="navigation_reset_title">@string/lock_screen_shortcuts_reset</string>
-    <string name="navigation_bar_title">Navigation controls</string>
-    <string name="navigation_bar_help_text">1 - To begin editing, tap the lock icon\n\n2 - Tap any button to assign or change functionality\n\n3 - Long press any button to rearrange the order\n\n4 - To save, tap the lock icon again\n\n5 - To restore system default, tap the reset button\n\n</string>
-    <string name="navigation_bar_tips">&#8226; Actions can only be assigned to one button at a time\n\n&#8226; The home button cannot be re-assigned\n\n&#8226; Side buttons cannot be rearranged</string>
-    <string name="navigation_bar_tips_title">Quick tips</string>
-    <string name="navigation_bar_reset_message">Delete current settings and restore to default?</string>
-    <string name="navigation_bar_save_message">Navigation bar settings saved</string>
-    <string name="navigation_bar_reset_toast">Navigation bar reset to default</string>
-    <string name="navigation_bar_menu_editable">Editable</string>
-    <string name="navigation_bar_menu_locked">Locked</string>
+    <string name="navigation_bar_title">Przyciski nawigacyjne</string>
+    <string name="navigation_bar_help_text">1 - Aby edyotwać dotknij ikone kłódki\n\n2 - Dotknij przycisk któremu chcesz zmienić lub dodać funkcję\n\n3 - Przyrzymaj przycisk aby go przesunąć\n\n4 - Aby zapisać dotknij ikone kłódki ponownie\n\n5 - Aby przywrócić ustawiena domyślne dotknij przycisk Zresetuj\n\n</string>
+    <string name="navigation_bar_tips">&#8226; Każdy przycisk może mieć tylko jedną funkcję\n\n&#8226; Funkcja przycisku home nie może być zmieniona\n\n&#8226; Boczne przyciski nie mogą być przesunięte</string>
+    <string name="navigation_bar_tips_title">Szybkie porady</string>
+    <string name="navigation_bar_reset_message">Usunąć obecne ustawienia i przywrócić domyślne?</string>
+    <string name="navigation_bar_save_message">Ustawienia przycisków nawigacyjnych zapisane</string>
+    <string name="navigation_bar_reset_toast">Pasek nawigacyjny zresetowany do ustawień domyślnych</string>
+    <string name="navigation_bar_menu_editable">Edytowalne</string>
+    <string name="navigation_bar_menu_locked">Zablokowane</string>
     
     <!-- Hybrid sub menu [CHAR LIMIT=30] -->
-    <string name="hybrid_settings">Hybrid properties</string>
+    <string name="hybrid_settings">Ustawienia Hybrydy</string>
 
-    <string name="mod_version">ParanoidAndroid version</string>
-    <string name="mod_version_default">Unknown</string>
+    <string name="mod_version">wersja ParanoidAndroid</string>
+    <string name="mod_version_default">Nieznane</string>
 
-    <string name="themes_settings_title">Themes</string>
+    <string name="themes_settings_title">Motywy</string>
 
     <!-- Android debugging over WiFi -->
-    <string name="adb_over_network">ADB over network</string>
-    <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>
+    <string name="adb_over_network">ADB przez sieć</string>
+    <string name="adb_over_network_summary">Włącz debugowanie TCP/IP przez interfejsy sieciowe (Wi-Fi, sieci USB). Ta opcja wyłącza się po restarcie urządzenia</string>
     <!-- Warning for Adb over Network -->
-    <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks, including GSM data network!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
+    <string name="adb_over_network_warning">UWAGA: Kiedy adb przez sieć jest włączone twój telefon jest podatny na wtargnięcia ze wszystkich podłączonych sieci. Dotyczy to także sieci GSM!\n\nUżywaj tej funkcji tylko i wyłącznie jeżeli jesteś podłączony do zaufanych sieci.\n\nCzy na pewno chcesz to włączyć?</string>
 
-    <string name="vibration_title">Phone vibration</string>
-    <string name="notification_convert_sound_to_vibration_title">Notification conversion</string>
-    <string name="notification_convert_sound_to_vibration_summary">Sounds to vibrations during vibrate mode</string>
+    <string name="vibration_title">Wibracje telefonu</string>
+    <string name="notification_convert_sound_to_vibration_title">Konwersja powiadomień</string>
+    <string name="notification_convert_sound_to_vibration_summary">Zamiana dźwięków powiadomień na wibrację</string>
 
     <!-- Quiet hours -->
-    <string name="quiet_hours_title">Quiet hours</string>
-    <string name="quiet_hours_summary">Configure the hours the device should be quiet</string>
-    <string name="quiet_hours_note_title">Note</string>
-    <string name="quiet_hours_note_summary">Incoming calls will behave like usual during quiet hours</string>
-    <string name="quiet_hours_enabled">Enable quiet hours</string>
-    <string name="quiet_hours_enabled_on">Quiet hours will be enforced</string>
-    <string name="quiet_hours_enabled_off">Notifications will function as normal</string>
-    <string name="quiet_hours_start">Start of quiet hours</string>
-    <string name="quiet_hours_start_summary">When to start enforcing quiet hours</string>
-    <string name="quiet_hours_end">End of quiet hours</string>
-    <string name="quiet_hours_end_summary">When to stop enforcing quiet hours</string>
-    <string name="quiet_hours_mute">Mute notifications</string>
-    <string name="quiet_hours_mute_on">No sounds will be played</string>
-    <string name="quiet_hours_mute_off">Sounds will play like normal</string>
-    <string name="quiet_hours_still">Disable vibrations</string>
-    <string name="quiet_hours_still_on">Device will not vibrate</string>
-    <string name="quiet_hours_still_off">Device will vibrate normally</string>
-    <string name="quiet_hours_dim">Disable notification light</string>
-    <string name="quiet_hours_dim_on">Notification light will be disabled</string>
-    <string name="quiet_hours_dim_off">Notification light will function as normal</string>
-    <string name="quiet_hours_haptic">Disable haptic feedback</string>
-    <string name="quiet_hours_haptic_on">Haptic feedback will be disabled</string>
-    <string name="quiet_hours_haptic_off">Haptic feedback will function as normal</string>
-    <string name="quiet_hours_active_from">Active from</string>
-    <string name="quiet_hours_active_to">to</string>
+    <string name="quiet_hours_title">Ciche godziny</string>
+    <string name="quiet_hours_summary">Skonfiguruj godziny podczas których urządzenie powinno być wyciszone</string>
+    <string name="quiet_hours_note_title">Uwaga</string>
+    <string name="quiet_hours_note_summary">Połączenia przychodzące będą sie zachowywać normalnie podczas cichych godzin</string>
+    <string name="quiet_hours_enabled">Włącz ciche godziny</string>
+    <string name="quiet_hours_enabled_on">Ciche godzny bedą włączone</string>
+    <string name="quiet_hours_enabled_off">Powiadomienia będą zachowywać się normalnie</string>
+    <string name="quiet_hours_start">Start cichych godzin</string>
+    <string name="quiet_hours_start_summary">Kiedy zacząć egzekwowanie cichych godzin</string>
+    <string name="quiet_hours_end">Koniec cichych godzin</string>
+    <string name="quiet_hours_end_summary">Kiedy zakończyć egzekwowanie cichych godzin</string>
+    <string name="quiet_hours_mute">Wycisz powiadomienia</string>
+    <string name="quiet_hours_mute_on">Dźwięki nie będą odtwarzane</string>
+    <string name="quiet_hours_mute_off">Dźwięki będą odtwarzane normalnie</string>
+    <string name="quiet_hours_still">Wyłącz wibracje</string>
+    <string name="quiet_hours_still_on">Urządzenie nie będzie wibrować</string>
+    <string name="quiet_hours_still_off">Urządzenie będzie wibrować normalnie</string>
+    <string name="quiet_hours_dim">Wyłącz diodę powiadomień</string>
+    <string name="quiet_hours_dim_on">Dioda powiadomień nie będzie świecić</string>
+    <string name="quiet_hours_dim_off">Dioda powiadomień będzie zachowywać się normalnie</string>
+    <string name="quiet_hours_haptic">Wibracja dotykowa</string>
+    <string name="quiet_hours_haptic_on">Wibracja dotykowa będzie wyłączona</string>
+    <string name="quiet_hours_haptic_off">Wibracja dotykowa będzie włączona</string>
+    <string name="quiet_hours_active_from">Aktywne od</string>
+    <string name="quiet_hours_active_to">do</string>
 
     <!-- Time range preference -->
     <string name="start_time_title">Start</string>
-    <string name="end_time_title">End</string>
+    <string name="end_time_title">Koniec</string>
 
 <!-- Automatic brightness customization -->
     <string name="light_sensor_current_value">”Aktualny odczyt sensora: “ <xliff:g id="light_level">%d</xliff:g> lux</string>
