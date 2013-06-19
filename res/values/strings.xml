@@ -4535,8 +4535,6 @@
 
     <!-- HALO -->
     <string name="halo_settings_title">HALO</string>
-    <string name="halo_enabled_title">Enable HALO</string>
-    <string name="halo_enabled_summary">If checked enable HALO feature (floating window on recent apps would not be affected)</string>
     <string name="halo_hide_title">Hide HALO after activity</string>
     <string name="halo_hide_summary">HALO will appear for incoming tasks and scroll out of sight after a while</string>
     <string name="halo_reversed_title">Reverse HALO</string>
