@@ -2033,9 +2033,7 @@
     <string name="hardware_keys_action_in_app_search">Búsqueda dentro de la aplicación</string>
     <string name="additional_options_title">Opciones adicionales</string>
     
-    <string name="pie_settings_title">Controles circulares</string>
-    <string name="pie_controls_summary">Permite la navegación y el reporte de estado en el modo de escritorio expandido</string>
-    
+    <string name="pie_controls_title">Controles circulares</string>   
     <string name="pie_gravity_title">Ubicación de los controles</string>
     <string name="pie_gravity_summary">Seleccionar la ubicación donde se encontrarán los controles circulares</string>
     <string name="pie_gravity_top">Arriba</string>
@@ -2058,9 +2056,9 @@
     <string name="pie_angle_summary">Ajusta el angulo entre el borde la pantalla y los controles</string>
     <string name="pie_angle_none">Ninguno</string>
     <string name="pie_angle_small">Pequeño</string>
-    <string name="pie_angle_big">Normal (defecto)</string>
-    <string name="pie_angle_huge">Grande</string>
-    <string name="pie_angle_super">Enorme</string>
+    <string name="pie_angle_normal">Normal (defecto)</string>
+    <string name="pie_angle_big">Grande</string>
+    <string name="pie_angle_huge">Enorme</string>
     <string name="pie_gap_title">Espacio entre los controles</string>
     <string name="pie_gap_summary">Ajustar el espacio entre los elementos</string>
     <string name="pie_gap_none">Sin espacio</string>
@@ -2073,6 +2071,7 @@
     <string name="pie_stick_summary">Evita los cambios de orientación cuando se gira la pantalla</string>
     <string name="pie_trigger_title">Area de disparo</string>
     <string name="pie_trigger_summary">Determinar el tamaño de el area que activará los controles circulares</string>
+    <string name="pie_trigger_none">Ninguna (desactivar)</string>
     <string name="pie_menu_title">Botón menú persistente</string>
     <string name="pie_menu_summary">Siempre mostrar el botón menú, incluso cuando no sea necesario</string>
     <string name="pie_search_title">Botón búsqueda</string>

@@ -4535,8 +4535,6 @@
 
     <!-- HALO -->
     <string name="halo_settings_title">HALO</string>
-    <string name="halo_enabled_title">Enable HALO</string>
-    <string name="halo_enabled_summary">If checked enable HALO feature (floating window on recent apps would not be affected)</string>
     <string name="halo_hide_title">Hide HALO after activity</string>
     <string name="halo_hide_summary">HALO will appear for incoming tasks and scroll out of sight after a while</string>
     <string name="halo_reversed_title">Reverse HALO</string>
@@ -4699,9 +4697,9 @@
     <string name="pie_angle_summary">Adjust the angle between screen\'s edge and pie</string>
     <string name="pie_angle_none">None</string>
     <string name="pie_angle_small">Small</string>
-    <string name="pie_angle_big">Normal (default)</string>
-    <string name="pie_angle_huge">Big</string>
-    <string name="pie_angle_super">Huge</string>
+    <string name="pie_angle_normal">Normal (default)</string>
+    <string name="pie_angle_big">Big</string>
+    <string name="pie_angle_huge">Huge</string>
     
     <string name="pie_gap_title">Item gap</string>
     <string name="pie_gap_summary">Adjust the gap that separates pie elements</string>
@@ -4724,11 +4722,11 @@
 
     <string name="pie_trigger_title">Trigger area</string>
     <string name="pie_trigger_summary">Determine the size of the region that registers swipes</string>
-    <string name="pie_trigger_none">None (Pie disabled)</string>
-    <string name="pie_trigger_small">@string/pie_size_small</string>
-    <string name="pie_trigger_normal">@string/pie_mode_default</string>
-    <string name="pie_trigger_big">Big</string>
-    <string name="pie_trigger_huge">Huge</string>
+    <string name="pie_trigger_none">None (disable)</string>
+    <string name="pie_trigger_small">@string/pie_angle_small</string>
+    <string name="pie_trigger_normal">@string/pie_angle_normal</string>
+    <string name="pie_trigger_big">@string/pie_angle_big</string>
+    <string name="pie_trigger_huge">@string/pie_angle_huge</string>
 
     <!-- Navigation Bar #CM -->
     <string name="navigation_reset_title">@string/lock_screen_shortcuts_reset</string>
