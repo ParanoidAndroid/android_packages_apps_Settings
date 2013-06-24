@@ -1969,17 +1969,19 @@
     <string name="halo_hide_title">Ocultar o HALO após a ativdade</string>
     <string name="halo_hide_summary">O HALO irá aparecer para novas tarefas e sair da tela após um tempo</string>
     <string name="halo_reversed_title">Inverter gesturas do HALO</string>
-				<string name="halo_reversed_summary">Aplica tarefas ou gesto de arrasto à gestura swipe-de-toque-duplo</string>
+    <string name="halo_reversed_summary">Aplica tarefas ou gesto de arrasto à gestura swipe-de-toque-duplo</string>
     <string name="halo_state_title">Política do HALO</string>
-				<string name="halo_state_summary">Para notificações de lista negra/branca mostradas no HALO</string>
+    <string name="halo_state_summary">Para notificações de lista negra/branca mostradas no HALO</string>
     <string name="halo_state_black">Lista Negra</string>
     <string name="halo_state_white">Lista Branca</string>
+    <string name="halo_pause_title">Pausar app ativo</string>
+    <string name="halo_pause_summary">Quando abrir um app com o Halo, o aplicativo que ficar por baixo, será pausado</string>
 
     <!-- Quick pulldown -->
     <string name="quick_pulldown_title">Puxada Rápida</string>
     <string name="quick_pulldown_summary">As bordas da barra de status irão puxar o menu de Configs. Rápidas</string>
     <!-- Show clock -->
-				<string name="show_clock_title">Mostrar relógio</string>
+    <string name="show_clock_title">Mostrar relógio</string>
     <!-- Circle battery -->
     <string name="circle_battery_title">Bateria com Círculo</string>
     <!-- AM/PM style -->
