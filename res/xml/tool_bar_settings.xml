@@ -67,6 +67,12 @@
             android:summary="@string/status_bar_donotdisturb_summary"
             android:defaultValue="false" />
 
+        <CheckBoxPreference
+            android:key="status_bar_brightness_control"
+            android:title="@string/status_bar_brightness"
+            android:summary="@string/status_bar_brightness_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
     
     <PreferenceCategory
