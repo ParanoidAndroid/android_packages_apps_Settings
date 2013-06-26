@@ -4571,11 +4571,7 @@
     <!-- Do not disturb -->
     <string name="status_bar_donotdisturb_title">Do not disturb</string>
     <string name="status_bar_donotdisturb_summary">Disable ticker animation for incoming notifications</string>
-    <!-- Brightness Control on Status Bar -->
-    <string name="status_bar_brightness">Brightness control</string>
-    <string name="status_bar_brightness_summary">Adjust brightness by sliding across status bar</string>
-    <string name="status_bar_brightness_auto_info">Automatic brightness is enabled</string>
-	
+
     <!-- Quick settings panel  -->
     <string name="quick_settings_panel_title">Quick Settings panel</string>
     <string name="quick_settings_title">Quick Settings</string>
