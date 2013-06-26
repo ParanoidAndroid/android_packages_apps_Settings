@@ -321,9 +321,8 @@ public class Toolbar extends SettingsPreferenceFragment
                     mStatusBarDoNotDisturb.isChecked() ? 1 : 0);
             return true;
         } else if (preference == mStatusBarBrightnessControl) {
-            value = mStatusBarBrightnessControl.isChecked();
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, value ? 1 : 0);
+                    Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, mStatusBarBrightnessControl.isChecked() ? 1 : 0);
             return true;
         } else if (preference == mPieMenu) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
