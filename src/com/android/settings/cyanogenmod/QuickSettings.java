@@ -17,6 +17,7 @@
 package com.android.settings.cyanogenmod;
 
 import static com.android.internal.util.cm.QSConstants.TILE_BLUETOOTH;
+import static com.android.internal.util.cm.QSConstants.TILE_CAMERA;
 import static com.android.internal.util.cm.QSConstants.TILE_MOBILEDATA;
 import static com.android.internal.util.cm.QSConstants.TILE_NETWORKMODE;
 import static com.android.internal.util.cm.QSConstants.TILE_NFC;
@@ -44,6 +45,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.android.internal.telephony.Phone;
+import com.android.internal.util.cm.QSUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -139,7 +141,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         }
         mDynamicUsbTether = (CheckBoxPreference) prefSet.findPreference(DYNAMIC_USBTETHER);
         if (mDynamicUsbTether != null) {
-            if (deviceSupportsUsbTether(getActivity())) {
+            if (QSUtils.deviceSupportsUsbTether(getActivity())) {
                 mDynamicUsbTether.setChecked(Settings.System.getInt(resolver, Settings.System.QS_DYNAMIC_USBTETHER, 1) == 1);
             } else {
                 mDynamicTiles.removePreference(mDynamicUsbTether);
@@ -148,7 +150,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         }
         mDynamicWifi = (CheckBoxPreference) prefSet.findPreference(DYNAMIC_WIFI);
         if (mDynamicWifi != null) {
-            if (deviceSupportsWifiDisplay(getActivity())) {
+            if (QSUtils.deviceSupportsWifiDisplay(getActivity())) {
                 mDynamicWifi.setChecked(Settings.System.getInt(resolver, Settings.System.QS_DYNAMIC_WIFI, 1) == 1);
             } else {
                 mDynamicTiles.removePreference(mDynamicWifi);
@@ -157,7 +159,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         }
 
         // Don't show mobile data options if not supported
-        if (!deviceSupportsMobileData(getActivity())) {
+        if (!QSUtils.deviceSupportsMobileData(getActivity())) {
             QuickSettingsUtil.TILES.remove(TILE_MOBILEDATA);
             QuickSettingsUtil.TILES.remove(TILE_WIFIAP);
             QuickSettingsUtil.TILES.remove(TILE_NETWORKMODE);
@@ -190,13 +192,18 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         }
 
         // Don't show the bluetooth options if not supported
-        if (!deviceSupportsBluetooth()) {
+        if (!QSUtils.deviceSupportsBluetooth()) {
             QuickSettingsUtil.TILES.remove(TILE_BLUETOOTH);
         }
 
         // Dont show the NFC tile if not supported
         if (!deviceSupportsNfc(getActivity())) {
             QuickSettingsUtil.TILES.remove(TILE_NFC);
+        }
+
+        // Don't show the Camera tile if the device has no cameras
+        if (!QSUtils.deviceSupportsCamera()) {
+            QuickSettingsUtil.TILES.remove(TILE_CAMERA);
         }
     }
 
