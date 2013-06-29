@@ -1238,6 +1238,7 @@ public class InstalledAppDetails extends Fragment
                 case DLG_DISABLE_NOTIFICATIONS:
                     // Re-enable the checkbox
                     getOwner().mNotificationSwitch.setChecked(true);
+                    break;
                 case DLG_PRIVACY_GUARD:
                     // Re-enable the checkbox
                     getOwner().mPrivacyGuardSwitch.setChecked(false);
