@@ -38,6 +38,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+import android.provider.Settings.SettingNotFoundException;
 import android.security.KeyStore;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -80,6 +81,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private static final String KEY_CREDENTIALS_MANAGER = "credentials_management";
     private static final String PACKAGE_MIME_TYPE = "application/vnd.android.package-archive";
 
+    private static final String KEY_PRIVACY_GUARD_DEFAULT = "privacy_guard_default";
+    private static final String KEY_APP_SECURITY_CATEGORY = "app_security";
+
     DevicePolicyManager mDPM;
 
     private ChooseLockSettingsHelper mChooseLockSettingsHelper;
@@ -99,6 +103,8 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private CheckBoxPreference mPowerButtonInstantlyLocks;
 
     private boolean mIsPrimary;
+
+    private CheckBoxPreference mPrivacyGuardDefault;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -256,6 +262,16 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 deviceAdminCategory.removePreference(mToggleVerifyApps);
             } else {
                 mToggleVerifyApps.setEnabled(false);
+	    }
+
+            // App security settings
+            addPreferencesFromResource(R.xml.security_settings_app_cyanogenmod);
+            mPrivacyGuardDefault = (CheckBoxPreference) findPreference(KEY_PRIVACY_GUARD_DEFAULT);
+            try {
+                mPrivacyGuardDefault.setChecked(Settings.Secure.getInt(getContentResolver(),
+                        Settings.Secure.PRIVACY_GUARD_DEFAULT) == 1);
+            } catch (SettingNotFoundException e) {
+                mPrivacyGuardDefault.setChecked(false);
             }
         }
 
@@ -471,6 +487,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
         } else if (KEY_TOGGLE_VERIFY_APPLICATIONS.equals(key)) {
             Settings.Global.putInt(getContentResolver(), Settings.Global.PACKAGE_VERIFIER_ENABLE,
                     mToggleVerifyApps.isChecked() ? 1 : 0);
+        } else if (KEY_PRIVACY_GUARD_DEFAULT.equals(key)) {
+            Settings.Secure.putInt(getContentResolver(), Settings.Secure.PRIVACY_GUARD_DEFAULT,
+                    mPrivacyGuardDefault.isChecked() ? 1 : 0);
         } else {
             // If we didn't handle it, let preferences handle it.
             return super.onPreferenceTreeClick(preferenceScreen, preference);
