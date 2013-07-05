@@ -1173,8 +1173,7 @@ public class InstalledAppDetails extends Fragment
                     .setNegativeButton(R.string.dlg_cancel,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            // Re-enable the checkbox
-                            getOwner().mNotificationSwitch.setChecked(true);
+                            dialog.cancel();
                         }
                     })
                     .create();
@@ -1193,8 +1192,41 @@ public class InstalledAppDetails extends Fragment
                     })
                     .setNegativeButton(R.string.dlg_cancel, null)
                     .create();
+                case DLG_PRIVACY_GUARD:
+                    return new AlertDialog.Builder(getActivity())
+                    .setTitle(getActivity().getText(R.string.privacy_guard_dlg_title))
+                    .setIconAttribute(android.R.attr.alertDialogIcon)
+                    .setMessage(getActivity().getText(R.string.privacy_guard_dlg_text))
+                    .setPositiveButton(R.string.dlg_ok,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            getOwner().setPrivacyGuard(true);
+                        }
+                    })
+                    .setNegativeButton(R.string.dlg_cancel,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    })
+                    .create();
             }
             throw new IllegalArgumentException("unknown id " + id);
+        }
+
+        @Override
+        public void onCancel(DialogInterface dialog) {
+            int id = getArguments().getInt("id");
+            switch (id) {
+                case DLG_DISABLE_NOTIFICATIONS:
+                    // Re-enable the checkbox
+                    getOwner().mNotificationSwitch.setChecked(true);
+                    break;
+                case DLG_PRIVACY_GUARD:
+                    // Re-enable the checkbox
+                    getOwner().mPrivacyGuardSwitch.setChecked(false);
+                    break;
+            }
         }
     }
 
