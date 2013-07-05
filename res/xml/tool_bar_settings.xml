@@ -98,6 +98,39 @@
             android:title="@string/halo_pause_title"
             android:summary="@string/halo_pause_summary" />
 
+        <CheckBoxPreference
+            android:key="halo_colors"
+            android:title="@string/halo_colors_title"
+            android:summary="@string/halo_colors_summary"
+            android:defaultValue="false" />
+
+        <com.android.settings.users.colorpicker.ColorPickerPreference
+            android:key="halo_circle_color"
+            android:title="@string/halo_circle_color_title"
+            android:dependency="halo_colors"
+            android:defaultValue="0xFF33B5E5"
+            alphaSlider="true" />
+
+        <com.android.settings.users.colorpicker.ColorPickerPreference
+            android:key="halo_effect_color"
+            android:title="@string/halo_effect_color_title"
+            android:summary="@string/halo_effect_color_summary"
+            android:dependency="halo_colors"
+            android:defaultValue="0xFF33B5E5"
+            alphaSlider="true" />
+
+        <com.android.settings.users.colorpicker.ColorPickerPreference
+            android:key="halo_bubble_color"
+            android:title="@string/halo_bubble_color_title"
+            android:dependency="halo_colors"
+            android:defaultValue="0xFF33B5E5"
+            alphaSlider="true" />
+
+        <com.android.settings.users.colorpicker.ColorPickerPreference
+            android:key="halo_bubble_text_color"
+            android:title="@string/halo_bubble_text_color_title"
+            android:dependency="halo_colors"
+            android:defaultValue="0xFFFFFFFF" />
     </PreferenceCategory>
 
     <PreferenceCategory

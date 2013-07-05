@@ -39,6 +39,8 @@ import android.view.IWindowManager;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settings.users.colorpicker.ColorPickerPreference;
+import com.android.settings.util.Helpers;
 
 public class Toolbar extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -47,6 +49,11 @@ public class Toolbar extends SettingsPreferenceFragment
     private static final String KEY_HALO_HIDE = "halo_hide";
     private static final String KEY_HALO_REVERSED = "halo_reversed";
     private static final String KEY_HALO_PAUSE = "halo_pause";
+    private static final String PREF_HALO_COLORS = "halo_colors";
+    private static final String PREF_HALO_CIRCLE_COLOR = "halo_circle_color";
+    private static final String PREF_HALO_EFFECT_COLOR = "halo_effect_color";
+    private static final String PREF_HALO_BUBBLE_COLOR = "halo_bubble_color";
+    private static final String PREF_HALO_BUBBLE_TEXT_COLOR = "halo_bubble_text_color";
     private static final String KEY_QUICK_PULL_DOWN = "quick_pulldown";
     private static final String KEY_AM_PM_STYLE = "am_pm_style";
     private static final String KEY_SHOW_CLOCK = "show_clock";
@@ -81,6 +88,11 @@ public class Toolbar extends SettingsPreferenceFragment
     private CheckBoxPreference mHaloHide;
     private CheckBoxPreference mHaloReversed;
     private CheckBoxPreference mHaloPause;
+    private CheckBoxPreference mHaloColors;
+    private ColorPickerPreference mHaloCircleColor;
+    private ColorPickerPreference mHaloEffectColor;
+    private ColorPickerPreference mHaloBubbleColor;
+    private ColorPickerPreference mHaloBubbleTextColor;
     private CheckBoxPreference mQuickPullDown;
     private CheckBoxPreference mShowClock;
     private CheckBoxPreference mCircleBattery;
@@ -125,6 +137,22 @@ public class Toolbar extends SettingsPreferenceFragment
         mHaloPause = (CheckBoxPreference) prefSet.findPreference(KEY_HALO_PAUSE);
         mHaloPause.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                 Settings.System.HALO_PAUSE, isLowRAM) == 1);
+
+        mHaloColors = (CheckBoxPreference) findPreference(PREF_HALO_COLORS);
+        mHaloColors.setChecked(Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.HALO_COLORS, 0) == 1);
+
+        mHaloEffectColor = (ColorPickerPreference) findPreference(PREF_HALO_EFFECT_COLOR);
+        mHaloEffectColor.setOnPreferenceChangeListener(this);
+
+        mHaloCircleColor = (ColorPickerPreference) findPreference(PREF_HALO_CIRCLE_COLOR);
+        mHaloCircleColor.setOnPreferenceChangeListener(this);
+
+        mHaloBubbleColor = (ColorPickerPreference) findPreference(PREF_HALO_BUBBLE_COLOR);
+        mHaloBubbleColor.setOnPreferenceChangeListener(this);
+
+        mHaloBubbleTextColor = (ColorPickerPreference) findPreference(PREF_HALO_BUBBLE_TEXT_COLOR);
+        mHaloBubbleTextColor.setOnPreferenceChangeListener(this);
 
         mQuickPullDown = (CheckBoxPreference) prefSet.findPreference(KEY_QUICK_PULL_DOWN);
         mQuickPullDown.setChecked(Settings.System.getInt(mContext.getContentResolver(),
@@ -291,10 +319,15 @@ public class Toolbar extends SettingsPreferenceFragment
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.HALO_PAUSE, mHaloPause.isChecked()
                     ? 1 : 0);
+        } else if (preference == mHaloColors) {
+            Settings.System.putInt(mContext.getContentResolver(),
+                    Settings.System.HALO_COLORS, mHaloColors.isChecked()
+                    ? 1 : 0);
         } else if (preference == mStatusBarNotifCount) {
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.STATUS_BAR_NOTIF_COUNT,	mStatusBarNotifCount.isChecked()
                     ? 1 : 0);
+            Helpers.restartSystemUI();
         } else if (preference == mMenuButtonShow) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.NAV_BAR_TABUI_MENU, mMenuButtonShow.isChecked() ? 1 : 0);
@@ -370,6 +403,39 @@ public class Toolbar extends SettingsPreferenceFragment
             } catch (android.os.RemoteException ex) {
                 // System dead
             }
+            return true;
+        } else if (preference == mHaloCircleColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.HALO_CIRCLE_COLOR, intHex);
+            return true;
+        } else if (preference == mHaloEffectColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.HALO_EFFECT_COLOR, intHex);
+            Helpers.restartSystemUI();
+            return true;
+        } else if (preference == mHaloBubbleColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.HALO_BUBBLE_COLOR, intHex);
+            return true;
+        } else if (preference == mHaloBubbleTextColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.HALO_BUBBLE_TEXT_COLOR, intHex);
             return true;
         }
         return false;
