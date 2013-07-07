@@ -155,8 +155,7 @@ public class Lockscreen extends SettingsPreferenceFragment
                     ? 1 : 0);
         } else if (preference == mQuickUnlock) {
             Settings.System.putBoolean(mContext.getContentResolver(),
-                    Settings.System.LOCKSCREEN_QUICK_UNLOCK,
-((CheckBoxPreference) preference).isChecked());
+                    Settings.System.LOCKSCREEN_QUICK_UNLOCK, mQuickUnlock.isChecked());
             return true;
         } else if (preference == mSeeThrough) {
             Settings.System.putInt(mContext.getContentResolver(),
