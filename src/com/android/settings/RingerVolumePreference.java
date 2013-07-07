@@ -258,8 +258,8 @@ public class RingerVolumePreference extends VolumePreference {
 
             });
 
-           if (System.getInt(getContext().getContentResolver(),
-                    		System.VOLUME_KEYS_CONTROL_RING_STREAM, 1) == 1) {
+            if (System.getInt(getContext().getContentResolver(),
+                      System.VOLUME_KEYS_CONTROL_RING_STREAM, 1) == 1) {
                 	volumeKeysControlRingStream.setChecked(true);
             } else {
                 	volumeKeysControlRingStream.setChecked(false);
