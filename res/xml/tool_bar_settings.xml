@@ -98,6 +98,10 @@
             android:title="@string/halo_pause_title"
             android:summary="@string/halo_pause_summary" />
 
+        <CheckBoxPreference
+            android:key="halo_gone"
+            android:title="@string/halo_gone_title"
+            android:summary="@string/halo_gone_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory
