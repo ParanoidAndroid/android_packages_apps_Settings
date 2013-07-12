@@ -105,6 +105,27 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="halo_color"
+        android:title="@string/halo_color_title">
+
+        <PreferenceScreen
+            android:key="halo_button_color"
+            android:title="@string/halo_button_color_title">
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="halo_text_bubble_color"
+            android:title="@string/halo_text_bubble_color_title">
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="halo_ping_color"
+            android:title="@string/halo_ping_color_title">
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="toolbar_navigation"
         android:title="@string/tool_bar_navigation_header">
 
