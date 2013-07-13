@@ -39,7 +39,7 @@
     <string name="ims_reg_required_on" msgid="3885152087309614653">"Det er nødvendigt at slå IMS-registrering til"</string>
     <string name="ims_reg_required_off" msgid="1720570343422743943">"Sluk IMS-registrering nødvendig"</string>
     <string name="lte_ram_dump_on" msgid="8568568019520172177">"Tænd kassering af LTE RAM"</string>
-    <string name="lte_ram_dump_off" msgid="2514507918652378283">"Sluk for kassering af LTE RAM"</string>
+    <string name="lte_ram_dump_off" msgid="2514507918652378283">"Sluk for kassering af LTE-RAM"</string>
     <string name="radioInfo_menu_viewADN" msgid="8743377494429930831">"Vis adressebog på SIM-kortet"</string>
     <string name="radioInfo_menu_viewFDN" msgid="7934301566925610318">"Vis faste opkaldsnumre"</string>
     <string name="radioInfo_menu_viewSDN" msgid="7130280686244955669">"Vis tjenesten faste opkaldsnumre"</string>
@@ -100,13 +100,13 @@
     <string name="battery_info_power_ac" msgid="6808516193001604634">"AC"</string>
     <string name="battery_info_power_usb" msgid="8012931702516331797">"USB"</string>
     <string name="battery_info_power_wireless" msgid="6819163295739305097">"trådløs"</string>
-    <string name="battery_info_power_ac_usb" msgid="6777734146838328688">"AC+USB"</string>
+    <string name="battery_info_power_ac_usb" msgid="6777734146838328688">"AC + USB"</string>
     <string name="battery_info_power_unknown" msgid="7344115502868899881">"Ukendt"</string>
     <string name="battery_info_health_unknown" msgid="5664295556921944255">"Ukendt"</string>
     <string name="battery_info_health_good" msgid="8070356565806711806">"God"</string>
     <string name="battery_info_health_overheat" msgid="8442959549291368806">"Overophed"</string>
     <string name="battery_info_health_dead" msgid="1725917445762829059">"Afladt"</string>
-    <string name="battery_info_health_over_voltage" msgid="2420269351664490121">"Over spænding"</string>
+    <string name="battery_info_health_over_voltage" msgid="2420269351664490121">"Overspænding"</string>
     <string name="battery_info_health_unspecified_failure" msgid="6347021103185471590">"Ukendt fejl"</string>
     <string name="battery_info_health_cold" msgid="3835692786176707318">"Kold"</string>
     <string name="bluetooth" msgid="5549625000628014477">"Bluetooth"</string>
@@ -136,7 +136,7 @@
     <string name="bluetooth_connected_no_headset_no_a2dp" msgid="9195757766755553810">"Forbundet (ingen telefon eller medier)"</string>
     <string name="bluetooth_disconnected" msgid="6557104142667339895">"Afbrudt"</string>
     <string name="bluetooth_disconnecting" msgid="8913264760027764974">"Afbryder ..."</string>
-    <string name="bluetooth_connecting" msgid="8555009514614320497">"Opretter forbindelse..."</string>
+    <string name="bluetooth_connecting" msgid="8555009514614320497">"Opretter forbindelse ..."</string>
     <string name="bluetooth_unknown" msgid="644716244548801421"></string>
     <string name="bluetooth_pairing" msgid="1426882272690346242">"Parrer ..."</string>
     <string name="bluetooth_device" msgid="5291950341750186887">"Unavngiven Bluetooth-enhed"</string>
@@ -157,8 +157,8 @@
     <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="4724094889807196118">"En app ønsker at aktivere Bluetooth og gøre din telefon synlig for andre enheder i <xliff:g id="TIMEOUT">%1$d</xliff:g> sekunder."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="989613204829097159">"En app ønsker at aktivere Bluetooth og gøre din tablet synlig for andre enheder. Du kan ændre dette senere i Bluetooth-indstillinger."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="6671615712909139801">"En app ønsker at aktivere Bluetooth og gøre din telefon synlig for andre enheder. Du kan ændre dette senere i Bluetooth-indstillinger."</string>
-    <string name="bluetooth_turning_on" msgid="4850574877288036646">"Aktiverer Bluetooth..."</string>
-    <string name="bluetooth_turning_off" msgid="2337747302892025192">"Bluetooth slukker??"</string>
+    <string name="bluetooth_turning_on" msgid="4850574877288036646">"Aktiverer Bluetooth ..."</string>
+    <string name="bluetooth_turning_off" msgid="2337747302892025192">"Slukker Bluetooth"</string>
     <string name="bluetooth_auto_connect" msgid="40711424456733571">"Opret automatisk forbindelse"</string>
     <string name="bluetooth_connection_permission_request" msgid="4747918249032890077">"Anmodning om Bluetooth-forbindelse"</string>
     <string name="bluetooth_connection_notif_message" msgid="3687933246423942977">"Tryk for at oprette forbindelse til \"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>\"."</string>
@@ -219,7 +219,7 @@
     <string name="radio_info_network_type_label" msgid="3706382548257257987">"Netværkstype:"</string>
     <string name="radio_info_set_perferred_label" msgid="9039200405863503267">"Angiv den foretrukne netværkstype"</string>
     <string name="radio_info_ping_ipaddr" msgid="498747917793263530">"Ping-IpAdr.:"</string>
-    <string name="radio_info_ping_hostname" msgid="3054888474808217853">"Ping-værtsnavn(www.google.com):"</string>
+    <string name="radio_info_ping_hostname" msgid="3054888474808217853">"Ping-værtsnavn (www.google.com):"</string>
     <string name="radio_info_http_client_test" msgid="5733604021077701555">"HTTP-klienttest:"</string>
     <string name="ping_test_label" msgid="7255376471490860631">"Kør ping-test"</string>
     <string name="radio_info_smsc_label" msgid="6399460520126501354">"SMSC:"</string>
@@ -245,11 +245,11 @@
     <string name="sdcard_settings_bad_removal_status" product="nosdcard" msgid="7761390725880773697">"USB-lager fjernet under brug!"</string>
     <string name="sdcard_settings_bad_removal_status" product="default" msgid="5145797653495907970">"SD-kortet blev fjernet, mens det stadig var i brug."</string>
     <string name="sdcard_settings_used_bytes_label" msgid="8820289486001170836">"Brugte bytes:"</string>
-    <string name="sdcard_settings_scanning_status" product="nosdcard" msgid="7503429447676219564">"Scanner USB-lager for medier…"</string>
+    <string name="sdcard_settings_scanning_status" product="nosdcard" msgid="7503429447676219564">"Scanner USB-lager for medier ..."</string>
     <string name="sdcard_settings_scanning_status" product="default" msgid="2763464949274455656">"Scanner SD-kort efter medier ..."</string>
     <string name="sdcard_settings_read_only_status" product="nosdcard" msgid="3624143937437417788">"USB-lageret er skrivebeskyttet."</string>
     <string name="sdcard_settings_read_only_status" product="default" msgid="4518291824764698112">"Det monterede SD-kort er skrivebeskyttet."</string>
-    <string name="skip_label" msgid="47510779345218297">"Skip"</string>
+    <string name="skip_label" msgid="47510779345218297">"Spring over"</string>
     <string name="next_label" msgid="4693520878012668114">"Næste"</string>
     <string name="language_picker_title" msgid="5349877711342869319">"Sprog"</string>
     <string name="activity_picker_label" msgid="6295660302548177109">"Vælg aktivitet"</string>
@@ -311,8 +311,8 @@
     <string name="user_info_settings_title" msgid="1195015434996724736">"Brugeroplysninger"</string>
     <string name="location_settings_title" msgid="4483843407328665068">"Placeringsadgang"</string>
     <string name="security_settings_title" msgid="7945465324818485460">"Sikkerhed"</string>
-    <string name="security_settings_summary" msgid="967393342537986570">"Angiv Min placering, oplåsning af skærmen, låsning af SIM-kort og lager for loginoplysninger"</string>
-    <string name="cdma_security_settings_summary" msgid="6068799952798901542">"Angiv Min placering, oplåsning af skærmen, lager for loginoplysninger"</string>
+    <string name="security_settings_summary" msgid="967393342537986570">"Angiv min placering, oplåsning af skærmen, låsning af SIM-kort og lager for loginoplysninger"</string>
+    <string name="cdma_security_settings_summary" msgid="6068799952798901542">"Angiv min placering, oplåsning af skærmen, lager for loginoplysninger"</string>
     <string name="security_passwords_title" msgid="2930627259125138363">"Adgangskoder"</string>
     <string name="crypt_keeper_settings_title" msgid="4219233835490520414">"Kryptering"</string>
     <string name="crypt_keeper_encrypt_title" product="tablet" msgid="1060273569887301457">"Krypter tablet"</string>
@@ -349,7 +349,7 @@
     <string name="unlock_backup_info_summary" msgid="108524727803788172">"Hvordan vil du låse op, når Ansigtslås ikke kan se dig?"</string>
     <string name="unlock_set_unlock_off_title" msgid="7117155352183088342">"Ingen"</string>
     <string name="unlock_set_unlock_off_summary" msgid="94361581669110415"></string>
-    <string name="unlock_set_unlock_none_title" msgid="2871898266296656162">"Træk fingeren hen over"</string>
+    <string name="unlock_set_unlock_none_title" msgid="2871898266296656162">"Træk fingeren henover"</string>
     <string name="unlock_set_unlock_none_summary" msgid="8914673583104628191">"Ingen sikkerhed"</string>
     <string name="unlock_set_unlock_biometric_weak_title" msgid="2227215291604628670">"Ansigtslås"</string>
     <string name="unlock_set_unlock_biometric_weak_summary" msgid="180083326982058964">"Lav sikkerhed, eksperimenterende"</string>
@@ -361,7 +361,7 @@
     <string name="unlock_set_unlock_password_summary" msgid="8856220848940929546">"Høj sikkerhed"</string>
     <string name="unlock_set_unlock_disabled_summary" msgid="2120729867788851674">"Deaktiveret af administrator, kryptering eller loginlager"</string>
     <string name="unlock_set_unlock_mode_off" msgid="5881952274566013651">"Ingen"</string>
-    <string name="unlock_set_unlock_mode_none" msgid="5660014471997663139">"Træk fingeren hen over"</string>
+    <string name="unlock_set_unlock_mode_none" msgid="5660014471997663139">"Træk fingeren henover"</string>
     <string name="unlock_set_unlock_mode_biometric_weak" msgid="3008473624490350142">"Ansigtslås"</string>
     <string name="unlock_set_unlock_mode_pattern" msgid="7837270780919299289">"Mønster"</string>
     <string name="unlock_set_unlock_mode_pin" msgid="3541326261341386690">"Pinkode"</string>
@@ -398,7 +398,7 @@
     <item quantity="other" msgid="3030801209112209245">"Adgangskoden skal indeholde mindst %d store bogstaver."</item>
   </plurals>
   <plurals name="lockpassword_password_requires_numeric">
-    <item quantity="one" msgid="3820355568839621231">"Adgangskoden skal indeholde mindst 1 tal."</item>
+    <item quantity="one" msgid="3820355568839621231">"Adgangskoden skal indeholde mindst ét tal."</item>
     <item quantity="other" msgid="4703982391407595924">"Adgangskoden skal indeholde mindst %d tal."</item>
   </plurals>
   <plurals name="lockpassword_password_requires_symbols">
@@ -409,7 +409,7 @@
     <item quantity="one" msgid="4594051152085925921">"Adgangskoden skal indeholde mindst ét tegn, der ikke er et bogstav."</item>
     <item quantity="other" msgid="3952508584649046404">"Adgangskoden skal indeholde mindst %d tegn, der ikke er bogstaver."</item>
   </plurals>
-    <string name="lockpassword_password_recently_used" msgid="6098087796784262081">"Enhedens administrator tillader ikke brug af en nylig brugt adgangskode."</string>
+    <string name="lockpassword_password_recently_used" msgid="6098087796784262081">"Enhedensadministrator tillader ikke brug af en nylig brugt adgangskode."</string>
     <string name="lockpassword_ok_label" msgid="313822574062553672">"OK"</string>
     <string name="lockpassword_cancel_label" msgid="8818529276331121899">"Annuller"</string>
     <string name="lockpattern_tutorial_cancel_label" msgid="6431583477570493261">"Annuller"</string>
@@ -443,7 +443,7 @@
     <string name="bluetooth_connecting_error_message" msgid="229861986106185022">"Der kunne ikke oprettes forbindelse til <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
     <string name="bluetooth_preference_scan_title" msgid="2277464653118896016">"Søg efter enheder"</string>
     <string name="bluetooth_search_for_devices" msgid="5957007154213560390">"Søg efter enheder"</string>
-    <string name="bluetooth_searching_for_devices" msgid="9203739709307871727">"Søger..."</string>
+    <string name="bluetooth_searching_for_devices" msgid="9203739709307871727">"Søger ..."</string>
     <string name="bluetooth_preference_device_settings" msgid="907776049862799122">"Enhedsindstillinger"</string>
     <string name="bluetooth_preference_paired_devices" msgid="1970524193086791964">"Parrede enheder"</string>
     <string name="bluetooth_preference_found_devices" msgid="1647983835063249680">"Mulige enheder"</string>
@@ -451,7 +451,7 @@
     <string name="bluetooth_device_context_disconnect" msgid="8220072022970148683">"Afbryd"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="7611522504813927727">"Par og forbind med denne enhed"</string>
     <string name="bluetooth_device_context_unpair" msgid="662992425948536144">"Ophæv parring"</string>
-    <string name="bluetooth_device_context_disconnect_unpair" msgid="7644014238070043798">"Afbryd, og ophæv parring"</string>
+    <string name="bluetooth_device_context_disconnect_unpair" msgid="7644014238070043798">"Afbryd og ophæv parring"</string>
     <string name="bluetooth_device_context_connect_advanced" msgid="2643129703569788771">"Indstillinger"</string>
     <string name="bluetooth_menu_advanced" msgid="8572178316357220524">"Avanceret"</string>
     <string name="bluetooth_advanced_titlebar" msgid="2142159726881547669">"Avanceret Bluetooth"</string>
@@ -496,7 +496,7 @@
     <string name="wifi_display_settings_empty_list_wifi_display_off" msgid="1225626898926363100">"Aktivér trådløs skærm for at se enhederne."</string>
     <string name="wifi_display_settings_empty_list_wifi_display_disabled" msgid="7363832031876872257">"Trådløs skærm er deaktiveret, fordi Wi-Fi er slået fra."</string>
     <string name="wifi_display_search_for_devices" msgid="5065526281193354502">"Søg efter skærme"</string>
-    <string name="wifi_display_searching_for_devices" msgid="5172373825348672137">"Søger…"</string>
+    <string name="wifi_display_searching_for_devices" msgid="5172373825348672137">"Søger ..."</string>
     <string name="wifi_display_no_devices_found" msgid="8180582698282377626">"Der blev ikke fundet nogen trådløse skærme."</string>
     <string name="wifi_display_paired_devices" msgid="7395326840730024303">"Parrede skærme"</string>
     <string name="wifi_display_available_devices" msgid="4558314642853513487">"Mulige enheder"</string>
@@ -531,8 +531,8 @@
     <string name="wifi_settings_title" msgid="4351120897298124250">"Wi-Fi"</string>
     <string name="wifi_settings_summary" msgid="668767638556052820">"Konfiguration og administration af trådløse adgangspunkter"</string>
     <string name="wifi_setup_wizard_title" msgid="70277346338812325">"Vælg Wi-Fi"</string>
-    <string name="wifi_starting" msgid="6716593470710880000">"Aktiverer Wi-Fi..."</string>
-    <string name="wifi_stopping" msgid="244864762599017659">"Slukker Wi-Fi..."</string>
+    <string name="wifi_starting" msgid="6716593470710880000">"Aktiverer Wi-Fi ..."</string>
+    <string name="wifi_stopping" msgid="244864762599017659">"Slukker Wi-Fi ..."</string>
     <string name="wifi_error" msgid="3207971103917128179">"Fejl"</string>
     <string name="wifi_in_airplane_mode" msgid="8652520421778203796">"I flytilstand"</string>
     <string name="wifi_fail_to_scan" msgid="1265540342578081461">"Der kan ikke søges efter netværk"</string>
@@ -556,17 +556,17 @@
     <string name="wifi_menu_forget" msgid="8736964302477327114">"Glem netværk"</string>
     <string name="wifi_menu_modify" msgid="2068554918652440105">"Rediger netværk"</string>
     <string name="wifi_empty_list_wifi_off" msgid="4722299515264875943">"Vis tilgængelige netværk ved at aktivere Wi-Fi."</string>
-    <string name="wifi_empty_list_wifi_on" msgid="3354911729026237372">"Søger efter Wi-Fi-netværk..."</string>
-    <string name="wifi_other_network" msgid="1048006316504242214">"Andre netværk..."</string>
+    <string name="wifi_empty_list_wifi_on" msgid="3354911729026237372">"Søger efter Wi-Fi-netværk ..."</string>
+    <string name="wifi_other_network" msgid="1048006316504242214">"Andre netværk ..."</string>
     <string name="wifi_more" msgid="3195296805089107950">"Mere"</string>
     <string name="wifi_setup_wps" msgid="8128702488486283957">"Automatisk konfig. (WPS)"</string>
     <string name="wifi_required_info_text" msgid="9014073093293520112">"Din tablet skal have adgang til Wi-Fi for at kunne fuldføre konfigurationen. Efter konfigurationen kan du skifte mellem mobildata og Wi-Fi."</string>
     <string name="wifi_show_advanced" msgid="1793703023711426246">"Vis avancerede valgmuligheder"</string>
     <string name="wifi_wps_setup_title" msgid="6034518116333042484">"Wi-Fi-beskyttet konfiguration"</string>
-    <string name="wifi_wps_setup_msg" msgid="315174329121275092">"Starter WPS..."</string>
+    <string name="wifi_wps_setup_msg" msgid="315174329121275092">"Starter WPS ..."</string>
     <string name="wifi_wps_onstart_pbc" msgid="7204827509934892103">"Tryk på Wi-Fi-beskyttet konfiguration på din router. Det kaldes muligvis \"WPS\" eller indeholder dette symbol:"</string>
     <string name="wifi_wps_onstart_pin" msgid="8067502591043979939">"Indtast pinkoden <xliff:g id="NUMBER">%1$s</xliff:g> på din Wi-Fi-router. Konfigurationen kan tage op til to minutter at fuldføre."</string>
-    <string name="wifi_wps_complete" msgid="2388138550456729134">"WPS godkendt. Opretter forbindelse til netværket..."</string>
+    <string name="wifi_wps_complete" msgid="2388138550456729134">"WPS godkendt. Opretter forbindelse til netværket ..."</string>
     <string name="wifi_wps_connected" msgid="5754399645462924103">"Forbundet til Wi-Fi-netværket <xliff:g id="NETWORK_NAME">%s</xliff:g>"</string>
     <string name="wifi_wps_in_progress" msgid="3372311348221357944">"WPS er allerede i gang og kan tage op til to minutter at fuldføre"</string>
     <string name="wifi_wps_failed_generic" msgid="5668775022238832527">"WPS mislykkedes. Prøv igen om lidt."</string>
@@ -637,7 +637,7 @@
     <string name="wifi_p2p_device_info" msgid="3191876744469364173">"Oplysninger om enheden"</string>
     <string name="wifi_p2p_persist_network" msgid="1646424791818168590">"Husk denne forbindelse"</string>
     <string name="wifi_p2p_menu_search" msgid="3436429984738771974">"Søg efter enheder"</string>
-    <string name="wifi_p2p_menu_searching" msgid="2396704492143633876">"Søger…"</string>
+    <string name="wifi_p2p_menu_searching" msgid="2396704492143633876">"Søger ..."</string>
     <string name="wifi_p2p_menu_rename" msgid="8448896306960060415">"Omdøb enhed"</string>
     <string name="wifi_p2p_peer_devices" msgid="299526878463303432">"Peer-enheder"</string>
     <string name="wifi_p2p_remembered_groups" msgid="3847022927914068230">"Gemte grupper"</string>
@@ -650,13 +650,13 @@
     <string name="wifi_p2p_cancel_connect_message" msgid="7477756213423749402">"Vil du annullere invitationen til at oprette forbindelse med <xliff:g id="PEER_NAME">%1$s</xliff:g>?"</string>
     <string name="wifi_p2p_delete_group_message" msgid="834559380069647086">"Vil du glemme denne gruppe?"</string>
     <string name="wifi_tether_checkbox_text" msgid="6961605862058056788">"Bærbart Wi-Fi-hotspot"</string>
-    <string name="wifi_tether_starting" msgid="1322237938998639724">"Aktiverer hotspot..."</string>
-    <string name="wifi_tether_stopping" msgid="4835852171686388107">"Deaktiverer hotspot..."</string>
+    <string name="wifi_tether_starting" msgid="1322237938998639724">"Aktiverer hotspot ..."</string>
+    <string name="wifi_tether_stopping" msgid="4835852171686388107">"Deaktiverer hotspot ..."</string>
     <string name="wifi_tether_enabled_subtext" msgid="8948641212931906143">"Det bærbare hotspot <xliff:g id="NETWORK_SSID">%1$s</xliff:g> er aktivt"</string>
     <string name="wifi_tether_failed_subtext" msgid="2654888578056042315">"Fejl ved bærbart Wi-Fi-hotspot"</string>
     <string name="wifi_tether_configure_ap_text" msgid="61237027772641155">"Konfiguration af Wi-Fi-hotspot"</string>
     <string name="wifi_tether_configure_subtext" msgid="1927454307836232128">"<xliff:g id="NETWORK_SSID">%1$s</xliff:g> <xliff:g id="NETWORK_SECURITY">%2$s</xliff:g> bærbart Wi-Fi-hotspot"</string>
-    <string name="wifi_tether_configure_ssid_default" msgid="8467525402622138547">"AndroidHotspot"</string>
+    <string name="wifi_tether_configure_ssid_default" msgid="8467525402622138547">"Android-hotspot"</string>
     <string name="display_settings_title" msgid="1708697328627382561">"Skærm"</string>
     <string name="sound_settings" msgid="5534671337768745343">"Lyd"</string>
     <string name="ringtone_title" msgid="5379026328015343686">"Ringetone for telefon"</string>
@@ -692,11 +692,11 @@
     <string name="dock_settings" msgid="1820107306693002541">"Dockingstation"</string>
     <string name="dock_settings_title" msgid="9161438664257429372">"Indstillinger for dockingstation"</string>
     <string name="dock_audio_settings_title" msgid="3324750259959570305">"Lyd"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"Indstillinger for den dockingstation der er tilsluttet din computer"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"Indstillinger for den dockingstation der er tilsluttet bilen"</string>
+    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"Indstillinger for den dockingstation, der er tilsluttet din computer"</string>
+    <string name="dock_audio_summary_car" msgid="6740897586006248450">"Indstillinger for den dockingstation, der er tilsluttet bilen"</string>
     <string name="dock_audio_summary_none" product="tablet" msgid="8215337394914283607">"Tabletcomputeren er ikke tilsluttet dockingstationen"</string>
     <string name="dock_audio_summary_none" product="default" msgid="289909253741048784">"Telefonen er ikke tilsluttet dockingstationen"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Indstillinger for den dockingstation der er tilsluttet"</string>
+    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Indstillinger for den dockingstation, der er tilsluttet"</string>
     <string name="dock_not_found_title" msgid="3290961741828952424">"Dockingstationen blev ikke fundet"</string>
     <string name="dock_not_found_text" product="tablet" msgid="8405432495282299143">"Du skal docke telefonen, før du konfigurerer docklyden."</string>
     <string name="dock_not_found_text" product="default" msgid="1460497923342627801">"Du skal docke telefonen, før du konfigurerer docklyden."</string>
@@ -802,7 +802,7 @@
     <string name="memory_available" msgid="5052397223077021181">"Tilgængelig"</string>
     <string name="memory_available_read_only" msgid="6497534390167920206">"Tilgængelig (skrivebeskyttet)"</string>
     <string name="memory_size" msgid="6629067715017232195">"Plads i alt"</string>
-    <string name="memory_calculating_size" msgid="2188358544203768588">"Beregner..."</string>
+    <string name="memory_calculating_size" msgid="2188358544203768588">"Beregner ..."</string>
     <string name="memory_apps_usage" msgid="2348501997988663688">"Apps (appdata og medieindhold)"</string>
     <string name="memory_media_usage" msgid="3738830697707880405">"Medier"</string>
     <string name="memory_downloads_usage" msgid="3755173051677533027">"Downloads"</string>
@@ -984,7 +984,7 @@
     <string name="settings_safetylegal_title" msgid="1289483965535937431">"Sikkerhedsoplysninger"</string>
     <string name="settings_safetylegal_activity_title" msgid="6901214628496951727">"Sikkerhedsoplysninger"</string>
     <string name="settings_safetylegal_activity_unreachable" msgid="232523852222964470">"Du har ingen dataforbindelse. Se disse oplysninger nu ved at gå til %s på en computer, der har forbindelse til internettet."</string>
-    <string name="settings_safetylegal_activity_loading" msgid="8059022597639516348">"Indlæser..."</string>
+    <string name="settings_safetylegal_activity_loading" msgid="8059022597639516348">"Indlæser ..."</string>
     <string name="lockpassword_choose_your_password_header" msgid="8624900666929394990">"Vælg din adgangskode"</string>
     <string name="lockpassword_choose_your_pattern_header" msgid="6949761069941694050">"Vælg dit mønster"</string>
     <string name="lockpassword_choose_your_pin_header" msgid="7598849519816138302">"Vælg din pinkode"</string>
@@ -1092,7 +1092,7 @@
     <string name="internal_storage" msgid="1584700623164275282">"Internt lager"</string>
     <string name="sd_card_storage" product="nosdcard" msgid="2673203150465132465">"USB-lager"</string>
     <string name="sd_card_storage" product="default" msgid="7623513618171928235">"SD-kortlager"</string>
-    <string name="recompute_size" msgid="7722567982831691718">"Beregner størrelse igen..."</string>
+    <string name="recompute_size" msgid="7722567982831691718">"Beregner størrelse igen ..."</string>
     <string name="clear_data_dlg_title" msgid="5605258400134511197">"Vil du slette appdata?"</string>
     <string name="clear_data_dlg_text" msgid="8847257251846779938">"Alle data i denne app slettes permanent. Det omfatter alle filer, indstillinger, konti, databaser osv."</string>
     <string name="dlg_ok" msgid="2402639055725653590">"OK"</string>
@@ -1225,7 +1225,7 @@
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"Slet"</string>
     <string name="user_dict_settings_empty_text" msgid="8165273379942105271">"Du har ikke nogen ord i brugerordbogen. Du kan tilføje et ord ved at trykke på knappen Tilføj (+)."</string>
     <string name="user_dict_settings_all_languages" msgid="6742000040975959247">"For alle sprog"</string>
-    <string name="user_dict_settings_more_languages" msgid="7316375944684977910">"Flere sprog..."</string>
+    <string name="user_dict_settings_more_languages" msgid="7316375944684977910">"Flere sprog ..."</string>
     <string name="testing" msgid="6584352735303604146">"Tester"</string>
     <string name="testing_phone_info" product="tablet" msgid="193561832258534798">"Oplysninger om tabletcomputer"</string>
     <string name="testing_phone_info" product="default" msgid="8656693364332840056">"Telefonoplysninger"</string>
@@ -1546,17 +1546,17 @@
     <string name="wifi_setup_forget" msgid="2562847595567347526">"Glem"</string>
     <string name="wifi_setup_save" msgid="3659235094218508211">"Gem"</string>
     <string name="wifi_setup_cancel" msgid="3185216020264410239">"Annuller"</string>
-    <string name="wifi_setup_status_scanning" msgid="5317003416385428036">"Søger efter netværk..."</string>
+    <string name="wifi_setup_status_scanning" msgid="5317003416385428036">"Søger efter netværk ..."</string>
     <string name="wifi_setup_status_select_network" msgid="7519563569903137003">"Tryk på et netværk for at oprette forbindelse til det"</string>
     <string name="wifi_setup_status_existing_network" msgid="6394925174802598186">"Opret forbindelse til eksisterende netværk"</string>
     <string name="wifi_setup_status_unsecured_network" msgid="8143046977328718252">"Tilslut til usikret netværk"</string>
     <string name="wifi_setup_status_edit_network" msgid="4765340816724760717">"Indtast netværkskonfiguration"</string>
     <string name="wifi_setup_status_new_network" msgid="7468952850452301083">"Opret forbindelse til nyt netværk"</string>
-    <string name="wifi_setup_status_connecting" msgid="4971421484401530740">"Opretter forbindelse..."</string>
+    <string name="wifi_setup_status_connecting" msgid="4971421484401530740">"Opretter forbindelse ..."</string>
     <string name="wifi_setup_status_proceed_to_next" msgid="6708250000342940031">"Gå til næste trin"</string>
     <string name="wifi_setup_status_eap_not_supported" msgid="5335338851032315905">"EAP understøttes ikke."</string>
     <string name="wifi_setup_eap_not_supported" msgid="595556546597351489">"Du kan ikke konfigurere en EAP-Wi-Fi-forbindelse under konfigurationen. Efter konfigurationen kan du gøre dette i Indstillinger &gt; Trådløst og netværk."</string>
-    <string name="wifi_setup_description_connecting" msgid="2793554932006756795">"Oprettelsen kan tage et par minutter..."</string>
+    <string name="wifi_setup_description_connecting" msgid="2793554932006756795">"Oprettelsen kan tage et par minutter ..."</string>
     <string name="wifi_setup_description_connected" msgid="5235991893829582459">"Tryk på "<b>"Næste "</b>"for at fortsætte med opsætningen."\n\n" Tryk på "<b>"Tilbage"</b>" for at oprette forbindelse til et andet Wi-Fi-netværk."</string>
     <string name="accessibility_sync_enabled" msgid="558480439730263116">"Synkronisering aktiveret"</string>
     <string name="accessibility_sync_disabled" msgid="1741194106479011384">"Sync deaktiveret"</string>
@@ -1677,7 +1677,7 @@
     <string name="data_usage_menu_show_ethernet" msgid="5181361208532314097">"Vis Ethernet-brug"</string>
     <string name="data_usage_menu_metered" msgid="5056695223222541863">"Mobilhotspots"</string>
     <string name="data_usage_menu_auto_sync" msgid="8203999775948778560">"Synkroniser data automatisk"</string>
-    <string name="data_usage_change_cycle" msgid="7776556448920114866">"Skift cyklus..."</string>
+    <string name="data_usage_change_cycle" msgid="7776556448920114866">"Skift cyklus ..."</string>
     <string name="data_usage_pick_cycle_day" msgid="4470796861757050966">"Dag i måneden, hvor cyklus for dataforbrug skal nulstilles"</string>
     <string name="data_usage_empty" msgid="8621855507876539282">"Ingen apps har brugt data i denne periode."</string>
     <string name="data_usage_label_foreground" msgid="4938034231928628164">"Forgrund"</string>
