@@ -259,7 +259,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 deviceAdminCategory.removePreference(mToggleVerifyApps);
             } else {
                 mToggleVerifyApps.setEnabled(false);
-        }
+            }
         }
         
         // App security settings
