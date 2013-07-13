@@ -260,18 +260,18 @@ public class RingerVolumePreference extends VolumePreference {
 
             if (System.getInt(getContext().getContentResolver(),
                       System.VOLUME_KEYS_CONTROL_RING_STREAM, 1) == 1) {
-                	volumeKeysControlRingStream.setChecked(true);
+                    volumeKeysControlRingStream.setChecked(true);
             } else {
-                	volumeKeysControlRingStream.setChecked(false);
+                    volumeKeysControlRingStream.setChecked(false);
             }
 
             volumeKeysControlRingStream.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
-                	@Override
-                	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    		Settings.System.putInt(buttonView.getContext().getContentResolver(),
-                            		Settings.System.VOLUME_KEYS_CONTROL_RING_STREAM, isChecked ? 1 : 0);
-                	}
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                            Settings.System.putInt(buttonView.getContext().getContentResolver(),
+                                    Settings.System.VOLUME_KEYS_CONTROL_RING_STREAM, isChecked ? 1 : 0);
+                    }
 
             });
 
