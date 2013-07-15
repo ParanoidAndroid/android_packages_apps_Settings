@@ -39,6 +39,7 @@ import android.view.IWindowManager;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settings.users.colorpicker.ColorPickerDialog.java
 
 public class Toolbar extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -47,6 +48,10 @@ public class Toolbar extends SettingsPreferenceFragment
     private static final String KEY_HALO_HIDE = "halo_hide";
     private static final String KEY_HALO_REVERSED = "halo_reversed";
     private static final String KEY_HALO_PAUSE = "halo_pause";
+    private static final String KEY_HALO_GONE = "halo_gone";
+    private static final String KEY_HALO_BUTTON_COLOR = "halo_button_color";
+    private static final String KEY_HALO_TEXT_BUBBLE_COLOR = "halo_text_bubble_color";
+    private static final String KEY_HALO_PING_COLOR = "halo_ping_color";
     private static final String KEY_QUICK_PULL_DOWN = "quick_pulldown";
     private static final String KEY_AM_PM_STYLE = "am_pm_style";
     private static final String KEY_SHOW_CLOCK = "show_clock";
@@ -81,6 +86,10 @@ public class Toolbar extends SettingsPreferenceFragment
     private CheckBoxPreference mHaloHide;
     private CheckBoxPreference mHaloReversed;
     private CheckBoxPreference mHaloPause;
+    private CheckBoxPreference mHaloGone;
+    private Preference mHaloButtonColor;
+    private Preference mHaloTextBubbleColor;
+    private Preference mHaloPingColor;
     private CheckBoxPreference mQuickPullDown;
     private CheckBoxPreference mShowClock;
     private CheckBoxPreference mCircleBattery;
@@ -121,10 +130,21 @@ public class Toolbar extends SettingsPreferenceFragment
         mHaloReversed.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                 Settings.System.HALO_REVERSED, 1) == 1);
 
+        mHaloGone = (CheckBoxPreference) prefSet.findPreference(KEY_HALO_GONE);
+        mHaloGone.setChecked(Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.HALO_GONE, 0) == 1);
+
         int isLowRAM = (ActivityManager.isLargeRAM()) ? 0 : 1;
         mHaloPause = (CheckBoxPreference) prefSet.findPreference(KEY_HALO_PAUSE);
         mHaloPause.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                 Settings.System.HALO_PAUSE, isLowRAM) == 1);
+
+        mHaloButtonColor =
+                (Preference) prefSet.findPreference(KEY_HALO_BUTTON_COLOR);
+        mHaloTextBubbleColor =
+                (Preference) prefSet.findPreference(KEY_HALO_TEXT_BUBBLE_COLOR);
+        mHaloPingColor =
+                (Preference) prefSet.findPreference(KEY_HALO_PING_COLOR);
 
         mQuickPullDown = (CheckBoxPreference) prefSet.findPreference(KEY_QUICK_PULL_DOWN);
         mQuickPullDown.setChecked(Settings.System.getInt(mContext.getContentResolver(),
@@ -291,6 +311,31 @@ public class Toolbar extends SettingsPreferenceFragment
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.HALO_PAUSE, mHaloPause.isChecked()
                     ? 1 : 0);
+        } else if (preference == mHaloGone) {
+            Settings.System.putInt(mContext.getContentResolver(),
+                    Settings.System.HALO_GONE, mHaloGone.isChecked()
+                    ? 1 : 0);
+        } else if (preference == mHaloButtonColor) {
+            ColorPickerDialog cp = new ColorPickerDialog(getActivity(),
+                    mButtonColorListener, Settings.System.getInt(mContext.getContentResolver(),
+                    Settings.System.HALO_BUTTON_COLOR, 0x00000000));
+            cp.setDefaultColor(0x00000000);
+            cp.show();
+            return true;
+        } else if (preference == mHaloTextBubbleColor) {
+            ColorPickerDialog cp = new ColorPickerDialog(getActivity(),
+                    mTextBubbleColorListener, Settings.System.getInt(mContext.getContentResolver(),
+                    Settings.System.HALO_TEXT_BUBBLE_COLOR, 0x00000000));
+            cp.setDefaultColor(0x00000000);
+            cp.show();
+            return true;
+        } else if (preference == mHaloPingColor) {
+            ColorPickerDialog cp = new ColorPickerDialog(getActivity(),
+                    mPingColorListener, Settings.System.getInt(mContext.getContentResolver(),
+                    Settings.System.HALO_PING_COLOR, 0xff33b5e5));
+            cp.setDefaultColor(0xff33b5e5);
+            cp.show();
+            return true;
         } else if (preference == mStatusBarNotifCount) {
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.STATUS_BAR_NOTIF_COUNT, mStatusBarNotifCount.isChecked()
@@ -374,4 +419,34 @@ public class Toolbar extends SettingsPreferenceFragment
         }
         return false;
     }
+    //Halo Colors
+    ColorPickerDialog.OnColorChangedListener mButtonColorListener =
+        new ColorPickerDialog.OnColorChangedListener() {
+            public void colorChanged(int color) {
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.HALO_BUTTON_COLOR, color);
+            }
+            public void colorUpdate(int color) {
+            }
+    };
+
+    ColorPickerDialog.OnColorChangedListener mTextBubbleColorListener =
+        new ColorPickerDialog.OnColorChangedListener() {
+            public void colorChanged(int color) {
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.HALO_TEXT_BUBBLE_COLOR, color);
+            }
+            public void colorUpdate(int color) {
+            }
+    };
+
+    ColorPickerDialog.OnColorChangedListener mPingColorListener =
+        new ColorPickerDialog.OnColorChangedListener() {
+            public void colorChanged(int color) {
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.HALO_PING_COLOR, color);
+            }
+            public void colorUpdate(int color) {
+            }
+    };
 }

@@ -98,6 +98,31 @@
             android:title="@string/halo_pause_title"
             android:summary="@string/halo_pause_summary" />
 
+        <CheckBoxPreference
+            android:key="halo_gone"
+            android:title="@string/halo_gone_title"
+            android:summary="@string/halo_gone_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="halo_color"
+        android:title="@string/halo_color_title">
+
+        <PreferenceScreen
+            android:key="halo_button_color"
+            android:title="@string/halo_button_color_title">
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="halo_text_bubble_color"
+            android:title="@string/halo_text_bubble_color_title">
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="halo_ping_color"
+            android:title="@string/halo_ping_color_title">
+        </PreferenceScreen>
+
     </PreferenceCategory>
 
     <PreferenceCategory
