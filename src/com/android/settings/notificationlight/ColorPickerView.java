@@ -657,7 +657,7 @@ public class ColorPickerView extends View {
     }
 
     private void setUpSatValRect() {
-        final RectF	dRect = mDrawingRect;
+        final RectF dRect = mDrawingRect;
         float panelSide = dRect.height() - BORDER_WIDTH_PX * 2;
 
         if(mShowAlphaPanel) {
@@ -673,7 +673,7 @@ public class ColorPickerView extends View {
     }
 
     private void setUpHueRect() {
-        final RectF	dRect = mDrawingRect;
+        final RectF dRect = mDrawingRect;
 
         float left = dRect.right - HUE_PANEL_WIDTH + BORDER_WIDTH_PX;
         float top = dRect.top + BORDER_WIDTH_PX;
@@ -686,7 +686,7 @@ public class ColorPickerView extends View {
     private void setUpAlphaRect() {
         if(!mShowAlphaPanel) return;
 
-        final RectF	dRect = mDrawingRect;
+        final RectF dRect = mDrawingRect;
 
         float left = dRect.left + BORDER_WIDTH_PX;
         float top = dRect.bottom - ALPHA_PANEL_HEIGHT + BORDER_WIDTH_PX;

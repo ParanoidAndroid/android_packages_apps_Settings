@@ -293,7 +293,7 @@ public class Toolbar extends SettingsPreferenceFragment
                     ? 1 : 0);
         } else if (preference == mStatusBarNotifCount) {
             Settings.System.putInt(mContext.getContentResolver(),
-                    Settings.System.STATUS_BAR_NOTIF_COUNT,	mStatusBarNotifCount.isChecked()
+                    Settings.System.STATUS_BAR_NOTIF_COUNT, mStatusBarNotifCount.isChecked()
                     ? 1 : 0);
         } else if (preference == mMenuButtonShow) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),

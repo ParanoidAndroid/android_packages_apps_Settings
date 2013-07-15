@@ -107,6 +107,15 @@ public class PrivacyGuardManager extends Fragment
     }
 
     @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        Fragment f = getFragmentManager().findFragmentById(R.id.privacy_guard_prefs);
+        if (f != null) {
+            getFragmentManager().beginTransaction().remove(f).commit();
+        }
+    }
+
+    @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
