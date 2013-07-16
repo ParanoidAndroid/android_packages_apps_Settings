@@ -93,6 +93,14 @@
             android:summary="@string/halo_reversed_summary"
             android:defaultValue="true" />
 
+        <ListPreference
+            android:key="halo_size"
+            android:dialogTitle="@string/halo_size_title"
+            android:title="@string/halo_size_title"
+            android:summary="@string/halo_size_summary"
+            android:entries="@array/entries_halo_size"
+            android:entryValues="@array/values_halo_size" />
+
         <CheckBoxPreference
             android:key="halo_pause"
             android:title="@string/halo_pause_title"

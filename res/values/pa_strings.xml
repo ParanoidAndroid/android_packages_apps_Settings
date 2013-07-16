@@ -156,6 +156,15 @@
     <string name="halo_pause_title">Pause active app</string>
     <string name="halo_pause_summary">When opening an app with HALO the underlying app will get paused</string>
 
+    <string name="halo_size_title">HALO size</string>
+    <string name="halo_size_summary">Defines how big HALO is going to be</string>
+    <string name="halo_size_miniscule">Miniscule</string>
+    <string name="halo_size_small">Small</string>
+    <string name="halo_size_default">@string/pie_mode_default</string>
+    <string name="halo_size_large">Large</string>
+    <string name="halo_size_gigantic">Gigantic</string>
+    <string name="halo_size_monster">Monster</string>
+
     <!-- Quick pulldown -->
     <string name="quick_pulldown_title">Quick pulldown</string>
     <string name="quick_pulldown_summary">Edge of status bar will pull down Quick Settings</string>
