@@ -187,15 +187,15 @@
 
         <!-- QuietHours AutoSMS -->
 
-        <service android:name=".service.AutoSmsService"/>
+        <service android:name=".cyanogenmod.autosms.AutoSmsService"/>
 
         <receiver
-            android:name=".service.AlarmReceiver">
+            android:name=".cyanogenmod.autosms.AlarmReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.TIMEZONE_CHANGED"></action>
                 <action android:name="android.intent.action.TIME_CHANGED"></action>
                 <action android:name="android.intent.action.DATE_CHANGED"></action>
-                <action android:name="com.android.settings.cyanogenmod.autosms.SMS_SERVICE_COMMAND"/>
+                <action android:name="com.android.settings.cyanogenmod.autosms.START_SMS_SERVICE"/>
                 <action android:name="com.android.settings.cyanogenmod.autosms.STOP_SMS_SERVICE"/>
             </intent-filter>
         </receiver>

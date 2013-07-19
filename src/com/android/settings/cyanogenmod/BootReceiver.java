@@ -67,10 +67,7 @@ public class BootReceiver extends BroadcastReceiver {
             }
         }
 
-        if (MessagingHelper.returnUserAutoCall(ctx) != 0
-                || MessagingHelper.returnUserAutoText(ctx) != 0) {
-            MessagingHelper.scheduleService(ctx);
-        }
+        MessagingHelper.scheduleService(ctx);
     }
 
     private void initFreqCapFiles(Context ctx)
