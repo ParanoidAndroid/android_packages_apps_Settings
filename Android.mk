@@ -18,6 +18,8 @@ LOCAL_AAPT_FLAGS := --extra-packages com.koushikdutta.superuser:com.koushikdutta
 
 LOCAL_SRC_FILES += $(call all-java-files-under,../../../external/koush/Superuser/Superuser/src) $(call all-java-files-under,../../../external/koush/Widgets/Widgets/src)
 
+LOCAL_JAVA_LIBRARIES += org.cyanogenmod.hardware
+
 include $(BUILD_PACKAGE)
 
 # Use the folloing include to make our test apk.
