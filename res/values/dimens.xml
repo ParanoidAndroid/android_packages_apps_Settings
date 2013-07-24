@@ -70,4 +70,12 @@
     <dimen name="normal_height">64dip</dimen>
     <!-- height of an expanded list item in edit playlist mode -->
     <dimen name="expanded_height">128dip</dimen>
+
+    <dimen name="circle_avatar_size">48dp</dimen>
+    <dimen name="circle_avatar_frame_stroke_width">1dp</dimen>
+    <dimen name="circle_avatar_frame_shadow_radius">3dp</dimen>
+
+    <!-- Minimum width for the popup for updating a user's photo. -->
+    <dimen name="update_user_photo_popup_min_width">300dip</dimen>
+
 </resources>
