@@ -194,7 +194,7 @@
     <string name="proxy_error_empty_port" msgid="5539106187558215246">"Sie müssen das Feld für den Port ausfüllen."</string>
     <string name="proxy_error_empty_host_set_port" msgid="2451694104858226781">"Das Feld für den Port muss leer sein, wenn das Feld für den Host leer ist."</string>
     <string name="proxy_error_invalid_port" msgid="2671425042711054494">"Der eingegebene Port ist ungültig."</string>
-    <string name="proxy_warning_limited_support" msgid="7229337138062837422">"Der HTTP-Proxy wird vom Browser verwendet, darf aber nicht von anderen Apps verwendet werden."</string>
+    <string name="proxy_warning_limited_support" msgid="7229337138062837422">"Der HTTP-Proxy wird vom Browser verwendet, möglicherweise aber nicht von anderen Apps."</string>
     <string name="radio_info_signal_location_label" msgid="16475158265551708">"Standort:"</string>
     <string name="radio_info_neighboring_location_label" msgid="2385625674055934880">"Benachbarte CID:"</string>
     <string name="radio_info_cellinfo_label" msgid="1300937728020622362">"Netz-Info:"</string>
@@ -504,9 +504,9 @@
     <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"Als Lautsprechertelefon"</string>
     <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"Für Musik und Medien"</string>
     <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"Einstellungen speichern"</string>
-    <string name="wifi_display_settings_title" msgid="564299108014609382">"Kabellose Übertragung"</string>
-    <string name="wifi_display_settings_empty_list_wifi_display_off" msgid="1225626898926363100">"Um Geräte zu sehen, aktivieren Sie die kabellose Übertragung."</string>
-    <string name="wifi_display_settings_empty_list_wifi_display_disabled" msgid="1336244693183075466">"Kabellose Übertragung ist deaktiviert, da WLAN deaktiviert ist."</string>
+    <string name="wifi_display_settings_title" msgid="564299108014609382">"Kabellose Übertragung (WiDi)"</string>
+    <string name="wifi_display_settings_empty_list_wifi_display_off" msgid="1225626898926363100">"Um Geräte zu sehen, aktivieren Sie die kabellose Übertragung (WiDi)."</string>
+    <string name="wifi_display_settings_empty_list_wifi_display_disabled" msgid="1336244693183075466">"Kabellose Übertragung (WiDi) ist deaktiviert, da WLAN ausgeschaltet ist."</string>
     <string name="wifi_display_search_for_devices" msgid="5065526281193354502">"Nach Displays suchen"</string>
     <string name="wifi_display_searching_for_devices" msgid="5172373825348672137">"Suche läuft…"</string>
     <string name="wifi_display_no_devices_found" msgid="8180582698282377626">"Keine kabellose Übertragung in der Nähe"</string>
@@ -518,7 +518,7 @@
     <string name="wifi_display_details" msgid="7791118209992162698">"Display-Einstellungen"</string>
     <string name="wifi_display_disconnect_title" msgid="1543715924639003599">"Verbindung trennen?"</string>
     <string name="wifi_display_disconnect_text" msgid="4824860802264489088">"Hierdurch wird die Verbindung mit&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt; getrennt."</string>
-    <string name="wifi_display_options_title" msgid="5740656401635054838">"Optionen für kabellose Übertragung"</string>
+    <string name="wifi_display_options_title" msgid="5740656401635054838">"Optionen für kabellose Übertragung (WiDi)"</string>
     <string name="wifi_display_options_forget" msgid="9119048225398894580">"Entfernen"</string>
     <string name="wifi_display_options_done" msgid="5703116500357822557">"Fertig"</string>
     <string name="wifi_display_options_name" msgid="4756080222307467898">"Name"</string>
@@ -979,6 +979,11 @@
     <string name="bluetooth_untether_blank" msgid="2871192409329334813">"Tethering für <xliff:g id="DEVICE_NAME">%1$s</xliff:g> wird deaktiviert."</string>
     <string name="tethering_help_button_text" msgid="656117495547173630">"Hilfe"</string>
     <string name="network_settings_title" msgid="7967552516440151852">"Mobilfunknetze"</string>
+    <string name="manage_mobile_plan_title" msgid="7588182101738043593">"Mobildatentarif verwalten"</string>
+    <string name="mobile_unknown_sim_operator" msgid="9101230468757324260">"Unbekannter SIM-Anbieter"</string>
+    <string name="mobile_no_provisioning_url" msgid="2399426808423775711">"Keine Bereitstellungs-Website für %1$s bekannt"</string>
+    <string name="mobile_insert_sim_card" msgid="9052590985784056395">"Legen Sie die SIM ein und starten das Gerät neu."</string>
+    <string name="mobile_connect_to_internet" msgid="1733894125065249639">"Bitte stellen Sie eine Verbindung zum Internet her."</string>
     <string name="location_title" msgid="1029961368397484576">"Mein Standort"</string>
     <string name="location_network_based" msgid="9134175479520582215">"WLAN- &amp; Mobilfunknetz-Standort"</string>
     <string name="location_neighborhood_level" msgid="5626515380188353712">"Apps dürfen meinen Standort mit dem Google-Standortdienst schneller bestimmen. Anonyme Standortdaten werden erfasst und an Google gesendet."</string>
@@ -1879,7 +1884,7 @@
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Wählen Sie aus, welche Notfallbenachrichtigungen angezeigt werden sollen."</string>
     <string name="user_restrictions_title" msgid="7745810037152772035">"Beschränkungen für Apps und Inhalte"</string>
     <string name="user_rename" msgid="8523499513614655279">"Umbenennen"</string>
-    <string name="app_restrictions_custom_label" msgid="4171895848817279538">"App-Grenzen festlegen"</string>
+    <string name="app_restrictions_custom_label" msgid="6160672982086584261">"App-Beschränkungen festlegen"</string>
     <string name="user_restrictions_controlled_by" msgid="3164078767438313899">"Von <xliff:g id="APP">%1$s</xliff:g> festgelegt"</string>
     <string name="app_not_supported_in_limited" msgid="913035259626149121">"Diese App wird in eingeschränkten Profilen nicht unterstützt."</string>
     <string name="app_sees_restricted_accounts" msgid="7503264525057246240">"Diese App darf auf Ihre Konten zugreifen."</string>
