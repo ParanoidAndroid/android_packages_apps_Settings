@@ -287,9 +287,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
             }
         }
         
-        // App security settings
-        addPreferencesFromResource(R.xml.security_settings_app_cyanogenmod);
-        
         mNotificationAccess = findPreference(KEY_NOTIFICATION_ACCESS);
         if (mNotificationAccess != null) {
             final int total = NotificationAccessSettings.getListenersCount(mPM);

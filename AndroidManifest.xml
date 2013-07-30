@@ -65,8 +65,6 @@
     <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
     <uses-permission android:name="android.permission.SET_TIME" />
 
-    <uses-permission android:name="android.permission.CHANGE_PRIVACY_GUARD_STATE" />
-
     <permission
         android:name="android.permission.REQUEST_SUPERUSER"
         android:protectionLevel="signature" />

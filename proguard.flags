@@ -13,7 +13,6 @@
 -keep class com.android.settings.fuelgauge.*
 -keep class com.android.settings.users.*
 -keep class com.koushikdutta.**
--keep class com.android.settings.cyanogenmod.privacyguard.**
 -keep class com.android.settings.NotificationStation
 
 # Keep click responders
