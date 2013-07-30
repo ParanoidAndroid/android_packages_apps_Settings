@@ -246,6 +246,8 @@
     <string name="quick_pulldown_right">Right</string>
     <string name="title_collapse_panel">Auto close panel</string>
     <string name="summary_collapse_panel">Close the Quick Settings panel upon toggle</string>
+    <string name="title_floating_window">Floating window</string>
+    <string name="summary_floating_window">Open Quick Settings tiles in floating window</string>
 
     <!-- Reset tiles -->
     <string name="tiles_add_title">Add</string>
