@@ -246,6 +246,8 @@
     <string name="quick_pulldown_right">Right</string>
     <string name="title_collapse_panel">Auto close panel</string>
     <string name="summary_collapse_panel">Close the Quick Settings panel upon toggle</string>
+    <string name="title_floating_window">Floating window</string>
+    <string name="summary_floating_window">Open Quick Settings tiles in floating window</string>
 
     <!-- Reset tiles -->
     <string name="tiles_add_title">Add</string>
@@ -446,6 +448,10 @@
     <!-- Stylus Icon -->
     <string name="stylus_icon_enabled_title">Show icon when using stylus</string>
     <string name="stylus_icon_enabled_summary">Show the pointer icon when hovering or drawing with the stylus</string>
+
+    <!-- Kill app long-press back -->
+    <string name="kill_app_longpress_back">Kill app back button</string>
+    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
 
     <!-- Stylus Gestures -->
     <string name="gestures_settings_title">Stylus gestures</string>
