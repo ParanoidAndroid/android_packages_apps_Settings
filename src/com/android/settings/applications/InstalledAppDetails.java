@@ -142,7 +142,6 @@ public class InstalledAppDetails extends Fragment
     private Button mClearDataButton;
     private Button mMoveAppButton;
     private CompoundButton mNotificationSwitch, mHaloState;
-    private CompoundButton mPrivacyGuardSwitch;
 
     private PackageMoveObserver mPackageMoveObserver;
 
@@ -182,7 +181,6 @@ public class InstalledAppDetails extends Fragment
     private static final int DLG_DISABLE = DLG_BASE + 7;
     private static final int DLG_DISABLE_NOTIFICATIONS = DLG_BASE + 8;
     private static final int DLG_SPECIAL_DISABLE = DLG_BASE + 9;
-    private static final int DLG_PRIVACY_GUARD = DLG_BASE + 10;
 
     // Menu identifiers
     public static final int UNINSTALL_ALL_USERS_MENU = 1;
@@ -388,7 +386,8 @@ public class InstalledAppDetails extends Fragment
         boolean enabled = true; // default on
         boolean allowedForHalo = true; // default on
         try {
-            enabled = mNotificationManager.areNotificationsEnabledForPackage(mAppEntry.info.packageName);
+            enabled = mNotificationManager.areNotificationsEnabledForPackage(mAppEntry.info.packageName,
+                    mAppEntry.info.uid);
             allowedForHalo = mNotificationManager.isPackageAllowedForHalo(mAppEntry.info.packageName);
         } catch (android.os.RemoteException ex) {
             // this does not bode well
@@ -401,22 +400,6 @@ public class InstalledAppDetails extends Fragment
         } else {
             mNotificationSwitch.setEnabled(true);
             mNotificationSwitch.setOnCheckedChangeListener(this);
-        }
-    }
-
-    private void initPrivacyGuardButton() {
-        if (mPrivacyGuardSwitch == null) {
-            return;
-        }
-
-        mPrivacyGuardSwitch.setChecked(mPm.getPrivacyGuardSetting(mAppEntry.info.packageName));
-
-        // disable privacy guard switch if the app is signed with the platform certificate
-        // to avoid the user shooting himself in the foot
-        if (isThisASystemPackage()) {
-            mPrivacyGuardSwitch.setEnabled(false);
-        } else {
-            mPrivacyGuardSwitch.setOnCheckedChangeListener(this);
         }
     }
 
@@ -506,8 +489,6 @@ public class InstalledAppDetails extends Fragment
         mHaloState = (CompoundButton) view.findViewById(R.id.halo_state);
         mHaloState.setText((mHaloPolicyIsBlack ? R.string.app_halo_label_black : R.string.app_halo_label_white));
 
-        mPrivacyGuardSwitch = (CompoundButton) view.findViewById(R.id.privacy_guard_switch);
-
         return view;
     }
 
@@ -570,10 +551,10 @@ public class InstalledAppDetails extends Fragment
         }
     }
 
-    // Utility method to set applicaiton label and icon.
+    // Utility method to set application label and icon.
     private void setAppLabelAndIcon(PackageInfo pkgInfo) {
         final View appSnippet = mRootView.findViewById(R.id.app_snippet);
-        appSnippet.setPadding(0, appSnippet.getPaddingTop(), 0, appSnippet.getPaddingBottom());
+        appSnippet.setPaddingRelative(0, appSnippet.getPaddingTop(), 0, appSnippet.getPaddingBottom());
 
         ImageView icon = (ImageView) appSnippet.findViewById(R.id.app_icon);
         mState.ensureIcon(mAppEntry);
@@ -800,7 +781,7 @@ public class InstalledAppDetails extends Fragment
             LinearLayout securityList = (LinearLayout) permsView.findViewById(
                     R.id.security_settings_list);
             securityList.removeAllViews();
-            securityList.addView(asp.getPermissionsView());
+            securityList.addView(asp.getPermissionsViewWithRevokeButtons());
             // If this app is running under a shared user ID with other apps,
             // update the description to explain this.
             String[] packages = mPm.getPackagesForUid(mPackageInfo.applicationInfo.uid);
@@ -868,12 +849,6 @@ public class InstalledAppDetails extends Fragment
             } catch (NameNotFoundException e) {
                 return false;
             }
-        }
-
-
-        // only setup the privacy guard setting if we didn't get uninstalled
-        if (!mMoveInProgress) {
-            initPrivacyGuardButton();
         }
 
         return true;
@@ -1218,31 +1193,6 @@ public class InstalledAppDetails extends Fragment
                     })
                     .setNegativeButton(R.string.dlg_cancel, null)
                     .create();
-                case DLG_PRIVACY_GUARD:
-                    final int messageResId;
-                    if ((getOwner().mAppEntry.info.flags & ApplicationInfo.FLAG_SYSTEM) != 0) {
-                        messageResId = R.string.privacy_guard_dlg_system_app_text;
-                    } else {
-                        messageResId = R.string.privacy_guard_dlg_text;
-                    }
-
-                    return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.privacy_guard_dlg_title)
-                    .setIconAttribute(android.R.attr.alertDialogIcon)
-                    .setMessage(messageResId)
-                    .setPositiveButton(R.string.dlg_ok,
-                        new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            getOwner().setPrivacyGuard(true);
-                        }
-                    })
-                    .setNegativeButton(R.string.dlg_cancel,
-                        new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    })
-                    .create();
             }
             throw new IllegalArgumentException("unknown id " + id);
         }
@@ -1254,10 +1204,6 @@ public class InstalledAppDetails extends Fragment
                 case DLG_DISABLE_NOTIFICATIONS:
                     // Re-enable the checkbox
                     getOwner().mNotificationSwitch.setChecked(true);
-                    break;
-                case DLG_PRIVACY_GUARD:
-                    // Re-enable the checkbox
-                    getOwner().mPrivacyGuardSwitch.setChecked(false);
                     break;
             }
         }
@@ -1338,7 +1284,7 @@ public class InstalledAppDetails extends Fragment
     private void setNotificationsEnabled(boolean enabled) {
         try {
             final boolean enable = mNotificationSwitch.isChecked();
-            mNotificationManager.setNotificationsEnabledForPackage(mAppEntry.info.packageName, enabled);
+            mNotificationManager.setNotificationsEnabledForPackage(mAppEntry.info.packageName, mAppEntry.info.uid, enabled);
         } catch (android.os.RemoteException ex) {
             mNotificationSwitch.setChecked(!enabled); // revert
         }
@@ -1350,11 +1296,6 @@ public class InstalledAppDetails extends Fragment
         } catch (android.os.RemoteException ex) {
             mHaloState.setChecked(!state); // revert
         }
-    }
-
-    private void setPrivacyGuard(boolean enabled) {
-        String packageName = mAppEntry.info.packageName;
-        mPm.setPrivacyGuardSetting(packageName, enabled);
     }
 
     private int getPremiumSmsPermission(String packageName) {
@@ -1456,12 +1397,6 @@ public class InstalledAppDetails extends Fragment
             }
         } else if (buttonView == mHaloState) {
             setHaloState(isChecked);
-        } else if (buttonView == mPrivacyGuardSwitch) {
-            if (isChecked) {
-                showDialogInner(DLG_PRIVACY_GUARD, 0);
-            } else {
-                setPrivacyGuard(false);
-            }
         }
     }
 }
