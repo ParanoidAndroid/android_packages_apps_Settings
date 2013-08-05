@@ -64,6 +64,10 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
     <uses-permission android:name="android.permission.SET_TIME" />
+    <uses-permission android:name="android.permission.CHANGE_PRIVACY_GUARD_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <permission
         android:name="android.permission.REQUEST_SUPERUSER"
@@ -180,6 +184,21 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <!-- QuietHours AutoSMS -->
+
+        <service android:name=".cyanogenmod.autosms.AutoSmsService"/>
+
+        <receiver
+            android:name=".cyanogenmod.autosms.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"></action>
+                <action android:name="android.intent.action.TIME_CHANGED"></action>
+                <action android:name="android.intent.action.DATE_CHANGED"></action>
+                <action android:name="com.android.settings.cyanogenmod.autosms.START_SMS_SERVICE"/>
+                <action android:name="com.android.settings.cyanogenmod.autosms.STOP_SMS_SERVICE"/>
+            </intent-filter>
+        </receiver>
 
         <!-- Wireless Controls -->
 
