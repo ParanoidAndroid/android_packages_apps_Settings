@@ -4554,4 +4554,7 @@
 
     <!-- Text to display in regulatory info screen (from device overlay). -->
     <string name="regulatory_info_text"></string>
+
+    <!-- Delete apn confirmation dialog message -->
+    <string name="confirm_delete_apn">The APN will be deleted.</string>
 </resources>
