@@ -1129,12 +1129,12 @@
     </string-array>
 
     <string-array name="values_halo_size" translatable="false">
+        <item>0.4</item>
         <item>0.6</item>
-        <item>0.8</item>
         <item>1.0</item>
         <item>1.2</item>
         <item>1.4</item>
-        <item>1.6</item>
+        <item>1.8</item>
     </string-array>
 
     <string-array name="entries_pie_mode">
