@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,78 +14,23 @@
      limitations under the License.
 -->
 
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/hardware_keys_title">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <CheckBoxPreference
+        android:key="hardware_keys_enable_custom"
+        android:title="@string/hardware_keys_enable_custom_title"
+        android:defaultValue="false"
+        android:persistent="false" />
 
     <PreferenceCategory
-        android:key="hardware_keys_bindings"
-        android:title="@string/hardware_keys_bindings_title">
-
-        <CheckBoxPreference
-            android:key="hardware_keys_enable_custom"
-            android:title="@string/hardware_keys_enable_custom_title"
-            android:defaultValue="false"
-            android:persistent="false" />
+        android:key="home_key"
+        android:title="@string/hardware_keys_home_key_title" >
 
         <ListPreference
             android:key="hardware_keys_home_long_press"
-            android:dialogTitle="@string/hardware_keys_home_long_press_title"
-            android:title="@string/hardware_keys_home_long_press_title"
-            android:entries="@array/hardware_keys_action_entries"
-            android:entryValues="@array/hardware_keys_action_values"
-            android:persistent="false"
-            android:dependency="hardware_keys_enable_custom" />
-
-        <ListPreference
-            android:key="hardware_keys_menu_press"
-            android:dialogTitle="@string/hardware_keys_menu_press_title"
-            android:title="@string/hardware_keys_menu_press_title"
-            android:entries="@array/hardware_keys_action_entries"
-            android:entryValues="@array/hardware_keys_action_values"
-            android:persistent="false"
-            android:dependency="hardware_keys_enable_custom" />
-
-        <ListPreference
-            android:key="hardware_keys_menu_long_press"
-            android:dialogTitle="@string/hardware_keys_menu_long_press_title"
-            android:title="@string/hardware_keys_menu_long_press_title"
-            android:entries="@array/hardware_keys_action_entries"
-            android:entryValues="@array/hardware_keys_action_values"
-            android:persistent="false"
-            android:dependency="hardware_keys_enable_custom" />
-
-        <ListPreference
-            android:key="hardware_keys_assist_press"
-            android:dialogTitle="@string/hardware_keys_assist_press_title"
-            android:title="@string/hardware_keys_assist_press_title"
-            android:entries="@array/hardware_keys_action_entries"
-            android:entryValues="@array/hardware_keys_action_values"
-            android:persistent="false"
-            android:dependency="hardware_keys_enable_custom" />
-
-        <ListPreference
-            android:key="hardware_keys_assist_long_press"
-            android:dialogTitle="@string/hardware_keys_assist_long_press_title"
-            android:title="@string/hardware_keys_assist_long_press_title"
-            android:entries="@array/hardware_keys_action_entries"
-            android:entryValues="@array/hardware_keys_action_values"
-            android:persistent="false"
-            android:dependency="hardware_keys_enable_custom" />
-
-        <ListPreference
-            android:key="hardware_keys_app_switch_press"
-            android:dialogTitle="@string/hardware_keys_app_switch_press_title"
-            android:title="@string/hardware_keys_app_switch_press_title"
-            android:entries="@array/hardware_keys_action_entries"
-            android:entryValues="@array/hardware_keys_action_values"
-            android:persistent="false"
-            android:dependency="hardware_keys_enable_custom" />
-
-        <ListPreference
-            android:key="hardware_keys_app_switch_long_press"
-            android:dialogTitle="@string/hardware_keys_app_switch_long_press_title"
-            android:title="@string/hardware_keys_app_switch_long_press_title"
+            android:dialogTitle="@string/hardware_keys_long_press_title"
+            android:title="@string/hardware_keys_long_press_title"
             android:entries="@array/hardware_keys_action_entries"
             android:entryValues="@array/hardware_keys_action_values"
             android:persistent="false"
@@ -94,14 +39,81 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/additional_options_title">
+        android:key="menu_key"
+        android:title="@string/hardware_keys_menu_key_title" >
 
-       <CheckBoxPreference
+        <CheckBoxPreference
             android:key="hardware_keys_show_overflow"
             android:title="@string/hardware_keys_show_overflow_title"
             android:summary="@string/hardware_keys_show_overflow_summary"
             android:persistent="false"
             android:defaultValue="false" />
+
+        <ListPreference
+            android:key="hardware_keys_menu_press"
+            android:dialogTitle="@string/hardware_keys_short_press_title"
+            android:title="@string/hardware_keys_short_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false"
+            android:dependency="hardware_keys_enable_custom" />
+
+        <ListPreference
+            android:key="hardware_keys_menu_long_press"
+            android:dialogTitle="@string/hardware_keys_long_press_title"
+            android:title="@string/hardware_keys_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false"
+            android:dependency="hardware_keys_enable_custom" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="assist_key"
+        android:title="@string/hardware_keys_assist_key_title" >
+
+        <ListPreference
+            android:key="hardware_keys_assist_press"
+            android:dialogTitle="@string/hardware_keys_short_press_title"
+            android:title="@string/hardware_keys_short_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false"
+            android:dependency="hardware_keys_enable_custom" />
+
+        <ListPreference
+            android:key="hardware_keys_assist_long_press"
+            android:dialogTitle="@string/hardware_keys_long_press_title"
+            android:title="@string/hardware_keys_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false"
+            android:dependency="hardware_keys_enable_custom" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="app_switch_key"
+        android:title="@string/hardware_keys_appswitch_key_title" >
+
+        <ListPreference
+            android:key="hardware_keys_app_switch_press"
+            android:dialogTitle="@string/hardware_keys_short_press_title"
+            android:title="@string/hardware_keys_short_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false"
+            android:dependency="hardware_keys_enable_custom" />
+
+        <ListPreference
+            android:key="hardware_keys_app_switch_long_press"
+            android:dialogTitle="@string/hardware_keys_long_press_title"
+            android:title="@string/hardware_keys_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false"
+            android:dependency="hardware_keys_enable_custom" />
 
     </PreferenceCategory>
 

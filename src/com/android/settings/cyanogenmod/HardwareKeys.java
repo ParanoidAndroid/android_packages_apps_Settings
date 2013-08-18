@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2013 The CyanogenMod project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,11 +16,12 @@
 
 package com.android.settings.cyanogenmod;
 
+import android.content.ContentResolver;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
-import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
@@ -28,19 +29,24 @@ import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
-public class HardwareKeys extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class HardwareKeys extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
+    private static final String KEY_ENABLE_CUSTOM_BINDING = "hardware_keys_enable_custom";
+    private static final String KEY_HOME_LONG_PRESS = "hardware_keys_home_long_press";
+    private static final String KEY_MENU_PRESS = "hardware_keys_menu_press";
+    private static final String KEY_MENU_LONG_PRESS = "hardware_keys_menu_long_press";
+    private static final String KEY_ASSIST_PRESS = "hardware_keys_assist_press";
+    private static final String KEY_ASSIST_LONG_PRESS = "hardware_keys_assist_long_press";
+    private static final String KEY_APP_SWITCH_PRESS = "hardware_keys_app_switch_press";
+    private static final String KEY_APP_SWITCH_LONG_PRESS = "hardware_keys_app_switch_long_press";
+    private static final String KEY_SHOW_OVERFLOW = "hardware_keys_show_overflow";
 
-    private static final String HARDWARE_KEYS_CATEGORY_BINDINGS = "hardware_keys_bindings";
-    private static final String HARDWARE_KEYS_ENABLE_CUSTOM = "hardware_keys_enable_custom";
-    private static final String HARDWARE_KEYS_HOME_LONG_PRESS = "hardware_keys_home_long_press";
-    private static final String HARDWARE_KEYS_MENU_PRESS = "hardware_keys_menu_press";
-    private static final String HARDWARE_KEYS_MENU_LONG_PRESS = "hardware_keys_menu_long_press";
-    private static final String HARDWARE_KEYS_ASSIST_PRESS = "hardware_keys_assist_press";
-    private static final String HARDWARE_KEYS_ASSIST_LONG_PRESS = "hardware_keys_assist_long_press";
-    private static final String HARDWARE_KEYS_APP_SWITCH_PRESS = "hardware_keys_app_switch_press";
-    private static final String HARDWARE_KEYS_APP_SWITCH_LONG_PRESS = "hardware_keys_app_switch_long_press";
-    private static final String HARDWARE_KEYS_SHOW_OVERFLOW = "hardware_keys_show_overflow";
+    private static final String CATEGORY_HOME = "home_key";
+    private static final String CATEGORY_MENU = "menu_key";
+    private static final String CATEGORY_ASSIST = "assist_key";
+    private static final String CATEGORY_APPSWITCH = "app_switch_key";
 
     // Available custom actions to perform on a key press.
     // Must match values for KEY_HOME_LONG_PRESS_ACTION in:
@@ -74,6 +80,12 @@ public class HardwareKeys extends SettingsPreferenceFragment implements OnPrefer
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        addPreferencesFromResource(R.xml.hardware_keys);
+
+        final Resources res = getResources();
+        final ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
         final int deviceKeys = getResources().getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
         final boolean hasHomeKey = (deviceKeys & KEY_MASK_HOME) != 0;
@@ -81,191 +93,159 @@ public class HardwareKeys extends SettingsPreferenceFragment implements OnPrefer
         final boolean hasAssistKey = (deviceKeys & KEY_MASK_ASSIST) != 0;
         final boolean hasAppSwitchKey = (deviceKeys & KEY_MASK_APP_SWITCH) != 0;
 
-        addPreferencesFromResource(R.xml.hardware_keys);
-        PreferenceScreen prefSet = getPreferenceScreen();
-
-        mEnableCustomBindings = (CheckBoxPreference) prefSet.findPreference(
-                HARDWARE_KEYS_ENABLE_CUSTOM);
-        mHomeLongPressAction = (ListPreference) prefSet.findPreference(
-                HARDWARE_KEYS_HOME_LONG_PRESS);
-        mMenuPressAction = (ListPreference) prefSet.findPreference(
-                HARDWARE_KEYS_MENU_PRESS);
-        mMenuLongPressAction = (ListPreference) prefSet.findPreference(
-                HARDWARE_KEYS_MENU_LONG_PRESS);
-        mAssistPressAction = (ListPreference) prefSet.findPreference(
-                HARDWARE_KEYS_ASSIST_PRESS);
-        mAssistLongPressAction = (ListPreference) prefSet.findPreference(
-                HARDWARE_KEYS_ASSIST_LONG_PRESS);
-        mAppSwitchPressAction = (ListPreference) prefSet.findPreference(
-                HARDWARE_KEYS_APP_SWITCH_PRESS);
-        mAppSwitchLongPressAction = (ListPreference) prefSet.findPreference(
-                HARDWARE_KEYS_APP_SWITCH_LONG_PRESS);
-        mShowActionOverflow = (CheckBoxPreference) prefSet.findPreference(
-                HARDWARE_KEYS_SHOW_OVERFLOW);
-        PreferenceCategory bindingsCategory = (PreferenceCategory) prefSet.findPreference(
-                HARDWARE_KEYS_CATEGORY_BINDINGS);
+        boolean hasAnyBindableKey = false;
+        final PreferenceCategory homeCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_HOME);
+        final PreferenceCategory menuCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_MENU);
+        final PreferenceCategory assistCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_ASSIST);
+        final PreferenceCategory appSwitchCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_APPSWITCH);
 
         if (hasHomeKey) {
-            int homeLongPressAction;
-            if (hasAppSwitchKey) {
-                homeLongPressAction = Settings.System.getInt(getContentResolver(),
-                        Settings.System.KEY_HOME_LONG_PRESS_ACTION, ACTION_NOTHING);
-            } else {
-                homeLongPressAction = Settings.System.getInt(getContentResolver(),
-                        Settings.System.KEY_HOME_LONG_PRESS_ACTION, ACTION_APP_SWITCH);
-            }
-            mHomeLongPressAction.setValue(Integer.toString(homeLongPressAction));
-            mHomeLongPressAction.setSummary(mHomeLongPressAction.getEntry());
-            mHomeLongPressAction.setOnPreferenceChangeListener(this);
+
+            int longPressAction = Settings.System.getInt(resolver,
+                    Settings.System.KEY_HOME_LONG_PRESS_ACTION,
+                    hasAppSwitchKey ? ACTION_NOTHING : ACTION_APP_SWITCH);
+            mHomeLongPressAction = initActionList(KEY_HOME_LONG_PRESS, longPressAction);
+
+            hasAnyBindableKey = true;
         } else {
-            bindingsCategory.removePreference(mHomeLongPressAction);
+            prefScreen.removePreference(homeCategory);
         }
 
         if (hasMenuKey) {
-            int menuPressAction = Settings.System.getInt(getContentResolver(),
+            int pressAction = Settings.System.getInt(resolver,
                     Settings.System.KEY_MENU_ACTION, ACTION_MENU);
-            mMenuPressAction.setValue(Integer.toString(menuPressAction));
-            mMenuPressAction.setSummary(mMenuPressAction.getEntry());
-            mMenuPressAction.setOnPreferenceChangeListener(this);
+            mMenuPressAction = initActionList(KEY_MENU_PRESS, pressAction);
 
-            int menuLongPressAction;
-            if (hasAssistKey) {
-                menuLongPressAction = Settings.System.getInt(getContentResolver(),
-                        Settings.System.KEY_MENU_LONG_PRESS_ACTION, ACTION_NOTHING);
-            } else {
-                menuLongPressAction = Settings.System.getInt(getContentResolver(),
-                        Settings.System.KEY_MENU_LONG_PRESS_ACTION, ACTION_SEARCH);
-            }
-            mMenuLongPressAction.setValue(Integer.toString(menuLongPressAction));
-            mMenuLongPressAction.setSummary(mMenuLongPressAction.getEntry());
-            mMenuLongPressAction.setOnPreferenceChangeListener(this);
+            int longPressAction = Settings.System.getInt(resolver,
+                        Settings.System.KEY_MENU_LONG_PRESS_ACTION,
+                        hasAssistKey ? ACTION_NOTHING : ACTION_SEARCH);
+            mMenuLongPressAction = initActionList(KEY_MENU_LONG_PRESS, longPressAction);
+
+            mShowActionOverflow =
+                    (CheckBoxPreference) prefScreen.findPreference(KEY_SHOW_OVERFLOW);
+
+            mShowActionOverflow.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.UI_FORCE_OVERFLOW_BUTTON, 0) == 1);
+
+            hasAnyBindableKey = true;
         } else {
-            bindingsCategory.removePreference(mMenuPressAction);
-            bindingsCategory.removePreference(mMenuLongPressAction);
+            prefScreen.removePreference(menuCategory);
         }
 
         if (hasAssistKey) {
-            int assistPressAction = Settings.System.getInt(getContentResolver(),
+            int pressAction = Settings.System.getInt(resolver,
                     Settings.System.KEY_ASSIST_ACTION, ACTION_SEARCH);
-            mAssistPressAction.setValue(Integer.toString(assistPressAction));
-            mAssistPressAction.setSummary(mAssistPressAction.getEntry());
-            mAssistPressAction.setOnPreferenceChangeListener(this);
+            mAssistPressAction = initActionList(KEY_ASSIST_PRESS, pressAction);
 
-            int assistLongPressAction = Settings.System.getInt(getContentResolver(),
+            int longPressAction = Settings.System.getInt(resolver,
                     Settings.System.KEY_ASSIST_LONG_PRESS_ACTION, ACTION_VOICE_SEARCH);
-            mAssistLongPressAction.setValue(Integer.toString(assistLongPressAction));
-            mAssistLongPressAction.setSummary(mAssistLongPressAction.getEntry());
-            mAssistLongPressAction.setOnPreferenceChangeListener(this);
+            mAssistLongPressAction = initActionList(KEY_ASSIST_LONG_PRESS, longPressAction);
+
+            hasAnyBindableKey = true;
         } else {
-            bindingsCategory.removePreference(mAssistPressAction);
-            bindingsCategory.removePreference(mAssistLongPressAction);
+            prefScreen.removePreference(assistCategory);
         }
 
         if (hasAppSwitchKey) {
-            int appSwitchPressAction = Settings.System.getInt(getContentResolver(),
+            int pressAction = Settings.System.getInt(resolver,
                     Settings.System.KEY_APP_SWITCH_ACTION, ACTION_APP_SWITCH);
-            mAppSwitchPressAction.setValue(Integer.toString(appSwitchPressAction));
-            mAppSwitchPressAction.setSummary(mAppSwitchPressAction.getEntry());
-            mAppSwitchPressAction.setOnPreferenceChangeListener(this);
+            mAppSwitchPressAction = initActionList(KEY_APP_SWITCH_PRESS, pressAction);
 
-            int appSwitchLongPressAction = Settings.System.getInt(getContentResolver(),
+            int longPressAction = Settings.System.getInt(resolver,
                     Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION, ACTION_NOTHING);
-            mAppSwitchLongPressAction.setValue(Integer.toString(appSwitchLongPressAction));
-            mAppSwitchLongPressAction.setSummary(mAppSwitchLongPressAction.getEntry());
-            mAppSwitchLongPressAction.setOnPreferenceChangeListener(this);
+            mAppSwitchLongPressAction = initActionList(KEY_APP_SWITCH_LONG_PRESS, longPressAction);
+
+            hasAnyBindableKey = true;
         } else {
-            bindingsCategory.removePreference(mAppSwitchPressAction);
-            bindingsCategory.removePreference(mAppSwitchLongPressAction);
+            prefScreen.removePreference(appSwitchCategory);
         }
 
-        mEnableCustomBindings.setChecked((Settings.System.getInt(getActivity().
-                getApplicationContext().getContentResolver(),
-                Settings.System.HARDWARE_KEY_REBINDING, 0) == 1));
-        mShowActionOverflow.setChecked((Settings.System.getInt(getActivity().
-                getApplicationContext().getContentResolver(),
-                Settings.System.UI_FORCE_OVERFLOW_BUTTON, 0) == 1));
+        mEnableCustomBindings =
+                (CheckBoxPreference) prefScreen.findPreference(KEY_ENABLE_CUSTOM_BINDING);
+
+        if (hasAnyBindableKey) {
+            mEnableCustomBindings.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.HARDWARE_KEY_REBINDING, 0) == 1);
+        } else {
+            prefScreen.removePreference(mEnableCustomBindings);
+        }
     }
 
+    private ListPreference initActionList(String key, int value) {
+        ListPreference list = (ListPreference) getPreferenceScreen().findPreference(key);
+        list.setValue(Integer.toString(value));
+        list.setSummary(list.getEntry());
+        list.setOnPreferenceChangeListener(this);
+        return list;
+    }
+
+    private void handleActionListChange(ListPreference pref, Object newValue, String setting) {
+        String value = (String) newValue;
+        int index = pref.findIndexOfValue(value);
+
+        pref.setSummary(pref.getEntries()[index]);
+        Settings.System.putInt(getContentResolver(), setting, Integer.valueOf(value));
+    }
+
+    private void handleCheckboxClick(CheckBoxPreference pref, String setting) {
+        Settings.System.putInt(getContentResolver(), setting, pref.isChecked() ? 1 : 0);
+    }
+
+    @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mHomeLongPressAction) {
-            int value = Integer.valueOf((String) newValue);
-            int index = mHomeLongPressAction.findIndexOfValue((String) newValue);
-            mHomeLongPressAction.setSummary(
-                    mHomeLongPressAction.getEntries()[index]);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.KEY_HOME_LONG_PRESS_ACTION, value);
+            handleActionListChange(mHomeLongPressAction, newValue,
+                    Settings.System.KEY_HOME_LONG_PRESS_ACTION);
             return true;
         } else if (preference == mMenuPressAction) {
-            int value = Integer.valueOf((String) newValue);
-            int index = mMenuPressAction.findIndexOfValue((String) newValue);
-            mMenuPressAction.setSummary(
-                    mMenuPressAction.getEntries()[index]);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.KEY_MENU_ACTION, value);
+            handleActionListChange(mMenuPressAction, newValue,
+                    Settings.System.KEY_MENU_ACTION);
             return true;
         } else if (preference == mMenuLongPressAction) {
-            int value = Integer.valueOf((String) newValue);
-            int index = mMenuLongPressAction.findIndexOfValue((String) newValue);
-            mMenuLongPressAction.setSummary(
-                    mMenuLongPressAction.getEntries()[index]);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.KEY_MENU_LONG_PRESS_ACTION, value);
+            handleActionListChange(mMenuLongPressAction, newValue,
+                    Settings.System.KEY_MENU_LONG_PRESS_ACTION);
             return true;
         } else if (preference == mAssistPressAction) {
-            int value = Integer.valueOf((String) newValue);
-            int index = mAssistPressAction.findIndexOfValue((String) newValue);
-            mAssistPressAction.setSummary(
-                    mAssistPressAction.getEntries()[index]);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.KEY_ASSIST_ACTION, value);
+            handleActionListChange(mAssistPressAction, newValue,
+                    Settings.System.KEY_ASSIST_ACTION);
             return true;
         } else if (preference == mAssistLongPressAction) {
-            int value = Integer.valueOf((String) newValue);
-            int index = mAssistLongPressAction.findIndexOfValue((String) newValue);
-            mAssistLongPressAction.setSummary(
-                    mAssistLongPressAction.getEntries()[index]);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.KEY_ASSIST_LONG_PRESS_ACTION, value);
+            handleActionListChange(mAssistLongPressAction, newValue,
+                    Settings.System.KEY_ASSIST_LONG_PRESS_ACTION);
             return true;
         } else if (preference == mAppSwitchPressAction) {
-            int value = Integer.valueOf((String) newValue);
-            int index = mAppSwitchPressAction.findIndexOfValue((String) newValue);
-            mAppSwitchPressAction.setSummary(
-                    mAppSwitchPressAction.getEntries()[index]);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.KEY_APP_SWITCH_ACTION, value);
+            handleActionListChange(mAppSwitchPressAction, newValue,
+                    Settings.System.KEY_APP_SWITCH_ACTION);
             return true;
         } else if (preference == mAppSwitchLongPressAction) {
-            int value = Integer.valueOf((String) newValue);
-            int index = mAppSwitchLongPressAction.findIndexOfValue((String) newValue);
-            mAppSwitchLongPressAction.setSummary(
-                    mAppSwitchLongPressAction.getEntries()[index]);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION, value);
+            handleActionListChange(mAppSwitchLongPressAction, newValue,
+                    Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION);
             return true;
         }
+
         return false;
     }
 
+    @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mEnableCustomBindings) {
-            Settings.System.putInt(getContentResolver(), Settings.System.HARDWARE_KEY_REBINDING,
-                    mEnableCustomBindings.isChecked() ? 1 : 0);
+            handleCheckboxClick(mEnableCustomBindings, Settings.System.HARDWARE_KEY_REBINDING);
             return true;
         } else if (preference == mShowActionOverflow) {
-            boolean enabled = mShowActionOverflow.isChecked();
-            Settings.System.putInt(getContentResolver(), Settings.System.UI_FORCE_OVERFLOW_BUTTON,
-                    enabled ? 1 : 0);
-            // Show appropriate
-            if (enabled) {
-                Toast.makeText(getActivity(), R.string.hardware_keys_show_overflow_toast_enable,
-                        Toast.LENGTH_LONG).show();
-            } else {
-                Toast.makeText(getActivity(), R.string.hardware_keys_show_overflow_toast_disable,
-                        Toast.LENGTH_LONG).show();
-            }
+            handleCheckboxClick(mShowActionOverflow, Settings.System.UI_FORCE_OVERFLOW_BUTTON);
+
+            int toastResId = mShowActionOverflow.isChecked()
+                    ? R.string.hardware_keys_show_overflow_toast_enable
+                    : R.string.hardware_keys_show_overflow_toast_disable;
+
+            Toast.makeText(getActivity(), toastResId, Toast.LENGTH_LONG).show();
             return true;
         }
-        return false;
+
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 }

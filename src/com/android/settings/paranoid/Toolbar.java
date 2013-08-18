@@ -262,7 +262,7 @@ public class Toolbar extends SettingsPreferenceFragment
         // Only show the hardware keys config on a device that does not have a navbar
         final int deviceKeys = getResources().getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
-        if(deviceKeys==15) {
+        if (deviceKeys==15) {
              PreferenceScreen HARDWARE =(PreferenceScreen) prefSet.findPreference(KEY_HARDWARE_KEYS);
              prefSet.removePreference(HARDWARE);
         }
