@@ -506,6 +506,11 @@
     <string name="color_green_title">Green</string>
     <string name="color_blue_title">Blue</string>
 
+    <!-- Hardware tunables - Key backlight -->
+    <string name="key_backlight_title">Backlight</string>
+    <string name="button_backlight_title">Button backlight brightness</string>
+    <string name="keyboard_backlight_title">Keyboard backlight brightness</string>
+
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Kill app back button</string>
     <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
