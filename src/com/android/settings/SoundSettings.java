@@ -88,6 +88,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_CONVERT_SOUND_TO_VIBRATE = "notification_convert_sound_to_vibration";
     private static final String KEY_QUIET_HOURS = "quiet_hours";
     private static final String KEY_VIBRATOR_INTENSITY = "vibrator_intensity";
+    private static final String KEY_VOLBTN_MUSIC_CTRL = "music_controls";
+    private static final String KEY_VOLUME_WAKE = "volume_wake";
 
     private static final String[] NEED_VOICE_CAPABILITY = {
             KEY_RINGTONE, KEY_DTMF_TONE, KEY_CATEGORY_CALLS,
@@ -109,6 +111,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private Preference mRingtonePreference;
     private Preference mNotificationPreference;
     private PreferenceScreen mQuietHours;
+    private CheckBoxPreference mVolBtnMusicCtrl;
+    private CheckBoxPreference mVolumeWake;
 
     private Runnable mRingtoneLookupRunnable;
 
@@ -190,6 +194,14 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             mQuietHours.setSummary(getString(R.string.quiet_hours_summary));
         }
 
+        mVolumeWake = (CheckBoxPreference) findPreference(KEY_VOLUME_WAKE);
+        mVolumeWake.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.VOLUME_WAKE_SCREEN, 0) == 1);
+
+        mVolBtnMusicCtrl = (CheckBoxPreference) findPreference(KEY_VOLBTN_MUSIC_CTRL);
+        mVolBtnMusicCtrl.setChecked(Settings.System.getInt(getContentResolver(),
+                   Settings.System.VOLBTN_MUSIC_CONTROLS, 0) == 1);
+
         mVibrateWhenRinging = (CheckBoxPreference) findPreference(KEY_VIBRATE);
         mVibrateWhenRinging.setPersistent(false);
         mVibrateWhenRinging.setChecked(Settings.System.getInt(resolver,
@@ -199,14 +211,17 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mDtmfTone.setPersistent(false);
         mDtmfTone.setChecked(Settings.System.getInt(resolver,
                 Settings.System.DTMF_TONE_WHEN_DIALING, 1) != 0);
+
         mSoundEffects = (CheckBoxPreference) findPreference(KEY_SOUND_EFFECTS);
         mSoundEffects.setPersistent(false);
         mSoundEffects.setChecked(Settings.System.getInt(resolver,
                 Settings.System.SOUND_EFFECTS_ENABLED, 1) != 0);
+
         mHapticFeedback = (CheckBoxPreference) findPreference(KEY_HAPTIC_FEEDBACK);
         mHapticFeedback.setPersistent(false);
         mHapticFeedback.setChecked(Settings.System.getInt(resolver,
                 Settings.System.HAPTIC_FEEDBACK_ENABLED, 1) != 0);
+
         mLockSounds = (CheckBoxPreference) findPreference(KEY_LOCK_SOUNDS);
         mLockSounds.setPersistent(false);
         mLockSounds.setChecked(Settings.System.getInt(resolver,
@@ -355,7 +370,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         } else if (preference == mDtmfTone) {
             Settings.System.putInt(getContentResolver(), Settings.System.DTMF_TONE_WHEN_DIALING,
                     mDtmfTone.isChecked() ? 1 : 0);
-
         } else if (preference == mSoundEffects) {
             if (mSoundEffects.isChecked()) {
                 mAudioManager.loadSoundEffects();
@@ -364,19 +378,21 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             }
             Settings.System.putInt(getContentResolver(), Settings.System.SOUND_EFFECTS_ENABLED,
                     mSoundEffects.isChecked() ? 1 : 0);
-
         } else if (preference == mHapticFeedback) {
             Settings.System.putInt(getContentResolver(), Settings.System.HAPTIC_FEEDBACK_ENABLED,
                     mHapticFeedback.isChecked() ? 1 : 0);
-
         } else if (preference == mLockSounds) {
             Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_SOUNDS_ENABLED,
                     mLockSounds.isChecked() ? 1 : 0);
-
+        } else if (preference == mVolumeWake) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.VOLUME_WAKE_SCREEN, mVolumeWake.isChecked() ? 1 : 0);
+         } else if (preference == mVolBtnMusicCtrl) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.VOLBTN_MUSIC_CONTROLS, mVolBtnMusicCtrl.isChecked() ? 1 : 0);
         } else if (preference == mConvertSoundToVibration) {
             Settings.System.putInt(getContentResolver(), Settings.System.NOTIFICATION_CONVERT_SOUND_TO_VIBRATION,
                     mConvertSoundToVibration.isChecked() ? 1 : 0);
-
         } else if (preference == mMusicFx) {
             // let the framework fire off the intent
             return false;

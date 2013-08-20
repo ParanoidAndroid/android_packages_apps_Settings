@@ -55,8 +55,6 @@ public class Lockscreen extends SettingsPreferenceFragment
     private static final String KEY_SEE_TRHOUGH = "see_through";
     private static final String KEY_HOME_SCREEN_WIDGETS = "home_screen_widgets";
     private static final String KEY_MAXIMIZE_WIDGETS = "maximize_widgets";
-    private static final String KEY_VOLBTN_MUSIC_CTRL = "music_controls";
-    private static final String KEY_VOLUME_WAKE = "volume_wake";
     private static final String KEY_BACKGROUND_PREF = "lockscreen_background";
 
     private static final int REQUEST_CODE_BG_WALLPAPER = 1024;
@@ -69,8 +67,6 @@ public class Lockscreen extends SettingsPreferenceFragment
     private CheckBoxPreference mSeeThrough;
     private CheckBoxPreference mHomeScreenWidgets;
     private CheckBoxPreference mMaximizeWidgets;
-    private CheckBoxPreference mVolBtnMusicCtrl;
-    private CheckBoxPreference mVolumeWake;
     private CheckBoxPreference mQuickUnlock;
 
     private File mWallpaperImage;
@@ -111,14 +107,6 @@ public class Lockscreen extends SettingsPreferenceFragment
         mHomeScreenWidgets = (CheckBoxPreference) prefSet.findPreference(KEY_HOME_SCREEN_WIDGETS);
         mHomeScreenWidgets.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.HOME_SCREEN_WIDGETS, 0) == 1);
-
-        mVolumeWake = (CheckBoxPreference) findPreference(KEY_VOLUME_WAKE);
-        mVolumeWake.setChecked(Settings.System.getInt(mContext.getContentResolver(),
-                    Settings.System.VOLUME_WAKE_SCREEN, 0) == 1);
-
-        mVolBtnMusicCtrl = (CheckBoxPreference) findPreference(KEY_VOLBTN_MUSIC_CTRL);
-        mVolBtnMusicCtrl.setChecked(Settings.System.getInt(mContext.getContentResolver(),
-                   Settings.System.VOLBTN_MUSIC_CONTROLS, 0) == 1);
                    
         if(Utils.getScreenType(mContext) == Utils.DEVICE_TABLET) {
             prefSet.removePreference(mAllowRotation);
@@ -190,13 +178,7 @@ public class Lockscreen extends SettingsPreferenceFragment
          } else if (preference == mMaximizeWidgets) {
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.LOCKSCREEN_MAXIMIZE_WIDGETS, mMaximizeWidgets.isChecked() ? 1 : 0);
-         } else if (preference == mVolumeWake) {
-            Settings.System.putInt(mContext.getContentResolver(),
-                    Settings.System.VOLUME_WAKE_SCREEN, mVolumeWake.isChecked() ? 1 : 0);
-         } else if (preference == mVolBtnMusicCtrl) {
-            Settings.System.putInt(mContext.getContentResolver(),
-                    Settings.System.VOLBTN_MUSIC_CONTROLS, mVolBtnMusicCtrl.isChecked() ? 1 : 0);
-        }
+         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 

@@ -1581,8 +1581,9 @@
 
         <!-- ParanoidAndroid customization -->
        <activity android:name=".paranoid.Lockscreen" />
-
        <activity android:name=".paranoid.Toolbar" />
+       <activity android:name=".paranoid.Halo" />
+       <activity android:name=".paranoid.PieControls" />
 
         <activity android:name=".ApnEditor" />
 
