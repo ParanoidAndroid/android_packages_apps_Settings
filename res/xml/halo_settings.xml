@@ -16,9 +16,6 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/halo_settings_title">
-   
-    <PreferenceCategory
-        android:key="toolbar_halo">
 
         <ListPreference
             android:key="halo_state"
@@ -53,7 +50,5 @@
             android:key="halo_pause"
             android:title="@string/halo_pause_title"
             android:summary="@string/halo_pause_summary" />
-
-    </PreferenceCategory>
 
 </PreferenceScreen>

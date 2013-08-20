@@ -17,9 +17,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/pie_controls_title">
 
-    <PreferenceCategory
-        android:key="toolbar_pie_controls">
-
         <ListPreference
             android:key="pie_trigger"
             android:dialogTitle="@string/pie_trigger_title"
@@ -87,7 +84,5 @@
             android:key="pie_search"
             android:title="@string/pie_search_title"
             android:summary="@string/pie_search_summary" />
-            
-    </PreferenceCategory>
 
 </PreferenceScreen>
