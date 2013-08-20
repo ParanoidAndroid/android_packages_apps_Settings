@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 ParanoidAndroid Project
+<!-- Copyright (C) 2013 ParanoidAndroid Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -70,45 +70,6 @@
     </PreferenceCategory>
     
     <PreferenceCategory
-        android:key="toolbar_halo"
-        android:title="@string/halo_settings_title">
-
-        <ListPreference
-            android:key="halo_state"
-            android:dialogTitle="@string/halo_state_title"
-            android:title="@string/halo_state_title"
-            android:summary="@string/halo_state_summary"
-            android:entries="@array/entries_halo_state"
-            android:entryValues="@array/values_halo_state" />
-
-        <CheckBoxPreference
-            android:key="halo_hide"
-            android:title="@string/halo_hide_title"
-            android:summary="@string/halo_hide_summary"
-            android:defaultValue="false" />
-
-        <CheckBoxPreference
-            android:key="halo_reversed"
-            android:title="@string/halo_reversed_title"
-            android:summary="@string/halo_reversed_summary"
-            android:defaultValue="true" />
-
-        <ListPreference
-            android:key="halo_size"
-            android:dialogTitle="@string/halo_size_title"
-            android:title="@string/halo_size_title"
-            android:summary="@string/halo_size_summary"
-            android:entries="@array/entries_halo_size"
-            android:entryValues="@array/values_halo_size" />
-
-        <CheckBoxPreference
-            android:key="halo_pause"
-            android:title="@string/halo_pause_title"
-            android:summary="@string/halo_pause_summary" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="toolbar_navigation"
         android:title="@string/tool_bar_navigation_header">
 
@@ -128,79 +89,5 @@
             android:key="hardware_keys"
             android:fragment="com.android.settings.cyanogenmod.HardwareKeys"
             android:title="@string/hardware_keys_title" />
-
-    <PreferenceCategory
-        android:key="toolbar_pie_controls"
-        android:title="@string/pie_controls_title">
-
-        <ListPreference
-            android:key="pie_trigger"
-            android:dialogTitle="@string/pie_trigger_title"
-            android:title="@string/pie_trigger_title"
-            android:summary="@string/pie_trigger_summary"
-            android:entries="@array/entries_pie_trigger"
-            android:entryValues="@array/values_pie_trigger" />
-
-        <CheckBoxPreference
-            android:key="pie_stick"
-            android:title="@string/pie_stick_title"
-            android:summary="@string/pie_stick_summary" />
-
-        <ListPreference
-            android:key="pie_gravity"
-            android:dialogTitle="@string/pie_gravity_title"
-            android:title="@string/pie_gravity_title"
-            android:summary="@string/pie_gravity_summary"
-            android:entries="@array/entries_pie_gravity"
-            android:entryValues="@array/values_pie_gravity" />
-
-        <CheckBoxPreference
-            android:key="pie_center"
-            android:title="@string/pie_center_title"
-            android:summary="@string/pie_center_summary" />
-
-        <ListPreference
-            android:key="pie_mode"
-            android:dialogTitle="@string/pie_mode_title"
-            android:title="@string/pie_mode_title"
-            android:summary="@string/pie_mode_summary"
-            android:entries="@array/entries_pie_mode"
-            android:entryValues="@array/values_pie_mode" />
-
-        <ListPreference
-            android:key="pie_size"
-            android:dialogTitle="@string/pie_size_title"
-            android:title="@string/pie_size_title"
-            android:summary="@string/pie_size_summary"
-            android:entries="@array/entries_pie_size"
-            android:entryValues="@array/values_pie_size" />
-
-        <ListPreference
-            android:key="pie_angle"
-            android:dialogTitle="@string/pie_angle_title"
-            android:title="@string/pie_angle_title"
-            android:summary="@string/pie_angle_summary"
-            android:entries="@array/entries_pie_angle"
-            android:entryValues="@array/values_pie_angle" />
-
-        <ListPreference
-            android:key="pie_gap"
-            android:dialogTitle="@string/pie_gap_title"
-            android:title="@string/pie_gap_title"
-            android:summary="@string/pie_gap_summary"
-            android:entries="@array/entries_pie_gap"
-            android:entryValues="@array/values_pie_gap" />
-
-        <CheckBoxPreference
-            android:key="pie_menu"
-            android:title="@string/pie_menu_title"
-            android:summary="@string/pie_menu_summary" />
-
-        <CheckBoxPreference
-            android:key="pie_search"
-            android:title="@string/pie_search_title"
-            android:summary="@string/pie_search_summary" />
-            
-    </PreferenceCategory>
 
 </PreferenceScreen>
