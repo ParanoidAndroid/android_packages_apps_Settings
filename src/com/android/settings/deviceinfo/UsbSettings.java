@@ -167,13 +167,10 @@ public class UsbSettings extends SettingsPreferenceFragment {
 
         String function = "none";
         if (preference == mMtp && mMtp.isChecked()) {
-            Settings.Secure.putInt(getContentResolver(), Settings.Secure.USB_MASS_STORAGE_ENABLED, 0 );
             function = UsbManager.USB_FUNCTION_MTP;
         } else if (preference == mPtp && mPtp.isChecked()) {
-            Settings.Secure.putInt(getContentResolver(), Settings.Secure.USB_MASS_STORAGE_ENABLED, 0 );
             function = UsbManager.USB_FUNCTION_PTP;
         } else if (preference == mUms && mUms.isChecked()) {
-            Settings.Secure.putInt(getContentResolver(), Settings.Secure.USB_MASS_STORAGE_ENABLED, 1 );
             function = UsbManager.USB_FUNCTION_MASS_STORAGE;
         }
 
