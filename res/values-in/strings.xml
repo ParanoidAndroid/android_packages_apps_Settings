@@ -28,7 +28,7 @@
   </plurals>
     <string name="show_dev_on" msgid="1110711554982716293">"Sekarang Anda adalah seorang pengembang!"</string>
     <string name="show_dev_already" msgid="2151632240145446227">"Tidak perlu, Anda sudah menjadi pengembang."</string>
-    <string name="header_category_wireless_networks" msgid="4944823405420438623">"NIRKABEL &amp; JARINGAN"</string>
+    <string name="header_category_wireless_networks" msgid="4944823405420438623">"JARINGAN &amp; NIRKABEL"</string>
     <string name="header_category_device" msgid="5781174212691167553">"PERANGKAT"</string>
     <string name="header_category_personal" msgid="6225932173498802187">"PRIBADI"</string>
     <string name="header_category_system" msgid="2073558547468647128">"SISTEM"</string>
@@ -85,7 +85,7 @@
     <string name="battery_info_temperature_label" msgid="1968383098818648037">"Suhu baterai:"</string>
     <string name="battery_info_temperature_units" msgid="9098950587249987550">"° C"</string>
     <string name="battery_info_uptime" msgid="5548545143573527992">"Waktu sejak boot:"</string>
-    <string name="battery_info_awake_battery" msgid="2557725975486185849">"Waktu bangun pada baterai:"</string>
+    <string name="battery_info_awake_battery" msgid="2557725975486185849">"Waktu bangun menggunakan baterai:"</string>
     <string name="battery_info_awake_plugged" msgid="176716874713478188">"Waktu bangun ketika mengisi daya:"</string>
     <string name="battery_info_screen_on" msgid="376277447175613889">"Waktu AKTIF layar:"</string>
     <string name="battery_info_status_unknown" msgid="196130600938058547">"Tidak diketahui"</string>
@@ -96,7 +96,7 @@
     <string name="battery_info_status_discharging" msgid="310932812698268588">"Tidak mengisi daya"</string>
     <string name="battery_info_status_not_charging" msgid="2820070506621483576">"Tidak mengisi daya"</string>
     <string name="battery_info_status_full" msgid="2824614753861462808">"Penuh"</string>
-    <string name="battery_info_power_unplugged" msgid="5987246575519551081">"Dicabut"</string>
+    <string name="battery_info_power_unplugged" msgid="5987246575519551081">"Tercabut"</string>
     <string name="battery_info_power_ac" msgid="6808516193001604634">"AC"</string>
     <string name="battery_info_power_usb" msgid="8012931702516331797">"USB"</string>
     <string name="battery_info_power_wireless" msgid="6819163295739305097">"nirkabel"</string>
@@ -106,12 +106,12 @@
     <string name="battery_info_health_good" msgid="8070356565806711806">"Baik"</string>
     <string name="battery_info_health_overheat" msgid="8442959549291368806">"Panas berlebih"</string>
     <string name="battery_info_health_dead" msgid="1725917445762829059">"Mati"</string>
-    <string name="battery_info_health_over_voltage" msgid="2420269351664490121">"Voltase berlebihan"</string>
+    <string name="battery_info_health_over_voltage" msgid="2420269351664490121">"Tegangan listrik berlebihan"</string>
     <string name="battery_info_health_unspecified_failure" msgid="6347021103185471590">"Kesalahan tidak dikenal"</string>
     <string name="battery_info_health_cold" msgid="3835692786176707318">"Dingin"</string>
     <string name="bluetooth" msgid="5549625000628014477">"Bluetooth"</string>
-    <string name="bluetooth_is_discoverable" msgid="8373421452106840526">"Terlihat utk semua perangkat Bluetooth terdekat (<xliff:g id="DISCOVERABLE_TIME_PERIOD">%1$s</xliff:g>)"</string>
-    <string name="bluetooth_is_discoverable_always" msgid="2849387702249327748">"Terlihat untuk semua perangkat Bluetooth terdekat"</string>
+    <string name="bluetooth_is_discoverable" msgid="8373421452106840526">"Terlihat utk semua perangkat Bluetooth sekitar (<xliff:g id="DISCOVERABLE_TIME_PERIOD">%1$s</xliff:g>)"</string>
+    <string name="bluetooth_is_discoverable_always" msgid="2849387702249327748">"Terlihat untuk semua perangkat Bluetooth sekitar"</string>
     <string name="bluetooth_not_visible_to_other_devices" msgid="9120274591523391910">"Tidak terlihat oleh perangkat Bluetooth lain"</string>
     <string name="bluetooth_only_visible_to_paired_devices" msgid="2049983392373296028">"Hanya terlihat oleh perangkat yang disandingkan"</string>
     <string name="bluetooth_visibility_timeout" msgid="8002247464357005429">"Batas waktu keterlihatan"</string>
@@ -136,12 +136,12 @@
     <string name="bluetooth_connected_no_headset_no_a2dp" msgid="9195757766755553810">"Terhubung (bukan telepon atau media)"</string>
     <string name="bluetooth_disconnected" msgid="6557104142667339895">"Sambungan terputus"</string>
     <string name="bluetooth_disconnecting" msgid="8913264760027764974">"Memutus sambungan..."</string>
-    <string name="bluetooth_connecting" msgid="8555009514614320497">"Menyambung…"</string>
+    <string name="bluetooth_connecting" msgid="8555009514614320497">"Menyambungkan…"</string>
     <string name="bluetooth_unknown" msgid="644716244548801421"></string>
     <string name="bluetooth_pairing" msgid="1426882272690346242">"Menyandingkan..."</string>
     <string name="bluetooth_device" msgid="5291950341750186887">"Perangkat Bluetooth tak bernama"</string>
-    <string name="progress_scanning" msgid="192587958424295789">"Menelusuri"</string>
-    <string name="bluetooth_no_devices_found" msgid="1085232930277181436">"Tak ditemukan prngkt Bluetooth terdekat."</string>
+    <string name="progress_scanning" msgid="192587958424295789">"Memindai"</string>
+    <string name="bluetooth_no_devices_found" msgid="1085232930277181436">"Tak ditemukan prngkt Bluetooth di sekitar."</string>
     <string name="bluetooth_notif_ticker" msgid="4726721390078512173">"Permintaan penyandingan bluetooth"</string>
     <string name="bluetooth_notif_title" msgid="2485175521845371514">"Permintaan penyandingan"</string>
     <string name="bluetooth_notif_message" msgid="5300852675110479862">"Sentuh untuk menyandingkan dengan <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
@@ -174,18 +174,18 @@
     <!-- no translation found for intent_sender_data_label (6332324780477289261) -->
     <skip />
     <string name="intent_sender_sendbroadcast_text" msgid="1415735148895872715">"Kirimkan <xliff:g id="BROADCAST">broadcast</xliff:g>"</string>
-    <string name="intent_sender_action_label" msgid="616458370005452389">"<xliff:g id="ACTION">Action</xliff:g>:"</string>
-    <string name="intent_sender_startactivity_text" msgid="5080516029580421895">"Mulai <xliff:g id="ACTIVITY">activity</xliff:g>"</string>
-    <string name="intent_sender_resource_label" msgid="6963659726895482829">"<xliff:g id="RESOURCE">Resource</xliff:g>:"</string>
+    <string name="intent_sender_action_label" msgid="616458370005452389">"<xliff:g id="ACTION">Aksi</xliff:g>:"</string>
+    <string name="intent_sender_startactivity_text" msgid="5080516029580421895">"Mulai <xliff:g id="ACTIVITY">aktivitas</xliff:g>"</string>
+    <string name="intent_sender_resource_label" msgid="6963659726895482829">"<xliff:g id="RESOURCE">Sumber daya</xliff:g>:"</string>
     <string name="intent_sender_account_label" msgid="465210404475603404">"Akun:"</string>
     <string name="proxy_settings_title" msgid="5912878565897294401">"Setelan proxy"</string>
     <string name="proxy_clear_text" msgid="5555400754952012657">"Bersihkan"</string>
     <string name="proxy_port_label" msgid="5655276502233453400">"Porta proxy"</string>
     <string name="proxy_exclusionlist_label" msgid="7700491504623418701">"Abaikan proxy untuk"</string>
     <string name="proxy_exclusionlist_hint" msgid="6084099226687226948">"example.com,mycomp.test.com,localhost"</string>
-    <string name="proxy_defaultView_text" msgid="6387985519141433291">"Pulihkan default"</string>
+    <string name="proxy_defaultView_text" msgid="6387985519141433291">"Kembalikan ke setingan awal"</string>
     <string name="proxy_action_text" msgid="2957063145357903951">"Selesai"</string>
-    <string name="proxy_hostname_label" msgid="8490171412999373362">"Nama host proksi"</string>
+    <string name="proxy_hostname_label" msgid="8490171412999373362">"Nama host proxy"</string>
     <string name="proxy_hostname_hint" msgid="2076157057003936176">"proxy.example.com"</string>
     <string name="proxy_error" msgid="8926675299638611451">"Perhatian"</string>
     <string name="proxy_error_dismiss" msgid="4993171795485460060">"Oke"</string>
@@ -1830,4 +1830,385 @@
     <string name="user_picture_title" msgid="7297782792000291692">"ID Foto"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Siaran sel"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Pilih jenis peringatan darurat yang akan ditampilkan."</string>
+
+    <!-- ======================================================================================= -->
+    <!-- PARANOIDANDROID STUFF -->
+    <!-- ======================================================================================= -->
+     
+    <string name="link_volume_ringtones">Kaitkan volume nada dering &amp; notifikasi</string>
+    <string name="link_volume_mutes">Mode senyap mempengaruhi notifikasi</string>
+    <string name="volume_overlay_title">Gaya panel Volume</string>
+    <string name="volume_overlay_single">Sendiri</string>
+    <string name="volume_overlay_expandable">Dapat diperluas</string>
+    <string name="volume_overlay_expanded">Diperluas</string>
+    <string name="volume_overlay_none">Tidak ada</string>
+    <string name="volume_ring_only_description">Nada dering</string>
+    <string name="notification_sound_limiter_title">Batas suara notifikasi</string>
+    <string name="notification_sound_limiter_summary">Set jeda waktu yang diijinkan antar notifikasi yang masuk</string>
+    <string name="notification_sound_default_time">Default</string>
+    <string name="volume_keys_control_ring_stream">Tombol volume mengatur volume nada dering</string>
+    
+    <string name="notification_light_general_title">Umum</string>
+    <string name="notification_light_applist_title">Aplikasi</string>
+    <string name="notification_light_use_custom">Gunakan nilai sendiri</string>
+    <string name="notification_light_add">Tambahkan</string>
+    <string name="notification_light_reset">Ulang</string>
+    <string name="notification_light_enabled">Aktifkan</string>
+    <string name="notification_light_disabled">Non-aktifkan</string>
+    <string name="notification_light_default_value">Default</string>
+    <string name="choose_app">Pilih aplikasi</string>
+    
+    <string name="edit_light_settings">Ubah pengaturan lampu</string>
+    <string name="pulse_speed_title">lama dan kecepatan kedipan</string>
+    <string name="picker_arrow" translatable="false">→</string>
+    <string name="default_time">Normal</string>
+    <string name="custom_time">Kustom</string>
+    <string name="dialog_delete_title">Hapus</string>
+    <string name="dialog_delete_message">Hapus item yang dipilih?</string>
+    <string name="dialog_test">Tes</string>
+    <string name="dialog_test_message">Matikan layar untuk melihat demonstrasi notifikasi yang dipilih atau hilangkan dialog ini untuk menghentikan tes ini</string>
+    <string name="dialog_test_button">Hilangkan</string>
+    
+    <string name="pulse_length_always_on">Selalu hidup</string>
+    <string name="pulse_length_very_short">Sangat pendek</string>
+    <string name="pulse_length_short">Pendek</string>
+    <string name="pulse_length_normal">Normal</string>
+    <string name="pulse_length_long">Panjang</string>
+    <string name="pulse_length_very_long">Sangat panjang</string>
+    <string name="pulse_speed_very_fast">Sangat cepat</string>
+    <string name="pulse_speed_fast">Cepat</string>
+    <string name="pulse_speed_normal">Normal</string>
+    <string name="pulse_speed_slow">Lambat</string>
+    <string name="pulse_speed_very_slow">Sangat lambat</string>
+    
+    <string name="battery_light_title">Lampu baterai</string>
+    <string name="battery_low_pulse_title">Berkedip saat baterai hampir habis</string>
+    <string name="battery_light_list_title">Warna</string>
+    <string name="battery_light_low_color_title">Baterai hampir habis</string>
+    <string name="battery_light_medium_color_title">Mengisi daya</string>
+    <string name="battery_light_full_color_title">Daya penuh</string>
+    
+    <string name="header_category_customization">Kustomisasi</string>
+    
+    <string name="lock_screen_settings">Lock Screen</string>
+    <string name="allow_rotate_title">Ijinkan perputaran</string>
+    <string name="allow_rotate_summary">Ijinkan mode landscape pada lock screen</string>
+    <string name="allow_quick_unlock_title">Pembuka kunci Cepat</string>
+    <string name="allow_quick_unlock_summary">Aktifkan pembuka kunci cepat pada lock screen</string>
+    <string name="see_through_title">Tembus pandang</string>
+    <string name="see_through_summary">Ijinkan untuk melihat applikasi dibelakang lock screen</string>
+    <string name="maximize_widgets_title">Maksimalkan widget</string>
+    <string name="maximize_widgets_summary">Tampilkan widget yang dimaksimalkan dan pembuka kunci diminimalkan saat layar dinyalakan</string>
+    <string name="home_screen_widgets_title">Widget home screen</string>
+    <string name="home_screen_widgets_summary">Ijinkan widgets dari home screen untuk dapat digunakan pada lock screen</string>
+    <string name="home_screen_widgets_warning_title">Ini mungkin berbahaya!</string>
+    <string name="home_screen_widgets_warning"Mengijinkan widget pada home screen widgets untuk digunakan pada lock screen, dapat menimbulkan masalah keamanan, apakah anda ingin melanjutkan?</string>
+    <string name="lock_screen_shortcuts_title">Shortcut</string>
+    <string name="lock_screen_shortcuts_summary">Lihat atau ubah shortcut pada lock screen</string>
+    <string name="lock_screen_shortcuts_add">@string/notification_light_add</string>
+    <string name="lock_screen_shortcuts_reset">Atur ulang</string>
+    <string name="lock_screen_shortcuts_reset_message">Atur ulang shortcut pada lock screen?</string>
+    <string name="lock_screen_shortcuts_limit">Hanya 6 shortcut yang diijinkan!</string>
+    <string name="icon_picker_type">Pilih jenis icon:</string>
+    <string name="icon_default">Default</string>
+    <string name="icon_presets">Ditetapkan</string>
+    <string name="icon_custom">Kustom</string>
+    <string name="icon_picker_choose_icon_title">Pilih icon</string>
+    <string name="icon_picker_alarm">Alarm</string>
+    <string name="icon_picker_browser">Browser</string>
+    <string name="icon_picker_calendar">Kalender</string>
+    <string name="icon_picker_camera">Kamera</string>
+    <string name="icon_picker_email">Email</string>
+    <string name="icon_picker_email2">Holo Email</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">Galeri</string>
+    <string name="icon_picker_google_small">Google (kecil)</string>
+    <string name="icon_picker_googleplus">Google Plus</string>
+    <string name="icon_picker_googletalk">Google Talk</string>
+    <string name="icon_picker_maps">Peta</string>
+    <string name="icon_picker_movie">Film</string>
+    <string name="icon_picker_music">Musik</string>
+    <string name="icon_picker_nav">Navigasi</string>
+    <string name="icon_picker_phone">Telepon</string>
+    <string name="icon_picker_podcast">Podcast</string>
+    <string name="icon_picker_rss">Rss</string>
+    <string name="icon_picker_sms">Pesan</string>
+    <string name="icon_picker_twitter">Twitter</string>
+    
+    <string name="volume_button_setting_title">Pengaturan tombol volume</string>
+    <string name="volbtn_music_controls_title">Kontrol musik dengan tombol volume</string>
+    <string name="volbtn_music_controls_summary">Saat layar mati, menekan tombol volume dalam waktu yg lama akan mencari trek musik</string>
+    
+    <string name="pref_volume_wake_title">Bangun dengan tombol volume</string>
+    <string name="pref_volume_wake_summary">Menekan tombol volume akan membangunkan perangkat anda.</string>
+    
+    <string name="tool_bar_settings">Toolbar</string>
+    <string name="tool_bar_status_header">Status bar</string>
+    <string name="tool_bar_navigation_header">Navigation bar</string>
+    
+    <string name="halo_hide_title">Sembunyikan HALO setelah aktivitas</string>
+    <string name="halo_hide_summary">HALO akan muncul untuk setiap tugas yang masuk dan akan keluar dari pandangan setelah beberapa saat</string>
+    <string name="halo_reversed_title">Balikkan gerakan untuk HALO</string>
+    <string name="halo_reversed_summary">Berlakukan tasking atau draging menjadi gerakan double-tap-swipe</string>
+    <string name="halo_state_title">Kebijakan HALO</string>
+    <string name="halo_state_summary">Untuk notifikasi daftar hitam/putih pinging melalui HALO</string>
+    <string name="halo_state_black">Daftar hitam</string>
+    <string name="halo_state_white">Daftar putih</string>
+    <string name="halo_pause_title">HALO menghentikan sementara aplikasi yang sedang aktif</string>
+    <string name="halo_pause_summary">Saat membuka aplikasi dengan HALO applikasi di bawahnya dihentikan sementara (langsung aktif pada perangkat dengan memori kecil)</string>
+    
+    <!-- Quick pulldown -->
+    <string name="quick_pulldown_title">Quick pulldown</string>
+    <string name="quick_pulldown_summary">Sisi status bar akan menarik Quick Settings ke bawah</string>
+    <!-- Show clock -->
+    <string name="show_clock_title">Tampilkan jam</string>
+    <!-- Circle battery -->
+    <string name="circle_battery_title">Lingkaran baterai</string>
+    <!-- AM/PM style -->
+    <string name="am_pm_style_title">Mode AM/PM</string>
+    <string name="status_bar_size_normal">Normal</string>
+    <string name="status_bar_size_small">Kecil</string>
+    <string name="status_bar_hidden">Tersembunyi (default)</string>
+    <string name="status_bar_am_pm_info">24-jam jam diaktifkan</string>
+    <!-- Status bar notification count -->
+    <string name="status_bar_notif_count_title">Hitungan notifikasi</string>
+    <string name="status_bar_notif_count_summary">Tampilkan jumlah notifikasi yang tertunda pada status bar</string>
+    <!-- Split menu -->
+    <string name="navigation_bar_tabui_menu_title">Pisahkan tombol menu</string>
+    <string name="navigation_bar_tabui_menu_summary">Tampilkan tombol menu tersendiri, bukan menggabungkannya dengan tombol recent</string>
+    <!-- Status bar notification limit -->
+    <string name="status_bar_max_notifications_title">Batas notifikasi</string>
+    <string name="status_bar_max_notifications_summary">Pilih batas icon notifikasi yang akan ditampilkan pada status bar. Berlakukan hanya pada orientasi portrait</string>
+    <!-- Do not disturb -->
+    <string name="status_bar_donotdisturb_title">Jangan ganggu</string>
+    <string name="status_bar_donotdisturb_summary">Nonaktifkan animasi ticker notifikasi yang masuk</string>
+    
+    <!-- Quick settings panel  -->
+    <string name="quick_settings_panel_title">Panel Quick Settings</string>
+    <string name="quick_settings_title">Quick Settings</string>
+    <string name="title_static_tiles">Tile statis</string>
+    <string name="tile_picker_title">Tile dan penataan</string>
+    <string name="tile_picker_summary">Lihat, pilih atau ubah penataan tampilan tile</string>
+    <string name="tile_choose_title">Pilih tile</string>
+    
+    <string name="title_tile_airplane">Mode pesawat</string>
+    <string name="title_tile_battery">Stat baterai</string>
+    <string name="title_tile_bluetooth">Bluetooth</string>
+    <string name="title_tile_brightness">Kecerahan</string>
+    <string name="title_tile_sleep">Pergi tidur</string>
+    <string name="title_tile_gps">GPS</string>
+    <string name="title_tile_torch">Senter</string>
+    <string name="title_tile_lockscreen">Kunci Layar</string>
+    <string name="title_tile_lte">LTE</string>
+    <string name="title_tile_mobiledata">Mobile data</string>
+    <string name="title_tile_profile">Profil</string>
+    <string name="title_tile_autorotate">Orientasi</string>
+    <string name="title_tile_settings">Pengaturan</string>
+    <string name="title_tile_sound">Suara</string>
+    <string name="title_tile_sync">Sync</string>
+    <string name="title_tile_wifiap">Wi-Fi AP</string>
+    <string name="title_tile_wifi">Wi-Fi</string>
+    <string name="title_tile_wimax">WiMAX</string>
+    <string name="title_tile_user">Pengganti User</string>
+    <string name="title_tile_networkmode">Mode jaringan</string>
+    <string name="title_tile_nfc">NFC</string>
+    <string name="title_tile_screen_timeout">Batas waktu layar</string>
+    <string name="title_tile_usb_tether">USB Tether</string>
+    <string name="title_tile_quiet_hours">Jam tenang</string>
+    <string name="title_tile_desktop_mode">Pie</string>
+    <string name="title_tile_hybrid">@string/hybrid_settings</string>
+    <string name="title_tile_volume">Volume</string>
+    
+    <string name="title_dynamic_tiles">Tile dinamis</string>
+    <string name="dynamic_tiles_note_title">Catatan</string>
+    <string name="dynamic_tiles_note_summary">Tile dinamis tidak selalu terlihat dan hanya akan muncul jika terjadi sesuatu dalam sistem</string>
+    <string name="title_dynamic_alarm">Jam alarm</string>
+    <string name="title_dynamic_bugreport">Laporan bug</string>
+    <string name="title_dynamic_ime">Pengganti IME</string>
+    <string name="title_dynamic_usbtether">@string/title_tile_usb_tether</string>
+    <string name="title_dynamic_wifi">Tampilan Wi-Fi</string>
+    
+    <string name="title_general">Umum</string>
+    <string name="title_quick_pulldown">Quick pulldown</string>
+    <string name="summary_quick_pulldown">%1$s sisi pada status bar akan menarik Quick Settings ke bawah</string>
+    <string name="quick_pulldown_summary_left">Kiri</string>
+    <string name="quick_pulldown_summary_right">Kanan</string>
+    <string name="quick_pulldown_off">Mati</string>
+    <string name="quick_pulldown_left">Kiri</string>
+    <string name="quick_pulldown_right">Kanan</string>
+    <string name="title_collapse_panel">Menutup panel secara otomatis</string>
+    <string name="summary_collapse_panel">Close the Quick Settings panel upon toggle</string>
+    
+    <!-- Reset tiles -->
+    <string name="tiles_add_title">Tambahkan</string>
+    <string name="tiles_reset_title">Atur ulang</string>
+    <string name="tiles_reset_message">Kembalikan tile dan penataan yang ditampilkan seperti semula?</string>
+    
+    <!-- Hardware keys -->
+    <string name="hardware_keys_title">Tombol Hardware</string>
+    <string name="hardware_keys_bindings_title">Aksi tombol</string>
+    <string name="hardware_keys_enable_custom_title">Aktifkan aksi kustom</string>
+    <string name="hardware_keys_home_long_press_title">Tombol Home (tekan lama)</string>
+    <string name="hardware_keys_menu_press_title">Tombol Menu</string>
+    <string name="hardware_keys_menu_long_press_title">Tombol Menu (tekan lama)</string>
+    <string name="hardware_keys_assist_press_title">Tombol Search</string>
+    <string name="hardware_keys_assist_long_press_title">Tombol Search (tekan lama)</string>
+    <string name="hardware_keys_app_switch_press_title">Tombol App switch</string>
+    <string name="hardware_keys_app_switch_long_press_title">Tombol App switch (tekan lama)</string>
+    <string name="hardware_keys_show_overflow_title">Tampilkan action overflow</string>
+    <string name="hardware_keys_show_overflow_summary">Tampilkan tombol menu 3-dot overflow dalam aplikasi</string>
+    <string name="hardware_keys_show_overflow_toast_enable">Tombol action overflow tidak akan terlihat sampai aplikasi dimulai kembali</string>
+    <string name="hardware_keys_show_overflow_toast_disable">Tombol action overflow tidak akan disembunyikan sampai aplikasi dimulai kembali</string>
+    <string name="hardware_keys_action_nothing">Tidak ada aksi</string>
+    <string name="hardware_keys_action_menu">Menu buka/tutup</string>
+    <string name="hardware_keys_action_app_switch">Recent apps switcher</string>
+    <string name="hardware_keys_action_search">Asisten pencarian</string>
+    <string name="hardware_keys_action_voice_search">Pencarian suara</string>
+    <string name="hardware_keys_action_in_app_search">Pencarian In-app</string>
+    <string name="additional_options_title">Pilihan tambahan</string>
+    
+    <string name="pref_ring_mode_title">Mode suara</string>
+    <string name="pref_ring_mode_summary">Lihat atau ubah mode tombol suara</string>
+    <string name="pref_network_mode_title">Mode jaringan</string>
+    <string name="pref_screentimeout_mode_title">Mode batas waktu layar</string>
+    <string name="cm_sound_mode_silent">Senyap</string>
+    <string name="cm_sound_mode_vibrate">Getar</string>
+    <string name="cm_sound_mode_sound">Suara</string>
+    <string name="cm_sound_mode_soundVibrate">Suara &amp; Getar</string>
+    
+    <!-- Pie controls -->
+    <string name="pie_controls_title">Kolntrol Pie</string>
+    
+    <string name="pie_gravity_title">Gravitasi Pie</string>
+    <string name="pie_gravity_summary">Pilih lokasi dimana pie akan ditempatkan</string>
+    <string name="pie_gravity_top">Atas</string>
+    <string name="pie_gravity_bottom">Bawah</string>
+    <string name="pie_gravity_right">Kanan</string>
+    <string name="pie_gravity_left">Kiri</string>
+    
+    <string name="pie_mode_title">Gaya Pie</string>
+    <string name="pie_mode_summary">Atur bagaimana animasi dan status tambahan akan ditampilkan</string>
+    <string name="pie_mode_bare">Langsung</string>
+    <string name="pie_mode_quick">Cepat</string>
+    <string name="pie_mode_default">Normal (default)</string>
+    <string name="pie_mode_slow">Lambat</string>
+    
+    <string name="pie_size_title">Ukuran Pie</string>
+    <string name="pie_size_summary">Tentutkan ukuran control pie</string>
+    <string name="pie_size_small">Kecil</string>
+    <string name="pie_size_default">@string/pie_mode_default</string>
+    <string name="pie_size_large">Besar</string>
+    <string name="pie_size_gigantic">Raksasa</string>
+    <string name="pie_size_monster">Monster</string>
+
+    <string name="pie_angle_title">Sudut Pie</string>
+    <string name="pie_angle_summary">Sesuaikan sudut dari sisi-sisi pie dari tepi layar</string>
+    <string name="pie_angle_none">Tidak ada (lama)</string>
+    <string name="pie_angle_small">Kecil</string>
+    <string name="pie_angle_big">Normal (default)</string>
+    <string name="pie_angle_huge">Besar</string>
+    <string name="pie_angle_super">Sangat besar</string>
+    
+    <!-- Navigation Bar #CM -->
+    <string name="navigation_reset_title">@string/lock_screen_shortcuts_reset</string>
+    <string name="navigation_bar_title">Kontrol navigasi</string>
+    <string name="navigation_bar_help_text">1 - Tekan icon gembok untuk mulai mengubah\n\n2 - Tekan sembarang tombol untuk menetapkan atau mengubah fungsinya\n\n3 - tekan lama sembarang tombol untuk mengatur susunannya\n\n4 - Tekan icon gembok lagi untuk menyimpan\n\n5 - Untuk mengembalikan ke pengaturan semula, tekan tombol atur ulang\n\n</string>
+    <string name="navigation_bar_tips">&#8226; Aksi hanya dapat ditetapkan pada satu tombol dalam satu waktu\n\n&#8226; Tpmbol home tidak dapat ditetapkan lagi\n\n&#8226; Tombol samping tidak dapat ditetapkan lagi</string>
+    <string name="navigation_bar_tips_title">Tips cepat</string>
+    <string name="navigation_bar_reset_message">Hapus pengaturan yang sekarang dan kembalikan ke aturan semula?</string>
+    <string name="navigation_bar_save_message">Pengaturan bar navigasi tersimpan</string>
+    <string name="navigation_bar_reset_toast">Bar navigasi diatur kembali ke aturan semula</string>
+    <string name="navigation_bar_menu_editable">Dapat diubah</string>
+    <string name="navigation_bar_menu_locked">Terkunci</string>
+    
+    <!-- Hybrid sub menu [CHAR LIMIT=30] -->
+    <string name="hybrid_settings">Properti Hybrid</string>
+
+    <string name="mod_version">Versi ParanoidAndroid</string>
+    <string name="mod_version_default">Tidak diketahui</string>
+
+    <string name="themes_settings_title">Thema</string>
+
+    <!-- Android debugging over WiFi -->
+    <string name="adb_over_network">ADB melalui jaringan</string>
+    <string name="adb_over_network_summary">Aktifkan debuggin TCP/IP melalui antarmuka jaringan (Wi-Fi, jaringan USB). Pengaturan ini kembali ke semula saat reboot</string>
+    <!-- Warning for Adb over Network -->
+    <string name="adb_over_network_warning">PERINGATAN: Saat ADB melalui jaringan diaktifkan, ponsel anda terbuka bagi pengganggu dari semua jaringan yang terhubung, termasuk jaringan data GSM!\n\nHanya gunakan fitur ini saat anda terhubung pada jaringan yang terpercaya.\n\nApakah anda benar-benar ingin mengaktifkan fitur ini?</string>
+
+    <string name="vibration_title">Getaran Ponsel</string>
+    <string name="notification_convert_sound_to_vibration_title">Konversi notifikasi</string>
+    <string name="notification_convert_sound_to_vibration_summary">Suara menjadi getaran selama mode getar</string>
+    
+    <!-- Quiet hours -->
+    <string name="quiet_hours_title">Jam tenang</string>
+    <string name="quiet_hours_summary">Atur jam dimana perangkat harus menjadi tenang</string>
+    <string name="quiet_hours_note_title">Catatan</string>
+    <string name="quiet_hours_note_summary">Panggilan masuk akan berlaku seperti biasa selama jam tenang</string>
+    <string name="quiet_hours_enabled">Aktifkan jam tenang</string>
+    <string name="quiet_hours_enabled_on">Jam tenang akan diberlakukan</string>
+    <string name="quiet_hours_enabled_off">Notifikasi akan berlaku seperti biasa</string>
+    <string name="quiet_hours_start">Awal jam tenang</string>
+    <string name="quiet_hours_start_summary">Kapan akan mulai memberlakukan jam tenang</string>
+    <string name="quiet_hours_end">Akhir jam tenang</string>
+    <string name="quiet_hours_end_summary">Kapan harus berhenti memberlakukan jam tenang</string>
+    <string name="quiet_hours_mute">Senyapkan notifikasi</string>
+    <string name="quiet_hours_mute_on">Tidak ada suara yang akan dimainkan</string>
+    <string name="quiet_hours_mute_off">Suara akan bermain seperti biasa</string>
+    <string name="quiet_hours_still">Non-aktifkan getaran</string>
+    <string name="quiet_hours_still_on">Perangkat tidak akan bergetar</string>
+    <string name="quiet_hours_still_off">Perangkat akan bergetar seperti biasa</string>
+    <string name="quiet_hours_dim">Non-aktifkan lampu notifikasi</string>
+    <string name="quiet_hours_dim_on">Lampu notifikasi akan di-non-aktifkan</string>
+    <string name="quiet_hours_dim_off">Lampu notifikasi akan berfungsi seperti biasa</string>
+    <string name="quiet_hours_haptic">Non-aktifkan haptic feedback</string>
+    <string name="quiet_hours_haptic_on">Haptic feedback akan di non-aktifkan</string>
+    <string name="quiet_hours_haptic_off">Haptic feedback akan berfungsi seperti biasa</string>
+    <string name="quiet_hours_active_from">Aktif dari</string>
+    <string name="quiet_hours_active_to">sampai</string>
+
+    <!-- Time range preference -->
+    <string name="start_time_title">Awal</string>
+    <string name="end_time_title">Akhir</string>
+    
+    <!-- Automatic brightness customization -->
+    <string name="light_sensor_current_value">Nilai sensor cahaya sekarang: <xliff:g id="light_level">%d</xliff:g> lux</string>
+    <string name="auto_brightness_dialog_title">Tingkat kecerahan otomatis</string>
+    <string name="auto_brightness_level_format"><xliff:g id="start_level">%1$s</xliff:g> -\n<xliff:g id="end_level">%2$s</xliff:g> lux</string>
+    <string name="auto_brightness_brightness_format"><xliff:g id="percent">%s</xliff:g>%%</string>
+    <string name="auto_brightness_adjust_button">Sesuaikan</string>
+    <string name="auto_brightness_reset_button">Atur ulang</string>
+    <string name="auto_brightness_remove_button">Hapus</string>
+    <string name="auto_brightness_add_line">Tambahkan baris</string>
+    <string name="auto_brightness_lux_dialog_title">Rentang kecerahan lingkungan</string>
+    <string name="auto_brightness_split_dialog_title">Pisahkan level kecerahan</string>
+    <string name="auto_brightness_start_lux">Awal rentang (lux)</string>
+    <string name="auto_brightness_end_lux">Akhir rentang (lux)</string>
+    <string name="auto_brightness_reset_dialog_title">Atur ulang tingak kecerahan?</string>
+    <string name="auto_brightness_reset_confirmation">Semua tingkat kecerahan akan dikembalikan ke pengaturan semula.</string>
+    <string name="auto_brightness_split_lux_format">Pisahkan posisi (antara <xliff:g id="min">%1$d</xliff:g> dan <xliff:g id="max">%2$d</xliff:g> lux)</string>
+    <string name="auto_brightness_level_options">Pilihan tingkat cahaya</string>
+    <string name="auto_brightness_menu_edit_lux">Rentang kecerahan lingkungan</string>
+    <string name="auto_brightness_menu_split">Pisahkan</string>
+    <string name="auto_brightness_menu_remove">Hapus</string>
+    <string name="auto_brightness_sensitivity_title">Sensitivitas penyesuaian</string>
+    <string name="auto_brightness_sensitivity_verylow">Sangat rendah</string>
+    <string name="auto_brightness_sensitivity_low">Rendah</string>
+    <string name="auto_brightness_sensitivity_medium">Sedang</string>
+    <string name="auto_brightness_sensitivity_high">Tinggi</string>
+    <string name="auto_brightness_sensitivity_veryhigh">Sangat tinggi</string>
+    
+    <!-- Custom lock screen background -->
+    <string name="lockscreen_custom_background_title">Latar belakang</string>
+    <string name="lockscreen_custom_background_dialog_title">Pilih warna</string>
+    <string name="lockscreen_background_result_successful">Latar belakang berhasil diganti</string>
+    <string name="lockscreen_background_result_not_successful">Latar belakang tidak dapat diganti</string>
+    <string name="lockscreen_background_color_fill">Isi dengan warna</string>
+    <string name="lockscreen_background_custom_image">Gambar kustom</string>
+    <string name="lockscreen_background_default_wallpaper">Wallpaper default</string>
+
+    <!-- Lockscreen, hide initial pages hints -->
+
+    <string name="lockscreen_hide_hints_title">Sembunyikan petunjuk</string>
+    <string name="lockscreen_hide_hints_summary">Jika dicentang maka saat layar dihidupkan petunjuk widget akan disembunyikan (hanya untuk mode portrait).</string>
+
 </resources>
