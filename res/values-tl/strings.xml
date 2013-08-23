@@ -50,11 +50,11 @@
     <string name="radioInfo_service_off" msgid="1434084741785525415">"Naka-off ang radyo"</string>
     <string name="radioInfo_roaming_in" msgid="9045363884600341051">"Roaming"</string>
     <string name="radioInfo_roaming_not" msgid="2851853244069662307">"Hindi roaming"</string>
-    <string name="radioInfo_phone_idle" msgid="7489244938838742820">"Idle"</string>
+    <string name="radioInfo_phone_idle" msgid="7489244938838742820">"Naka Istambay"</string>
     <string name="radioInfo_phone_ringing" msgid="4883724645684297895">"Nagri-ring"</string>
     <string name="radioInfo_phone_offhook" msgid="4174402846862780998">"Nagaganap na pagtawag"</string>
     <string name="radioInfo_data_disconnected" msgid="1959735267890719418">"Hindi nakakonekta"</string>
-    <string name="radioInfo_data_connecting" msgid="8404571440697917823">"Pagkonekta"</string>
+    <string name="radioInfo_data_connecting" msgid="8404571440697917823">"Komokonekta"</string>
     <string name="radioInfo_data_connected" msgid="7074301157399238697">"Konektado"</string>
     <string name="radioInfo_data_suspended" msgid="5315325487890334196">"Suspendido"</string>
     <string name="radioInfo_unknown" msgid="737385314432468266">"hindi kilala"</string>
@@ -1764,7 +1764,7 @@
     <string name="vpn_connect_to" msgid="5965299358485793260">"Kumonekta sa <xliff:g id="PROFILE">%s</xliff:g>"</string>
     <string name="vpn_title" msgid="6317731879966640551">"VPN"</string>
     <string name="vpn_create" msgid="5628219087569761496">"Idagdag ang profile sa VPN"</string>
-    <string name="vpn_menu_edit" msgid="408275284159243490">"I-edit ang profile"</string>
+    <string name="vpn_menu_edit" msgid="408275284159243490">"Baguhin ang profile"</string>
     <string name="vpn_menu_delete" msgid="8098021690546891414">"Tanggalin ang profile"</string>
     <string name="vpn_menu_lockdown" msgid="7863024538064268139">"Always-on VPN"</string>
     <string name="vpn_lockdown_summary" msgid="2200032066376720339">"Pumili ng VPN profile kung saan palaging mananatiling nakakonekta. Papayagan lang ang trapiko ng network kapag nakakonekta sa VPN na ito."</string>
