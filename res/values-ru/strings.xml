@@ -30,7 +30,7 @@
     <string name="show_dev_already" msgid="2151632240145446227">"Не нужно, вы уже разработчик."</string>
     <string name="header_category_wireless_networks" msgid="4944823405420438623">"БЕСПРОВОДНЫЕ СЕТИ"</string>
     <string name="header_category_device" msgid="5781174212691167553">"УСТРОЙСТВО"</string>
-    <string name="header_category_personal" msgid="6225932173498802187">"ЛИЧНЫЕ ДАННЫЕ"</string>
+        <string name="header_category_personal" msgid="6225932173498802187">"ЛИЧНЫЕ ДАННЫЕ"</string>
     <string name="header_category_system" msgid="2073558547468647128">"СИСТЕМА"</string>
     <string name="turn_on_radio" msgid="8706561489788373676">"Включить радио"</string>
     <string name="turn_off_radio" msgid="1820294552893884115">"Отключить радио"</string>
@@ -2036,14 +2036,52 @@
     <string name="network_mode_2g_3g2g">2G/3G+2G</string>
     <string name="network_mode_2g_3g">Только 2G/3G</string>
     <string name="network_mode_2g_3g_3g2g">2G/3G Только /3G+2G</string>
-
-    <!-- Add tiles -->
-    <string name="add_title">Добавить</string>
-
+    
+     <!-- Circle battery -->
+    <string name="circle_battery_title">Кольцевая батарея</string>
+    
+    <!-- Quick pulldown -->
+    <string name="quick_pulldown_title">Быстрое раскрыие</string>
+    <string name="quick_pulldown_summary">Угол статус-бара откроет панель быстрых настроек</string>
+    
+    <!-- Quick settings panel  -->
+    <string name="quick_settings_panel_title">Панель быстрых настроек</string>
+    <string name="title_collapse_panel">Автозакрытие панели</string>
+    <string name="summary_collapse_panel">Закрыть панель быстрых настроек после переключения</string>
+    <string name="title_tile_usb_tether">USB модем</string>
+    <string name="cm_sound_mode_silent">Тишина</string>
+    <string name="cm_sound_mode_vibrate">Вибрировать</string>
+    <string name="cm_sound_mode_sound">Звук</string>
+    <string name="cm_sound_mode_soundVibrate">Звук &amp; Вибровать</string>
+    
+    <string name="title_tile_lockscreen">Экран блокировки</string>
+    <string name="title_tile_torch">Фонарик</string>
+    <string name="title_tile_volume">Громкость</string>
+    
+     <!-- Quick Unlock -->
+    <string name="allow_quick_unlock_title">Быстрая разблокировка</string>
+    <string name="allow_quick_unlock_summary">Разблокировать автоматически после ввода верного пароля</string>
+    
+     <!-- Reset tiles -->
+    <string name="tiles_add_title">Добавить</string>
+  
     <!-- Reset tiles -->
     <string name="tiles_reset_title">@string/lock_screen_shortcuts_reset</string>
     <string name="tiles_reset_message">Восстановить стандартные плитки и их расположение?</string>
 
+    <!-- HALO -->
+    <string name="halo_settings_title">HALO</string>
+    <string name="halo_hide_title">Спрятать HALO после активности</string>
+    <string name="halo_hide_summary">HALO появится для входящих задач и исчезнет спустя некоторое время</string>
+    <string name="halo_reversed_title">Переключить HALO</string>
+    <string name="halo_reversed_summary">Примените для переключения задач и жестов</string>
+    <string name="halo_state_title">Политика HALO</string>
+    <string name="halo_state_summary">Включить черный/белый список оповещений</string>
+    <string name="halo_state_black">Черный список</string>
+    <string name="halo_state_white">Белый список</string>
+    <string name="halo_pause_title">Приостановить активное приложение</string>
+    <string name="halo_pause_summary">При открытии приложения через HALO, основное приложение будет приостановлено</string>
+    
     <!-- Pie controls -->
     <string name="pie_controls_title">PIE</string>
     
@@ -2054,7 +2092,7 @@
     <string name="pie_gravity_right">Справо</string>
     <string name="pie_gravity_left">Слева</string>
     
-    <string name="pie_mode_title">PIE анимация</string>
+    <string name="pie_mode_title">Анимация PIE</string>
     <string name="pie_mode_summary">Настройте анимацию появления уведомлений и дополнительных элементов</string>
     <string name="pie_mode_bare">Без уведомлений</string>
     <string name="pie_mode_quick">Быстро</string>
@@ -2067,6 +2105,7 @@
     <string name="pie_size_default">@string/pie_mode_default</string>
     <string name="pie_size_large">Большой</string>
     <string name="pie_size_gigantic">Огромный</string>
+    <!--<string name="pie_size_monster">Как зад твоей мамы</string>-->
     
     <string name="pie_gap_title">Интервал элементов</string>
     <string name="pie_gap_summary">Настройте интервал между PIE элементами</string>
@@ -2074,19 +2113,52 @@
     <string name="pie_gap_small">Маленький (По умолчанию)</string>
     <string name="pie_gap_big">Большой</string>
     <string name="pie_gap_huge">Огромный</string>
+    
 
     <string name="pie_menu_title">Постоянная кнопка меню</string>
     <string name="pie_menu_summary">Всегда отображать кнопку меню, даже когда в этом нет необходимоcти</string>
 
     <string name="pie_search_title">Кнопка поиска</string>
     <string name="pie_search_summary">Активировать кнопку поиска при PIE</string>
+    
+    <string name="pie_stick_title">Отключит автоповорот</string>
+    <string name="pie_stick_summary">Отключить изменение ориентации экрана при вращении</string>
+    
+    <string name="pie_center_title">Центрировать</string>
+    <string name="pie_center_summary">Выровнять PIE по центру</string>
+    
+    <string name="pie_angle_title">Нижний отступ</string>
+    <string name="pie_angle_summary">Настроить отступ между PIE и стороной экрана</string>
+    <string name="pie_angle_none">Без отступа</string>
+    <string name="pie_angle_small">Маленький</string>
+    <string name="pie_angle_big">Нормальный (По умолчанию)</string>
+    <string name="pie_angle_huge">Большой</string>
+    <string name="pie_angle_super">Огромный</string>
 
     <string name="pie_trigger_title">Область триггера</string>
     <string name="pie_trigger_summary">Определить размер области, которая регистрирует жест Swipe</string>
     <string name="pie_trigger_small">Маленький (По умолчанию)</string>
     <string name="pie_trigger_big">@string/pie_gap_big</string>
     <string name="pie_trigger_huge">@string/pie_gap_huge</string>
-
+    
+    <!-- Custom lock screen background -->
+    <string name="lockscreen_custom_background_title">Фон</string>
+    <string name="lockscreen_custom_background_dialog_title">Выберите цвет</string>
+    <string name="lockscreen_background_result_successful">Фон был успешно изменен</string>
+    <string name="lockscreen_background_result_not_successful">Фон не может быть изменен</string>
+    <string name="lockscreen_background_color_fill">Заливка цветом</string>
+    <string name="lockscreen_background_custom_image">Выбранное изображение</string>
+    <string name="lockscreen_background_default_wallpaper">Изображение по умолчанию</string>
+    <!-- NFC Polling-->
+    <string name="nfc_polling_mode_title">Режим опроса NFC</string>
+    <string name="nfc_polling_mode_screen_off">Дисплей отключен</string>
+    <string name="nfc_polling_mode_screen_locked">Дисплей включен, заблокирован</string>
+    <string name="nfc_polling_mode_screen_unlocked">Дисплей включен, разблокирован (По умолчанию)</string>
+    
+     <!-- Maximize widgets -->
+    <string name="maximize_widgets_title">Развернуть виджеты</string>
+    <string name="maximize_widgets_summary">Показывать виджеты развернутыми и разблокировать сворачивание когда дисплей включен</string>
+    
     <!-- Navigation Bar #CM -->
     <string name="navigation_reset_title">@string/lock_screen_shortcuts_reset</string>
     <string name="navigation_bar_title">Элементы навигационной панели</string>
