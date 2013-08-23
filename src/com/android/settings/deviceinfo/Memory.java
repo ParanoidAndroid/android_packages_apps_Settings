@@ -175,10 +175,7 @@ public class Memory extends SettingsPreferenceFragment {
     @Override
     public void onPrepareOptionsMenu(Menu menu) {
         final MenuItem usb = menu.findItem(R.id.storage_usb);
-        UserManager um = (UserManager)getActivity().getSystemService(Context.USER_SERVICE);
-        boolean usbItemVisible = !isMassStorageEnabled()
-                && !um.hasUserRestriction(UserManager.DISALLOW_USB_FILE_TRANSFER);
-        usb.setVisible(usbItemVisible);
+        usb.setVisible(true);
     }
 
     @Override
