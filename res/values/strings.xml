@@ -4575,4 +4575,7 @@
     <!-- USB Mass Storage -->
     <string name="usb_mass_storage_title">Mass storage</string>
     <string name="usb_mass_storage_summary">Enable USB mass storage</string>
+
+    <!-- Themes settings  -->
+    <string name="themes_settings_title">Themes</string>
 </resources>
