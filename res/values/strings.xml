@@ -4568,7 +4568,4 @@
 
     <!-- Text to display in regulatory info screen (from device overlay). -->
     <string name="regulatory_info_text"></string>
-
-    <!-- Themes settings  -->
-    <string name="themes_settings_title">Themes</string>
 </resources>
