@@ -25,6 +25,7 @@ import static com.android.internal.util.cm.QSConstants.TILE_BRIGHTNESS;
 import static com.android.internal.util.cm.QSConstants.TILE_DELIMITER;
 import static com.android.internal.util.cm.QSConstants.TILE_GPS;
 import static com.android.internal.util.cm.QSConstants.TILE_LOCKSCREEN;
+import static com.android.internal.util.cm.QSConstants.TILE_LTE;
 import static com.android.internal.util.cm.QSConstants.TILE_MOBILEDATA;
 import static com.android.internal.util.cm.QSConstants.TILE_NETWORKMODE;
 import static com.android.internal.util.cm.QSConstants.TILE_NFC;
@@ -82,6 +83,9 @@ public class QuickSettingsUtil {
         TILES.put(TILE_LOCKSCREEN, new QuickSettingsUtil.TileInfo(
                 TILE_LOCKSCREEN, R.string.title_tile_lockscreen,
                 "com.android.systemui:drawable/ic_qs_lock_screen_off"));
+        TILES.put(TILE_LTE, new QuickSettingsUtil.TileInfo(
+                TILE_LTE, R.string.title_tile_lte,
+                "com.android.systemui:drawable/ic_qs_lte_off"));
         TILES.put(TILE_MOBILEDATA, new QuickSettingsUtil.TileInfo(
                 TILE_MOBILEDATA, R.string.title_tile_mobiledata,
                 "com.android.systemui:drawable/ic_qs_signal_4"));
@@ -131,7 +135,7 @@ public class QuickSettingsUtil {
 
     public static String getCurrentTiles(Context context) {
         String tiles = Settings.System.getString(context.getContentResolver(),
-                Settings.System.QUICK_SETTINGS);
+                Settings.System.QUICK_SETTINGS_TILES);
         if (tiles == null) {
             tiles = getDefaultTiles(context);
         }
@@ -140,13 +144,13 @@ public class QuickSettingsUtil {
 
     public static void saveCurrentTiles(Context context, String tiles) {
         Settings.System.putString(context.getContentResolver(),
-                Settings.System.QUICK_SETTINGS, tiles);
+                Settings.System.QUICK_SETTINGS_TILES, tiles);
     }
 
     public static void resetTiles(Context context) {
         String defaultTiles = TextUtils.join(TILE_DELIMITER, TILES_DEFAULT);
         Settings.System.putString(context.getContentResolver(),
-                Settings.System.QUICK_SETTINGS, defaultTiles);
+                Settings.System.QUICK_SETTINGS_TILES, defaultTiles);
     }
 
     public static String mergeInNewTileString(String oldString, String newString) {
