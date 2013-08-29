@@ -511,6 +511,12 @@
     <string name="button_backlight_title">Button backlight brightness</string>
     <string name="keyboard_backlight_title">Keyboard backlight brightness</string>
 
+    <!--  Other device settings -->
+    <string name="more_device_controls_title">More\u2026</string>
+    <string name="more_device_settings_title">Other device options</string>
+    <string name="sensors_motors_title">Sensors &amp; motors</string>
+    <string name="display_calibration_title">Display calibration</string>
+
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Kill app back button</string>
     <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
