@@ -20,6 +20,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
+import com.android.settings.DisplaySettings;
 import com.android.settings.R;
 
 public class BootReceiver extends BroadcastReceiver {
@@ -35,6 +36,7 @@ public class BootReceiver extends BroadcastReceiver {
         VibratorIntensity.restore(ctx);
         ButtonBacklightBrightness.restore(ctx);
         KeyboardBacklightBrightness.restore(ctx);
+        DisplaySettings.restore(ctx);
     }
 
 }
