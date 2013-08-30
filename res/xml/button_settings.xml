@@ -17,7 +17,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <CheckBoxPreference
+    <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
         android:key="hardware_key_rebinding"
         android:title="@string/hardware_keys_enable_custom_title"
         android:defaultValue="false" />
@@ -50,7 +50,7 @@
         android:key="menu_key"
         android:title="@string/hardware_keys_menu_key_title" >
 
-        <CheckBoxPreference
+        <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
             android:key="ui_force_overflow_button"
             android:title="@string/hardware_keys_show_overflow_title"
             android:summary="@string/hardware_keys_show_overflow_summary"

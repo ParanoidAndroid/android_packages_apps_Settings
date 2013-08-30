@@ -33,7 +33,7 @@ import com.android.settings.cyanogenmod.KeyboardBacklightBrightness;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-public class HardwareKeys extends SettingsPreferenceFragment implements
+public class ButtonSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String KEY_HOME_LONG_PRESS = "hardware_keys_home_long_press";
     private static final String KEY_HOME_DOUBLE_TAP = "hardware_keys_home_double_tap";
@@ -84,7 +84,7 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.hardware_keys);
+        addPreferencesFromResource(R.xml.button_settings);
 
         final Resources res = getResources();
         final ContentResolver resolver = getActivity().getContentResolver();
@@ -110,7 +110,6 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_BACKLIGHT);
 
         if (hasHomeKey) {
-
             int defaultLongPressAction = res.getInteger(
                     com.android.internal.R.integer.config_longPressOnHomeBehavior);
             if (defaultLongPressAction < ACTION_NOTHING ||
@@ -150,10 +149,12 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
                         hasAssistKey ? ACTION_NOTHING : ACTION_SEARCH);
             mMenuLongPressAction = initActionList(KEY_MENU_LONG_PRESS, longPressAction);
 
+            mShowActionOverflow = (CheckBoxPreference)
+                    prefScreen.findPreference(Settings.System.UI_FORCE_OVERFLOW_BUTTON);
+
             hasAnyBindableKey = true;
         } else {
-            menuCategory.removePreference(findPreference(KEY_MENU_PRESS));
-            menuCategory.removePreference(findPreference(KEY_MENU_LONG_PRESS));
+            prefScreen.removePreference(menuCategory);
         }
 
         if (hasAssistKey) {
@@ -182,13 +183,6 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
             hasAnyBindableKey = true;
         } else {
             prefScreen.removePreference(appSwitchCategory);
-        }
-
-        if (hasAnyBindableKey) {
-            mShowActionOverflow = (CheckBoxPreference)
-                prefScreen.findPreference(Settings.System.UI_FORCE_OVERFLOW_BUTTON);
-        } else {
-            prefScreen.removePreference(menuCategory);
         }
 
         if (!hasAnyBindableKey) {
@@ -222,10 +216,6 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
 
         pref.setSummary(pref.getEntries()[index]);
         Settings.System.putInt(getContentResolver(), setting, Integer.valueOf(value));
-    }
-
-    private void handleCheckboxClick(CheckBoxPreference pref, String setting) {
-        Settings.System.putInt(getContentResolver(), setting, pref.isChecked() ? 1 : 0);
     }
 
     @Override
