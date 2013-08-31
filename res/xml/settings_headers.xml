@@ -110,16 +110,19 @@
         <intent android:action="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
     </header>
 
-    <!-- DeviceParts Device Specific settings -->
+    <!-- Buttons -->
     <header
-        android:id="@+id/advanced_settings"
-        android:title="@string/advanced_settings_title"
-        android:icon="@drawable/ic_settings_advanced">
-        <intent
-            android:action="com.cyanogenmod.action.LAUNCH_DEVICE_SETTINGS"
-            android:targetPackage="com.cyanogenmod.settings.device"
-            android:targetClass="com.cyanogenmod.settings.device.DeviceSettings" />
-    </header>
+        android:icon="@drawable/ic_settings_buttons"
+        android:fragment="com.android.settings.cyanogenmod.ButtonSettings"
+        android:title="@string/button_settings" />
+
+    <!-- Other device controls -->
+    <header
+        android:id="@+id/more_device_settings"
+        android:title="@string/more_device_controls_title"
+        android:breadCrumbTitle="@string/more_device_settings_title"
+        android:fragment="com.android.settings.cyanogenmod.MoreDeviceSettings"
+        android:icon="@drawable/empty_icon" />
 
     <!-- PERSONAL -->
     <header android:id="@+id/personal_section"

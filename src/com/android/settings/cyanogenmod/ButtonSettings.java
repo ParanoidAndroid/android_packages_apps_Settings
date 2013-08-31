@@ -47,6 +47,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_MENU = "menu_key";
     private static final String CATEGORY_ASSIST = "assist_key";
     private static final String CATEGORY_APPSWITCH = "app_switch_key";
+    private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_BACKLIGHT = "key_backlight";
 
     // Available custom actions to perform on a key press.
@@ -103,8 +104,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_ASSIST);
         final PreferenceCategory appSwitchCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_APPSWITCH);
+        final PreferenceCategory volumeCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_VOLUME);
 
         if (hasHomeKey) {
+            if (!res.getBoolean(R.bool.config_show_homeWake)) {
+                homeCategory.removePreference(findPreference(Settings.System.HOME_WAKE_SCREEN));
+            }
+
             int defaultLongPressAction = res.getInteger(
                     com.android.internal.R.integer.config_longPressOnHomeBehavior);
             if (defaultLongPressAction < ACTION_NOTHING ||
@@ -187,6 +194,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         if (!hasAnyBindableKey) {
             prefScreen.removePreference(findPreference(Settings.System.HARDWARE_KEY_REBINDING));
+        }
+
+        if (Utils.hasVolumeRocker(getActivity())) {
+            if (!res.getBoolean(R.bool.config_show_volumeRockerWake)) {
+                volumeCategory.removePreference(findPreference(Settings.System.VOLUME_WAKE_SCREEN));
+            }
+        } else {
+            prefScreen.removePreference(volumeCategory);
         }
 
         final ButtonBacklightBrightness backlight =

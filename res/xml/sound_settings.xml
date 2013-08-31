@@ -53,23 +53,6 @@
             android:fragment="com.android.settings.cyanogenmod.QuietHours"
             android:title="@string/quiet_hours_title" />
 
-    <!-- Volumer buttons -->
-    <PreferenceCategory
-        android:key="volume_button_settings"
-        android:title="@string/volume_button_setting_title"/>
-
-    <CheckBoxPreference
-        android:key="music_controls"
-        android:title="@string/volbtn_music_controls_title"
-        android:summary="@string/volbtn_music_controls_summary"
-        android:persistent="false" />
-
-    <CheckBoxPreference
-        android:key="volume_wake"
-        android:title="@string/pref_volume_wake_title"
-        android:summary="@string/pref_volume_wake_summary"
-        android:defaultValue="false" />
-
     <PreferenceCategory
             android:key="category_calls_and_notification"
             android:title="@string/sound_category_call_ringtone_vibrate_title"/>
@@ -137,12 +120,6 @@
             android:title="@string/emergency_tone_title"
             android:entries="@array/emergency_tone_entries"
             android:entryValues="@array/emergency_tone_values" />
-
-    <com.android.settings.cyanogenmod.VibratorIntensity
-            android:key="vibrator_intensity"
-            android:title="@string/vibrator_intensity_title"
-            android:dialogTitle="@string/vibrator_intensity_title"
-            android:persistent="false" />
 
     <!-- Dock -->
     <PreferenceCategory

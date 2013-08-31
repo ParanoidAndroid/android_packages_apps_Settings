@@ -132,15 +132,9 @@
     <string name="icon_picker_sms">Messaging</string>
     <string name="icon_picker_twitter">Twitter</string>
 
-    <!-- Volume sub settings -->
-    <string name="volume_button_setting_title">Volume buttons settings</string>
     <!-- Volume music controls -->
-    <string name="volbtn_music_controls_title">Volume rocker music controls</string>
-    <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
-
-    <!-- Wakeup options -->
-    <string name="pref_volume_wake_title">Volume rocker wake</string>
-    <string name="pref_volume_wake_summary">Pressing the volume rocker will wake your device</string>
+    <string name="volbtn_music_controls_title">Allow music control</string>
+    <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume keys will seek music tracks</string>
 
     <!-- Bars sub menu [CHAR LIMIT=30] -->
     <string name="tool_bar_settings">Toolbars</string>
@@ -268,12 +262,13 @@
     <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
 
     <!-- Hardware keys -->
-    <string name="button_settings">Hardware keys</string>
-    <string name="hardware_keys_enable_custom_title">Allow custom actions</string>
+    <string name="button_settings">Buttons</string>
+    <string name="hardware_keys_enable_custom_title">Allow custom buttons</string>
     <string name="hardware_keys_home_key_title">Home button</string>
     <string name="hardware_keys_menu_key_title">Menu button</string>
     <string name="hardware_keys_assist_key_title">Search button</string>
     <string name="hardware_keys_appswitch_key_title">Recents button</string>
+    <string name="hardware_keys_volume_keys_title">Volume buttons</string>
     <string name="hardware_keys_short_press_title">Short press action</string>
     <string name="hardware_keys_long_press_title">Long press action</string>
     <string name="hardware_keys_double_tap_title">Double tap action</string>
@@ -287,6 +282,10 @@
     <string name="hardware_keys_action_search">Search assistant</string>
     <string name="hardware_keys_action_voice_search">Voice search</string>
     <string name="hardware_keys_action_in_app_search">In-app search</string>
+    <string name="home_wake_title">Home button wake</string>
+    <string name="home_wake_summary">Pressing the home button will wake your device</string>
+    <string name="volume_wake_title">Volume button wake</string>
+    <string name="volume_wake_summary">Pressing a volume button will wake your device</string>
 
     <string name="pref_ring_mode_title">Sound modes</string>
     <string name="pref_ring_mode_summary">View or change the Sound button modes</string>
@@ -542,4 +541,11 @@
 
     <!-- Title for the accessibility preference to home button to answers a call. [CHAR LIMIT=35] -->
     <string name="accessibility_home_button_answers_call_prerefence_title">Home button answers call</string>
+
+    <!-- Category title for headset specific Settings.
+         [CHAR LIMIT=40] -->
+    <string name="headset_category_title">Headset</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app</string>
+    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
 </resources>
