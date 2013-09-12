@@ -40,15 +40,48 @@
             android:defaultValue="false" />
 
         <CheckBoxPreference
+            android:key="halo_ninja"
+            android:title="@string/halo_ninja_title"
+            android:summary="@string/halo_ninja_summary"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="halo_notify_count"
+            android:dialogTitle="@string/halo_notification_count_title"
+            android:title="@string/halo_notification_count_title"
+            android:summary="@string/halo_notification_count_summary"
+            android:entries="@array/entries_halo_notification_count"
+            android:entryValues="@array/values_halo_notification_count" />
+
+        <CheckBoxPreference
+            android:key="halo_msgbox"
+            android:title="@string/halo_notification_msgbox_title"
+            android:summary="@string/halo_notification_msgbox_summary"
+            android:defaultValue="true" />
+
+        <ListPreference	
+            android:key="halo_msgbox_animation"
+            android:dialogTitle="@string/halo_msgbox_animation_title"
+            android:title="@string/halo_msgbox_animation_title"
+            android:summary="@string/halo_msgbox_animation_summary"
+            android:entries="@array/entries_halo_msgbox_animation"
+            android:entryValues="@array/values_halo_msgbox_animation" />
+
+        <CheckBoxPreference
             android:key="halo_reversed"
             android:title="@string/halo_reversed_title"
             android:summary="@string/halo_reversed_summary"
             android:defaultValue="true" />
 
-
         <CheckBoxPreference
             android:key="halo_pause"
             android:title="@string/halo_pause_title"
             android:summary="@string/halo_pause_summary" />
+
+        <CheckBoxPreference
+            android:key="halo_unlock_ping"
+            android:title="@string/halo_unlock_ping_title"
+            android:summary="@string/halo_unlock_ping_summary"
+            android:defaultValue="false" />
 
 </PreferenceScreen>
