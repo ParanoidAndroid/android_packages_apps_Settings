@@ -43,7 +43,6 @@ public class Toolbar extends SettingsPreferenceFragment
     private static final String STATUS_BAR_DONOTDISTURB = "status_bar_donotdisturb";
     private static final String NAV_BAR_CATEGORY = "toolbar_navigation";
     private static final String NAV_BAR_CONTROLS = "navigation_bar_controls";
-    private static final String KEY_HARDWARE_KEYS = "hardware_keys";
 
     private ListPreference mAmPmStyle;
     private ListPreference mStatusBarMaxNotif;
@@ -128,14 +127,6 @@ public class Toolbar extends SettingsPreferenceFragment
         } else {
             mNavigationCategory.removePreference(mNavigationBarControls);
             prefSet.removePreference(mQuickPullDown);
-        }
-
-        // Only show the hardware keys config on a device that does not have a navbar
-        final int deviceKeys = getResources().getInteger(
-                com.android.internal.R.integer.config_deviceHardwareKeys);
-        if (deviceKeys==15) {
-             PreferenceScreen HARDWARE =(PreferenceScreen) prefSet.findPreference(KEY_HARDWARE_KEYS);
-             prefSet.removePreference(HARDWARE);
         }
     }
 

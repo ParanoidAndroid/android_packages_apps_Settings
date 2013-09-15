@@ -82,7 +82,7 @@ public class VibratorIntensity extends HWValueSliderPreference {
     }
 
     public static void restore(Context context) {
-        if (isSupported()) {
+        if (!isSupported()) {
             return;
         }
         HWValueSliderPreference.restore(context, HW_INTERFACE);
