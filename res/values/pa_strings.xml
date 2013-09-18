@@ -16,18 +16,29 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Sound settings screen -->
+    <string name="volume_overlay_title">Volume panel style</string>
+    <string name="volbtn_music_controls_title">Allow music control</string>
+    <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume keys will seek music tracks</string>
+    <string name="volume_ring_only_description">Ringtone</string>
+    <string name="ring_mode_title">Ring mode</string>
+    <string name="ring_mode_normal">Normal</string>
+    <string name="ring_mode_vibrate">Vibrate</string>
+    <string name="ring_mode_mute">Mute</string>
+    <string name="automation_effects_title">Automation &amp; Effects</string>
     <string name="link_volume_ringtones">Link ringtone &amp; notifications volumes</string>
     <string name="link_volume_mutes">Silent mode affects notifications</string>
-    <string name="volume_overlay_title">Volume panel style</string>
     <string name="volume_overlay_single">Single</string>
     <string name="volume_overlay_expandable">Expandable</string>
     <string name="volume_overlay_expanded">Expanded</string>
     <string name="volume_overlay_none">None</string>
-    <string name="volume_ring_only_description">Ringtone</string>
     <string name="notification_sound_limiter_title">Notification sound limit</string>
     <string name="notification_sound_limiter_summary">Sets the allowed delay between incoming notifications</string>
     <string name="notification_sound_default_time">Default</string>
     <string name="volume_keys_control_ring_stream">Volume keys control ringtone volume</string>
+
+    <!-- Waiver -->
+    <string name="cyanogenmod_waiver_title">Waiver</string>
+    <string name="cyanogenmod_waiver_body">Changing this setting may be against your state or government laws.\n\nIn selecting \'OK\' below, you acknowledge this warning and waive, indemnify and hold harmless CyanogenMod and its contributors from all legal liabilities.</string>
 
     <!-- Display settings screen, notification light settings -->
     <string name="notification_light_general_title">General</string>
@@ -131,10 +142,6 @@
     <string name="icon_picker_rss">Rss</string>
     <string name="icon_picker_sms">Messaging</string>
     <string name="icon_picker_twitter">Twitter</string>
-
-    <!-- Volume music controls -->
-    <string name="volbtn_music_controls_title">Allow music control</string>
-    <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume keys will seek music tracks</string>
 
     <!-- Bars sub menu [CHAR LIMIT=30] -->
     <string name="tool_bar_settings">Toolbars</string>
@@ -567,4 +574,31 @@
     <!-- Launch music player when headset is connected -->
     <string name="headset_connect_player_title">Launch music app</string>
     <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Safe headset volume</string>
+
+    <!-- vibrate during phone calls -->
+    <string name="notification_vibrate_during_calls_title">Vibrate during call</string>
+    <string name="notification_vibrate_during_calls_summary">Incoming notifications will softly vibrate during phone calls</string>
+
+    <!-- Sound settings screen, setting check box label -->
+    <string name="volume_adjust_sounds_enable_title">Volume adjustment sound</string>
+    <!-- Sound settings screen, setting check box summary -->
+    <string name="volume_adjust_sounds_enable_summary">Play sound when adjusting volume with volume rocker</string>
+
+    <!-- Category title for Charging sounds (Power state change) specific Settings.
+         [CHAR LIMIT=40] -->
+    <string name="power_notifications_category_title">Charging sounds</string>
+
+    <!-- Sound settings, Charging sounds enable/disable, setting check box label -->
+    <string name="power_notifications_enable_title">Enable</string>
+    <string name="power_notifications_enable_summary">Play a sound when connecting or disconnecting the charger</string>
+    <!-- Sound settings, Charging sounds vibrate enable/disable, setting check box label -->
+    <string name="power_notifications_vibrate_title">Vibrate</string>
+    <!-- Sound settings, Charging sounds ringtone selection, preference label -->
+    <string name="power_notifications_ringtone_title">Notification sound</string>
+    <!-- Sound settings, charging sounds label for ringtone == none -->
+    <string name="power_notifications_ringtone_silent">Silent</string>
+
 </resources>
