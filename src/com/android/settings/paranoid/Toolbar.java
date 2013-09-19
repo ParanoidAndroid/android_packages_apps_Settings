@@ -63,12 +63,7 @@ public class Toolbar extends SettingsPreferenceFragment
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.tool_bar_settings);
-        
         PreferenceScreen prefSet = getPreferenceScreen();
-        CheckBoxPreference checkSet = get.CheckBoxPreference();
-        ListPreference listSet = get.ListPreference();
-        PreferenceCategory categorySet = get.PreferenceCategory();
-        
         mContext = getActivity();
 
         mQuickPullDown = (CheckBoxPreference) prefSet.findPreference(KEY_QUICK_PULL_DOWN);
@@ -123,16 +118,16 @@ public class Toolbar extends SettingsPreferenceFragment
                 Settings.System.STATUS_BAR_DONOTDISTURB, 0) == 1));
 
         if (!Utils.isTablet()) {
-            listSet.removePreference(mStatusBarMaxNotif);
-            checkSet.removePreference(mMenuButtonShow);
-            checkSet.removePreference(mStatusBarDoNotDisturb);
+            prefSet.removePreference(mStatusBarMaxNotif);
+            prefSet.removePreference(mMenuButtonShow);
+            prefSet.removePreference(mStatusBarDoNotDisturb);
 
             if(!Utils.hasNavigationBar()) {
-                categorySet.removePreference(mNavigationCategory);
+                prefSet.removePreference(mNavigationCategory);
             }
         } else {
             mNavigationCategory.removePreference(mNavigationBarControls);
-            checkSet.removePreference(mQuickPullDown);
+            prefSet.removePreference(mQuickPullDown);
         }
 
         // Only show the hardware keys config on a device that does not have a navbar
