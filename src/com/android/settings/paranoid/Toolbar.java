@@ -44,6 +44,7 @@ public class Toolbar extends SettingsPreferenceFragment
     private static final String NAV_BAR_CATEGORY = "toolbar_navigation";
     private static final String NAV_BAR_CONTROLS = "navigation_bar_controls";
     private static final String KEY_HARDWARE_KEYS = "hardware_keys";
+    private static final String STATUS_CATEGORY = "toolbar_status";
 
     private ListPreference mAmPmStyle;
     private ListPreference mStatusBarMaxNotif;
@@ -55,6 +56,7 @@ public class Toolbar extends SettingsPreferenceFragment
     private CheckBoxPreference mStatusBarDoNotDisturb;
     private PreferenceScreen mNavigationBarControls;
     private PreferenceCategory mNavigationCategory;
+    private PreferenceCategory mStatusCategory;
 
     private Context mContext;
 
@@ -64,6 +66,7 @@ public class Toolbar extends SettingsPreferenceFragment
 
         addPreferencesFromResource(R.xml.tool_bar_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
+
         mContext = getActivity();
 
         mQuickPullDown = (CheckBoxPreference) prefSet.findPreference(KEY_QUICK_PULL_DOWN);
@@ -98,6 +101,7 @@ public class Toolbar extends SettingsPreferenceFragment
                 Settings.System.NAV_BAR_TABUI_MENU, 0) == 1));
 
         mNavigationBarControls = (PreferenceScreen) prefSet.findPreference(NAV_BAR_CONTROLS);
+        mStatusCategory = (PreferenceCategory) prefSet.findPreference(STATUS_CATEGORY);
 
         try {
             if (Settings.System.getInt(getActivity().getContentResolver(),
@@ -118,16 +122,16 @@ public class Toolbar extends SettingsPreferenceFragment
                 Settings.System.STATUS_BAR_DONOTDISTURB, 0) == 1));
 
         if (!Utils.isTablet()) {
-            prefSet.removePreference(mStatusBarMaxNotif);
-            prefSet.removePreference(mMenuButtonShow);
-            prefSet.removePreference(mStatusBarDoNotDisturb);
+            mStatusCategory.removePreference(mStatusBarMaxNotif);
+            mStatusCategory.removePreference(mMenuButtonShow);
+            mStatusCategory.removePreference(mStatusBarDoNotDisturb);
 
             if(!Utils.hasNavigationBar()) {
                 prefSet.removePreference(mNavigationCategory);
             }
         } else {
             mNavigationCategory.removePreference(mNavigationBarControls);
-            prefSet.removePreference(mQuickPullDown);
+            mStatusCategory.removePreference(mQuickPullDown);
         }
 
         // Only show the hardware keys config on a device that does not have a navbar
