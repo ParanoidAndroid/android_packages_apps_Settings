@@ -57,6 +57,60 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
 
+    <!-- CUSTOMIZATION -->
+    <header android:id="@+id/personal_section"
+        android:title="@string/header_category_customization" />
+
+    <!-- HALO -->
+    <header
+        android:id="@+id/halo_settings"
+        android:fragment="com.android.settings.paranoid.Halo"
+        android:icon="@drawable/ic_settings_halo" 
+        android:title="@string/halo_settings_title" />
+
+    <!-- Hybrid options -->
+    <header
+        android:id="@+id/hybrid_settings"
+        android:icon="@drawable/ic_settings_hybrid"
+        android:title="@string/hybrid_settings">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.paranoid.preferences"
+            android:targetClass="com.paranoid.preferences.MainActivity" />
+    </header>
+
+    <!-- Lockscreen -->
+    <header
+        android:id="@+id/lock_screen_settings"
+        android:fragment="com.android.settings.paranoid.Lockscreen"
+        android:icon="@drawable/ic_settings_lock_screen" 
+        android:title="@string/lock_screen_settings" />
+
+    <!-- Pie Controls -->
+    <header
+        android:id="@+id/pie_settings"
+        android:fragment="com.android.settings.paranoid.PieControls"
+        android:icon="@drawable/ic_settings_pie" 
+        android:title="@string/pie_controls_title" />
+
+    <!-- Statusbar -->
+    <header
+        android:id="@+id/tool_bar_settings"
+        android:fragment="com.android.settings.paranoid.Toolbar"
+        android:icon="@drawable/ic_settings_status_bar" 
+        android:title="@string/tool_bar_settings" />
+
+    <!-- Themes -->
+    <header
+        android:id="@+id/themes_settings"
+        android:icon="@drawable/ic_settings_themes"
+        android:title="@string/themes_settings_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.tmobile.themechooser"
+            android:targetClass="com.tmobile.themechooser.ThemeChooser" />
+    </header>   
+
     <!-- DEVICE -->
     <header android:id="@+id/device_section"
         android:title="@string/header_category_device" />
@@ -129,63 +183,6 @@
     <header android:id="@+id/personal_section"
         android:title="@string/header_category_personal" />
 
-    <!-- HALO -->
-    <header
-        android:id="@+id/halo_settings"
-        android:fragment="com.android.settings.paranoid.Halo"
-        android:icon="@drawable/ic_settings_halo" 
-        android:title="@string/halo_settings_title" />
-
-    <!-- Pie Controls -->
-    <header
-        android:id="@+id/pie_settings"
-        android:fragment="com.android.settings.paranoid.PieControls"
-        android:icon="@drawable/ic_settings_pie" 
-        android:title="@string/pie_controls_title" />
-        
-    <!-- Hybrid options -->
-    <header
-        android:id="@+id/hybrid_settings"
-        android:icon="@drawable/ic_settings_hybrid"
-        android:title="@string/hybrid_settings">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="com.paranoid.preferences"
-            android:targetClass="com.paranoid.preferences.MainActivity" />
-    </header>
-
-    <!-- Privacy -->
-    <header
-        android:fragment="com.android.settings.applications.AppOpsSummary"
-        android:icon="@drawable/ic_privacy_guard"
-        android:title="@string/appops_settings_title"
-        android:id="@+id/appops_settings" />
-
-    <!-- Lockscreen -->
-    <header
-        android:id="@+id/lock_screen_settings"
-        android:fragment="com.android.settings.paranoid.Lockscreen"
-        android:icon="@drawable/ic_settings_lock_screen" 
-        android:title="@string/lock_screen_settings" />
-
-    <!-- Statusbar -->
-    <header
-        android:id="@+id/tool_bar_settings"
-        android:fragment="com.android.settings.paranoid.Toolbar"
-        android:icon="@drawable/ic_settings_status_bar" 
-        android:title="@string/tool_bar_settings" />
-
-    <!-- Themes -->
-    <header
-        android:id="@+id/themes_settings"
-        android:icon="@drawable/ic_settings_themes"
-        android:title="@string/themes_settings_title">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="com.tmobile.themechooser"
-            android:targetClass="com.tmobile.themechooser.ThemeChooser" />
-    </header>   
-
     <!-- Location -->
     <header
         android:fragment="com.android.settings.LocationSettings"
@@ -237,6 +234,13 @@
         android:fragment="com.koushikdutta.superuser.PolicyNativeFragment"
         android:icon="@drawable/ic_action_permission"
         android:title="@string/superuser" />
+
+    <!-- Privacy -->
+    <header
+        android:fragment="com.android.settings.applications.AppOpsSummary"
+        android:icon="@drawable/ic_privacy_guard"
+        android:title="@string/appops_settings_title"
+        android:id="@+id/appops_settings" />
 
     <!-- Date & Time -->
     <header
