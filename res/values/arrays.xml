@@ -1419,4 +1419,9 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+
+    <!-- Gamma calibration descriptors, deliberately empty as string values populated via
+    per-device overlay. Required to build on non-hardware tunable devices -->
+    <string-array name="gamma_descriptors">
+    </string-array>
 </resources>
