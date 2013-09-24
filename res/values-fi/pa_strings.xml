@@ -139,7 +139,7 @@
     <string name="pref_volume_wake_summary">Ääninäppäimen painaminen herättää laitteen.</string>
 
     <!-- Bars sub menu [CHAR LIMIT=30] -->
-    <string name="tool_bar_settings">Työkalupalkit</string>
+    <string name="tool_bar_settings">Työkalupalkki</string>
     <string name="tool_bar_status_header">Tilapalkki</string>
     <string name="tool_bar_navigation_header">Navigointipalkki</string>
 
@@ -157,10 +157,10 @@
     <string name="halo_pause_title">Pysäytä aktiivinen sovellus</string>
     <string name="halo_pause_summary">Kun sovellus avataan Halo:lla, alla oleva sovellus pysäytetään.</string>
     <string name="halo_ninja_title">Ninja tila</string>
-    <string name="halo_ninja_summary">Halo katoo kokonaan kun se on tyhjä</string>
+    <string name="halo_ninja_summary">Halo piiloutuu kokonaan kun se on tyhjä</string>
     <string name="halo_notification_msgbox_title">Näytä viestin kuvaus</string>
     <string name="halo_notification_msgbox_summary">Näyttää viestin kuvauksen tuleville ilmoituksille</string>
-    <string name="halo_unlock_ping_title">Hyppää avatessa</string>
+    <string name="halo_unlock_ping_title">Näyttäydy ruudun avauksessa</string>
     <string name="halo_unlock_ping_summary">Halo tulee näkyville lukituksen avatessa jos uusia ilmoituksia on ilmestynyt.</string>
 
     <string name="halo_size_title">Halo:n koko</string>
@@ -378,7 +378,7 @@
     <string name="navigation_bar_menu_locked">Lukittu</string>
     
     <!-- Hybrid sub menu [CHAR LIMIT=30] -->
-    <string name="hybrid_settings">Hybridi asetukset</string>
+    <string name="hybrid_settings">Hybrid-asetukset</string>
 
     <string name="mod_version">ParanoidAndroid versio</string>
     <string name="mod_version_default">Tuntematon</string>
