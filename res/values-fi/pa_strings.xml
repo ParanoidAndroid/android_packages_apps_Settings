@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+     Copyright (C) 2013 ParanoidAndroid Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Sound settings screen -->
+    <string name="link_volume_ringtones">Yhdistä soittoäänen &amp; ilmoitusten äänenvoimakkuudet</string>
+    <string name="link_volume_mutes">Hiljainen tila vaikuttaa ilmoituksiin</string>
+    <string name="volume_overlay_title">Äänenvoimakkuuspaneelin tyyli</string>
+    <string name="volume_overlay_single">Yksittäinen</string>
+    <string name="volume_overlay_expandable">Laajennettava</string>
+    <string name="volume_overlay_expanded">Laajennettu</string>
+    <string name="volume_overlay_none">Ei mitään</string>
+    <string name="volume_ring_only_description">Soittoääni</string>
+    <string name="notification_sound_limiter_title">Ilmoituksen ääni raja</string>
+    <string name="notification_sound_limiter_summary">Aseta sallittu tulevien ilmoitusten aikaväli</string>
+    <string name="notification_sound_default_time">Oletus</string>
+    <string name="volume_keys_control_ring_stream">Äänenvoimakkuus näppäimet hallitsevat soittoäänen voimakkuutta</string>
+
+    <!-- Display settings screen, notification light settings -->
+    <string name="notification_light_general_title">Yleiset</string>
+    <string name="notification_light_applist_title">Sovellukset</string>
+    <string name="notification_light_use_custom">Käytä muokattuja arvoja</string>
+    <string name="notification_light_add">Lisää</string>
+    <string name="notification_light_reset">Resetoi</string>
+    <string name="notification_light_enabled">Käytössä</string>
+    <string name="notification_light_disabled">Pois käytöstä</string>
+    <string name="notification_light_default_value">Oletus</string>
+    <string name="choose_app">Valitse sovellus</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Muuta valon asetuksia</string>
+    <string name="pulse_speed_title">Pulssin pituus ja nopeus</string>
+    <string name="picker_arrow" translatable="false">→</string>
+    <string name="default_time">Tavallinen</string>
+    <string name="custom_time">Muokattu</string>
+    <string name="dialog_delete_title">Poista</string>
+    <string name="dialog_delete_message">Poista valitut kohteet?</string>
+    <string name="dialog_test">Testaus</string>
+    <string name="dialog_test_message">Sulje näyttö nähdäksesi valitu ilmoitus käytössä tai Sulje tämä ikkuna lopettaaksesi testin.</string>
+    <string name="dialog_test_button">Sulje</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Aina päällä</string>
+    <string name="pulse_length_very_short">Erittäin lyhyt</string>
+    <string name="pulse_length_short">Lyhyt</string>
+    <string name="pulse_length_normal">Tavallinen</string>
+    <string name="pulse_length_long">Pitkä</string>
+    <string name="pulse_length_very_long">Erittäin pitkä</string>
+    <string name="pulse_speed_very_fast">Erittäin nopea</string>
+    <string name="pulse_speed_fast">Nopea</string>
+    <string name="pulse_speed_normal">Tavallinen</string>
+    <string name="pulse_speed_slow">Hidas</string>
+    <string name="pulse_speed_very_slow">Erittäin hidas</string>
+
+    <!-- Battery light settings  -->
+    <string name="battery_light_title">Akun valo</string>
+    <string name="battery_low_pulse_title">Pulssi kun akku on vähissä</string>
+    <string name="battery_light_list_title">Värit</string>
+    <string name="battery_light_low_color_title">Akku lpussa</string>
+    <string name="battery_light_medium_color_title">Latautuu</string>
+    <string name="battery_light_full_color_title">Täyteen ladattu</string>
+    
+    <!-- Customization main menu category heading [CHAR LIMIT=40] -->
+    <string name="header_category_customization">Räätälöinti</string>
+
+    <!-- Lock screen sub menu [CHAR LIMIT=30] -->
+    <string name="lock_screen_settings">Lukitusnäyttö</string>
+    <!-- Allow rotation -->
+    <string name="allow_rotate_title">Salli kääntyminen</string>
+    <string name="allow_rotate_summary">Sallii sivuttaistilan lukitusnäytössä</string>
+    <!-- Quick Unlock -->
+    <string name="allow_quick_unlock_title">Nopea avaus</string>
+    <string name="allow_quick_unlock_summary">Avaa lukitus automaattisesti kun oikea salasana on kirjoitettu</string>
+    <!-- Lock screen see through -->
+    <string name="see_through_title">Läpinäkyvyys</string>
+    <string name="see_through_summary">Mahdollistaa taustalla olevien sovellusten näkemisen</string>
+    <!-- Maximize widgets -->
+    <string name="maximize_widgets_title">Maksimoi widgetit</string>
+    <string name="maximize_widgets_summary">Näyttää widgetit maksimoituina ja avauksen pienennettynä kun näyttö laitetaan päälle</string>
+    <!-- Home screen widgets -->
+    <string name="home_screen_widgets_title">Kotinäytön widgetit</string>
+    <string name="home_screen_widgets_summary">Mahdollistaa kaikkien widgettien käytön lukitusnäytöllä.</string>
+    <string name="home_screen_widgets_warning_title">Tämä saattaa olla vaarallista!</string>
+    <string name="home_screen_widgets_warning">Kotinäytön widgettien käyttäminen saattaa johtaa turvaongelmiin. Oletko varma?</string>
+    <!-- Shortcuts -->
+    <string name="lock_screen_shortcuts_title">Pikakuvakkeet</string>
+    <string name="lock_screen_shortcuts_summary">Katso tai muokkaa lukitusnäytön pikakuvakkeita.</string>
+    <string name="lock_screen_shortcuts_add">@string/notification_light_add</string>
+    <string name="lock_screen_shortcuts_reset">Resetoi</string>
+    <string name="lock_screen_shortcuts_reset_message">Resetoi lukitusnäytön pikakuvakkeet?</string>
+    <string name="lock_screen_shortcuts_limit">6 pikakuvaketta on maksimi!</string>
+    <string name="icon_picker_type">Valitse ikonin tyyli:</string>
+    <string name="icon_default">Oletus</string>
+    <string name="icon_presets">Valmiit</string>
+    <string name="icon_custom">Muokattu</string>
+    <string name="icon_picker_choose_icon_title">Valitse ikoni</string>
+    <string name="icon_picker_alarm">Hälytys</string>
+    <string name="icon_picker_browser">Selain</string>
+    <string name="icon_picker_calendar">Kalenteri</string>
+    <string name="icon_picker_camera">Kamera</string>
+    <string name="icon_picker_email">Sähköposti</string>
+    <string name="icon_picker_email2">Sähköposti Holo</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">Galleria</string>
+    <string name="icon_picker_google_small">Google (pieni)</string>
+    <string name="icon_picker_googleplus">Google Plus</string>
+    <string name="icon_picker_googletalk">Google Talk</string>
+    <string name="icon_picker_maps">Kartat</string>
+    <string name="icon_picker_movie">Elokuvat</string>
+    <string name="icon_picker_music">Musiikki</string>
+    <string name="icon_picker_nav">Navigointi</string>
+    <string name="icon_picker_phone">Puhelin</string>
+    <string name="icon_picker_podcast">Podcast</string>
+    <string name="icon_picker_rss">Rss</string>
+    <string name="icon_picker_sms">Viestit</string>
+    <string name="icon_picker_twitter">Twitter</string>
+
+    <!-- Volume sub settings -->
+    <string name="volume_button_setting_title">Ääninäppäinten asetukset</string>
+    <!-- Volume music controls -->
+    <string name="volbtn_music_controls_title">Ääninäppäinten musiikin hallinta</string>
+    <string name="volbtn_music_controls_summary">Kun näyttö on pois päältä, painamalla pitkään ääninäppäintä vaihtaa kappaleen.</string>
+
+    <!-- Wakeup options -->
+    <string name="pref_volume_wake_title">Ääninäppäinten herätys</string>
+    <string name="pref_volume_wake_summary">Ääninäppäimen painaminen herättää laitteen.</string>
+
+    <!-- Bars sub menu [CHAR LIMIT=30] -->
+    <string name="tool_bar_settings">Työkalupalkki</string>
+    <string name="tool_bar_status_header">Tilapalkki</string>
+    <string name="tool_bar_navigation_header">Navigointipalkki</string>
+
+    <!-- Halo -->
+    <string name="halo_settings_title">Halo</string>
+    <string name="halo_behavior_title">Halo:n käyttäytyminen</string>
+    <string name="halo_hide_title">Piilota Halo käytön jälkeen</string>
+    <string name="halo_hide_summary">Halo ilmestyy uusien ilmoitusten saapuessa ja liukuu piiloon hetken kuluttua</string>
+    <string name="halo_reversed_title">Käänteinen Halo</string>
+    <string name="halo_reversed_summary">Vaikuttaa tehtävien vaihtoon ja liikkuviin eleisiin</string>
+    <string name="halo_state_title">Halo periaate</string>
+    <string name="halo_state_summary">Mahdollistaa musta/valko listauksen sovelluksille</string>
+    <string name="halo_state_black">Musta lista</string>
+    <string name="halo_state_white">Valkoinen lista</string>
+    <string name="halo_pause_title">Pysäytä aktiivinen sovellus</string>
+    <string name="halo_pause_summary">Kun sovellus avataan Halo:lla, alla oleva sovellus pysäytetään.</string>
+    <string name="halo_ninja_title">Ninja tila</string>
+    <string name="halo_ninja_summary">Halo piiloutuu kokonaan kun se on tyhjä</string>
+    <string name="halo_notification_msgbox_title">Näytä viestin kuvaus</string>
+    <string name="halo_notification_msgbox_summary">Näyttää viestin kuvauksen tuleville ilmoituksille</string>
+    <string name="halo_unlock_ping_title">Näyttäydy ruudun avauksessa</string>
+    <string name="halo_unlock_ping_summary">Halo tulee näkyville lukituksen avatessa jos uusia ilmoituksia on ilmestynyt.</string>
+
+    <string name="halo_size_title">Halo:n koko</string>
+    <string name="halo_size_summary">Määrittelee kuinka suuri Halo:sta tulee</string>
+    <string name="halo_size_miniscule">Minimaalinen</string>
+    <string name="halo_size_small">Pieni</string>
+    <string name="halo_size_default">@string/pie_mode_default</string>
+    <string name="halo_size_large">Suuri</string>
+    <string name="halo_size_gigantic">Jättimäinen</string>
+    <string name="halo_size_monster">Suunnaton</string>
+
+    <string name="halo_notification_count_title">Ilmoitusten määrä</string>
+    <string name="halo_notification_count_summary">Näytä ilmoitusten määrä Halo:ssa</string>
+    <string name="halo_notification_count_none">Ei käytössä</string>
+    <string name="halo_notification_count_total">Kokonaisuudessa</string>
+    <string name="halo_notification_count_individual">Per sovellus</string>
+    <string name="halo_notification_count_both">Molemmat</string>
+
+    <string name="halo_msgbox_animation_title">Viestilaatikon animointi</string>
+    <string name="halo_msgbox_animation_summary">Halo:n viestilaatikon animointi tuleville viesteille.</string>
+    <string name="halo_msgbox_animation_none">Ei käytössä</string>
+    <string name="halo_msgbox_animation_flip">Pyörähdys</string>
+
+    <!-- Quick pulldown -->
+    <string name="quick_pulldown_title">Nopea alasveto</string>
+    <string name="quick_pulldown_summary">Tilapalkin sivusta alasvetäinen avaa nopeat asetukset</string>
+    <!-- Show clock -->
+    <string name="show_clock_title">Näytä kello</string>
+    <!-- Circle battery -->
+    <string name="circle_battery_title">Ympyrä akku</string>
+    <!-- AM/PM style -->
+    <string name="am_pm_style_title">AM/PM tyyli</string>
+    <string name="status_bar_size_normal">Tavallinen</string>
+    <string name="status_bar_size_small">Pieni</string>
+    <string name="status_bar_hidden">Piilotettu (Oletus)</string>
+    <string name="status_bar_am_pm_info">24-tunnin kello on päällä</string>
+    <!-- Status bar notification count -->
+    <string name="status_bar_notif_count_title">Ilmoitusten määrä</string>
+    <string name="status_bar_notif_count_summary">Näytä odottavien ilmoitusten määrä tilapalkissa</string>
+    <!-- Split menu -->
+    <string name="navigation_bar_tabui_menu_title">Erota menu-nappi</string>
+    <string name="navigation_bar_tabui_menu_summary">Näytä erillinen nappi Menu:lle sen yhdistämisen Viimeisimmät sovelluksen-napin sijaan.</string>
+    <!-- Status bar notification limit -->
+    <string name="status_bar_max_notifications_title">Ilmoitusten raja</string>
+    <string name="status_bar_max_notifications_summary">Määritä näkyvien ilmoitusten määrä tilapalkissa. Vaikuttaa vain pysty-asentoon</string>
+    <!-- Do not disturb -->
+    <string name="status_bar_donotdisturb_title">Älä häiritse</string>
+    <string name="status_bar_donotdisturb_summary">Poista animointi tuleville ilmoituksille</string>
+
+    <!-- Quick settings panel  -->
+    <string name="quick_settings_panel_title">Nopeat asetukset -paneeli</string>
+    <string name="quick_settings_title">Nopeat asetukset</string>
+    <string name="title_static_tiles">Staattiset tiilet</string>
+    <string name="tile_picker_title">Tiilet ja ulkoasu</string>
+    <string name="tile_picker_summary">Katso, valitse tai muuta näytettävien tiilien ulkoasu.</string>
+    <string name="tile_choose_title">Valitse tiili</string>
+
+    <string name="title_tile_airplane">Lentokone-tila</string>
+    <string name="title_tile_battery">Akun tilastot</string>
+    <string name="title_tile_bluetooth">Bluetooth</string>
+    <string name="title_tile_brightness">Kirkkaus</string>
+    <string name="title_tile_sleep">Mene nukkumaan</string>
+    <string name="title_tile_gps">GPS</string>
+    <string name="title_tile_torch">Lamppu</string>
+    <string name="title_tile_lockscreen">Lukitusnäyttö</string>
+    <string name="title_tile_lte">LTE</string>
+    <string name="title_tile_mobiledata">Mobiilidata</string>
+    <string name="title_tile_profile">Profiili</string>
+    <string name="title_tile_autorotate">Asento</string>
+    <string name="title_tile_settings">Asetukset</string>
+    <string name="title_tile_sound">Ääni</string>
+    <string name="title_tile_sync">Synkronointi</string>
+    <string name="title_tile_wifiap">Wi-Fi tukiasema</string>
+    <string name="title_tile_wifi">Wi-Fi</string>
+    <string name="title_tile_wimax">WiMAX</string>
+    <string name="title_tile_user">Käyttäkän vaihto</string>
+    <string name="title_tile_networkmode">Verkkotila</string>
+    <string name="title_tile_nfc">NFC</string>
+    <string name="title_tile_screen_timeout">Näytön aikakatkaisu</string>
+    <string name="title_tile_usb_tether">USB jako</string>
+    <string name="title_tile_quiet_hours">Hiljaiset tunnit</string>
+    <string name="title_tile_desktop_mode">Pie</string>
+    <string name="title_tile_hybrid">@string/hybrid_settings</string>
+    <string name="title_tile_volume">Äänenvoimakkuus</string>
+
+    <string name="title_dynamic_tiles">Muuttuvat tiilet</string>
+    <string name="dynamic_tiles_note_title">Ilmoitus</string>
+    <string name="dynamic_tiles_note_summary">Muuttuvat tiilet eivät ole aina näkyvissä ja näkyvät vain kun järjestelmä määrää niin</string>
+    <string name="title_dynamic_alarm">Herätyskello</string>
+    <string name="title_dynamic_bugreport">Virheen raportointi</string>
+    <string name="title_dynamic_ime">IME:n muuntaja</string>
+    <string name="title_dynamic_usbtether">@string/title_tile_usb_tether</string>
+    <string name="title_dynamic_wifi">Wi-Fi Tiedot</string>
+
+    <string name="title_general">Yleiset</string>
+    <string name="title_quick_pulldown">Nopea alasveto</string>
+    <string name="summary_quick_pulldown">%1$s tilapalkin reunasta alasveto avaa nopeat asetukset</string>
+    <string name="quick_pulldown_summary_left">Vasen</string>
+    <string name="quick_pulldown_summary_right">Oikea</string>
+    <string name="quick_pulldown_off">Pois päältä</string>
+    <string name="quick_pulldown_left">Vasen</string>
+    <string name="quick_pulldown_right">Oikea</string>
+    <string name="title_collapse_panel">Sulje paneeli automaattisesti</string>
+    <string name="summary_collapse_panel">Sulje nopeat asetukset tiilen painamisen jälkeen</string>
+    <string name="title_floating_window">Leijuva ikkuna</string>
+    <string name="summary_floating_window">Avaa nopeat asetukset leijuvaan ikkunaan</string>
+
+    <!-- Reset tiles -->
+    <string name="tiles_add_title">Lisää</string>
+    <string name="tiles_reset_title">Resetoi</string>
+    <string name="tiles_reset_message">Palauta oletus tiilet ja ulkoasu?</string>
+
+    <!-- Hardware keys -->
+    <string name="hardware_keys_title">Laitteiston näppäimet</string>
+    <string name="hardware_keys_bindings_title">Näppäin asetukset</string>
+    <string name="hardware_keys_enable_custom_title">Mahdollista muokatut toiminnot</string>
+    <string name="hardware_keys_home_long_press_title">Koti-näppäin (Pitkä painallus)</string>
+    <string name="hardware_keys_menu_press_title">Valikko-näppäin</string>
+    <string name="hardware_keys_menu_long_press_title">Valikko-näppäin (Pitkä painallus)</string>
+    <string name="hardware_keys_assist_press_title">Hae-näppäin</string>
+    <string name="hardware_keys_assist_long_press_title">Hae-näppäin (Pitkä painallus)</string>
+    <string name="hardware_keys_app_switch_press_title">Sovelluksen vaihto-näppäin</string>
+    <string name="hardware_keys_app_switch_long_press_title">Sovelluksen vaihto-näppäin (Pitkä painallus)</string>
+    <string name="hardware_keys_show_overflow_title">Näytä toiminnan ylivuoto</string>
+    <string name="hardware_keys_show_overflow_summary">Näytä 3-piste ylivuoto valikko-näppäin sovelluksen sisällä</string>
+    <string name="hardware_keys_show_overflow_toast_enable">Yli-vuodetut näppäimet eivät ole ehkä näkyvillä ennen kuin sovellukset käynnistetään uudelleen</string>
+    <string name="hardware_keys_show_overflow_toast_disable">Yli-vuodetut näppäimet eivät ole ehkä piilotettuna ennen kuin sovellukset käynnistetään uudelleen</string>
+    <string name="hardware_keys_action_nothing">Ei toimintoa</string>
+    <string name="hardware_keys_action_menu">Avaa/sulje valikko</string>
+    <string name="hardware_keys_action_app_switch">Viimeisimmmät sovellukset</string>
+    <string name="hardware_keys_action_search">Haun auttaja</string>
+    <string name="hardware_keys_action_voice_search">Äänihaku</string>
+    <string name="hardware_keys_action_in_app_search">Sovelluksen sisäinen haku</string>
+    <string name="additional_options_title">Ylimääräiset asetukset</string>
+
+    <string name="pref_ring_mode_title">Äänitilat</string>
+    <string name="pref_ring_mode_summary">Katso tai muuta ääninäppäimen tiloja</string>
+    <string name="pref_network_mode_title">Verkkotilat</string>
+    <string name="pref_screentimeout_mode_title">Näytän aikakatkaisu tilat</string>
+    <string name="cm_sound_mode_silent">Äänetön</string>
+    <string name="cm_sound_mode_vibrate">Värinä</string>
+    <string name="cm_sound_mode_sound">Ääni</string>
+    <string name="cm_sound_mode_soundVibrate">Ääni &amp; Värinä</string>
+
+    <!-- Pie controls -->
+    <string name="pie_controls_title">Pie Asetukset</string>
+    
+    <string name="pie_gravity_title">Pie Sijainti</string>
+    <string name="pie_gravity_summary">Valitse sijainti johon Pie Sijoitetaan</string>
+    <string name="pie_gravity_top">Ylös</string>
+    <string name="pie_gravity_bottom">Alas</string>
+    <string name="pie_gravity_right">Oikea</string>
+    <string name="pie_gravity_left">Vasen</string>
+    
+    <string name="pie_mode_title">Pie:n tyyli</string>
+    <string name="pie_mode_summary">Määrittele kuinka animaatiot ja tilan lisäykset hoidetaan</string>
+    <string name="pie_mode_bare">Nopein</string>
+    <string name="pie_mode_quick">Nopea</string>
+    <string name="pie_mode_default">Tavallinen (Oletus)</string>
+    <string name="pie_mode_slow">Hidas</string>
+    
+    <string name="pie_size_title">Pie:n koko</string>
+    <string name="pie_size_summary">Määrittele Pie:n näppäinten koko</string>
+    <string name="pie_size_small">Pieni</string>
+    <string name="pie_size_default">@string/pie_mode_default</string>
+    <string name="pie_size_large">Suuri</string>
+    <string name="pie_size_gigantic">Jättimäinen</string>
+    <string name="pie_size_monster">Suunnaton</string>
+
+    <string name="pie_angle_title">Alakulma</string>
+    <string name="pie_angle_summary">Muokkaa kulmaa näytön reunan ja Pie:n välillä</string>
+    <string name="pie_angle_none">Olematon</string>
+    <string name="pie_angle_small">Pieni</string>
+    <string name="pie_angle_normal">Tavallinen (Oletus)</string>
+    <string name="pie_angle_big">Suuri</string>
+    <string name="pie_angle_huge">Jättimäinen</string>
+    
+    <string name="pie_gap_title">Kohteiden väli</string>
+    <string name="pie_gap_summary">Muokkaa väliä Pie:n kohteiden välillä</string>
+    <string name="pie_gap_none">Olematon</string>
+    <string name="pie_gap_small">Pieni</string>
+    <string name="pie_gap_big">Suuri (Oletus)</string>
+    <string name="pie_gap_huge">Jättimäinen</string>
+
+    <string name="pie_center_title">Keskitetty sijainti</string>
+    <string name="pie_center_summary">Keskitä Pie sivulle</string>
+
+    <string name="pie_stick_title">Estä kääntyminen</string>
+    <string name="pie_stick_summary">Estää tilan muuttumisen kun laite käännetään</string>
+
+    <string name="pie_menu_title">Pysyvä Valikko-näppäin</string>
+    <string name="pie_menu_summary">Näytä Valiiko-näppäin aina, vaikka sitä ei tarvita</string>
+
+    <string name="pie_search_title">Haku-näppäin</string>
+    <string name="pie_search_summary">Ota Haku-näppäin käyttöön Pie:ssä</string>
+
+    <string name="pie_trigger_title">Laukaisu alue</string>
+    <string name="pie_trigger_summary">Määritä Pie:n avaavan alueen koko</string>
+    <string name="pie_trigger_none">Olematon (Pois käytöstä)</string>
+    <string name="pie_trigger_small">@string/pie_angle_small</string>
+    <string name="pie_trigger_normal">@string/pie_angle_normal</string>
+    <string name="pie_trigger_big">@string/pie_angle_big</string>
+    <string name="pie_trigger_huge">@string/pie_angle_huge</string>
+
+    <!-- Navigation Bar #CM -->
+    <string name="navigation_reset_title">@string/lock_screen_shortcuts_reset</string>
+    <string name="navigation_bar_title">Navigointi ohjaus</string>
+    <string name="navigation_bar_help_text">1 - Aloittaaksesi muokkauksen, näpäytä lukko-ikonia\n\n2 - Näpäytä mitä tahansa näppäintä muuttaaksesi toiminnon\n\n3 - Pidä mitä tahansa näppäintä pohjassa muokataksesi järjestystä\n\n4 - Tallentaaksesi, paina lukko-ikonia uudestaan\n\n5 - Palauttaaksesi oletukset, näpäytä reset-nappia\n\n</string>
+    <string name="navigation_bar_tips">&#8226; Toiminnon voi määrittää vain yhteen näppäimeen\n\n&#8226; Kotinappia ei voi uudelleen-määritellä\n\n&#8226; Sivu-nappeja ei voi uudelleen-määrittää</string>
+    <string name="navigation_bar_tips_title">Nopeita vihjeitä</string>
+    <string name="navigation_bar_reset_message">Poista nykyiset asetukset ja palauta oletukset?</string>
+    <string name="navigation_bar_save_message">Navigointipalkin asetukset tallennettu</string>
+    <string name="navigation_bar_reset_toast">Navigointipalkin asetukset palautettu oletuksiksi</string>
+    <string name="navigation_bar_menu_editable">Muokattava</string>
+    <string name="navigation_bar_menu_locked">Lukittu</string>
+    
+    <!-- Hybrid sub menu [CHAR LIMIT=30] -->
+    <string name="hybrid_settings">Hybrid-asetukset</string>
+
+    <string name="mod_version">ParanoidAndroid versio</string>
+    <string name="mod_version_default">Tuntematon</string>
+
+    <string name="vibration_title">Puhelimen värinä</string>
+    <string name="notification_convert_sound_to_vibration_title">Ilmoitusten muuntaminen</string>
+    <string name="notification_convert_sound_to_vibration_summary">Äänet värinäksi värinä-tilassa</string>
+
+    <!-- Quiet hours -->
+    <string name="quiet_hours_title">Hiljaiset tunnit</string>
+    <string name="quiet_hours_summary">Aseta tunnit jolloin laitteen tulee olla hiljaa</string>
+    <string name="quiet_hours_note_title">Huomio</string>
+    <string name="quiet_hours_note_summary">Saapuvat puhelut toimivat hiljaisessa tilassa kuten tavallisestikin</string>
+    <string name="quiet_hours_enabled">Käytä hiljaisia tunteja</string>
+    <string name="quiet_hours_enabled_on">Hiljaiset tunnit ovat pakotettu</string>
+    <string name="quiet_hours_enabled_off">Ilmoitukset toimivat kuten normaalisti</string>
+    <string name="quiet_hours_start">Aloita hiljaiset tunnit</string>
+    <string name="quiet_hours_start_summary">Milloin aloitetaan hiljaiset tunnit</string>
+    <string name="quiet_hours_end">Hiljaisten tuntien loppu</string>
+    <string name="quiet_hours_end_summary">Milloin lopetetaan hiljaiset tunnit</string>
+    <string name="quiet_hours_mute">Hiljennä ilmoitukset</string>
+    <string name="quiet_hours_mute_on">Mitään ääniä ei toisteta</string>
+    <string name="quiet_hours_mute_off">Äänet toistetaan kuten normaalisti</string>
+    <string name="quiet_hours_still">Poista värinä</string>
+    <string name="quiet_hours_still_on">Laite ei värise</string>
+    <string name="quiet_hours_still_off">Laite värisee kuten normaalisti</string>
+    <string name="quiet_hours_dim">Poista ilmoitusvalo</string>
+    <string name="quiet_hours_dim_on">Ilmoitusvalo on pois päältä</string>
+    <string name="quiet_hours_dim_off">Ilmoitusvalo on päällä</string>
+    <string name="quiet_hours_haptic">Poista haptinen palaute</string>
+    <string name="quiet_hours_haptic_on">Haptinen palaute on pois päältä</string>
+    <string name="quiet_hours_haptic_off">Haptinen palaute toimii kuten normaalisti</string>
+    <string name="quiet_hours_active_from">Aktiivisena alkaen</string>
+    <string name="quiet_hours_active_to">ja loppuen</string>
+
+    <!-- Increasing ring -->
+    <string name="increasing_ring_title">Nouseva soittoääni</string>
+    <!-- Sound settings screen, the caption of the checkbox for making incoming calls increase in volume -->
+    <string name="checkbox_increasing_ring">Käytössä</string>
+    <!-- Sound settings screen, the title of the volume bar to adjust the minimum increasing ring volume -->
+    <string name="increasing_ring_min_volume_title">Soiton aloitusvoimakkuus</string>
+    <string name="increasing_ring_volume_notice">Huomio:\nJos aloitus äänenvoimakkuus on kovempi kuin tavallinen äänenvoimakkuus, soittoääni soi tavallisesti.</string>
+    <string name="increasing_ring_interval_title">Nousun aikaväli</string>
+    <string name="increasing_ring_interval_eachring">Jokaisella toistolla</string>
+    <string name="increasing_ring_interval_half_second">0.5 Sekuntia</string>
+    <string name="increasing_ring_interval_1second">1 Sekunti</string>
+    <string name="increasing_ring_interval_2seconds">2 Sekuntia</string>
+    <string name="increasing_ring_interval_3seconds">3 Sekuntia</string>
+    <string name="increasing_ring_interval_5seconds">5 Sekuntia</string>
+    <string name="increasing_ring_interval_10seconds">10 Sekuntia</string>
+
+    <!-- Time range preference -->
+    <string name="start_time_title">Aloitus</string>
+    <string name="end_time_title">Lopetus</string>
+
+    <!-- Automatic brightness customization -->
+    <string name="light_sensor_current_value">Nykyinen valosensorin lukema: <xliff:g id="light_level">%d</xliff:g> luxia</string>
+    <string name="auto_brightness_dialog_title">Automaattisen kirkkauden tasot</string>
+    <string name="auto_brightness_level_format"><xliff:g id="start_level">%1$s</xliff:g> -\n<xliff:g id="end_level">%2$s</xliff:g> luxia</string>
+    <string name="auto_brightness_brightness_format"><xliff:g id="percent">%s</xliff:g>%%</string>
+    <string name="auto_brightness_adjust_button">Muokkaa</string>
+    <string name="auto_brightness_reset_button">Resetoi</string>
+    <string name="auto_brightness_remove_button">Poista</string>
+    <string name="auto_brightness_add_line">Lisää linja</string>
+    <string name="auto_brightness_lux_dialog_title">Ympäröivän kirkkauden alue</string>
+    <string name="auto_brightness_split_dialog_title">Jaa kirkkauden tasot</string>
+    <string name="auto_brightness_start_lux">Alueen alku (luxia)</string>
+    <string name="auto_brightness_end_lux">Alueen loppu (luxia)</string>
+    <string name="auto_brightness_reset_dialog_title">Resetoi tasot?</string>
+    <string name="auto_brightness_reset_confirmation">Kaikki kirkkauden asetukset resetoidaan oletuksille.</string>
+    <string name="auto_brightness_split_lux_format">Jaa sijainti (Väliltä <xliff:g id="min">%1$d</xliff:g> ja <xliff:g id="max">%2$d</xliff:g> luxia)</string>
+    <string name="auto_brightness_level_options">Valon tason asetukset</string>
+    <string name="auto_brightness_menu_edit_lux">Ympäröivän kirkkauden alue</string>
+    <string name="auto_brightness_menu_split">Jaa</string>
+    <string name="auto_brightness_menu_remove">Poista</string>
+
+    <!-- Custom lock screen background -->
+    <string name="lockscreen_custom_background_title">Taustakuva</string>
+    <string name="lockscreen_custom_background_dialog_title">Valitse väri</string>
+    <string name="lockscreen_background_result_successful">Taustakuva vaihdettu onnistuneesti</string>
+    <string name="lockscreen_background_result_not_successful">Taustakuvaa ei voitu vaihtaa</string>
+    <string name="lockscreen_background_color_fill">Väritäyttö</string>
+    <string name="lockscreen_background_custom_image">Muu kuva</string>
+    <string name="lockscreen_background_default_wallpaper">Oletus taustakuva</string>
+
+    <string name="auto_brightness_sensitivity_title">Säädön herkkyys</string>
+    <string name="auto_brightness_sensitivity_verylow">Erittäin matala</string>
+    <string name="auto_brightness_sensitivity_low">Matala</string>
+    <string name="auto_brightness_sensitivity_medium">Keskitaso</string>
+    <string name="auto_brightness_sensitivity_high">Korkea</string>
+    <string name="auto_brightness_sensitivity_veryhigh">Erittäin korkea</string>
+
+</resources>
