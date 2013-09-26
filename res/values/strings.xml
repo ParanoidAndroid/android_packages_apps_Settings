@@ -4571,4 +4571,6 @@
     
     <!-- Themes settings  -->
     <string name="themes_settings_title">Themes</string>
+    
+    <string name="phone_overheat">Phone is too hot!</string>
 </resources>
