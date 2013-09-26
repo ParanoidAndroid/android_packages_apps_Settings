@@ -17,6 +17,7 @@
 package com.android.settings;
 
 import android.app.Activity;
+import android.widget.Toast;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -45,6 +46,7 @@ public class BatteryInfo extends Activity {
     private TextView mUptime;
     private IBatteryStats mBatteryStats;
     private IPowerManager mScreenStats;
+    Activity activity;
     
     private static final int EVENT_TICK = 1;
     
@@ -119,6 +121,8 @@ public class BatteryInfo extends Activity {
                 if (health == BatteryManager.BATTERY_HEALTH_GOOD) {
                     healthString = getString(R.string.battery_info_health_good);
                 } else if (health == BatteryManager.BATTERY_HEALTH_OVERHEAT) {
+                    Activity = this;
+                    Toast tooHot = Toast.makeText(activity, R.string.phone_overheat, Toast.LENGTH_SHORT).show();
                     healthString = getString(R.string.battery_info_health_overheat);
                 } else if (health == BatteryManager.BATTERY_HEALTH_DEAD) {
                     healthString = getString(R.string.battery_info_health_dead);
