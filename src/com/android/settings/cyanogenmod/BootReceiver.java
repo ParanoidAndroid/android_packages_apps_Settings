@@ -21,6 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.android.settings.DisplaySettings;
+import com.android.settings.LocationSettings;
 import com.android.settings.R;
 
 public class BootReceiver extends BroadcastReceiver {
@@ -35,6 +36,7 @@ public class BootReceiver extends BroadcastReceiver {
         DisplayGamma.restore(ctx);
         VibratorIntensity.restore(ctx);
         DisplaySettings.restore(ctx);
+        LocationSettings.restore(ctx);
     }
 
 }
