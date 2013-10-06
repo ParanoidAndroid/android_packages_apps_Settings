@@ -471,4 +471,7 @@
     <string name="auto_brightness_sensitivity_high">High</string>
     <string name="auto_brightness_sensitivity_veryhigh">Very high</string>
 
+    <!-- Power Fade Effect -->
+    <string name="power_fade_effect">Power Fade Effect</string>
+    <string name="power_fade_effect_summary">Use fade effect instead of electron beam</string>
 </resources>

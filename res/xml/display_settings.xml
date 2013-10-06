@@ -67,4 +67,9 @@
                 android:title="@string/wifi_display_settings_title"
                 android:fragment="com.android.settings.wfd.WifiDisplaySettings" />
 
+        <CheckBoxPreference
+            android:key="power_fade_effect"
+            android:title="@string/power_fade_effect"
+            android:summary="@string/power_fade_effect_summary"
+            android:defaultValue="false" />
 </PreferenceScreen>
