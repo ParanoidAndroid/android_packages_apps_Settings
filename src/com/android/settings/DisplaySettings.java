@@ -63,12 +63,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_SCREEN_SAVER = "screensaver";
     private static final String KEY_WIFI_DISPLAY = "wifi_display";
     private static final String KEY_BATTERY_LIGHT = "battery_light";
+    private static final String KEY_FADE_ANIMATION = "fade_animation";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
     private DisplayManager mDisplayManager;
 
     private CheckBoxPreference mAccelerometer;
+    private CheckBoxPreference mFadeAnimation;
     private WarnedListPreference mFontSizePref;
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
@@ -103,6 +105,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             // Display settings.  However, is still available in Accessibility settings.
             getPreferenceScreen().removePreference(mAccelerometer);
         }
+
+        mFadeAnimation = (CheckBoxPreference) findPreference(KEY_FADE_ANIMATION);
+        mFadeAnimation.setChecked(Settings.System.getBoolean(
+                    getActivity().getContentResolver(), Settings.System.FADE_ANIMATION, false));
 
         mScreenSaverPreference = findPreference(KEY_SCREEN_SAVER);
         if (mScreenSaverPreference != null
@@ -351,6 +357,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (preference == mAccelerometer) {
             RotationPolicy.setRotationLockForAccessibility(
                     getActivity(), !mAccelerometer.isChecked());
+        } else if (preference == mPowerFadeEffect){
+            Settings.System.putBoolean(getActivity().getContentResolver(),
+                    Settings.System.POWER_FADE_EFFECT, mPowerFadeEffect.isChecked());
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
@@ -369,7 +378,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (KEY_FONT_SIZE.equals(key)) {
             writeFontSizePreference(objValue);
         }
-
+        
         return true;
     }
 

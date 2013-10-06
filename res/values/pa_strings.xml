@@ -471,4 +471,7 @@
     <string name="auto_brightness_sensitivity_high">High</string>
     <string name="auto_brightness_sensitivity_veryhigh">Very high</string>
 
+    <!-- Fade Animation -->
+    <string name="fade_animation">Fade Animation</string>
+    <string name="fade_animation_summary">Use Fade Animation instead of electron beam</string>
 </resources>
