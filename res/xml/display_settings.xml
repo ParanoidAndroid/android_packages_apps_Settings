@@ -67,4 +67,9 @@
                 android:title="@string/wifi_display_settings_title"
                 android:fragment="com.android.settings.wfd.WifiDisplaySettings" />
 
+        <CheckBoxPreference
+            android:key="fade_animation"
+            android:title="@string/fade_animation"
+            android:summary="@string/fade_animation_summary"
+            android:defaultValue="false" />
 </PreferenceScreen>
