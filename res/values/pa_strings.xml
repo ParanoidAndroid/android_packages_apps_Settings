@@ -46,7 +46,7 @@
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
     <string name="pulse_speed_title">Pulse length and speed</string>
-    <string name="picker_arrow" translatable="false">→</string>
+    <string name="picker_arrow" translatable="false">???</string>
     <string name="default_time">Normal</string>
     <string name="custom_time">Custom</string>
     <string name="dialog_delete_title">Delete</string>
@@ -514,4 +514,8 @@
 
     <!-- Themes settings  -->
     <string name="themes_settings_title">Themes</string>
+    
+    <!-- Battery around lockscreen ring -->
+    <string name="battery_around_lockscreen_ring">Battery level around lock ring</string>
+
 </resources>
