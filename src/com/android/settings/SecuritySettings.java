@@ -86,6 +86,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
     private static final String KEY_APP_SECURITY_CATEGORY = "app_security";
 
+    // Omni Additions
+    private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
+
     private PackageManager mPM;
 
     DevicePolicyManager mDPM;
@@ -106,6 +109,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private DialogInterface mWarnInstallApps;
     private CheckBoxPreference mToggleVerifyApps;
     private CheckBoxPreference mPowerButtonInstantlyLocks;
+
+    // Omni Additions
+    private CheckBoxPreference mLockRingBattery;
 
     private Preference mNotificationAccess;
 
@@ -209,6 +215,13 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
         // visible pattern
         mVisiblePattern = (CheckBoxPreference) root.findPreference(KEY_VISIBLE_PATTERN);
+
+
+        // Add the additional Omni settings
+        mLockRingBattery = (CheckBoxPreference) root
+                    .findPreference(BATTERY_AROUND_LOCKSCREEN_RING);
+        mLockRingBattery.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, 0) == 1);
 
         // lock instantly on power key press
         mPowerButtonInstantlyLocks = (CheckBoxPreference) root.findPreference(
@@ -520,6 +533,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
             lockPatternUtils.setPowerButtonInstantlyLocks(isToggled(preference));
         } else if (LOCK_SYNC_ENCRYPTION_PASSWORD.equals(key)) {
             lockPatternUtils.setSyncEncryptionPassword(isToggled(preference));
+        } else if (preference == mLockRingBattery) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, isToggled(preference) ? 1 : 0);
         } else if (preference == mShowPassword) {
             Settings.System.putInt(getContentResolver(), Settings.System.TEXT_SHOW_PASSWORD,
                     mShowPassword.isChecked() ? 1 : 0);
