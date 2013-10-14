@@ -514,4 +514,8 @@
 
     <!-- Themes settings  -->
     <string name="themes_settings_title">Themes</string>
+    
+    <!-- Battery around lockscreen ring -->
+    <string name="battery_around_lockscreen_ring">Battery level around lock ring</string>
+
 </resources>
