@@ -50,6 +50,12 @@
         android:title="@string/maximize_widgets_title"
         android:summary="@string/maximize_widgets_summary" />
 
+    <CheckBoxPreference
+        android:key="battery_around_lockscreen_ring"
+        android:title="@string/battery_around_lockscreen_ring"
+        android:summary="@string/battery_around_lockscreen_ring_summary"
+        android:defaultValue="true" />
+
     <PreferenceScreen
         android:key="lock_screen_shortcuts"
         android:fragment="com.android.settings.paranoid.Shortcuts"
