@@ -56,6 +56,7 @@ public class Lockscreen extends SettingsPreferenceFragment
     private static final String KEY_HOME_SCREEN_WIDGETS = "home_screen_widgets";
     private static final String KEY_MAXIMIZE_WIDGETS = "maximize_widgets";
     private static final String KEY_BACKGROUND_PREF = "lockscreen_background";
+    private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
 
     private static final int REQUEST_CODE_BG_WALLPAPER = 1024;
     private static final int LOCKSCREEN_BACKGROUND_COLOR_FILL = 0;
@@ -68,6 +69,7 @@ public class Lockscreen extends SettingsPreferenceFragment
     private CheckBoxPreference mHomeScreenWidgets;
     private CheckBoxPreference mMaximizeWidgets;
     private CheckBoxPreference mQuickUnlock;
+    private CheckBoxPreference mLockRingBattery;
 
     private File mWallpaperImage;
     private File mWallpaperTemporary;
@@ -107,6 +109,10 @@ public class Lockscreen extends SettingsPreferenceFragment
         mHomeScreenWidgets = (CheckBoxPreference) prefSet.findPreference(KEY_HOME_SCREEN_WIDGETS);
         mHomeScreenWidgets.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.HOME_SCREEN_WIDGETS, 0) == 1);
+
+        mLockRingBattery = (CheckBoxPreference) findPreference(BATTERY_AROUND_LOCKSCREEN_RING);
+        mLockRingBattery.setChecked(Settings.System.getInt(mContext.getContentResolver(),
+	            Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, 0) == 1);
                    
         if(Utils.getScreenType(mContext) == Utils.DEVICE_TABLET) {
             prefSet.removePreference(mAllowRotation);
@@ -144,6 +150,11 @@ public class Lockscreen extends SettingsPreferenceFragment
         } else if (preference == mQuickUnlock) {
             Settings.System.putBoolean(mContext.getContentResolver(),
                     Settings.System.LOCKSCREEN_QUICK_UNLOCK, mQuickUnlock.isChecked());
+            return true;
+        } else if (preference == mLockRingBattery) {
+            Settings.System.putInt(mContext.getContentResolver(),
+                   Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, mLockRingBattery.isChecked()
+	           ? 1 : 0);
             return true;
         } else if (preference == mSeeThrough) {
             Settings.System.putInt(mContext.getContentResolver(),
