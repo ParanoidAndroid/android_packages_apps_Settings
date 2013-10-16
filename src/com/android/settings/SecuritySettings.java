@@ -84,6 +84,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private static final String PACKAGE_MIME_TYPE = "application/vnd.android.package-archive";
     private static final String LOCK_SYNC_ENCRYPTION_PASSWORD = "lock_sync_encryption_password";
 
+    // Omni Additions
+    private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
+
     private static final String KEY_APP_SECURITY_CATEGORY = "app_security";
 
     private PackageManager mPM;
@@ -106,6 +109,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private DialogInterface mWarnInstallApps;
     private CheckBoxPreference mToggleVerifyApps;
     private CheckBoxPreference mPowerButtonInstantlyLocks;
+
+    // Omni Additions
+    private CheckBoxPreference mLockRingBattery;
 
     private Preference mNotificationAccess;
 
@@ -130,6 +136,12 @@ public class SecuritySettings extends SettingsPreferenceFragment
         }
         addPreferencesFromResource(R.xml.security_settings);
         root = getPreferenceScreen();
+
+       // Add the additional Omni settings
+       mLockRingBattery = (CheckBoxPreference) root
+                    .findPreference(BATTERY_AROUND_LOCKSCREEN_RING);
+       mLockRingBattery.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, 0) == 1);
 
         // Add options for lock/unlock screen
         int resid = 0;
@@ -520,6 +532,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
             lockPatternUtils.setPowerButtonInstantlyLocks(isToggled(preference));
         } else if (LOCK_SYNC_ENCRYPTION_PASSWORD.equals(key)) {
             lockPatternUtils.setSyncEncryptionPassword(isToggled(preference));
+        } else if (preference == mLockRingBattery) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, isToggled(preference) ? 1 : 0);
         } else if (preference == mShowPassword) {
             Settings.System.putInt(getContentResolver(), Settings.System.TEXT_SHOW_PASSWORD,
                     mShowPassword.isChecked() ? 1 : 0);
