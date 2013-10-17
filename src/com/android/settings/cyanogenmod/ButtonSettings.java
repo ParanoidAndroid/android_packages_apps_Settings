@@ -316,7 +316,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             return true;
         } else if (preference == mSwapVolumeButtons) {
             int value = mSwapVolumeButtons.isChecked()
-                    ? (Utils.isTablet(getActivity()) ? 2 : 1) : 0;
+                    ? (Utils.isTablet() ? 2 : 1) : 0;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION, value);
         }
