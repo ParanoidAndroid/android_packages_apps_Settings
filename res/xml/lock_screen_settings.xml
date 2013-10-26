@@ -56,4 +56,12 @@
         android:title="@string/lock_screen_shortcuts_title"
         android:summary="@string/lock_screen_shortcuts_summary" />
 
+        <!-- Active display -->
+    <PreferenceScreen
+        android:key="active_display"
+        android:fragment="com.android.settings.crdroid.ActiveDisplaySettings"
+        android:title="@string/ad_settings_title"
+        android:summary="@string/ad_settings_summary" /> 
+
+
 </PreferenceScreen>
