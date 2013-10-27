@@ -187,6 +187,14 @@
     <string name="halo_msgbox_animation_none">None</string>
     <string name="halo_msgbox_animation_flip">Flip</string>
 
+    <string name="halo_colors">Enable Custom Colors</string>
+    <string name="halo_circle_color">Change Circle Color</string> 
+    <string name="halo_effect_color">Change Effect Color</string>
+    <string name="halo_notif_title_color">Notification Title Color</string>
+    <string name="halo_notif_desc_color">Notification Description Color</string>
+    <string name="halo_speech_bubble_color">Speech Bubble Color</string>
+    <string name="halo_text_color">Text Color</string>
+
     <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_halo_label_black">Blacklist from HALO</string>
     <string name="app_halo_label_white">Whitelist from HALO</string>
@@ -514,4 +522,15 @@
 
     <!-- Themes settings  -->
     <string name="themes_settings_title">Themes</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color picker</string>
+    <string name="press_color_to_apply">Tap on color to apply</string>
+    <string name="arrow_right" translatable="false">\u2192</string>
+    <string name="arrow_down" translatable="false">\u2193</string>
+    <string name="hex_hint" translatable="false">#ff000000</string>
+    <string name="ics_color" translatable="false">!</string>
+    <string name="set">Set</string>
+    <string name="hex">Hex:</string>
+    <string name="color_default">Default</string> 
 </resources>
