@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+Copyright 2013 The ParanoidAndroid Project
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--Notification LED category header-->
+    <string name="notification_led_category_title">Notifikační dioda</string>
+
+    <!--Notification light dialogs-->
+    <string name="edit_light_settings">Upravit nastavení diody</string>
+    <string name="pulse_speed_title">Délka a rychlost blikání</string>
+    <string name="default_time">Normální</string>
+    <string name="custom_time">Vlastní</string>
+    <string name="dialog_test">Otestovat</string>
+    <string name="dialog_delete_title">Smazat</string>
+    <string name="dialog_delete_message">Odstranit vybranou položku?</string>
+    <string name="dialog_test_message">Pro otestování vybraných nastavení nyní vypněte obrazovku nebo zvolte Přerušit a tím ukončíte testování</string>
+    <string name="dialog_test_button">Přerušit</string>
+
+    <!--Display settings screen, notification light settings-->
+    <string name="notification_light_ok">Ok</string>
+    <string name="notification_light_reset">Obnovit</string>
+    <string name="notification_light_general_title">Obecné</string>
+    <string name="notification_light_applist_title">Aplikace</string>
+    <string name="notification_light_phonelist_title">Telefon</string>
+    <string name="notification_light_use_custom">Použít vlastní hodnoty</string>
+    <string name="notification_light_default_value">Výchozí</string>
+    <string name="notification_light_enabled">Povoleno</string>
+    <string name="notification_light_disabled">Zakázáno</string>
+    <string name="notification_light_missed_call_title">Zmeškaný hovor</string>
+    <string name="notification_light_voicemail_title">Hlasová schránka</string>
+    <string name="notification_light_choose_app">Zvolit aplikaci</string>
+    <string name="notification_light_add">Přidat</string>
+
+    <!--Values for the notification light pulse spinners-->
+    <string name="pulse_length_always_on">Stále rozsvíceno</string>
+    <string name="pulse_length_very_short">Velmi krátce</string>
+    <string name="pulse_length_short">Krátce</string>
+    <string name="pulse_length_normal">Normálně</string>
+    <string name="pulse_length_long">Dlouho</string>
+    <string name="pulse_length_very_long">Velmi dlouho</string>
+    <string name="pulse_speed_very_fast">Velmi rychle</string>
+    <string name="pulse_speed_fast">Rychle</string>
+    <string name="pulse_speed_normal">Normálně</string>
+    <string name="pulse_speed_slow">Pomalu</string>
+    <string name="pulse_speed_very_slow">Velmi pomalu</string>
+
+    <!-- Volume adjust sounds -->
+    <string name="volume_adjust_sounds_enable_summary">Povolit zvukovou odezvu při změně hlasitosti pomocí HW tlačítek</string>
+
+    <!-- Link volumes -->
+    <string name="link_volume_ringtones">Spojit hlasitost vyzvánění a notifikací</string>
+    <string name="volume_ring_only_description">Vyzvánění</string>
+
+    <string name="increasing_ring_title">Vzestupné vyzvánění</string>
+    <!-- Sound settings screen, the caption of the checkbox for making incoming calls increase in volume -->
+    <string name="checkbox_increasing_ring">Povolit</string>
+    <!-- Sound settings screen, the title of the volume bar to adjust the minimum increasing ring volume -->
+    <string name="increasing_ring_min_volume_title">Počáteční hlasitost vyzvánění</string>
+    <string name="increasing_ring_volume_notice">Upozornění:\nProtože je hlasitost nastavena na vyšší hodnotu, než je hlasitost vyzvánění, bude vyzvánění přehráváno pomocí výchozí hlasitosti vyzvánění</string>
+    <string name="increasing_ring_interval_title">Interval zesílení</string>
+    <string name="increasing_ring_interval_eachring">Při každém zazvonění</string>
+    <string name="increasing_ring_interval_half_second">Půl sekundy</string>
+    <string name="increasing_ring_interval_1second">1 sekunda</string>
+    <string name="increasing_ring_interval_2seconds">2 sekundy</string>
+    <string name="increasing_ring_interval_3seconds">3 sekundy</string>
+    <string name="increasing_ring_interval_5seconds">5 sekund</string>
+    <string name="increasing_ring_interval_10seconds">10 sekund</string>
+
+    <!--Volume buttons category-->
+    <string name="volume_buttons_category">Tlačítka hlasitosti</string>
+
+    <!--Volume buttons wake-->
+    <string name="volume_wake_title">Probuzení tlačítky hlasitosti</string>
+    <string name="volume_wake_summary">Stisknutím některého z tlačítek hlasitosti se zařízení probudí</string>
+
+    <!--Lockscreen see through-->
+    <string name="see_through_title">Průhlednost</string>
+    <string name="see_through_summary">Zobrazí lehce rozmazaný obsah jako pozadí zamykací obrazovky. Vaše data mohou být viditelná lidem kolem vás</string>
+
+    <!--AppOps-->
+    <string name="appops_settings_title">Oprávnění aplikací</string>
+
+    <!--User preferences settings-->
+    <string name="personalization">Přizpůsobení</string>
+    <string name="reset_user_preferences_title">Obnovení předvoleb</string>
+    <string name="reset_user_preferences_summary">Obnoví nastavení uživatelského rozhraní na výchozí hodnoty</string>
+    <string name="reset_user_preferences_dialog">Jste si jisti, že chcete smazat vaše nastavení?</string>
+
+    <!--Battery icon selection-->
+    <string name="battery_status_icon_title">Ikona baterie</string>
+    <string name="battery_bar">Baterie</string>
+    <string name="battery_bar_percent">Baterie a procenta</string>
+    <string name="battery_circle">Kruh</string>
+    <string name="battery_circle_percent">Kruh a procenta</string>
+
+    <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
+    <string name="custom_runtime_warning_title">Varování</string>
+    <string name="custom_runtime_warning_message">ART není podporován týmem ParanoidAndroid. Toto nastavení je zahrnuto pouze pro experimentální účely a může způsobovat nestabilitu, pády, ztráty dat nebo chyby při spouštění vašeho zařízení. Pro více informací navštivte stránku &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Seznámení s běhovým prostředím ART&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Žádáme vás, nepodávejte hlášení o chybách, pokud jste povolili ART jako běhové prostředí.&lt;br/&gt;&lt;br/&gt;Jste si jisti, že chcete restartovat zařízení a změnit runtime z <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> na <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+
+    <!-- Lockscreen widgets -->
+    <string name="security_maximize_widgets_title">Maximalizovat widgety</string>
+
+    <!--PA version-->
+    <string name="pa_version">Verze ParanoidAndroid</string>
+    <string name="pa_version_default">Neznámá</string>
+</resources>
